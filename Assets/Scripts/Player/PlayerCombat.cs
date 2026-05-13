@@ -12,18 +12,28 @@ public class PlayerCombat : MonoBehaviour
     public float ParryRange = 0.3f;
 
     public int MeleeDamage = 10;
-    public int max_hp = 50;
+    public int max_hp = 500;
     private int hp;
 
     public LayerMask EnemyLayers;
     public LayerMask ProjectileLayers;
 
     private Vector2 InputVector;
-    
 
+    public int iFrames = 0;
+    
     private void Start()
     {
         hp = max_hp;
+    }
+
+    void FixedUpdate()
+    {
+        if(iFrames > 0)
+        {
+            iFrames--;
+            print("invincible : " + iFrames);
+        }
     }
 
 
@@ -31,7 +41,6 @@ public class PlayerCombat : MonoBehaviour
     {
         InputVector = value.Get<Vector2>();
     }
-
 
     void OnMelee()
     {
@@ -111,7 +120,8 @@ public class PlayerCombat : MonoBehaviour
 
     public void takeDamage(int damage)
     {
-        
+        hp -= damage;
+        //Ball wird rausgeknockt
     }
 
     public void OnDrawGizmosSelected()

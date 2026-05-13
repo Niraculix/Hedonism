@@ -28,11 +28,12 @@ public class PlayerMovement : MonoBehaviour
     void OnDash()
     {
         dashing = true;
+        GetComponent<PlayerCombat>().iFrames = 10;
     }
 
     void FixedUpdate()
     {
-        horizontalMove = (float)movementVector.x * moveSpeed;
+        horizontalMove = movementVector.x * moveSpeed;
         controller.Move(horizontalMove * Time.fixedDeltaTime, jumping, dashing);
         jumping = false;
         dashing = false;

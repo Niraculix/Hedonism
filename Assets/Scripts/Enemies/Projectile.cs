@@ -22,7 +22,7 @@ public class Projectile : MonoBehaviour
         print("Parried");
         _isParried = true;
         // Richtung umkehren zurück zur Quelle
-        _direction = (transform.position - _initPos).normalized;
+        _direction = (_initPos - transform.position).normalized;
         // Ein bisschen schneller nach Parry
         speed *= 1.5f;
     }
@@ -37,9 +37,12 @@ public class Projectile : MonoBehaviour
         // Trifft Spieler (nur wenn nicht parriert)
         if (!_isParried && other.CompareTag("Player"))
         {
-            Debug.Log("Spieler getroffen!");
-            other.GetComponent<PlayerCombat>().takeDamage(_damage);
-            Destroy(gameObject);
+            if(other.GetComponent<PlayerCombat>().iFrames == 0)
+            {
+                Debug.Log("Spieler getroffen!");
+                other.GetComponent<PlayerCombat>().takeDamage(_damage);
+                Destroy(gameObject);
+            }
             return;
         }
 
