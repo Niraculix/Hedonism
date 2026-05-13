@@ -123,6 +123,7 @@ public class PlayerCombat : MonoBehaviour
         hp -= damage;
 
         SetIFrames(5);
+        
         //Ball wird rausgeknockt
     }
 

@@ -2,6 +2,7 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using Unity.Mathematics;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -17,7 +18,15 @@ public class PlayerMovement : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        movementVector = value.Get<Vector2>();
+        if(Mathf.Abs(value.Get<Vector2>().x) > 0.25)
+        {
+            movementVector = value.Get<Vector2>();
+        }
+        else
+        {
+            movementVector = new Vector2(0,0);
+        }
+        
     }
 
     void OnJump()
