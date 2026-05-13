@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 79278932}
   - component: {fileID: 79278933}
   - component: {fileID: 79278934}
+  - component: {fileID: 79278935}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -289,7 +290,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 0.9967942, y: 1.5041937}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.02
 --- !u!50 &79278931
 Rigidbody2D:
   serializedVersion: 5
@@ -386,6 +387,42 @@ MonoBehaviour:
   ProjectileLayers:
     serializedVersion: 2
     m_Bits: 256
+--- !u!58 &79278935
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79278925}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.06169927, y: -0.08}
+  m_Radius: 0.50554574
 --- !u!1 &121081348
 GameObject:
   m_ObjectHideFlags: 0
@@ -14479,7 +14516,7 @@ TilemapCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
+  m_MaximumTileChangeCount: 10000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
 --- !u!1 &1233686666
