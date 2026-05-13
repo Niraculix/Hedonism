@@ -12,7 +12,7 @@ public class PlayerCombat : MonoBehaviour
     public float ParryRange = 0.3f;
 
     public int MeleeDamage = 10;
-    public int max_hp = 500;
+    public int max_hp = 30;
     private int hp;
 
     public LayerMask EnemyLayers;
@@ -20,7 +20,7 @@ public class PlayerCombat : MonoBehaviour
 
     private Vector2 InputVector;
 
-    public int iFrames = 0;
+    private int iFrames = 0;
     
     private void Start()
     {
@@ -127,5 +127,20 @@ public class PlayerCombat : MonoBehaviour
     public void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(SideMeleePoint.position, ParryRange);
+    }
+
+    public void SetIFrames(int i)
+    {
+        iFrames = i;
+    }
+
+    public int GetIFrames()
+    {
+        return iFrames;
+    }
+
+    public int GetHp()
+    {
+        return hp;
     }
 }

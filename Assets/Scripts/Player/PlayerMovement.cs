@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     void OnDash()
     {
         dashing = true;
-        GetComponent<PlayerCombat>().iFrames = 10;
+        GetComponent<PlayerCombat>().SetIFrames(10);
     }
 
     void FixedUpdate()

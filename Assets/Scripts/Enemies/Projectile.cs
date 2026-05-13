@@ -37,7 +37,7 @@ public class Projectile : MonoBehaviour
         // Trifft Spieler (nur wenn nicht parriert)
         if (!_isParried && other.CompareTag("Player"))
         {
-            if(other.GetComponent<PlayerCombat>().iFrames == 0)
+            if(other.GetComponent<PlayerCombat>().GetIFrames() == 0)
             {
                 Debug.Log("Spieler getroffen!");
                 other.GetComponent<PlayerCombat>().takeDamage(_damage);
