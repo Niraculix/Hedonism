@@ -121,6 +121,8 @@ public class PlayerCombat : MonoBehaviour
     public void takeDamage(int damage)
     {
         hp -= damage;
+
+        SetIFrames(5);
         //Ball wird rausgeknockt
     }
 
@@ -131,7 +133,10 @@ public class PlayerCombat : MonoBehaviour
 
     public void SetIFrames(int i)
     {
-        iFrames = i;
+        if(i > iFrames)
+        {
+            iFrames = i;
+        }
     }
 
     public int GetIFrames()

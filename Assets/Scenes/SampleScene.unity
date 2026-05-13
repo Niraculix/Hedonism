@@ -14655,7 +14655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   hp: 30
   ProjectileDamage: 5
-  TimerCooldown: 5
+  TimerCooldown: 1
   ProjectilePrefab: {fileID: 7731221766088345364, guid: 4326adb5923eda04fa634de436182b2d, type: 3}
   FirePoint: {fileID: 563020149}
 --- !u!1 &1348657244
