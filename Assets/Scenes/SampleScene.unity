@@ -130,13 +130,13 @@ GameObject:
   - component: {fileID: 79278928}
   - component: {fileID: 79278927}
   - component: {fileID: 79278926}
+  - component: {fileID: 79278936}
   - component: {fileID: 79278931}
   - component: {fileID: 79278930}
   - component: {fileID: 79278932}
   - component: {fileID: 79278933}
   - component: {fileID: 79278934}
   - component: {fileID: 79278935}
-  - component: {fileID: 79278936}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -442,11 +442,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bc6dfb4f8b0be64d9c37541de28fcf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed_mult: 1
-  dmg_mult: 0
-  dash_force_mult: 1
-  jump_force_mult: 1
-  light_drain_mult: 1
+  speed_mult: 1.3
+  dmg_mult: 2
+  dash_force_mult: 1.3
+  jump_force_mult: 1.3
+  light_drain_mult: 3
 --- !u!1 &121081348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,6 +1044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthBar
   Player: {fileID: 79278925}
   slider: {fileID: 706965739}
+  fill: {fileID: 1947830272}
 --- !u!1 &767706852
 GameObject:
   m_ObjectHideFlags: 0
