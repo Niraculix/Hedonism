@@ -40,7 +40,7 @@ public class Projectile : MonoBehaviour
             if(other.GetComponent<PlayerCombat>().GetIFrames() == 0)
             {
                 Debug.Log("Spieler getroffen!");
-                other.GetComponent<PlayerCombat>().takeDamage(_damage);
+                other.GetComponent<PlayerCombat>().takeDamage(_damage, _direction);
                 Destroy(gameObject);
             }
             return;

@@ -6,9 +6,11 @@ using UnityEngine.Rendering;
 
 public class CharacterController : MonoBehaviour
 {
+	[SerializeField] private float speed = 10f;
 	[SerializeField] private float m_JumpForce = 1400f;
 	[SerializeField] private float m_DashForce = 600f;
-	public float m_DashCooldown = 5f;
+	[SerializeField] private float m_PogoForce = 600f;
+	public float m_DashCooldown = 0.1f;
 
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;
 	[SerializeField] private bool m_AirControl = false;
@@ -70,8 +72,16 @@ public class CharacterController : MonoBehaviour
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{
+			Vector3 targetVelocity;
 			// Move the character by velocity
-			Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.linearVelocity.y);
+			if (!GetComponent<PlayerCombat>().light_dropped)
+			{
+				targetVelocity = new Vector2(move * speed, m_Rigidbody2D.linearVelocity.y);
+			}
+			else
+			{
+				targetVelocity = new Vector2(move * speed * GetComponent<BerserkMode>().speed_mult , m_Rigidbody2D.linearVelocity.y);
+			}
 			// smoothing out and applying it
 			m_Rigidbody2D.linearVelocity = Vector3.SmoothDamp(m_Rigidbody2D.linearVelocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
@@ -90,7 +100,14 @@ public class CharacterController : MonoBehaviour
 		{
 			// Add a vertical jumping-force to the player.
 			m_Grounded = false;
-			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			if (!GetComponent<PlayerCombat>().light_dropped)
+			{
+				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			}
+			else
+			{
+				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce * GetComponent<BerserkMode>().jump_force_mult));
+			}
 		}
 
 		if (m_DashAvailable && dash)
@@ -111,7 +128,14 @@ public class CharacterController : MonoBehaviour
 				dir = -1;
 			}
 
-			m_Rigidbody2D.AddForce(new Vector2(m_DashForce * dir, 0f));
+			if (!GetComponent<PlayerCombat>().light_dropped)
+			{
+				m_Rigidbody2D.AddForce(new Vector2(m_DashForce * dir, 0f));
+			}
+			else
+			{
+				m_Rigidbody2D.AddForce(new Vector2(m_DashForce * GetComponent<BerserkMode>().dash_force_mult * dir, 0f));
+			}
 		}
 	}
 
@@ -131,7 +155,18 @@ public class CharacterController : MonoBehaviour
 
 		yield return new WaitForSeconds(m_DashCooldown);
 
-		m_DashOnCooldown = false;
+		ResetDash();
 
+	}
+
+	public void ResetDash()
+	{
+		m_DashOnCooldown = false;
+	}
+
+	public void Pogo()
+	{
+		m_Rigidbody2D.AddForce(new Vector2(0,m_PogoForce));
+		ResetDash();
 	}
 }

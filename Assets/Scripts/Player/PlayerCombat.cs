@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,11 +13,17 @@ public class PlayerCombat : MonoBehaviour
     public float ParryRange = 0.3f;
 
     public int MeleeDamage = 10;
-    public int max_hp = 30;
-    private int hp;
+    public int max_hp = 1000;
+    private float hp;
+    public bool light_dropped = false;
+    public bool room_cleared = false;
+    public float natural_drain_rate = 1;
 
     public LayerMask EnemyLayers;
     public LayerMask ProjectileLayers;
+    public GameObject LightSpherePrefab;
+
+    private GameObject LightSphere = null;
 
     private Vector2 InputVector;
 
@@ -34,6 +41,18 @@ public class PlayerCombat : MonoBehaviour
             iFrames--;
             print("invincible : " + iFrames);
         }
+
+        if(!room_cleared)
+        {
+            if (!light_dropped)
+            {
+                hp -= natural_drain_rate * Time.fixedDeltaTime;
+            }
+            else
+            {
+                hp -= natural_drain_rate * GetComponent<BerserkMode>().light_drain_mult * Time.fixedDeltaTime;
+            }
+        }
     }
 
 
@@ -44,6 +63,7 @@ public class PlayerCombat : MonoBehaviour
 
     void OnMelee()
     {
+        bool pogo = false;
         Vector3 AttackPoint = new Vector3();
         if(InputVector.x < 0.3 && InputVector.x > -0.3 )
         {
@@ -56,6 +76,7 @@ public class PlayerCombat : MonoBehaviour
             if(InputVector.y < 0)
             {
                 AttackPoint = DownMeleePoint.position;
+                pogo = true;
                 print("Downwards Swing");
             }
 
@@ -73,11 +94,35 @@ public class PlayerCombat : MonoBehaviour
         }
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPoint, MeleeAttackRange, EnemyLayers);
+        Collider2D[] hitProjectiles = Physics2D.OverlapCircleAll(AttackPoint, MeleeAttackRange, ProjectileLayers);
 
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Enemy>().takeDamage(MeleeDamage);
+            if(!light_dropped) 
+            {
+                enemy.GetComponent<Enemy>().takeDamage(MeleeDamage);
+            }
+            else
+            {
+                enemy.GetComponent<Enemy>().takeDamage(MeleeDamage * GetComponent<BerserkMode>().dmg_mult);
+            }
+
+            if(pogo)
+            {
+                GetComponent<CharacterController>().Pogo();
+                pogo = false;
+            }
         }
+
+        foreach(Collider2D projectile in hitProjectiles)
+        {
+            if(pogo)
+            {
+                GetComponent<CharacterController>().Pogo();
+                pogo = false;
+            }
+        }
+
     }
 
     void OnParry()
@@ -118,13 +163,30 @@ public class PlayerCombat : MonoBehaviour
         } 
     }
 
-    public void takeDamage(int damage)
+    public void takeDamage(int damage, Vector2 dir)
     {
         hp -= damage;
 
         SetIFrames(5);
-        
-        //Ball wird rausgeknockt
+        dropLight(damage,dir);
+    }
+
+    void dropLight(int damage, Vector2 dir)
+    {
+        if(!light_dropped)
+        {
+            light_dropped = true;
+            GameObject light = Instantiate(LightSpherePrefab,transform.position, Quaternion.identity);
+            light.GetComponent<LightSphere>().Init(dir,damage);
+
+            LightSphere = light;
+        }
+    }
+
+    public void pickupLight()
+    {
+        LightSphere = null;
+        light_dropped = false;
     }
 
     public void OnDrawGizmosSelected()
@@ -145,7 +207,7 @@ public class PlayerCombat : MonoBehaviour
         return iFrames;
     }
 
-    public int GetHp()
+    public float GetHp()
     {
         return hp;
     }
