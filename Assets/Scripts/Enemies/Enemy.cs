@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
 
     private float ShootTimer = 0f;
 
+    public bool active = true;
+
     void Start()
     {
         _playerPos = GameObject.FindGameObjectWithTag("Player").transform;
@@ -22,7 +24,7 @@ public class Enemy : MonoBehaviour
     void FixedUpdate()
     {
         ShootTimer -= Time.fixedDeltaTime;
-        if(ShootTimer <= 0)
+        if(ShootTimer <= 0 && active)
         {
             ShootTimer = TimerCooldown;
             Shoot();

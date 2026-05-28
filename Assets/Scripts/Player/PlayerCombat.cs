@@ -22,6 +22,7 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask EnemyLayers;
     public LayerMask ProjectileLayers;
     public GameObject LightSpherePrefab;
+    public CharacterController controller;
 
     private GameObject LightSphere = null;
 
@@ -93,7 +94,18 @@ public class PlayerCombat : MonoBehaviour
             print("Sideways Swing");
         }
 
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPoint, MeleeAttackRange, EnemyLayers);
+        Collider2D[] hitEnemies;
+
+        if(AttackPoint == DownMeleePoint.position)
+        {
+            hitEnemies = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(GetComponent<CapsuleCollider2D>().size.x, MeleeAttackRange * 2), 0, EnemyLayers);
+        }
+        else
+        {
+            hitEnemies = Physics2D.OverlapCircleAll(AttackPoint, MeleeAttackRange, EnemyLayers);
+        }
+
+        
         Collider2D[] hitProjectiles = Physics2D.OverlapCircleAll(AttackPoint, MeleeAttackRange, ProjectileLayers);
 
         foreach(Collider2D enemy in hitEnemies)
@@ -109,7 +121,7 @@ public class PlayerCombat : MonoBehaviour
 
             if(pogo)
             {
-                GetComponent<CharacterController>().Pogo();
+                controller.Pogo();
                 pogo = false;
             }
         }
@@ -118,7 +130,7 @@ public class PlayerCombat : MonoBehaviour
         {
             if(pogo)
             {
-                GetComponent<CharacterController>().Pogo();
+                controller.Pogo();
                 pogo = false;
             }
         }
@@ -191,7 +203,9 @@ public class PlayerCombat : MonoBehaviour
 
     public void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(SideMeleePoint.position, ParryRange);
+        Gizmos.DrawWireSphere(SideMeleePoint.position, MeleeAttackRange);
+        Gizmos.DrawWireCube(DownMeleePoint.position, new Vector2(GetComponent<CapsuleCollider2D>().size.x, MeleeAttackRange * 2));
+        Gizmos.DrawWireSphere(UpMeleePoint.position, MeleeAttackRange);
     }
 
     public void SetIFrames(int i)

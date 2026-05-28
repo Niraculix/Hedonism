@@ -181,6 +181,8 @@ public class CharacterController : MonoBehaviour
 
 	public void Pogo()
 	{
+		print("Pogo");
+		m_Rigidbody2D.linearVelocityY = 0;
 		m_Rigidbody2D.AddForce(new Vector2(0,m_PogoForce));
 		ResetDash();
 	}
