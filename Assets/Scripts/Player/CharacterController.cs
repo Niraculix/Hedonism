@@ -2,6 +2,7 @@ using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
 public class CharacterController : MonoBehaviour
@@ -25,6 +26,10 @@ public class CharacterController : MonoBehaviour
 	private bool m_FacingRight = true;
 	private Vector3 m_Velocity = Vector3.zero;
 
+	[SerializeField] private InputActionReference jumpAction;
+	private bool jumpInputReleased;
+
+
 	[Header("Events")]
 	[Space]
 
@@ -46,6 +51,9 @@ public class CharacterController : MonoBehaviour
 	{
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
+		jumpInputReleased = !jumpAction.action.IsPressed();
+
+		//print(jumpInputReleased);
 
 		// The player is grounded if a circlecast to the groundcheck position hits anything groundy
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -64,6 +72,8 @@ public class CharacterController : MonoBehaviour
 				}
 			}
 		}
+
+		
 	}
 
 
@@ -95,10 +105,9 @@ public class CharacterController : MonoBehaviour
 				Flip();
 			}
 		}
-		// If the player should jump...
+		// Player springt
 		if (m_Grounded && jump)
 		{
-			// Add a vertical jumping-force to the player.
 			m_Grounded = false;
 			if (!GetComponent<PlayerCombat>().light_dropped)
 			{
@@ -109,6 +118,12 @@ public class CharacterController : MonoBehaviour
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce * GetComponent<BerserkMode>().jump_force_mult));
 			}
 		}
+
+		// auf y achse ausbremsen, wenn jump action released wurde
+		if(jumpInputReleased && m_Rigidbody2D.linearVelocity.y > 0)
+			{
+				m_Rigidbody2D.linearVelocity = new Vector2(m_Rigidbody2D.linearVelocity.x, m_Rigidbody2D.linearVelocity.y / 1.5f);
+			}
 
 		if (m_DashAvailable && dash)
 		{
