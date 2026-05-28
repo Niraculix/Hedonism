@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Projectile : MonoBehaviour
 {
@@ -9,6 +10,36 @@ public class Projectile : MonoBehaviour
 
     private Vector3 _initPos = new Vector3();
 
+    // Scale-up settings
+    [SerializeField] private float growDuration = 0.5f;   // seconds
+    [SerializeField] private Vector3 startScale = new Vector3(0.5f, 0.5f, 1f);
+    [SerializeField] private Vector3 endScale = new Vector3(1f, 1f, 1f);
+    private float _spawnTime;
+    private void Awake()
+    {
+        // Ensure we start at the intended scale
+        transform.localScale = startScale;
+        _spawnTime = Time.time;
+
+        StartCoroutine(ScaleOverTime());
+    }
+    private IEnumerator ScaleOverTime()
+    {
+        float elapsed = 0f;
+
+        while (elapsed < growDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / growDuration);
+            t = Mathf.SmoothStep(0f, 1f, t); // optional easing
+
+            transform.localScale = Vector3.Lerp(startScale, endScale, t);
+            yield return null;
+        }
+
+        // Ensure final scale is exact
+        transform.localScale = endScale;
+    }
     public void Init(Vector2 direction, int damage)
     {
         _direction = direction.normalized;
