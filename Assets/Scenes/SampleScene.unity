@@ -227,6 +227,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_GroundCheck: {fileID: 261465339}
+  m_FacingRight: 1
   jumpAction: {fileID: -2099379676528639254, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   OnLandEvent:
     m_PersistentCalls:
@@ -410,6 +411,10 @@ MonoBehaviour:
     m_Bits: 256
   LightSpherePrefab: {fileID: 7952630626987971147, guid: 2b4f3bb0f8dd5c34f82813b857163095, type: 3}
   controller: {fileID: 79278926}
+  meleeAction: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  parryAction: {fileID: -570521643958939378, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  LTriggerAction: {fileID: 5037749538142088997, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  RTriggerAction: {fileID: -5270623865475825602, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!114 &79278936
 MonoBehaviour:
   m_ObjectHideFlags: 0
