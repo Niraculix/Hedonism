@@ -9,15 +9,16 @@ public class PlayerCombat : MonoBehaviour
     public Transform UpMeleePoint;
     public Transform DownMeleePoint;
 
-    public float MeleeAttackRange = 0.4f;
-    public float ParryRange = 0.3f;
+    [SerializeField] public float MeleeAttackRange = 0.4f;
+    [SerializeField] public float ParryRange = 0.3f;
 
-    public int MeleeDamage = 10;
+    [SerializeField] public int MeleeDamage = 10;
     public int max_hp = 1000;
     private float hp;
     public bool light_dropped = false;
     public bool room_cleared = false;
     public float natural_drain_rate = 1;
+    private bool facingRight = true;
 
     public LayerMask EnemyLayers;
     public LayerMask ProjectileLayers;
@@ -25,6 +26,10 @@ public class PlayerCombat : MonoBehaviour
     public CharacterController controller;
 
     private GameObject LightSphere = null;
+
+    [SerializeField] private GameObject vfxAttackVertTemp;
+    [SerializeField] private GameObject vfxAttackHoriTemp;
+    [SerializeField] private GameObject vfxParryTemp;
 
     private Vector2 InputVector;
 
@@ -66,33 +71,44 @@ public class PlayerCombat : MonoBehaviour
     {
         bool pogo = false;
         Vector3 AttackPoint = new Vector3();
-        if(InputVector.x < 0.3 && InputVector.x > -0.3 )
+        GameObject vfxToSpawn = null;
+
+        if (InputVector.x < 0.3 && InputVector.x > -0.3)
         {
-            if(InputVector.y > 0) 
+            if (InputVector.y > 0)
             {
                 AttackPoint = UpMeleePoint.position;
+                vfxToSpawn = vfxAttackVertTemp;
                 print("Upwards Swing");
             }
 
-            if(InputVector.y < 0)
+            if (InputVector.y < 0)
             {
                 AttackPoint = DownMeleePoint.position;
                 pogo = true;
+                vfxToSpawn = vfxAttackVertTemp;
                 print("Downwards Swing");
             }
 
-            if(InputVector == new Vector2(0,0))
+            if (InputVector == new Vector2(0, 0))
             {
                 AttackPoint = SideMeleePoint.position;
+                vfxToSpawn = vfxAttackHoriTemp;
                 print("Sideways Swing");
             }
-            
+
         }
         else
         {
             AttackPoint = SideMeleePoint.position;
+            vfxToSpawn = vfxAttackHoriTemp;
             print("Sideways Swing");
         }
+        if (vfxToSpawn != null)
+        {
+            Instantiate(vfxToSpawn, AttackPoint, Quaternion.identity);
+        }
+
 
         Collider2D[] hitEnemies;
 

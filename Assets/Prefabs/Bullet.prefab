@@ -169,6 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 893b336e09d269f4199fe6071c373c0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  growDuration: 0.7
+  growDuration: 1
   startScale: {x: 0.3, y: 0.3, z: 1}
   endScale: {x: 1, y: 1, z: 1}
