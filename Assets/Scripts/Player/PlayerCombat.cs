@@ -63,11 +63,6 @@ public class PlayerCombat : MonoBehaviour
             }
         }
 
-        print(meleeAction.action.IsPressed());
-        print(parryAction.action.IsPressed());
-        print(LTriggerAction.action.IsPressed());
-        print(RTriggerAction.action.IsPressed());
-
 
         if(meleeAction.action.IsPressed() && parryAction.action.IsPressed() && LTriggerAction.action.IsPressed() && RTriggerAction.action.IsPressed())
         {
@@ -75,7 +70,14 @@ public class PlayerCombat : MonoBehaviour
                 if(!ActionOnCooldown)
                 {
                     ActionCooldown(0.1f);
-                    dropLight(1, InputVector);
+                    if(controller.m_FacingRight)
+                    {
+                        dropLight(5, new Vector2(1,0));
+                    }
+                    else
+                    {
+                        dropLight(5, new Vector2(-1,0));
+                    }
                 }
             }
         }

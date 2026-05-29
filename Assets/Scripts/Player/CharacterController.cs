@@ -23,7 +23,7 @@ public class CharacterController : MonoBehaviour
 	private bool m_DashOnCooldown;
 	private bool m_DashAvailable;
 	private Rigidbody2D m_Rigidbody2D;
-	private bool m_FacingRight = true;
+	public bool m_FacingRight = true;
 	private Vector3 m_Velocity = Vector3.zero;
 
 	[SerializeField] private InputActionReference jumpAction;
