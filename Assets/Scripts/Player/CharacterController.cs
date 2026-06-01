@@ -14,7 +14,6 @@ public class CharacterController : MonoBehaviour
 	public float m_DashCooldown = 0.1f;
 
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;
-	[SerializeField] private bool m_AirControl = false;
 	[SerializeField] private LayerMask m_WhatIsGround;
 	[SerializeField] private Transform m_GroundCheck;
 
@@ -22,6 +21,7 @@ public class CharacterController : MonoBehaviour
 	private bool m_Grounded;
 	private bool m_DashOnCooldown;
 	private bool m_DashAvailable;
+	private bool can_Move = true;
 	private Rigidbody2D m_Rigidbody2D;
 	public bool m_FacingRight = true;
 	private Vector3 m_Velocity = Vector3.zero;
@@ -79,9 +79,9 @@ public class CharacterController : MonoBehaviour
 
 	public void Move(float move, bool jump, bool dash)
 	{
-		//only control the player if grounded or airControl is turned on
-		if (m_Grounded || m_AirControl)
+		if(can_Move)
 		{
+			
 			Vector3 targetVelocity;
 			// Move the character by velocity
 			if (!GetComponent<PlayerCombat>().light_dropped)
@@ -104,18 +104,18 @@ public class CharacterController : MonoBehaviour
 			{
 				Flip();
 			}
-		}
-		// Player springt
-		if (m_Grounded && jump)
-		{
-			m_Grounded = false;
-			if (!GetComponent<PlayerCombat>().light_dropped)
+			// Player springt
+			if (m_Grounded && jump)
 			{
-				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-			}
-			else
-			{
-				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce * GetComponent<BerserkMode>().jump_force_mult));
+				m_Grounded = false;
+				if (!GetComponent<PlayerCombat>().light_dropped)
+				{
+					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				}
+				else
+				{
+					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce * GetComponent<BerserkMode>().jump_force_mult));
+				}
 			}
 		}
 
@@ -185,5 +185,19 @@ public class CharacterController : MonoBehaviour
 		m_Rigidbody2D.linearVelocityY = 0;
 		m_Rigidbody2D.AddForce(new Vector2(0,m_PogoForce));
 		ResetDash();
+	}
+
+	public void Knockback(Vector2 dir, int dmg)
+	{
+		m_Rigidbody2D.linearVelocityX = 0;
+		m_Rigidbody2D.AddForce(dir * dmg * 500);
+		StartCoroutine(MoveStun(0.4f));
+	}
+
+	IEnumerator MoveStun(float sec)
+	{
+		can_Move = false;
+		yield return new WaitForSeconds(sec);
+		can_Move = true;
 	}
 }

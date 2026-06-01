@@ -5,6 +5,8 @@ public class Enemy : MonoBehaviour
 {
     public int hp = 30;
 
+    public int contact_dmg = 5;
+
     public void takeDamage(int damage)
     {
         hp -= damage;

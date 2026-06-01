@@ -244,6 +244,17 @@ public class PlayerCombat : MonoBehaviour
         ActionOnCooldown = false;
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+		if (collision.GetComponent<Enemy>())
+		{
+            Vector2 toEnemy = ((Vector2)transform.position - (Vector2)collision.transform.position).normalized;
+			takeDamage(collision.GetComponent<Enemy>().contact_dmg, toEnemy);
+            controller.Knockback(toEnemy, collision.GetComponent<Enemy>().contact_dmg);
+		}
+    }
+
     public void SetIFrames(int i)
     {
         if(i > iFrames)

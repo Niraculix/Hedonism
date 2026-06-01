@@ -45,8 +45,6 @@ public class LightSphere : MonoBehaviour
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(GroundCheck.position, .1f, GroundLayers);
 
-        print(colliders[0]);
-
         if(rb.linearVelocity.x != 0)
         {
             rb.linearVelocityX *= 0.99f;
