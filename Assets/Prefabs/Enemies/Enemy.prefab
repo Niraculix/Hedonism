@@ -120,7 +120,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &829485503097660658
 CapsuleCollider2D:
@@ -172,8 +172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   hp: 30
-  ProjectileDamage: 5
-  TimerCooldown: 1
   ProjectilePrefab: {fileID: 7731221766088345364, guid: 4326adb5923eda04fa634de436182b2d, type: 3}
   FirePoint: {fileID: 6499807715354129263}
 --- !u!1 &4630911327421492959
@@ -185,6 +183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6499807715354129263}
+  - component: {fileID: 988290349034620578}
   m_Layer: 7
   m_Name: FirePoint
   m_TagString: Untagged
@@ -207,3 +206,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 926677902347228788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &988290349034620578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4630911327421492959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1dc6e762d6fda47842897d7f6e5259, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  ProjectileDamage: 5
+  TimerCooldown: 5
+  ProjectilePrefab: {fileID: 7731221766088345364, guid: 4326adb5923eda04fa634de436182b2d, type: 3}
+  active: 1

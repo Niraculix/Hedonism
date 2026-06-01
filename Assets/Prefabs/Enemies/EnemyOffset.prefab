@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2608704233497737619}
   - component: {fileID: 9188056160403363155}
-  - component: {fileID: 8859698986962107301}
   - component: {fileID: 6767165009653419611}
   - component: {fileID: 974145003380098878}
+  - component: {fileID: 7653473443138798538}
   m_Layer: 7
   m_Name: EnemyOffset
   m_TagString: Enemy
@@ -95,24 +95,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &8859698986962107301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3198484740073070678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f3ee4735fff80a42a5c3408b7cb399e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyOffset
-  hp: 60
-  ProjectileDamage: 5
-  TimerCooldown: 1
-  AimOffset: 2
-  ProjectilePrefab: {fileID: 7731221766088345364, guid: 4326adb5923eda04fa634de436182b2d, type: 3}
-  FirePoint: {fileID: 3809122185024901472}
 --- !u!58 &6767165009653419611
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -174,8 +156,21 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &7653473443138798538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198484740073070678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d230f6bafd92c429224d5cc57f06f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  hp: 30
 --- !u!1 &3868243861665937716
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,6 +180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3809122185024901472}
+  - component: {fileID: 7315683122994480249}
   m_Layer: 7
   m_Name: FirePoint
   m_TagString: Untagged
@@ -207,3 +203,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2608704233497737619}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7315683122994480249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3868243861665937716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d436d95f6635474baad444b81b9ae75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  ProjectileDamage: 5
+  TimerCooldown: 2
+  AimOffset: 2
+  ProjectilePrefab: {fileID: 7731221766088345364, guid: 4326adb5923eda04fa634de436182b2d, type: 3}
+  active: 1

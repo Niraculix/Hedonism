@@ -130,7 +130,7 @@ public class PlayerCombat : MonoBehaviour
 
             if(AttackPoint == DownMeleePoint.position)
             {
-                hitEnemies = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(GetComponent<CapsuleCollider2D>().size.x, MeleeAttackRange * 2), 0, EnemyLayers);
+                hitEnemies = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(GetComponent<CapsuleCollider2D>().size.x * 1.5f, MeleeAttackRange * 3), 0, EnemyLayers);
             }
             else
             {
@@ -264,7 +264,7 @@ public class PlayerCombat : MonoBehaviour
     public void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(SideMeleePoint.position, MeleeAttackRange);
-        Gizmos.DrawWireCube(DownMeleePoint.position, new Vector2(GetComponent<CapsuleCollider2D>().size.x, MeleeAttackRange * 2));
+        Gizmos.DrawWireCube(DownMeleePoint.position, new Vector2(GetComponent<CapsuleCollider2D>().size.x * 1.5f, MeleeAttackRange * 3));
         Gizmos.DrawWireSphere(UpMeleePoint.position, MeleeAttackRange);
     }
 }

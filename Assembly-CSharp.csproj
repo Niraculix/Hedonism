@@ -53,10 +53,11 @@
     <Compile Include="Assets\Scripts\Player\BerserkMode.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCombat.cs" />
     <Compile Include="Assets\Scripts\Player\CharacterController.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyVariants\Regular_Enemy.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Enemies\EnemyOffset.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyVariants\Offset_Enemy.cs" />
     <Compile Include="Assets\Scripts\Player\LightSphere.cs" />
   </ItemGroup>
   <ItemGroup>
