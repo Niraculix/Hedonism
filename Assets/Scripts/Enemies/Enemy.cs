@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        GameObject.FindGameObjectWithTag("Room").GetComponent<RoomDefinition>().EnemyKilled();
         Destroy(gameObject);
     }
 }
