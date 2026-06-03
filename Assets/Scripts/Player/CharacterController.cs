@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Threading.Tasks;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using Unity.Mathematics;
 
 public class CharacterController : MonoBehaviour
 {
@@ -28,6 +30,8 @@ public class CharacterController : MonoBehaviour
 
 	[SerializeField] private InputActionReference jumpAction;
 	private bool jumpInputReleased;
+
+	private Vector2 InputVector;
 
 
 	[Header("Events")]
@@ -68,7 +72,7 @@ public class CharacterController : MonoBehaviour
 				if(m_DashOnCooldown == false && m_DashAvailable == false)
 				{
 					m_DashAvailable = true;
-					print("Dash Available");
+					//print("Dash Available");
 				}
 			}
 		}
@@ -82,16 +86,8 @@ public class CharacterController : MonoBehaviour
 		if(can_Move)
 		{
 			
-			Vector3 targetVelocity;
-			// Move the character by velocity
-			if (!GetComponent<PlayerCombat>().light_dropped)
-			{
-				targetVelocity = new Vector2(move * speed, m_Rigidbody2D.linearVelocity.y);
-			}
-			else
-			{
-				targetVelocity = new Vector2(move * speed * GetComponent<BerserkMode>().speed_mult , m_Rigidbody2D.linearVelocity.y);
-			}
+			Vector3 targetVelocity = new Vector2(move * speed, m_Rigidbody2D.linearVelocity.y);
+			
 			// smoothing out and applying it
 			m_Rigidbody2D.linearVelocity = Vector3.SmoothDamp(m_Rigidbody2D.linearVelocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
@@ -108,14 +104,8 @@ public class CharacterController : MonoBehaviour
 			if (m_Grounded && jump)
 			{
 				m_Grounded = false;
-				if (!GetComponent<PlayerCombat>().light_dropped)
-				{
-					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-				}
-				else
-				{
-					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce * GetComponent<BerserkMode>().jump_force_mult));
-				}
+
+				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 			}
 		}
 
@@ -131,26 +121,31 @@ public class CharacterController : MonoBehaviour
 			m_DashAvailable = false;
 
 			StartCoroutine(DashTimer());
-			print("dash");
 
-			float dir = 0;
-			if (m_FacingRight)
+			if(Mathf.Abs(InputVector.x) < 0.3)
 			{
-				dir = 1;
+				InputVector.x = 0;
 			}
-			else
+			if(Mathf.Abs(InputVector.y) < 0.3 )
 			{
-				dir = -1;
+				InputVector.y = 0;
 			}
 
-			if (!GetComponent<PlayerCombat>().light_dropped)
+			
+			if(InputVector ==  new Vector2(0,0))
 			{
-				m_Rigidbody2D.AddForce(new Vector2(m_DashForce * dir, 0f));
+				print(InputVector);
+				if(m_FacingRight)
+				{
+					InputVector = new Vector2(1,0);
+				}
+				else
+				{
+					InputVector = new Vector2(-1,0);
+				}
 			}
-			else
-			{
-				m_Rigidbody2D.AddForce(new Vector2(m_DashForce * GetComponent<BerserkMode>().dash_force_mult * dir, 0f));
-			}
+
+			m_Rigidbody2D.AddForce(InputVector * m_DashForce);
 		}
 	}
 
@@ -177,6 +172,11 @@ public class CharacterController : MonoBehaviour
 	public void ResetDash()
 	{
 		m_DashOnCooldown = false;
+	}
+
+	void OnMove(InputValue value)
+	{
+		InputVector = value.Get<Vector2>();
 	}
 
 	public void Pogo()

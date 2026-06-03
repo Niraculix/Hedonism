@@ -48,7 +48,6 @@ public class PlayerCombat : MonoBehaviour
         if(iFrames > 0)
         {
             iFrames--;
-            print("invincible : " + iFrames);
         }
 
         if(!room_cleared)
@@ -247,7 +246,7 @@ public class PlayerCombat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-		if (collision.GetComponent<Enemy>())
+		if (collision.GetComponent<Enemy>() && iFrames <= 0)
 		{
             Vector2 toEnemy = ((Vector2)transform.position - (Vector2)collision.transform.position).normalized;
 			takeDamage(collision.GetComponent<Enemy>().contact_dmg, toEnemy);
