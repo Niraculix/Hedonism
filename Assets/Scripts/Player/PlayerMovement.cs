@@ -46,5 +46,6 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, jumping, dashing);
         jumping = false;
         dashing = false;
+        
     }
 }

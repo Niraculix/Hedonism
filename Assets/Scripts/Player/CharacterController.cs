@@ -19,6 +19,8 @@ public class CharacterController : MonoBehaviour
 	[SerializeField] private LayerMask m_WhatIsGround;
 	[SerializeField] private Transform m_GroundCheck;
 
+
+
 	const float k_GroundedRadius = .2f;
 	private bool m_Grounded;
 	private bool m_DashOnCooldown;
@@ -27,6 +29,10 @@ public class CharacterController : MonoBehaviour
 	private Rigidbody2D m_Rigidbody2D;
 	public bool m_FacingRight = true;
 	private Vector3 m_Velocity = Vector3.zero;
+
+	public int CoyoteTime;
+
+	private int CoyoteTimeFrames;
 
 	[SerializeField] private InputActionReference jumpAction;
 	private bool jumpInputReleased;
@@ -53,6 +59,7 @@ public class CharacterController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
+		print(m_Rigidbody2D.linearVelocity);
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
 		jumpInputReleased = !jumpAction.action.IsPressed();
@@ -74,10 +81,17 @@ public class CharacterController : MonoBehaviour
 					m_DashAvailable = true;
 					//print("Dash Available");
 				}
+
+				ResetCoyoteTime(CoyoteTime);
 			}
+
 		}
 
-		
+		if(CoyoteTimeFrames > 0)
+		{
+			CoyoteTimeFrames--;
+		}
+
 	}
 
 
@@ -101,11 +115,15 @@ public class CharacterController : MonoBehaviour
 				Flip();
 			}
 			// Player springt
-			if (m_Grounded && jump)
+			if (jump)
 			{
+				if(m_Grounded || CoyoteTimeFrames > 0)
+				{
 				m_Grounded = false;
 
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				}
+					
 			}
 		}
 
@@ -121,6 +139,7 @@ public class CharacterController : MonoBehaviour
 			m_DashAvailable = false;
 
 			StartCoroutine(DashTimer());
+			StartCoroutine(DashTrail(0.1f));
 
 			if(Mathf.Abs(InputVector.x) < 0.3)
 			{
@@ -169,9 +188,21 @@ public class CharacterController : MonoBehaviour
 
 	}
 
+	IEnumerator DashTrail(float time)
+	{
+		GetComponent<TrailRenderer>().emitting = true;
+		yield return new WaitForSeconds(time);
+		GetComponent<TrailRenderer>().emitting = false;
+	}
+
 	public void ResetDash()
 	{
 		m_DashOnCooldown = false;
+	}
+
+	public void ResetCoyoteTime(int i)
+	{
+		CoyoteTimeFrames = i;
 	}
 
 	void OnMove(InputValue value)
@@ -200,4 +231,9 @@ public class CharacterController : MonoBehaviour
 		yield return new WaitForSeconds(sec);
 		can_Move = true;
 	}
+
+    public void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawSphere(m_GroundCheck.position, k_GroundedRadius);
+    }
 }
