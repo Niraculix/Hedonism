@@ -1,4 +1,5 @@
 using System.Collections;
+using NUnit.Framework;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -11,9 +12,10 @@ public class LightSphere : MonoBehaviour
     [SerializeField] private LayerMask GroundLayers;
     [SerializeField] private Rigidbody2D rb;
 
-    public float gravity;
+    public float floating_height;
 
-    public bool falling = true;
+    bool floating;
+    bool grounded;
 
 
     public void Init(Vector2 dir, int dmg)
@@ -43,11 +45,25 @@ public class LightSphere : MonoBehaviour
 
     void FixedUpdate()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(GroundCheck.position, .1f, GroundLayers);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(GroundCheck.position, .05f, GroundLayers);
+
+        for (int i = 0; i < colliders.Length; i++)
+		{
+			if (colliders[i].gameObject != gameObject)
+			{
+				grounded = true;
+			}
+		}
 
         if(rb.linearVelocity.x != 0)
         {
             rb.linearVelocityX *= 0.99f;
+        }
+
+        if(grounded && !floating)
+        {
+            StartCoroutine(ball_floating());
+            rb.gravityScale = 0.25f;
         }
     }
 
@@ -55,5 +71,18 @@ public class LightSphere : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         pickup_ready = true;
+    }
+
+    IEnumerator ball_floating()
+    {
+        floating = true;
+        rb.gravityScale *= -1;
+        print("change grav");
+        yield return new WaitForSeconds(floating_height);
+
+        if(grounded == true)
+        {
+            StartCoroutine(ball_floating());
+        }
     }
 }

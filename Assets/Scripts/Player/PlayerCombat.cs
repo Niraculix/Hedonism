@@ -33,8 +33,9 @@ public class PlayerCombat : MonoBehaviour
 
     private int iFrames = 0;
 
-    [SerializeField] private InputActionReference meleeAction;
-    [SerializeField] private InputActionReference parryAction;
+    [SerializeField] private InputActionReference MoveAction;
+    [SerializeField] private InputActionReference LShoulderAction;
+    [SerializeField] private InputActionReference RShoulderAction;
     [SerializeField] private InputActionReference LTriggerAction;
     [SerializeField] private InputActionReference RTriggerAction;
     
@@ -63,7 +64,7 @@ public class PlayerCombat : MonoBehaviour
         }
 
 
-        if(meleeAction.action.IsPressed() && parryAction.action.IsPressed() && LTriggerAction.action.IsPressed() && RTriggerAction.action.IsPressed())
+        if(LShoulderAction.action.IsPressed() && RShoulderAction.action.IsPressed() && LTriggerAction.action.IsPressed() && RTriggerAction.action.IsPressed())
         {
             if(!light_dropped){
                 if(!ActionOnCooldown)
@@ -81,40 +82,37 @@ public class PlayerCombat : MonoBehaviour
             }
         }
 
-    }
-
-
-    void OnMove(InputValue value)
-    {
-        InputVector = value.Get<Vector2>();
+        InputVector = MoveAction.action.ReadValue<Vector2>();
     }
 
     void OnMelee()
     {
-        
-        if(!ActionOnCooldown && !parryAction.action.IsPressed() && !LTriggerAction.action.IsPressed() && !RTriggerAction.action.IsPressed())
+        if(!ActionOnCooldown)
         {
             ActionCooldown(0.05f);
             bool pogo = false;
             Vector3 AttackPoint = new Vector3();
+            Vector3 ParryPoint = new Vector3();
             if(InputVector.x < 0.3 && InputVector.x > -0.3 )
             {
                 if(InputVector.y > 0) 
                 {
                     AttackPoint = UpMeleePoint.position;
-                    print("Upwards Swing");
+                    ParryPoint = UpMeleePoint.position;
+                    print("Upwards Swing, " + InputVector);
                 }
 
-                if(InputVector.y < 0)
+                else if(InputVector.y < 0)
                 {
                     AttackPoint = DownMeleePoint.position;
                     pogo = true;
                     print("Downwards Swing");
                 }
 
-                if(InputVector == new Vector2(0,0))
+                else if(Mathf.Abs(InputVector.y) < 0.3)
                 {
                     AttackPoint = SideMeleePoint.position;
+                    ParryPoint = SideMeleePoint.position;
                     print("Sideways Swing");
                 }
                 
@@ -122,6 +120,7 @@ public class PlayerCombat : MonoBehaviour
             else
             {
                 AttackPoint = SideMeleePoint.position;
+                ParryPoint = SideMeleePoint.position;
                 print("Sideways Swing");
             }
 
@@ -137,8 +136,6 @@ public class PlayerCombat : MonoBehaviour
             }
 
             
-            Collider2D[] hitProjectiles = Physics2D.OverlapCircleAll(AttackPoint, MeleeAttackRange, ProjectileLayers);
-
             foreach(Collider2D enemy in hitEnemies)
             {
                 if(!light_dropped) 
@@ -157,7 +154,10 @@ public class PlayerCombat : MonoBehaviour
                 }
             }
 
-            foreach(Collider2D projectile in hitProjectiles)
+
+            Collider2D[] hitProjectilesAttack = Physics2D.OverlapCircleAll(AttackPoint, MeleeAttackRange, ProjectileLayers);
+
+            foreach(Collider2D projectile in hitProjectilesAttack)
             {
                 if(pogo)
                 {
@@ -165,45 +165,10 @@ public class PlayerCombat : MonoBehaviour
                     pogo = false;
                 }
             }
-        }
-    }
 
-    void OnParry()
-    {
-        if (!ActionOnCooldown && !meleeAction.action.IsPressed() && !LTriggerAction.action.IsPressed() && !RTriggerAction.action.IsPressed())
-        {
-            ActionCooldown(0.05f);
-            Vector3 ParryPoint = new Vector3();
-            if(InputVector.x < 0.3 && InputVector.x > -0.3 )
-            {
-                if(InputVector.y > 0) 
-                {
-                    ParryPoint = UpMeleePoint.position;
-                    print("Upwards Parry");
-                }
+            Collider2D[] hitProjectilesParry = Physics2D.OverlapCircleAll(ParryPoint, ParryRange, ProjectileLayers);
 
-                if(InputVector.y < 0)
-                {
-                    ParryPoint = DownMeleePoint.position;
-                    print("Downwards Parry");
-                }
-
-                if(InputVector == new Vector2(0,0))
-                {
-                    ParryPoint = SideMeleePoint.position;
-                    //print("Sideways Parry");
-                }
-                
-            }
-            else
-            {
-                ParryPoint = SideMeleePoint.position;
-                //print("Sideways Parry");
-            }
-
-            Collider2D[] hitProjectiles = Physics2D.OverlapCircleAll(ParryPoint, ParryRange, ProjectileLayers);
-
-            foreach(Collider2D projectile in hitProjectiles)
+            foreach(Collider2D projectile in hitProjectilesParry)
             {
                 projectile.GetComponent<Projectile>().Parry();
             } 
@@ -273,8 +238,8 @@ public class PlayerCombat : MonoBehaviour
 
     public void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(SideMeleePoint.position, MeleeAttackRange);
-        Gizmos.DrawWireCube(DownMeleePoint.position, new Vector2(GetComponent<CapsuleCollider2D>().size.x * 1.5f, MeleeAttackRange * 3));
+        Gizmos.DrawWireSphere(SideMeleePoint.position, ParryRange);
+        Gizmos.DrawWireCube(DownMeleePoint.position, new Vector2(GetComponent<CapsuleCollider2D>().size.x * 1.5f, MeleeAttackRange * 2));
         Gizmos.DrawWireSphere(UpMeleePoint.position, MeleeAttackRange);
     }
 }

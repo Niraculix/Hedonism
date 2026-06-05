@@ -43,15 +43,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Parry",
-                    "type": "Button",
-                    "id": "3942f24e-f443-443d-ab6f-b5f1a32e3e10",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "LeftTrigger",
                     "type": "Button",
                     "id": "d1b5c279-2fab-447b-b896-b15a6fa89093",
@@ -64,6 +55,24 @@
                     "name": "RightTrigger",
                     "type": "Button",
                     "id": "850814de-39cd-4822-a354-2be4456ee4e4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightShoulder",
+                    "type": "Button",
+                    "id": "9fa55e8c-7190-4859-bc06-619e6cef0c9b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftShoulder",
+                    "type": "Button",
+                    "id": "5b4c221d-c75f-4d75-a5bd-dcd4c82db8da",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -217,7 +226,7 @@
                 {
                     "name": "",
                     "id": "f419289c-bb56-4ab1-8060-653773fe5952",
-                    "path": "<Gamepad>/rightShoulder",
+                    "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -282,39 +291,6 @@
                 },
                 {
                     "name": "",
-                    "id": "313f15d2-ded0-4b43-b00e-4612b40503d2",
-                    "path": "<Gamepad>/leftShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Parry",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d06ef6fa-a5de-4b4d-8e7c-1889ba40f8a7",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Parry",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7b11dc32-3c32-4712-b41c-012bcdf7f499",
-                    "path": "<Keyboard>/3",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Parry",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "4bf4d803-72be-4c76-8a96-098844467b21",
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
@@ -354,6 +330,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "RightTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bceffc2d-75a5-46e7-a485-b5bab61ac8bc",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightShoulder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "617c7f45-1ccb-4a1c-90e0-582c54841c0c",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightShoulder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6f3eafbe-8c0d-480b-92bb-1e974b2a2594",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftShoulder",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d7122216-dd28-4abd-a5bb-e983c073eed3",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftShoulder",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

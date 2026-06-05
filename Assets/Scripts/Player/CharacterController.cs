@@ -59,7 +59,6 @@ public class CharacterController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		print(m_Rigidbody2D.linearVelocity);
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
 		jumpInputReleased = !jumpAction.action.IsPressed();

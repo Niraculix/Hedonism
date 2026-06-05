@@ -295,8 +295,8 @@ MonoBehaviour:
   SideMeleePoint: {fileID: 6359635164780948939}
   UpMeleePoint: {fileID: 3909717941996362470}
   DownMeleePoint: {fileID: 2229789529490380139}
-  MeleeAttackRange: 1
-  ParryRange: 0.5
+  MeleeAttackRange: 2
+  ParryRange: 1.5
   MeleeDamage: 10
   max_hp: 30
   light_dropped: 0
@@ -310,8 +310,9 @@ MonoBehaviour:
     m_Bits: 256
   LightSpherePrefab: {fileID: 7952630626987971147, guid: 2b4f3bb0f8dd5c34f82813b857163095, type: 3}
   controller: {fileID: 1153397424987520980}
-  meleeAction: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  parryAction: {fileID: -570521643958939378, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  MoveAction: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  LShoulderAction: {fileID: 6445210570509783361, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  RShoulderAction: {fileID: 6561231601327374612, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   LTriggerAction: {fileID: 5037749538142088997, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   RTriggerAction: {fileID: -5270623865475825602, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!70 &7362777206761080782

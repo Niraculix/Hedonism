@@ -114,8 +114,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   rb: {fileID: 2417326905795273247}
-  gravity: 0
-  falling: 1
+  floating_height: 1.25
 --- !u!58 &3715656398852920891
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -241,7 +240,7 @@ Transform:
   m_GameObject: {fileID: 9054961905243042076}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.12, z: 0}
+  m_LocalPosition: {x: 0, y: -0.879, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
