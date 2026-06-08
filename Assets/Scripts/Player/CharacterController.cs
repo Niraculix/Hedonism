@@ -19,6 +19,9 @@ public class CharacterController : MonoBehaviour
 	[SerializeField] private LayerMask m_WhatIsGround;
 	[SerializeField] private Transform m_GroundCheck;
 
+	[SerializeField] private PhysicsMaterial2D PlayerMat;
+	[SerializeField] private PhysicsMaterial2D BouncyPlayerMat;
+
 
 
 	const float k_GroundedRadius = .2f;
@@ -137,8 +140,8 @@ public class CharacterController : MonoBehaviour
 			m_Grounded = false;
 			m_DashAvailable = false;
 
-			StartCoroutine(DashTimer());
-			StartCoroutine(DashTrail(0.1f));
+			StartCoroutine(DashCooldown());
+			StartCoroutine(DashTime(0.1f));
 
 			if(Mathf.Abs(InputVector.x) < 0.3)
 			{
@@ -177,7 +180,7 @@ public class CharacterController : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
-	IEnumerator DashTimer()
+	IEnumerator DashCooldown()
 	{
 		m_DashOnCooldown = true;
 
@@ -187,10 +190,15 @@ public class CharacterController : MonoBehaviour
 
 	}
 
-	IEnumerator DashTrail(float time)
+	IEnumerator DashTime(float time)
 	{
+		m_Rigidbody2D.sharedMaterial = BouncyPlayerMat;
+		StartCoroutine(DisableMoveForSec(time / 2));
 		GetComponent<TrailRenderer>().emitting = true;
+
 		yield return new WaitForSeconds(time);
+		
+		m_Rigidbody2D.sharedMaterial = PlayerMat;
 		GetComponent<TrailRenderer>().emitting = false;
 	}
 
@@ -227,6 +235,16 @@ public class CharacterController : MonoBehaviour
 	IEnumerator MoveStun(float sec)
 	{
 		can_Move = false;
+		yield return new WaitForSeconds(sec);
+		can_Move = true;
+	}
+
+	IEnumerator DisableMoveForSec(float sec)
+	{
+		if(can_Move == true)
+		{
+			can_Move = false;
+		}
 		yield return new WaitForSeconds(sec);
 		can_Move = true;
 	}

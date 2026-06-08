@@ -188,6 +188,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_GroundCheck: {fileID: 9111719633053037842}
+  PlayerMat: {fileID: 6200000, guid: 294e2df669cffb94aa5f7264ff962953, type: 2}
+  BouncyPlayerMat: {fileID: 6200000, guid: 1396a6c71fbf06e4cb647b8feed4825c, type: 2}
   m_FacingRight: 1
   CoyoteTime: 4
   jumpAction: {fileID: -2099379676528639254, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
