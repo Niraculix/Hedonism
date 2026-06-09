@@ -93,7 +93,7 @@ public class PlayerCombat : MonoBehaviour
             bool pogo = false;
             Vector3 AttackPoint = new Vector3();
             Vector3 ParryPoint = new Vector3();
-            if(InputVector.x < 0.3 && InputVector.x > -0.3 )
+            if(InputVector.x > 0.3 && InputVector.x < -0.3 )
             {
                 if(InputVector.y > 0) 
                 {

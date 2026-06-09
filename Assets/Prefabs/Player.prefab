@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController2D
   speed: 20
-  m_JumpForce: 2200
+  m_JumpForce: 2400
   m_DashForce: 5000
   m_PogoForce: 3000
   m_DashCooldown: 0.1
@@ -225,7 +225,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 10
+  m_GravityScale: 14
   m_Material: {fileID: 6200000, guid: 294e2df669cffb94aa5f7264ff962953, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
