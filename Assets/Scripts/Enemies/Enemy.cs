@@ -7,14 +7,29 @@ public class Enemy : MonoBehaviour
 
     public int contact_dmg = 5;
 
+    private int IFrames = 0;
+
+     private void FixedUpdate()
+    {
+        if(IFrames > 0)
+        {
+            IFrames--;
+        }
+    }
+
     public void takeDamage(int damage)
     {
-        hp -= damage;
-        print("Damaged " + gameObject.name + ", HP Now: " + hp);
+        if(IFrames <= 0)
+        {   
+            hp -= damage;
+            print("Damaged " + gameObject.name + ", HP Now: " + hp);
 
-        if(hp <= 0)
-        {
-            Die();
+            IFrames = 5;
+
+            if(hp <= 0)
+            {
+                Die();
+            }
         }
     }
 

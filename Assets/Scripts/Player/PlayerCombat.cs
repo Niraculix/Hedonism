@@ -13,7 +13,7 @@ public class PlayerCombat : MonoBehaviour
     public float MeleeAttackRange = 0.4f;
     public float ParryRange = 0.3f;
 
-    public int MeleeDamage = 10;
+    public int MeleeDamage = 1000;
     public int max_hp = 1000;
     private float hp;
     public bool light_dropped = false;
@@ -211,11 +211,20 @@ public class PlayerCombat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-		if (collision.GetComponent<Enemy>() && iFrames <= 0)
+		if (collision.GetComponent<Enemy>())
 		{
-            Vector2 toEnemy = ((Vector2)transform.position - (Vector2)collision.transform.position).normalized;
-			takeDamage(collision.GetComponent<Enemy>().contact_dmg, toEnemy);
-            controller.Knockback(toEnemy, collision.GetComponent<Enemy>().contact_dmg);
+            if(iFrames <= 0)
+            {
+                Vector2 toEnemy = ((Vector2)transform.position - (Vector2)collision.transform.position).normalized;
+                takeDamage(collision.GetComponent<Enemy>().contact_dmg, toEnemy);
+                controller.Knockback(toEnemy, collision.GetComponent<Enemy>().contact_dmg);
+            }
+            else if(controller.dashing)
+            {
+                collision.GetComponent<Enemy>().takeDamage(MeleeDamage);
+                print("dash dmg hit");
+            }
+                
 		}
     }
 
