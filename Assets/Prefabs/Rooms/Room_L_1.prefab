@@ -19649,7 +19649,7 @@ MonoBehaviour:
   DoorRight: 0
   DoorUp: 0
   DoorDown: 0
-  Enemies: 0
+  Enemies: 3
 --- !u!1 &9076815953196371478
 GameObject:
   m_ObjectHideFlags: 0
