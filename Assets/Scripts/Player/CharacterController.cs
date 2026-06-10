@@ -34,7 +34,7 @@ public class CharacterController : MonoBehaviour
 
 	private float grav;
 
-	const float k_GroundedRadius = .2f;
+	const float k_GroundedRadius = .08f;
 	private bool m_Grounded;
 	private bool m_DashOnCooldown;
 	private bool can_Move = true;
@@ -44,6 +44,8 @@ public class CharacterController : MonoBehaviour
 	[Header("Other")]
 	public int CoyoteTime;
 	private int CoyoteTimeFrames;
+
+	private bool JumpAvailable;
 
 	[SerializeField] private InputActionReference jumpAction;
 	private bool jumpInputReleased;
@@ -104,6 +106,7 @@ public class CharacterController : MonoBehaviour
 					DashCooldown();
 				}
 
+				JumpAvailable = true;
 				ResetCoyoteTime(CoyoteTime);
 			}
 
@@ -160,14 +163,14 @@ public class CharacterController : MonoBehaviour
 				Flip();
 			}
 			// Player springt
-			if (jump)
+			if (jump && JumpAvailable && !dashing)
 			{
-				if(m_Grounded || CoyoteTimeFrames > 0)
-				{
 				m_Grounded = false;
+				JumpAvailable = false;
 
+				m_Rigidbody2D.linearVelocityY = 0;
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-				}
+				
 					
 			}
 		}
