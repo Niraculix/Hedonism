@@ -45,7 +45,7 @@ public class CharacterController : MonoBehaviour
 	public int CoyoteTime;
 	private int CoyoteTimeFrames;
 
-	private bool JumpAvailable;
+	private int JumpsAvailable;
 
 	[SerializeField] private InputActionReference jumpAction;
 	private bool jumpInputReleased;
@@ -84,6 +84,7 @@ public class CharacterController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
+		print(JumpsAvailable);
 		bool wasGrounded = m_Grounded;
 		GetComponent<TrailRenderer>().emitting = dashing;
 		m_Grounded = false;
@@ -106,7 +107,7 @@ public class CharacterController : MonoBehaviour
 					DashCooldown();
 				}
 
-				JumpAvailable = true;
+				JumpsAvailable = 2;
 				ResetCoyoteTime(CoyoteTime);
 			}
 
@@ -141,6 +142,11 @@ public class CharacterController : MonoBehaviour
 			StartCoroutine(DashRecharge());
 		}
 
+		if(!m_Grounded && JumpsAvailable > 1)
+		{
+			JumpsAvailable = 1;
+		}
+
 	}
 
 
@@ -164,13 +170,13 @@ public class CharacterController : MonoBehaviour
 				Flip();
 			}
 			// Player springt
-			if (jump && JumpAvailable && !dashing)
+			if (jump && JumpsAvailable > 0 && !dashing)
 			{
 				m_Grounded = false;
-				JumpAvailable = false;
 
 				m_Rigidbody2D.linearVelocityY = 0;
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				JumpsAvailable--;
 				
 					
 			}

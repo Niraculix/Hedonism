@@ -10,6 +10,10 @@ public class RoomDefinition : MonoBehaviour
 
     public int Enemies;
 
+    [SerializeField] private Vector2Int roomSizeInCells = new Vector2Int(2, 1);
+
+    [SerializeField] private GameObject CamBox;
+
     private GameObject player;
     private int EnemiesRemaining;
 
@@ -26,6 +30,11 @@ public class RoomDefinition : MonoBehaviour
         {
             player.GetComponent<PlayerCombat>().room_cleared = true;
         }
+    }
+
+    void OnValidate()
+    {
+        CamBox.GetComponent<BoxCollider2D>().size = new Vector2(roomSizeInCells.x * 42, roomSizeInCells.y * 42);
     }
 
 
