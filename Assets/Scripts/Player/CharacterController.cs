@@ -101,7 +101,7 @@ public class CharacterController : MonoBehaviour
 					OnLandEvent.Invoke();
 				
 
-				if(m_DashOnCooldown == false && dashes_remaining != MaxDashes)
+				if(m_DashOnCooldown == false && dashes_remaining < MaxDashes)
 				{
 					DashCooldown();
 				}
@@ -124,7 +124,7 @@ public class CharacterController : MonoBehaviour
 
 		if(dashCooldownFrames > 0 && m_DashOnCooldown)
 		{
-			if(m_Grounded)
+			if(m_Grounded && !dashing)
 			{
 				dashCooldownFrames--;
 			}
@@ -133,6 +133,7 @@ public class CharacterController : MonoBehaviour
 				m_DashOnCooldown = false;
 			}
 		}
+
 		else if(dashCooldownFrames <= 0 && m_DashOnCooldown)
 		{
 			recharging_dash = true;
@@ -188,6 +189,12 @@ public class CharacterController : MonoBehaviour
 
 		if (dashes_remaining > 0 && dash)
 		{
+			if(m_Grounded && InputVector.y < 0.05)
+			{
+				InputVector.y = 0;
+				print("test");
+			}
+
 			m_Grounded = false;
 			dashes_remaining--;
 
@@ -215,6 +222,8 @@ public class CharacterController : MonoBehaviour
 				}
 			}
 
+			
+
 			m_Rigidbody2D.AddForce(InputVector * m_DashForce);
 		}
 	}
@@ -231,7 +240,6 @@ public class CharacterController : MonoBehaviour
 
 	void DashCooldown()
 	{
-		print("DashCooldwon");
 		m_DashOnCooldown = true;
 
 		dashCooldownFrames = (int)Mathf.Ceil(m_DashCooldown * 50);
@@ -239,11 +247,14 @@ public class CharacterController : MonoBehaviour
 
 	IEnumerator DashRecharge()
 	{
-		RegainDash();
+		if(m_DashOnCooldown && !dashing)
+		{
+			RegainDash();
+		}
 
 		yield return new WaitForSeconds(m_DashRechargeTime);
 
-		if(recharging_dash && dashes_remaining != MaxDashes)
+		if(recharging_dash && dashes_remaining < MaxDashes && m_DashOnCooldown)
 		{
 			StartCoroutine(DashRecharge());
 		}
@@ -271,7 +282,6 @@ public class CharacterController : MonoBehaviour
 	public void RegainDash()
 	{
 		dashes_remaining++;
-		print("regained Dash: " + dashes_remaining);
 	}
 
 	public void ResetCoyoteTime(int i)
