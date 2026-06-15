@@ -47,9 +47,8 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private InputActionReference LTriggerAction;
     [SerializeField] private InputActionReference RTriggerAction;
 
-    [Header("Do Not Touch")]
-    public bool light_dropped = false;
-    public bool room_cleared = false;
+    [HideInInspector] public bool light_dropped = false;
+    [HideInInspector] public bool room_cleared = false;
     
     private void Start()
     {

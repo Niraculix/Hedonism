@@ -54,10 +54,9 @@ public class CharacterController : MonoBehaviour
 
 	private bool recharging_dash = false;
 
-	[Header("Do Not Touch")]
-	public bool dashing;
-	public int dashes_remaining;
-	public bool m_FacingRight = true;
+	[HideInInspector] public bool dashing;
+	[HideInInspector] public int dashes_remaining;
+	[HideInInspector] public bool m_FacingRight = true;
 
 	private int dashCooldownFrames = 0;
 
@@ -84,7 +83,6 @@ public class CharacterController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		print(JumpsAvailable);
 		bool wasGrounded = m_Grounded;
 		GetComponent<TrailRenderer>().emitting = dashing;
 		m_Grounded = false;

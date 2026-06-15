@@ -10,6 +10,7 @@ public class HealthBar : MonoBehaviour
     void FixedUpdate()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+        if(Player == null) return;
         
         float hp_difference = (float)Player.GetComponent<PlayerCombat>().GetHp() / (float)Player.GetComponent<PlayerCombat>().max_hp;
         slider.value = hp_difference;
