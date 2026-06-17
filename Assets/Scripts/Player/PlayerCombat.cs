@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -50,6 +51,9 @@ public class PlayerCombat : MonoBehaviour
     [Header("Do Not Touch")]
     public bool light_dropped = false;
     public bool room_cleared = false;
+
+    public float dropTreshold = 0.3f;
+    private float accumulatedDamage = 0f;
     
     private void Start()
     {
@@ -87,6 +91,8 @@ public class PlayerCombat : MonoBehaviour
                     hp = 1;
                 }
             }
+            Debug.Log("HP: " + hp + " | iFrames: " + iFrames);
+
         }
 
 
@@ -210,6 +216,8 @@ public class PlayerCombat : MonoBehaviour
 
     public void takeDamage(int damage, Vector2 dir)
     {
+        Debug.Log("takeDamage aufgerufen, HP: " + hp + ", Schaden: " + damage + ", dead: " + dead + ", iFrames: " + iFrames);
+
         if (!dead)
         { 
             if(hp - damage > 0)
@@ -218,12 +226,22 @@ public class PlayerCombat : MonoBehaviour
             }
             else
             {
-                Die();
+                Debug.Log("ELSE BRANCH - DIE WIRD AUFGERUFEN");
                 hp = 0;
+                Die();
             }
             
             SetIFrames(5);
-            dropLight(damage,dir);
+            
+            if (!light_dropped)
+            {
+                accumulatedDamage += damage;
+                if (accumulatedDamage >= max_hp * dropTreshold)
+                {
+                    accumulatedDamage = 0f;
+                    dropLight(damage,dir);
+                }
+            }
         }
     }
 
@@ -248,8 +266,11 @@ public class PlayerCombat : MonoBehaviour
 
     public void Die()
     {
+        Debug.Log("DIE WURDE AUFGERUFEN");
         dead = true;
         hp = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
     }
 
     IEnumerator ActionCooldown(float cooldownSec)
