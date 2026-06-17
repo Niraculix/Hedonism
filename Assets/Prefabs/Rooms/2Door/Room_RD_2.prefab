@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 120507612907162107}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9224997, y: -1.0140946, z: -10}
+  m_LocalPosition: {x: 5.5219407, y: -0.01409173, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -420,7 +420,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 84, y: 42}
+  m_Size: {x: 144, y: 40}
   m_EdgeRadius: 0
 --- !u!1 &7361181890422489206
 GameObject:
@@ -26458,13 +26458,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8605469322970061586}
   - {fileID: 1054125502038494429}
   - {fileID: 2953905082405914121}
   - {fileID: 2021190498834952613}
   - {fileID: 8483462467165240913}
   - {fileID: 823203839965574085}
   - {fileID: 5069583201957995358}
-  - {fileID: 8605469322970061586}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4577596900626670604
@@ -26485,10 +26485,10 @@ MonoBehaviour:
   CamBox: {fileID: 7077014435082509964}
   doors:
   - direction: 2
-    doorObject: {fileID: 7601995065482360932}
+    doorObject: {fileID: 0}
     isConnected: 0
   - direction: 1
-    doorObject: {fileID: 1203150985783979947}
+    doorObject: {fileID: 0}
     isConnected: 0
 --- !u!1 &9076815953196371478
 GameObject:
@@ -26752,6 +26752,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 761487881613088307, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
+      propertyPath: direction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7
@@ -26800,11 +26804,6 @@ PrefabInstance:
 --- !u!4 &1054125502038494429 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
-  m_PrefabInstance: {fileID: 1502750140894575599}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1203150985783979947 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 317684337927574596, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
   m_PrefabInstance: {fileID: 1502750140894575599}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5589365462794372127
@@ -26882,6 +26881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 761487881613088307, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
+      propertyPath: direction
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 51.9
@@ -26927,11 +26930,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
---- !u!1 &7601995065482360932 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 317684337927574596, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
-  m_PrefabInstance: {fileID: 7860771486321732640}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8605469322970061586 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}

@@ -38,8 +38,6 @@ public class RoomDefinition : MonoBehaviour
     void OnValidate()
     {
         if (CamBox == null) return;
-        CamBox.GetComponent<BoxCollider2D>().size = new Vector2(roomSizeInCells.x * 42, roomSizeInCells.y * 42);
+        CamBox.GetComponent<BoxCollider2D>().size = new Vector2(roomSizeInCells.x * 72, roomSizeInCells.y * 40);
     }
-
-
 }

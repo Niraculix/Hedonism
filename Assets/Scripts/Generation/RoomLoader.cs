@@ -11,6 +11,8 @@ public class RoomLoader : MonoBehaviour
 
     private GameObject currentRoomInstance;
 
+    bool isTransitioning = false;
+
     private void Awake()
     {
         Instance = this;
@@ -29,47 +31,85 @@ public class RoomLoader : MonoBehaviour
 
     private IEnumerator Transition(GameObject roomPrefab, DoorDirection? comingFrom)
     {
-        // yield return Fader.FadeOut();
-
-        // Alten Raum entladen
-        if (currentRoomInstance != null)
-            Destroy(currentRoomInstance);
-
-        // Neuer Raum
-        currentRoomInstance = Instantiate(roomPrefab);
-        player = GameObject.FindGameObjectWithTag("Player");
-
-        
-        var def = currentRoomInstance.GetComponent<RoomDefinition>();
-        var connections = GameManager.Instance.connections;
-
-        foreach (var doorSlot in def.doors)
+        if (!isTransitioning)
         {
-            if (doorSlot.doorObject == null) continue;
+            isTransitioning = true;
 
-            doorSlot.doorObject.direction = doorSlot.direction;
-
-            var conn = connections.FirstOrDefault(c =>
-                (c.roomPrefabA == roomPrefab && c.doorFromA == doorSlot.direction) ||
-                (c.roomPrefabB == roomPrefab && c.doorFromB == doorSlot.direction)
-            );
-
-            bool isA = conn.roomPrefabA == roomPrefab;
-            doorSlot.doorObject.targetRoomPrefab = isA ? conn.roomPrefabB : conn.roomPrefabA;
-
-        }
-        
-        if (comingFrom.HasValue)
-        {
-            var spawnDoor = def.doors.FirstOrDefault(d => d.direction == comingFrom.Value);
-            //if (spawnDoor != null)
-                //player.transform.position = spawnDoor.doorObject.transform.position;
+            //print("Transitioning...");
             
-            //COMING FROM IMPLEMENTIEREN
+
+            // Alten Raum entladen
+            if (currentRoomInstance != null)
+                Destroy(currentRoomInstance);
+
+            // Neuer Raum
+            
+            yield return new WaitForFixedUpdate();
+
+            currentRoomInstance = Instantiate(roomPrefab);
+            player = GameObject.FindGameObjectWithTag("Player");
+
+            
+            var def = currentRoomInstance.GetComponent<RoomDefinition>();
+            var connections = GameManager.Instance.connections;
+
+            // DEBUG:
+            var allTriggers = currentRoomInstance.GetComponentsInChildren<DoorTrigger>();
+            print($"Gefundene DoorTrigger: {allTriggers.Length}");
+            foreach(var t in allTriggers)
+            {
+                print($"  DoorTrigger direction: {t.direction}");
+            }
+            print($"DoorSlots: {def.doors.Count}");
+            foreach(var d in def.doors)
+            {
+                print($"  DoorSlot direction: {d.direction}");
+            }
+            // DEBUG END
+
+            foreach (var doorSlot in def.doors)
+            {
+
+                // DoorTrigger im instanziierten Raum per Richtung suchen
+                DoorTrigger trigger = currentRoomInstance
+                    .GetComponentsInChildren<DoorTrigger>()
+                    .FirstOrDefault(t => t.direction == doorSlot.direction);
+
+                if (trigger == null)
+                {
+                    print($"Kein DoorTrigger gefunden für Richtung: {doorSlot.direction}");
+                    continue;
+                }
+
+                var conn = connections.FirstOrDefault(c =>
+                    (c.roomPrefabA == roomPrefab && c.doorFromA == doorSlot.direction) ||
+                    (c.roomPrefabB == roomPrefab && c.doorFromB == doorSlot.direction)
+                );
+
+                if (conn == null) continue;
+
+                bool isA = conn.roomPrefabA == roomPrefab;
+                trigger.targetRoomPrefab = isA ? conn.roomPrefabB : conn.roomPrefabA;
+                //print($"Setze target: {trigger.targetRoomPrefab.name} für Tür: {doorSlot.direction}");
+
+            }
+            
+            if (comingFrom.HasValue)
+            {
+                var spawnDoor = def.doors.FirstOrDefault(d => d.direction == comingFrom.Value);
+                //if (spawnDoor != null)
+                    //player.transform.position = spawnDoor.doorObject.transform.position;
+                
+                //COMING FROM IMPLEMENTIEREN
+            }
+
+            //print("Transitioned");
+
+            isTransitioning = false;
+
+            // yield return Fader.FadeIn();
+
+            yield return null;
         }
-
-        // yield return Fader.FadeIn();
-
-        yield return null;
     }
 }

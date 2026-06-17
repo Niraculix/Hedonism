@@ -110,7 +110,7 @@ public class GameManager : MonoBehaviour
                 {
                     open.Enqueue((nextPrefab, nextDef, distance + 1));
                 }
-                //print($"Verbinde: {currentPrefab.name} ({door.direction}) → {nextPrefab.name}");
+                print($"Verbinde: {currentPrefab.name} ({door.direction}) → {nextPrefab.name}");
             }
         }
 

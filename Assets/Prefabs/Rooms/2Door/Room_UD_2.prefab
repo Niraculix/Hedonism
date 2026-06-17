@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 120507612907162107}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9224997, y: -1.0140946, z: -10}
+  m_LocalPosition: {x: 5.5219407, y: -0.01409173, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -420,7 +420,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 84, y: 42}
+  m_Size: {x: 144, y: 40}
   m_EdgeRadius: 0
 --- !u!1 &7361181890422489206
 GameObject:
@@ -28599,10 +28599,10 @@ MonoBehaviour:
   CamBox: {fileID: 7077014435082509964}
   doors:
   - direction: 0
-    doorObject: {fileID: 1514555899754291032}
+    doorObject: {fileID: 0}
     isConnected: 0
   - direction: 1
-    doorObject: {fileID: 8601993898438710602}
+    doorObject: {fileID: 0}
     isConnected: 0
 --- !u!1 &9076815953196371478
 GameObject:
@@ -28916,11 +28916,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
   m_PrefabInstance: {fileID: 1255497865438120732}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1514555899754291032 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 317684337927574596, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
-  m_PrefabInstance: {fileID: 1255497865438120732}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5589365462794372127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28996,6 +28991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 761487881613088307, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
+      propertyPath: direction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8
@@ -29044,10 +29043,5 @@ PrefabInstance:
 --- !u!4 &7598444610192127548 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
-  m_PrefabInstance: {fileID: 8289103644895510798}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8601993898438710602 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 317684337927574596, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
   m_PrefabInstance: {fileID: 8289103644895510798}
   m_PrefabAsset: {fileID: 0}
