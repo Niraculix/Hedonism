@@ -12,15 +12,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        foreach (Transform child in transform)
-        {
-            print(child);
-            if (child.GetComponent<RoomDefinition>())
-            {
-                Destroy(child);
-            }
-        }
-        GenerateDungeon();
+        
+        //GenerateDungeon();
     }
     void GenerateDungeon()
     {
