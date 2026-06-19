@@ -51,13 +51,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemies\Projectile.cs" />
     <Compile Include="Assets\Scripts\RoomDefinition.cs" />
-    <Compile Include="Assets\Scripts\Enemies\Pathfinding.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCombat.cs" />
     <Compile Include="Assets\Scripts\Player\CharacterController.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyVariants\Regular_Enemy.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\UI\dashUI.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Pathfinding-Patrol.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyVariants\Offset_Enemy.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />

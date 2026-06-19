@@ -10,6 +10,7 @@ public class PlatformerEnemyAI : MonoBehaviour
 
     [Header("Detection Settings")]
     public float detectionRadius = 15f;
+    public Transform detectionCheck;
     public LayerMask playerLayer;
     public LayerMask Environment;
 
@@ -22,12 +23,17 @@ public class PlatformerEnemyAI : MonoBehaviour
     public float edgeCheckDistance = 1.5f;
 
     private Rigidbody2D rb;
-    private float moveDirection = 1f; // 1 for right, -1 for left
+    private float moveDirection = 1f; 
     private bool isGrounded;
     private bool isChasing;
     private Transform player;
     private float flipCooldown = 0.5f;
     private float lastFlipTime = 0f;
+
+    [Header("Optimization")]
+    public float detectionRate = 0.2f; 
+    private float detectionTimer;
+
 
     void Start()
     {
@@ -39,8 +45,7 @@ public class PlatformerEnemyAI : MonoBehaviour
 
     void Update()
     {
-        CheckGround();
-        CheckForPlayer();
+
 
         if (isChasing && player != null)
         {
@@ -50,19 +55,58 @@ public class PlatformerEnemyAI : MonoBehaviour
         {
             Patrol();
         }
+
+        detectionTimer -= Time.deltaTime;
+        if (detectionTimer <= 0f)
+        {
+            CheckGround();
+            CheckForPlayer();
+            detectionTimer = detectionRate; 
+        }
     }
 
     void CheckGround()
     {
-        // Check if enemy is touching the ground
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, Environment);
     }
 
     void CheckForPlayer()
     {
         if (player == null) return;
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        isChasing = distanceToPlayer <= detectionRadius;
+
+      
+        Vector2 checkPosition = detectionCheck != null ? detectionCheck.position : transform.position;
+        float distanceToPlayer = Vector2.Distance(checkPosition, player.position);
+
+        if (distanceToPlayer <= detectionRadius)
+        {
+         
+            Vector2 enemyCenter = transform.position;
+            Vector2 directionToPlayer = ((Vector2)player.position - enemyCenter).normalized;
+            float distanceFromEnemy = Vector2.Distance(enemyCenter, player.position);
+
+          
+            int combinedLayerMask = playerLayer | Environment;
+
+         
+            RaycastHit2D hit = Physics2D.Raycast(enemyCenter, directionToPlayer, distanceFromEnemy, combinedLayerMask);
+
+           
+            
+
+            if (hit.collider != null && hit.collider.CompareTag("Player"))
+            {
+                isChasing = true; 
+            }
+            else
+            {
+                isChasing = false; 
+            }
+        }
+        else
+        {
+            isChasing = false; 
+        }
     }
 
     void Patrol()
@@ -127,14 +171,50 @@ public class PlatformerEnemyAI : MonoBehaviour
 
 
 
-    // Visualize Raycasts in the Unity Editor
+
     private void OnDrawGizmos()
     {
         if (wallCheck != null) Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * moveDirection * wallCheckDistance);
         if (edgeCheck != null) Gizmos.DrawLine(edgeCheck.position, edgeCheck.position + Vector3.down * edgeCheckDistance);
         if (groundCheck != null) Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
 
+        // Calculate the position for the detection radius
+        Vector2 checkPosition = detectionCheck != null ? detectionCheck.position : transform.position;
+
+        // Draw a semi-transparent red circle
+        Gizmos.color = new Color(1f, 0f, 0f, 0.3f);
+        Gizmos.DrawSphere(checkPosition, detectionRadius);
+
+        // Draw the red outline
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, detectionRadius);
+        Gizmos.DrawWireSphere(checkPosition, detectionRadius);
+
+        // Draw a yellow line from the enemy's body to the detection center
+        if (detectionCheck != null)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawLine(transform.position, checkPosition);
+        }
+
+        if (player != null)
+        {
+            float distanceToPlayer = Vector2.Distance(checkPosition, player.position);
+
+            if (distanceToPlayer <= detectionRadius)
+            {
+                Vector2 directionToPlayer = ((Vector2)player.position - checkPosition).normalized;
+                int combinedLayerMask = playerLayer | Environment;
+
+                RaycastHit2D hit = Physics2D.Raycast(checkPosition, directionToPlayer, distanceToPlayer, combinedLayerMask);
+
+               
+                Gizmos.color = (hit.collider != null && hit.collider.CompareTag("Player")) ? Color.green : Color.red;
+
+                
+                Vector2 endPoint = hit.collider != null ? hit.point : player.position;
+                Gizmos.DrawLine(checkPosition, endPoint);
+            }
+        }
     }
+
 }
