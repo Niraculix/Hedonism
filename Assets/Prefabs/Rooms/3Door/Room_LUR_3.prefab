@@ -24688,14 +24688,13 @@ MonoBehaviour:
   CamBox: {fileID: 7077014435082509964}
   doors:
   - direction: 0
-    doorObject: {fileID: 6719144444022527984}
     isConnected: 0
   - direction: 2
-    doorObject: {fileID: 5680793014171917970}
     isConnected: 0
   - direction: 3
-    doorObject: {fileID: 5369633130329895851}
     isConnected: 0
+  enteredFromOtherRoom: 0
+  comingFrom: 0
 --- !u!1 &9076815953196371478
 GameObject:
   m_ObjectHideFlags: 0
@@ -24958,6 +24957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 761487881613088307, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
+      propertyPath: direction
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.8
@@ -25003,17 +25006,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
---- !u!114 &5369633130329895851 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 761487881613088307, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
-  m_PrefabInstance: {fileID: 4617770511616402840}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02b3a9b6d6889a4b8125e3d7272af70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger
 --- !u!4 &6516228268053779114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
@@ -25030,6 +25022,10 @@ PrefabInstance:
     - target: {fileID: 317684337927574596, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
       propertyPath: m_Name
       value: Door (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 761487881613088307, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
+      propertyPath: direction
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25076,17 +25072,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
---- !u!114 &5680793014171917970 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 761487881613088307, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
-  m_PrefabInstance: {fileID: 4920008957716383905}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02b3a9b6d6889a4b8125e3d7272af70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger
 --- !u!4 &6790501151263686547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
@@ -25217,14 +25202,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
   m_PrefabInstance: {fileID: 6318105473892516291}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6719144444022527984 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 761487881613088307, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
-  m_PrefabInstance: {fileID: 6318105473892516291}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02b3a9b6d6889a4b8125e3d7272af70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger

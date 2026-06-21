@@ -77,13 +77,13 @@ public class PlayerCombat : MonoBehaviour
             }
             else
             {
-                if(hp - naturalDrainRate * Time.fixedDeltaTime > 1)
+                if(hp - naturalDrainRate * Time.fixedDeltaTime > 2)
                 {
                     hp -= naturalDrainRate * Time.fixedDeltaTime;
                 }
                 else
                 {
-                    hp = 1;
+                    hp = 5;
                 }
             }
         }

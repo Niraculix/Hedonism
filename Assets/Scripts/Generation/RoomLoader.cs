@@ -39,6 +39,17 @@ public class RoomLoader : MonoBehaviour
             
 
             // Alten Raum entladen
+            var bullets = GameObject.FindGameObjectsWithTag("Bullet");
+            foreach(GameObject bullet in bullets)
+            {
+                Destroy(bullet);
+            }
+            
+            if(GameObject.FindGameObjectWithTag("LightSphere") != null)
+            {
+                Destroy(GameObject.FindGameObjectWithTag("LightSphere"));
+            }
+
             if (currentRoomInstance != null)
                 Destroy(currentRoomInstance);
 
@@ -48,9 +59,19 @@ public class RoomLoader : MonoBehaviour
 
             currentRoomInstance = Instantiate(roomPrefab);
             player = GameObject.FindGameObjectWithTag("Player");
+            var def = currentRoomInstance.GetComponent<RoomDefinition>();
+
+            if (comingFrom.HasValue)
+            {
+                def.enteredFromOtherRoom = true;
+                def.comingFrom = (DoorDirection)comingFrom;
+            }
+            else
+            {
+                def.enteredFromOtherRoom = false;
+            }
 
             
-            var def = currentRoomInstance.GetComponent<RoomDefinition>();
             var connections = GameManager.Instance.connections;
 
             // DEBUG:
@@ -94,14 +115,7 @@ public class RoomLoader : MonoBehaviour
 
             }
             
-            if (comingFrom.HasValue)
-            {
-                var spawnDoor = def.doors.FirstOrDefault(d => d.direction == comingFrom.Value);
-                //if (spawnDoor != null)
-                    //player.transform.position = spawnDoor.doorObject.transform.position;
-                
-                //COMING FROM IMPLEMENTIEREN
-            }
+            
 
             //print("Transitioned");
 

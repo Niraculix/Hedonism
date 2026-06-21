@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using Unity.Mathematics;
 using TMPro;
+using Unity.VisualScripting;
 
 public class CharacterController : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class CharacterController : MonoBehaviour
 	[Header("Dash")]
 	[SerializeField] private float m_DashForce = 600f;
 	public float m_DashCooldown = 2f;
-	public float m_DashRechargeTime = 0.2f;
+	public float m_DashRechargeTime = 0.5f;
 	[Range(1, 1.5f)] [SerializeField] private float DashYDamping;
 	public int MaxDashes;
 
@@ -34,7 +35,7 @@ public class CharacterController : MonoBehaviour
 
 	private float grav;
 
-	const float k_GroundedRadius = .08f;
+	const float k_GroundedRadius = .2f;
 	private bool m_Grounded;
 	private bool m_DashOnCooldown;
 	private bool can_Move = true;
@@ -57,6 +58,7 @@ public class CharacterController : MonoBehaviour
 	[HideInInspector] public bool dashing;
 	[HideInInspector] public int dashes_remaining;
 	[HideInInspector] public bool m_FacingRight = true;
+	[HideInInspector] public bool doors_enterable = true;
 
 	private int dashCooldownFrames = 0;
 
@@ -79,6 +81,9 @@ public class CharacterController : MonoBehaviour
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
+		
+		doors_enterable = true;
+		StartCoroutine(EnableDoors());
 	}
 
 	private void FixedUpdate()
@@ -232,6 +237,12 @@ public class CharacterController : MonoBehaviour
 		}
 	}
 
+	public IEnumerator LaunchPlayerInDir(Vector2 force)
+	{
+		yield return new WaitForFixedUpdate();
+		m_Rigidbody2D.AddForce(force);
+	}
+
 
 	private void Flip()
 	{
@@ -319,7 +330,7 @@ public class CharacterController : MonoBehaviour
 		can_Move = true;
 	}
 
-	IEnumerator DisableMoveForSec(float sec)
+	public IEnumerator DisableMoveForSec(float sec)
 	{
 		if(can_Move == true)
 		{
@@ -329,8 +340,20 @@ public class CharacterController : MonoBehaviour
 		can_Move = true;
 	}
 
+	IEnumerator EnableDoors()
+	{
+		yield return new WaitForSeconds(2);
+		print("doors enabled");
+		doors_enterable = true;
+		
+	}
+
     public void OnDrawGizmosSelected()
+
     {
         Gizmos.DrawSphere(m_GroundCheck.position, k_GroundedRadius);
     }
+
+
+
 }

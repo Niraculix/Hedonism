@@ -28245,11 +28245,11 @@ MonoBehaviour:
   CamBox: {fileID: 7077014435082509964}
   doors:
   - direction: 3
-    doorObject: {fileID: 0}
     isConnected: 0
   - direction: 0
-    doorObject: {fileID: 0}
     isConnected: 0
+  enteredFromOtherRoom: 0
+  comingFrom: 0
 --- !u!1 &9076815953196371478
 GameObject:
   m_ObjectHideFlags: 0
@@ -28518,7 +28518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.5
+      value: -40.43
       objectReference: {fileID: 0}
     - target: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -28647,7 +28647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.3
+      value: 24.23
       objectReference: {fileID: 0}
     - target: {fileID: 1908355011664885554, guid: 72ced4eb0455e1a4d9b097d8256224cb, type: 3}
       propertyPath: m_LocalPosition.z
