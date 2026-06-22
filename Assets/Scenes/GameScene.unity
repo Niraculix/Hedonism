@@ -223,6 +223,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+<<<<<<< HEAD
 --- !u!1 &377514117
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +384,8 @@ Transform:
   - {fileID: 1038408154}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+=======
+>>>>>>> room_gen
 --- !u!1 &605226009
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +536,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff861bcfbd113af4cb20cc2796a357c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+<<<<<<< HEAD
 --- !u!1 &647271170
+=======
+--- !u!1 &794437711
+>>>>>>> room_gen
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -541,17 +548,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 647271171}
   - component: {fileID: 647271174}
   - component: {fileID: 647271173}
   - component: {fileID: 647271172}
   m_Layer: 0
   m_Name: Spike (1)
+=======
+  - component: {fileID: 794437713}
+  - component: {fileID: 794437712}
+  m_Layer: 0
+  m_Name: RoomLoader
+>>>>>>> room_gen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &647271171
 Transform:
   m_ObjectHideFlags: 0
@@ -618,11 +633,15 @@ PolygonCollider2D:
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 1
 --- !u!114 &647271173
+=======
+--- !u!114 &794437712
+>>>>>>> room_gen
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 647271170}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -709,11 +728,21 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &687091382
+=======
+  m_GameObject: {fileID: 794437711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc6a2b624cf25547a8cae11a8d3e97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomLoader
+--- !u!4 &794437713
+>>>>>>> room_gen
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 687091381}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -845,6 +874,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+=======
+  m_GameObject: {fileID: 794437711}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> room_gen
 --- !u!1 &801672484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2119,6 +2159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433156571}
   - component: {fileID: 1433156572}
+  - component: {fileID: 1433156573}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2155,21 +2196,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   roomPrefabs_Start:
   - {fileID: 8133202235992323011, guid: a30707bff49dd3443a66a5933b9c1674, type: 3}
+  - {fileID: 8133202235992323011, guid: 9aaa65616c67da8468c9b3b0341cd337, type: 3}
   - {fileID: 8133202235992323011, guid: b9f534b9b2bca6147a5fbd3915280bbd, type: 3}
+  - {fileID: 8133202235992323011, guid: 6b68cda7876804f4e856bb66373c1569, type: 3}
   - {fileID: 8133202235992323011, guid: 0d1398af3b83b624dbaa31e069da3980, type: 3}
   roomPrefabs_1Door:
-  - {fileID: 8133202235992323011, guid: a30707bff49dd3443a66a5933b9c1674, type: 3}
-  - {fileID: 8133202235992323011, guid: 434afa33336e28b4ca55b22afdbe6705, type: 3}
+  - {fileID: 8133202235992323011, guid: 5da8aba62770e3d4ea06f474d20167d5, type: 3}
+  - {fileID: 8133202235992323011, guid: 0bbebb5a887d02f4a99c303ae506b293, type: 3}
+  - {fileID: 8133202235992323011, guid: 3b3d3fc7dd2f5fd4fbddc10839c5f403, type: 3}
+  - {fileID: 8133202235992323011, guid: a2d9b4a6cae6eea4f80570520355f2ec, type: 3}
   roomPrefabs_2Door:
+<<<<<<< HEAD
   - {fileID: 8133202235992323011, guid: 24178c11782d70e42a28d4fdb546ab8a, type: 3}
   roomPrefabs_3Door: []
   roomPrefabs_4Door: []
 --- !u!1 &1618360635
 GameObject:
+=======
+  - {fileID: 8133202235992323011, guid: 479973bea8443b3429ec854bc9f6aec9, type: 3}
+  - {fileID: 8133202235992323011, guid: 0e23f2571f1276a498c50dc7c5ddb920, type: 3}
+  - {fileID: 8133202235992323011, guid: 94ba49c38cdb55149b51af2193aa12fd, type: 3}
+  - {fileID: 8133202235992323011, guid: 9609917933b195d438c97a7df1410b2c, type: 3}
+  - {fileID: 8133202235992323011, guid: f7a2efd9c8e858046b418c88485f60d7, type: 3}
+  - {fileID: 8133202235992323011, guid: 5b39e636d06a20745bc27dfbef0c1265, type: 3}
+  roomPrefabs_3Door:
+  - {fileID: 8133202235992323011, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
+  - {fileID: 8133202235992323011, guid: 49118ed44f16a044f9ed86958dcc25ed, type: 3}
+  - {fileID: 8133202235992323011, guid: 85c0371ed639d3f4e9c847ba771cb958, type: 3}
+  - {fileID: 8133202235992323011, guid: 9fef67c126892bb4b88b94c574cf9ca9, type: 3}
+--- !u!114 &1433156573
+MonoBehaviour:
+>>>>>>> room_gen
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1618360636}
@@ -2320,6 +2382,14 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+=======
+  m_GameObject: {fileID: 1433156570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc6a2b624cf25547a8cae11a8d3e97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+>>>>>>> room_gen
 --- !u!1 &1726854699
 GameObject:
   m_ObjectHideFlags: 0
@@ -2896,8 +2966,14 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1433156571}
+<<<<<<< HEAD
   - {fileID: 1906481944}
   - {fileID: 303085838}
   - {fileID: 1271416395}
   - {fileID: 1404467399}
   - {fileID: 377514121}
+=======
+  - {fileID: 794437713}
+  - {fileID: 1906481944}
+  - {fileID: 303085838}
+>>>>>>> room_gen

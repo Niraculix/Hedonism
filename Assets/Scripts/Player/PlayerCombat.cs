@@ -48,12 +48,17 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private InputActionReference LTriggerAction;
     [SerializeField] private InputActionReference RTriggerAction;
 
+<<<<<<< HEAD
     [Header("Do Not Touch")]
     public bool light_dropped = false;
     public bool room_cleared = false;
 
     public float dropTreshold = 0.3f;
     private float accumulatedDamage = 0f;
+=======
+    [HideInInspector] public bool light_dropped = false;
+    [HideInInspector] public bool room_cleared = false;
+>>>>>>> room_gen
     
     private void Start()
     {
@@ -82,13 +87,13 @@ public class PlayerCombat : MonoBehaviour
             }
             else
             {
-                if(hp - naturalDrainRate * Time.fixedDeltaTime > 1)
+                if(hp - naturalDrainRate * Time.fixedDeltaTime > 2)
                 {
                     hp -= naturalDrainRate * Time.fixedDeltaTime;
                 }
                 else
                 {
-                    hp = 1;
+                    hp = 5;
                 }
             }
             Debug.Log("HP: " + hp + " | iFrames: " + iFrames);

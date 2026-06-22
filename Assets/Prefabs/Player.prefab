@@ -104,7 +104,6 @@ GameObject:
   - component: {fileID: 4047111454787910222}
   - component: {fileID: 6550152358401669883}
   - component: {fileID: 1153397424987520980}
-  - component: {fileID: 8039349081398400838}
   - component: {fileID: 7575433211993654841}
   - component: {fileID: 958103523568391828}
   - component: {fileID: 3314265159781832154}
@@ -233,20 +232,6 @@ MonoBehaviour:
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8039349081398400838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2376414552589813071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bc6dfb4f8b0be64d9c37541de28fcf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  dmg_mult: 2
-  light_drain_mult: 3
 --- !u!50 &7575433211993654841
 Rigidbody2D:
   serializedVersion: 5
@@ -331,16 +316,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fae08e03f78aa24e88839be376a75e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
-  SideMeleePoint: {fileID: 6359635164780948939}
-  UpMeleePoint: {fileID: 3909717941996362470}
-  DownMeleePoint: {fileID: 2229789529490380139}
   MeleeAttackRange: 1.32
   ParryRange: 1.5
   MeleeDamage: 1000
+  AdrenalinDamage: 2000
   max_hp: 30
-  light_dropped: 0
-  room_cleared: 0
-  natural_drain_rate: 0.8
+  naturalDrainRate: 1
+  naturalHealRate: 0.2
+  baseAttackCooldown: 1
+  AdrenalinAttackCooldown: 0.25
   EnemyLayers:
     serializedVersion: 2
     m_Bits: 128
@@ -348,12 +332,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   LightSpherePrefab: {fileID: 7952630626987971147, guid: 2b4f3bb0f8dd5c34f82813b857163095, type: 3}
+  SideMeleePoint: {fileID: 6359635164780948939}
+  UpMeleePoint: {fileID: 3909717941996362470}
+  DownMeleePoint: {fileID: 2229789529490380139}
   controller: {fileID: 1153397424987520980}
   MoveAction: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   LShoulderAction: {fileID: 6445210570509783361, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   RShoulderAction: {fileID: 6561231601327374612, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   LTriggerAction: {fileID: 5037749538142088997, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   RTriggerAction: {fileID: -5270623865475825602, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  light_dropped: 0
+  room_cleared: 0
 --- !u!70 &7362777206761080782
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

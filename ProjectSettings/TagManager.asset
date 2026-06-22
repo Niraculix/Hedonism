@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Environment
+  - Room
+  - Bullet
+  - LightSphere
   layers:
   - Default
   - TransparentFX
