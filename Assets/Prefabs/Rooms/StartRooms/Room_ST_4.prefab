@@ -420,11 +420,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-<<<<<<< HEAD:Assets/Prefabs/Rooms/Room_ST_4.prefab
-  m_Size: {x: 84, y: 42}
-=======
   m_Size: {x: 216, y: 80}
->>>>>>> room_gen:Assets/Prefabs/Rooms/StartRooms/Room_ST_4.prefab
   m_EdgeRadius: 0
 --- !u!1 &7361181890422489206
 GameObject:
@@ -78216,12 +78212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoomDefinition
   Enemies: 3
-<<<<<<< HEAD:Assets/Prefabs/Rooms/Room_ST_4.prefab
-  roomSizeInCells: {x: 2, y: 1}
-=======
   roomSizeInCells: {x: 3, y: 2}
   distanceFromStart: 0
->>>>>>> room_gen:Assets/Prefabs/Rooms/StartRooms/Room_ST_4.prefab
   CamBox: {fileID: 7077014435082509964}
   doors:
   - direction: 0
