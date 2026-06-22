@@ -57,6 +57,7 @@
     <Compile Include="Assets\Scripts\Enemies\EnemyVariants\Regular_Enemy.cs" />
     <Compile Include="Assets\Scripts\Generation\DoorSlot.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\Generation\DoorBlocker.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Generation\RoomLoader.cs" />
     <Compile Include="Assets\Scripts\UI\dashUI.cs" />

@@ -1,8 +1,7 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
 
 public class RoomDefinition : MonoBehaviour
 {
@@ -18,20 +17,33 @@ public class RoomDefinition : MonoBehaviour
     private Rigidbody2D playerRB;
     private int EnemiesRemaining;
 
+    [HideInInspector] public bool room_cleared = false;
+
     public List<DoorSlot> doors = new List<DoorSlot>();
     public int doorCount => doors.Count;
     [HideInInspector] public bool enteredFromOtherRoom;
     [HideInInspector] public DoorDirection comingFrom;
-    //[HideInInspector] public bool doors_useable;
+    [HideInInspector] public bool doors_open;
+    
 
 
     void Start()
     {
+        doors_open = true;
         Enemies = gameObject.GetComponentsInChildren<Enemy>().Count();
         player = GameObject.FindGameObjectWithTag("Player");
         playerCC = player.GetComponent<CharacterController>();
         playerRB = player.GetComponent<Rigidbody2D>();
         EnemiesRemaining = Enemies;
+
+        if(room_cleared)
+        {
+            foreach(Enemy enemy in gameObject.GetComponentsInChildren<Enemy>())
+            {
+                Destroy(enemy);
+            }
+        }
+
 
         if(enteredFromOtherRoom)
         {
@@ -43,7 +55,7 @@ public class RoomDefinition : MonoBehaviour
                 {
                     playerCC.doors_enterable = false;
 
-                    //playerCC.DisableMoveForSec(1);
+                    playerCC.DisableMoveForSec(1);
 
                     switch(comingFrom)
                     {
@@ -68,11 +80,13 @@ public class RoomDefinition : MonoBehaviour
                         break;
 
                     }
+                    StartCoroutine(LockDoors(1));
                 }
             }
 
             player.transform.position = newPlayerPos;
             print($"Player Pos: {player.transform.position}");
+            return;
         }
     }
 
@@ -82,10 +96,29 @@ public class RoomDefinition : MonoBehaviour
         if(EnemiesRemaining <= 0)
         {
             player.GetComponent<PlayerCombat>().room_cleared = true;
+            RoomLoader.Instance.CurrentRoomCleared();
+            StartCoroutine(UnlockDoors(1));
         }
     }
 
     public bool HasDoorIn(DoorDirection dir) => doors.Any(d => d.direction == dir);
+
+    public IEnumerator LockDoors(float sec)
+    {
+        yield return new WaitForSeconds(sec);
+        doors_open = false;
+
+        if(EnemiesRemaining <= 0)
+        {
+            StartCoroutine(UnlockDoors(1));
+        }
+
+    }
+    public IEnumerator UnlockDoors(float sec)
+    {
+        yield return new WaitForSeconds(sec);
+        doors_open = true;
+    }
 
     void OnValidate()
     {

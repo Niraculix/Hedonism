@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class RoomLoader : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class RoomLoader : MonoBehaviour
     private GameObject player;
     private GameObject currentRoomInstance;
     private RoomNode currentNode;
+
+    [HideInInspector] public List<int> RoomsCleared;
 
     bool isTransitioning = false;
 
@@ -28,13 +31,18 @@ public class RoomLoader : MonoBehaviour
         StartCoroutine(Transition(node, null));
     }
 
+    public void CurrentRoomCleared()
+    {
+        RoomsCleared.Add(currentNode.id);
+    }
+
     private IEnumerator Transition(RoomNode node, DoorDirection? comingFrom)
     {
         if (isTransitioning) yield break;
         isTransitioning = true;
 
         // alten Raum entladen
-        
+
         var bullets = GameObject.FindGameObjectsWithTag("Bullet");
         foreach (GameObject bullet in bullets) Destroy(bullet);
 
@@ -54,6 +62,14 @@ public class RoomLoader : MonoBehaviour
         var def = currentRoomInstance.GetComponent<RoomDefinition>();
 
         print($"Betrete Raum: {node.prefab.name} [ID: {node.id}]");
+
+        foreach(int roomID in RoomsCleared)
+        {
+            if(roomID == currentNode.id)
+            {
+                def.room_cleared = true;
+            }
+        }
 
         if (comingFrom.HasValue)
         {
@@ -89,4 +105,5 @@ public class RoomLoader : MonoBehaviour
         isTransitioning = false;
         yield return null;
     }
+
 }
