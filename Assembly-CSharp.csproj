@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Generation\RoomConnection.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyVariants\Offset_Enemy.cs" />
+    <Compile Include="Assets\Scripts\Generation\RoomNode.cs" />
     <Compile Include="Assets\Scripts\Generation\GameManager.cs" />
     <Compile Include="Assets\Scripts\Player\LightSphere.cs" />
   </ItemGroup>

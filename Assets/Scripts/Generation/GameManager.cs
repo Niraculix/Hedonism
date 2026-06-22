@@ -9,171 +9,119 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<GameObject> roomPrefabs_2Door = new List<GameObject>();
     [SerializeField] private List<GameObject> roomPrefabs_3Door = new List<GameObject>();
 
-    
-    private HashSet<(GameObject, DoorDirection)> connectedDoors = new HashSet<(GameObject, DoorDirection)>();
-    
+    private HashSet<(int, DoorDirection)> connectedDoors = new HashSet<(int, DoorDirection)>();
+
     public List<RoomConnection> connections = new List<RoomConnection>();
-    
+    public RoomNode startNode;
+
     public static GameManager Instance;
 
+    private int nodeIdCounter = 0;
 
     void Start()
     {
         GenerateDungeon();
     }
 
-
     private void Awake()
     {
         Instance = this;
     }
+
     void GenerateDungeon()
     {
-        //Choose first Room
         float rand = Random.value;
-
         GameObject StartRoom;
-        if(rand < 0.2) //20%
+
+        if (rand < 0.2f)
         {
-            float rand2 = Random.value;
-            if(rand2 < 0.5)
-            {
-                StartRoom = roomPrefabs_Start[0];
-            }
-            else
-            {
-                StartRoom = roomPrefabs_Start[1];
-            }
+            StartRoom = roomPrefabs_Start[Random.value < 0.5f ? 0 : 1];
         }
-        else if(rand < 0.8) //60%
+        else if (rand < 0.8f)
         {
-            float rand2 = Random.value;
-            if(rand2 < 0.5)
-            {
-                StartRoom = roomPrefabs_Start[2];
-            }
-            else
-            {
-                StartRoom = roomPrefabs_Start[3];
-            }
+            StartRoom = roomPrefabs_Start[Random.value < 0.5f ? 2 : 3];
         }
-        else //20%
+        else
         {
             StartRoom = roomPrefabs_Start[4];
         }
 
-        //Instantiate(StartRoom);
-
-        Queue<(GameObject prefab, RoomDefinition def, int distance)> open = new();
-
         var startDef = StartRoom.GetComponent<RoomDefinition>();
-        open.Enqueue((StartRoom, startDef, 0));
+        startNode = new RoomNode { prefab = StartRoom, id = nodeIdCounter++ };
 
-
+        Queue<(RoomNode node, RoomDefinition def, int distance)> open = new();
+        open.Enqueue((startNode, startDef, 0));
 
         while (open.Count > 0)
         {
-            var (currentPrefab, currentDef, distance) = open.Dequeue();
-
-            print("Distance from Start: " + distance);
+            var (currentNode, currentDef, distance) = open.Dequeue();
 
             foreach (var door in currentDef.doors)
             {
-                // Prüfen ob diese Tür dieses Prefabs schon verbunden wurde
-                if (connectedDoors.Contains((currentPrefab, door.direction))) continue;
+                if (connectedDoors.Contains((currentNode.id, door.direction))) continue;
 
                 int targetDoorCount = RandomizeDoorCount(distance);
-
-                var nextPrefab = FindRoomWithDoorAndCount(
-                    Opposite(door.direction),
-                    targetDoorCount
-                );
-
-                //print("next Prefab: " + nextPrefab);
+                var nextPrefab = FindRoomWithDoorAndCount(Opposite(door.direction), targetDoorCount);
                 if (nextPrefab == null) continue;
 
+                var nextNode = new RoomNode { prefab = nextPrefab, id = nodeIdCounter++ };
                 var nextDef = nextPrefab.GetComponent<RoomDefinition>();
 
                 connections.Add(new RoomConnection
                 {
-                    roomPrefabA = currentPrefab,
+                    nodeA = currentNode,
                     doorFromA = door.direction,
-                    roomPrefabB = nextPrefab,
+                    nodeB = nextNode,
                     doorFromB = Opposite(door.direction)
                 });
 
-                // Beide Seiten als verbunden markieren
-                connectedDoors.Add((currentPrefab, door.direction));
-                connectedDoors.Add((nextPrefab, Opposite(door.direction)));
+                connectedDoors.Add((currentNode.id, door.direction));
+                connectedDoors.Add((nextNode.id, Opposite(door.direction)));
 
                 if (nextDef.doorCount > 1)
-                {
-                    open.Enqueue((nextPrefab, nextDef, distance + 1));
-                }
-                print($"Verbinde: {currentPrefab.name} ({door.direction}) → {nextPrefab.name}");
+                    open.Enqueue((nextNode, nextDef, distance + 1));
+
+                print($"Verbinde: {currentNode.prefab.name}[{currentNode.id}] ({door.direction}) → {nextNode.prefab.name}[{nextNode.id}]");
             }
         }
 
         print("Dungeon Complete!");
-        RoomLoader.Instance.LoadStartRoom(StartRoom);
+        RoomLoader.Instance.LoadStartRoom(startNode);
     }
-
 
     private GameObject FindRoomWithDoorAndCount(DoorDirection dir, int doorCount)
     {
-        List<GameObject> roomPrefabs = new List<GameObject>();
-        if(doorCount == 1)
+        List<GameObject> roomPrefabs = doorCount switch
         {
-            roomPrefabs = roomPrefabs_1Door;
-        }
-        else if(doorCount == 2)
-        {
-            roomPrefabs = roomPrefabs_2Door;
-        }
-        else if(doorCount == 3)
-        {
-            roomPrefabs = roomPrefabs_3Door;
-        }
+            1 => roomPrefabs_1Door,
+            2 => roomPrefabs_2Door,
+            3 => roomPrefabs_3Door,
+            _ => new List<GameObject>()
+        };
+
         var exact = roomPrefabs
-            .Where(p => {
-                var def = p.GetComponent<RoomDefinition>();
-                return def.HasDoorIn(dir) && def.doorCount == doorCount;
-            }).ToList();
-
-        if (exact.Count > 0)
-            return exact[Random.Range(0, exact.Count)];
-
-        var fallback = roomPrefabs
-            .Where(p => p.GetComponent<RoomDefinition>().HasDoorIn(dir))
+            .Where(p => p.GetComponent<RoomDefinition>().HasDoorIn(dir) && p.GetComponent<RoomDefinition>().doorCount == doorCount)
             .ToList();
 
-        if (fallback.Count > 0)
-            return fallback[Random.Range(0, fallback.Count)];
+        if (exact.Count > 0) return exact[Random.Range(0, exact.Count)];
 
-        return null;
+        var fallback = roomPrefabs.Where(p => p.GetComponent<RoomDefinition>().HasDoorIn(dir)).ToList();
+        return fallback.Count > 0 ? fallback[Random.Range(0, fallback.Count)] : null;
     }
 
     public static DoorDirection Opposite(DoorDirection dir) => dir switch
     {
         DoorDirection.North => DoorDirection.South,
         DoorDirection.South => DoorDirection.North,
-        DoorDirection.East  => DoorDirection.West,
-        DoorDirection.West  => DoorDirection.East,
+        DoorDirection.East => DoorDirection.West,
+        DoorDirection.West => DoorDirection.East,
         _ => dir
     };
 
     private int RandomizeDoorCount(int distance)
     {
         float roll = Random.value;
-
-        if (distance == 0)
-        {
-            if (roll < 0.70f) return 2;
-            return 3;
-        }
-        else
-        {
-            return 1;
-        }
+        if (distance == 0) return roll < 0.70f ? 2 : 3;
+        return 1;
     }
 }

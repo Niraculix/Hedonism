@@ -1,6 +1,5 @@
 using System.Linq;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RoomLoader : MonoBehaviour
@@ -8,8 +7,8 @@ public class RoomLoader : MonoBehaviour
     public static RoomLoader Instance;
 
     private GameObject player;
-
     private GameObject currentRoomInstance;
+    private RoomNode currentNode;
 
     bool isTransitioning = false;
 
@@ -19,111 +18,75 @@ public class RoomLoader : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void LoadRoom(GameObject roomPrefab, DoorDirection comingFrom)
+    public void LoadRoom(RoomNode node, DoorDirection comingFrom)
     {
-        StartCoroutine(Transition(roomPrefab, comingFrom));
+        StartCoroutine(Transition(node, comingFrom));
     }
 
-    public void LoadStartRoom(GameObject roomPrefab)
+    public void LoadStartRoom(RoomNode node)
     {
-        StartCoroutine(Transition(roomPrefab, null));
+        StartCoroutine(Transition(node, null));
     }
 
-    private IEnumerator Transition(GameObject roomPrefab, DoorDirection? comingFrom)
+    private IEnumerator Transition(RoomNode node, DoorDirection? comingFrom)
     {
-        if (!isTransitioning)
+        if (isTransitioning) yield break;
+        isTransitioning = true;
+
+        // alten Raum entladen
+        
+        var bullets = GameObject.FindGameObjectsWithTag("Bullet");
+        foreach (GameObject bullet in bullets) Destroy(bullet);
+
+        var lightSphere = GameObject.FindGameObjectWithTag("LightSphere");
+        if (lightSphere != null) Destroy(lightSphere);
+
+        if (currentRoomInstance != null)
+            Destroy(currentRoomInstance);
+
+        yield return new WaitForFixedUpdate();
+
+        //neuen Raum laden
+
+        currentRoomInstance = Instantiate(node.prefab);
+        currentNode = node;
+        player = GameObject.FindGameObjectWithTag("Player");
+        var def = currentRoomInstance.GetComponent<RoomDefinition>();
+
+        print($"Betrete Raum: {node.prefab.name} [ID: {node.id}]");
+
+        if (comingFrom.HasValue)
         {
-            isTransitioning = true;
-
-            //print("Transitioning...");
-            
-
-            // Alten Raum entladen
-            var bullets = GameObject.FindGameObjectsWithTag("Bullet");
-            foreach(GameObject bullet in bullets)
-            {
-                Destroy(bullet);
-            }
-            
-            if(GameObject.FindGameObjectWithTag("LightSphere") != null)
-            {
-                Destroy(GameObject.FindGameObjectWithTag("LightSphere"));
-            }
-
-            if (currentRoomInstance != null)
-                Destroy(currentRoomInstance);
-
-            // Neuer Raum
-            
-            yield return new WaitForFixedUpdate();
-
-            currentRoomInstance = Instantiate(roomPrefab);
-            player = GameObject.FindGameObjectWithTag("Player");
-            var def = currentRoomInstance.GetComponent<RoomDefinition>();
-
-            if (comingFrom.HasValue)
-            {
-                def.enteredFromOtherRoom = true;
-                def.comingFrom = (DoorDirection)comingFrom;
-            }
-            else
-            {
-                def.enteredFromOtherRoom = false;
-            }
-
-            
-            var connections = GameManager.Instance.connections;
-
-            // DEBUG:
-            var allTriggers = currentRoomInstance.GetComponentsInChildren<DoorTrigger>();
-            print($"Gefundene DoorTrigger: {allTriggers.Length}");
-            foreach(var t in allTriggers)
-            {
-                print($"  DoorTrigger direction: {t.direction}");
-            }
-            print($"DoorSlots: {def.doors.Count}");
-            foreach(var d in def.doors)
-            {
-                print($"  DoorSlot direction: {d.direction}");
-            }
-            // DEBUG END
-
-            foreach (var doorSlot in def.doors)
-            {
-
-                // DoorTrigger im instanziierten Raum per Richtung suchen
-                DoorTrigger trigger = currentRoomInstance
-                    .GetComponentsInChildren<DoorTrigger>()
-                    .FirstOrDefault(t => t.direction == doorSlot.direction);
-
-                if (trigger == null)
-                {
-                    print($"Kein DoorTrigger gefunden für Richtung: {doorSlot.direction}");
-                    continue;
-                }
-
-                var conn = connections.FirstOrDefault(c =>
-                    (c.roomPrefabA == roomPrefab && c.doorFromA == doorSlot.direction) ||
-                    (c.roomPrefabB == roomPrefab && c.doorFromB == doorSlot.direction)
-                );
-
-                if (conn == null) continue;
-
-                bool isA = conn.roomPrefabA == roomPrefab;
-                trigger.targetRoomPrefab = isA ? conn.roomPrefabB : conn.roomPrefabA;
-                //print($"Setze target: {trigger.targetRoomPrefab.name} für Tür: {doorSlot.direction}");
-
-            }
-            
-            
-
-            //print("Transitioned");
-
-            isTransitioning = false;
-
-            // yield return Fader.FadeIn();
-
-            yield return null;
+            def.enteredFromOtherRoom = true;
+            def.comingFrom = comingFrom.Value;
         }
+        else
+        {
+            def.enteredFromOtherRoom = false;
+        }
+
+        var connections = GameManager.Instance.connections;
+
+        foreach (var doorSlot in def.doors)
+        {
+            DoorTrigger trigger = currentRoomInstance
+                .GetComponentsInChildren<DoorTrigger>()
+                .FirstOrDefault(t => t.direction == doorSlot.direction);
+
+            if (trigger == null) continue;
+
+            var conn = connections.FirstOrDefault(c =>
+                (c.nodeA.id == node.id && c.doorFromA == doorSlot.direction) ||
+                (c.nodeB.id == node.id && c.doorFromB == doorSlot.direction)
+            );
+
+            if (conn == null) continue;
+
+            bool isA = conn.nodeA.id == node.id;
+            trigger.targetNode = isA ? conn.nodeB : conn.nodeA;
+        }
+
+        isTransitioning = false;
+        yield return null;
     }
 }

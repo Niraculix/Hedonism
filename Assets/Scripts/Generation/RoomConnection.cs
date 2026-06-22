@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class RoomConnection
 {
-    public GameObject roomPrefabA;
+    public RoomNode nodeA;
     public DoorDirection doorFromA;
-    public GameObject roomPrefabB;
+    public RoomNode nodeB;
     public DoorDirection doorFromB;
 }

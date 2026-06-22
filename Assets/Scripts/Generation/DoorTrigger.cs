@@ -8,18 +8,16 @@ public class DoorTrigger : MonoBehaviour
     [SerializeField] public GameObject SouthPoint;
     [SerializeField] public GameObject EastPoint;
     [SerializeField] public GameObject WestPoint;
-    [HideInInspector] public GameObject targetRoomPrefab;
+    [HideInInspector] public RoomNode targetNode;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-        //if (targetRoomPrefab == null) return;
+        if (targetNode == null) return;
 
         if (other.GetComponent<CharacterController>().doors_enterable == true)
         {
-            RoomLoader.Instance.LoadRoom(targetRoomPrefab, GameManager.Opposite(direction));
-            print(targetRoomPrefab);
+            RoomLoader.Instance.LoadRoom(targetNode, GameManager.Opposite(direction));
         }
-        
     }
 }
