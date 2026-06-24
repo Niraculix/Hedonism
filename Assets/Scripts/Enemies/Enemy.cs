@@ -36,6 +36,12 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         GameObject.FindGameObjectWithTag("Room").GetComponent<RoomDefinition>().EnemyKilled();
+
+        if(GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>().DashResetOnKill)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().RegainDash();
+        }
+        
         Destroy(gameObject);
     }
 }

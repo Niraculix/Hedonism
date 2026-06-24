@@ -49,6 +49,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.4.6f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Enemies\Projectile.cs" />
     <Compile Include="Assets\Scripts\Generation\RoomDefinition.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCombat.cs" />
@@ -61,6 +62,8 @@
     <Compile Include="Assets\Scripts\Spike.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Generation\RoomLoader.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemManager.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemObject.cs" />
     <Compile Include="Assets\Scripts\UI\dashUI.cs" />
     <Compile Include="Assets\Scripts\Generation\RoomConnection.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />

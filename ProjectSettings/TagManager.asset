@@ -9,6 +9,7 @@ TagManager:
   - Room
   - Bullet
   - LightSphere
+  - ItemManager
   layers:
   - Default
   - TransparentFX

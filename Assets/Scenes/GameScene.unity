@@ -493,6 +493,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801672484}
   m_CullTransparentMesh: 1
+--- !u!1 &1342367307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1342367309}
+  - component: {fileID: 1342367308}
+  m_Layer: 0
+  m_Name: ItemManager
+  m_TagString: ItemManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1342367308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342367307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f24031d0b22323499b4a0d770b616a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  max_hp: 0
+  HealRate: 0
+  DrainRate: 0
+  maxDashesDarkMode: 0
+  maxDashesLightMode: 0
+  MeleeDamage: 0
+  ParryRange: 0
+  ItemList: []
+--- !u!4 &1342367309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342367307}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1433156570
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,4 +892,5 @@ SceneRoots:
   - {fileID: 1433156571}
   - {fileID: 794437713}
   - {fileID: 1906481944}
+  - {fileID: 1342367309}
   - {fileID: 303085838}
