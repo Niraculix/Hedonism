@@ -15,6 +15,7 @@ public class ItemManager : MonoBehaviour
     [HideInInspector] public bool DashResetOnKill = false;
     [HideInInspector] public float parry_leech_percent = 0;
     
+    public List<Item> PossibleItems = new List<Item>();
     public List<Item> ItemList = new List<Item>();
     // Update is called once per frame
     public void UpdateItems()
@@ -33,15 +34,47 @@ public class ItemManager : MonoBehaviour
 
         foreach(Item item in ItemList)
         {
-            switch (item.item_name)
+            foreach(ItemAttribute att in item.attributes)
             {
-                case "testItem":
-                maxDashesDarkMode++;
-                break;
+                switch (att.type)
+                {
+                    case ItemAttribute.ItemType.MaxHp_Int:
+                    max_hp += att.intValue;
+                    break;
 
-                case "testItem2":
-                HealRate += 1;
-                break;
+                    case ItemAttribute.ItemType.LHealRate_Float:
+                    HealRate += att.floatValue;
+                    break;
+
+                    case ItemAttribute.ItemType.DDrainRate_Float:
+                    DrainRate -= att.floatValue;
+                    break;
+
+                    case ItemAttribute.ItemType.DDashCount_Int:
+                    maxDashesDarkMode += att.intValue;
+                    break;
+
+                    case ItemAttribute.ItemType.LDashCount_Int:
+                    maxDashesLightMode += att.intValue;
+                    break;
+
+                    case ItemAttribute.ItemType.LAttackDMG_Int:
+                    MeleeDamage += att.intValue;
+                    break;
+
+                    case ItemAttribute.ItemType.DAttackCooldown_Float:
+                    AttackCooldownDarkMode -= att.floatValue;
+                    break;
+
+                    case ItemAttribute.ItemType.DDashReset_Bool:
+                    DashResetOnKill = att.boolValue;
+                    break;
+
+                    case ItemAttribute.ItemType.LParryLechPercent_Float:
+                    parry_leech_percent -= att.floatValue;
+                    break;
+                }
+
             }
         }
 
