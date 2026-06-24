@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        GenerateDungeon();
+      //  GenerateDungeon();
     }
 
     private void Awake()
