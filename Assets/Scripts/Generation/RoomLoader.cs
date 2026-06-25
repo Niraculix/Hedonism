@@ -9,7 +9,7 @@ public class RoomLoader : MonoBehaviour
 
     private GameObject player;
     private GameObject currentRoomInstance;
-    private RoomNode currentNode;
+    [HideInInspector] public RoomNode currentNode;
 
     [HideInInspector] public List<int> RoomsCleared;
 
@@ -63,6 +63,9 @@ public class RoomLoader : MonoBehaviour
 
         print($"Betrete Raum: {node.prefab.name} [ID: {node.id}]");
 
+        node.visited = true;
+        node.discovered = true;
+
         foreach(int roomID in RoomsCleared)
         {
             if(roomID == currentNode.id)
@@ -82,6 +85,13 @@ public class RoomLoader : MonoBehaviour
         }
 
         var connections = GameManager.Instance.connections;
+        foreach (var conn in connections)
+        {
+            if (conn.nodeA.id == node.id) conn.nodeB.discovered = true;
+            if (conn.nodeB.id == node.id) conn.nodeA.discovered = true;
+        }
+
+        MinimapUI.Instance.Refresh();
 
         foreach (var doorSlot in def.doors)
         {

@@ -19,8 +19,8 @@ public class CharacterController : MonoBehaviour
 
 	[Header("Dash")]
 	[SerializeField] private float m_DashForce = 600f;
-	public float m_DashCooldown = 2f;
-	public float m_DashRechargeTime = 0.5f;
+	public float m_DashCooldown = 0.25f;
+	public float m_DashRechargeTime = 0.25f;
 	[Range(1, 1.5f)] [SerializeField] private float DashYDamping;
 	public int MaxDashes;
 
@@ -62,6 +62,10 @@ public class CharacterController : MonoBehaviour
 
 	private int dashCooldownFrames = 0;
 
+	private bool light_dropped;
+
+	ItemManager itemManager;
+
 	[Header("Events")]
 	[Space]
 
@@ -73,8 +77,11 @@ public class CharacterController : MonoBehaviour
 
 	private void Awake()
 	{
+		
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 		grav = m_Rigidbody2D.gravityScale;
+		itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
+		//itemManager.UpdateItems();
 
 		dashing = false;
 		dashes_remaining = MaxDashes;
@@ -93,6 +100,21 @@ public class CharacterController : MonoBehaviour
 		m_Grounded = false;
 		jumpInputReleased = !jumpAction.action.IsPressed();
 
+		light_dropped = GetComponent<PlayerCombat>().light_dropped;
+
+		if (light_dropped)
+		{
+			MaxDashes = itemManager.maxDashesDarkMode;
+		}
+		else
+		{
+			MaxDashes = itemManager.maxDashesLightMode;
+		}
+
+		if(dashes_remaining > MaxDashes)
+		{
+			dashes_remaining = MaxDashes;
+		}
 		
 
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -180,8 +202,6 @@ public class CharacterController : MonoBehaviour
 				m_Rigidbody2D.linearVelocityY = 0;
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 				JumpsAvailable--;
-				
-					
 			}
 		}
 
@@ -353,7 +373,4 @@ public class CharacterController : MonoBehaviour
     {
         Gizmos.DrawSphere(m_GroundCheck.position, k_GroundedRadius);
     }
-
-
-
 }

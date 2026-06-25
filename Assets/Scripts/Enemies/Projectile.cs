@@ -6,7 +6,7 @@ public class Projectile : MonoBehaviour
     private Vector2 _direction;
     private float speed = 8;
     private bool _isParried = false;
-    private int _damage;
+    [HideInInspector] public int _damage;
 
     private Vector3 _initPos = new Vector3();
 
@@ -92,5 +92,10 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+    }
+
+    public void EnterParryRange()
+    {
+        //Adden zu blink animation
     }
 }

@@ -67,6 +67,8 @@ public class GameManager : MonoBehaviour
                 var nextNode = new RoomNode { prefab = nextPrefab, id = nodeIdCounter++ };
                 var nextDef = nextPrefab.GetComponent<RoomDefinition>();
 
+                nextNode.mapPosition = currentNode.mapPosition + DirectionToOffset(door.direction);
+
                 connections.Add(new RoomConnection
                 {
                     nodeA = currentNode,
@@ -116,6 +118,15 @@ public class GameManager : MonoBehaviour
         DoorDirection.East => DoorDirection.West,
         DoorDirection.West => DoorDirection.East,
         _ => dir
+    };
+
+    private Vector2Int DirectionToOffset(DoorDirection dir) => dir switch
+    {
+        DoorDirection.North => new Vector2Int(0, 1),
+        DoorDirection.South => new Vector2Int(0, -1),
+        DoorDirection.East  => new Vector2Int(1, 0),
+        DoorDirection.West  => new Vector2Int(-1, 0),
+        _ => Vector2Int.zero
     };
 
     private int RandomizeDoorCount(int distance)
