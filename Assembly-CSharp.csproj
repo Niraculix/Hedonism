@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Enemies\Projectile.cs" />
+    <Compile Include="Assets\Scripts\UI\MiniMapUI.cs" />
     <Compile Include="Assets\Scripts\Generation\RoomDefinition.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCombat.cs" />
     <Compile Include="Assets\Scripts\Player\CharacterController.cs" />
@@ -65,9 +66,11 @@
     <Compile Include="Assets\Scripts\Items\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Items\ItemObject.cs" />
     <Compile Include="Assets\Scripts\UI\dashUI.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Pathfinding-Patrol.cs" />
     <Compile Include="Assets\Scripts\Generation\RoomConnection.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyVariants\Offset_Enemy.cs" />
+    <Compile Include="Assets\Scripts\UI\RoomIconUI.cs" />
     <Compile Include="Assets\Scripts\Generation\RoomNode.cs" />
     <Compile Include="Assets\Scripts\Generation\GameManager.cs" />
     <Compile Include="Assets\Scripts\Player\LightSphere.cs" />
