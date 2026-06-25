@@ -11,15 +11,16 @@ public class PlayerCombat : MonoBehaviour
     public float MeleeAttackRange = 0.4f;
     public float ParryRange = 0.3f;
 
-    public int MeleeDamage = 1000;
+    public int MeleeDamage = 50;
     public int AdrenalinDamage = 2000;
     public int max_hp = 1000;
     private float hp;
-    public float naturalDrainRate = 1;
+    public float naturalDrainRate = 2f;
 
-    public float naturalHealRate = 0.2f;
+    public float naturalHealRate = 1f;
     public float baseAttackCooldown = 1f;
     public float AdrenalinAttackCooldown = 0.25f;
+    [HideInInspector] public bool room_cleared = false;
 
     [Header("References")]
     public LayerMask EnemyLayers;
@@ -37,6 +38,8 @@ public class PlayerCombat : MonoBehaviour
 
     private bool ActionOnCooldown = false;
 
+
+
     private int iFrames = 0;
 
     private bool dead = false;
@@ -50,11 +53,22 @@ public class PlayerCombat : MonoBehaviour
 
 
     [HideInInspector] public bool light_dropped = false;
-    [HideInInspector] public bool room_cleared = false;
+
+    private Vector3 AttackPoint = new Vector3();
+    private Vector3 ParryPoint = new Vector3();
+
+
+    ItemManager itemManager;
     
     private void Start()
     {
-        hp = max_hp;
+        itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
+        itemManager.UpdateItems();
+    }
+
+    public void ReloadItems()
+    {
+        hp = itemManager.max_hp;
     }
 
     void FixedUpdate()
@@ -68,20 +82,20 @@ public class PlayerCombat : MonoBehaviour
         {
             if (!light_dropped)
             {
-                if(hp + naturalHealRate * Time.fixedDeltaTime < max_hp)
+                if(hp + itemManager.HealRate * Time.fixedDeltaTime < itemManager.max_hp)
                 {
-                    hp += naturalHealRate * Time.fixedDeltaTime;
+                    hp += itemManager.HealRate * Time.fixedDeltaTime;
                 }
                 else
                 {
-                    hp = max_hp;
+                    hp = itemManager.max_hp;
                 }
             }
             else
             {
-                if(hp - naturalDrainRate * Time.fixedDeltaTime > 2)
+                if(hp - itemManager.DrainRate * Time.fixedDeltaTime > 2)
                 {
-                    hp -= naturalDrainRate * Time.fixedDeltaTime;
+                    hp -= itemManager.DrainRate * Time.fixedDeltaTime;
                 }
                 else
                 {
@@ -109,7 +123,45 @@ public class PlayerCombat : MonoBehaviour
             }
         }
 
+
         InputVector = MoveAction.action.ReadValue<Vector2>();
+
+        if(Mathf.Abs(InputVector.x) > 0.3 || Mathf.Abs(InputVector.y) > 0.3 )
+        {
+            if(Mathf.Abs(InputVector.y) < 0.7)
+            {
+                AttackPoint = SideMeleePoint.position;
+                ParryPoint = SideMeleePoint.position;
+                print("Sideways Swing, " + InputVector);
+            }
+            else if(InputVector.y > 0) 
+            {
+                AttackPoint = UpMeleePoint.position;
+                ParryPoint = UpMeleePoint.position;
+                print("Upwards Swing, " + InputVector);
+            }
+
+            else if(InputVector.y < 0)
+            {
+                AttackPoint = DownMeleePoint.position;
+                ParryPoint = DownMeleePoint.position;
+                print("Downwards Swing, " + InputVector);
+            }
+        }
+        else
+        {
+            AttackPoint = SideMeleePoint.position;
+            ParryPoint = SideMeleePoint.position;
+            print("Sideways Swing, No Input, " + InputVector);
+        }
+
+        Collider2D[] ProjectilesInParryRange = Physics2D.OverlapCircleAll(ParryPoint, ParryRange, ProjectileLayers);
+        foreach(Collider2D projectile in ProjectilesInParryRange)
+        {
+            if(!projectile.GetComponent<Projectile>()) continue;
+            
+            projectile.GetComponent<Projectile>().EnterParryRange();
+        }
     }
 
     void OnMelee()
@@ -125,38 +177,12 @@ public class PlayerCombat : MonoBehaviour
                 StartCoroutine(ActionCooldown(baseAttackCooldown));
             }
             bool pogo = false;
-            Vector3 AttackPoint = new Vector3();
-            Vector3 ParryPoint = new Vector3();
-            if(InputVector.x > 0.3 && InputVector.x < -0.3 )
-            {
-                if(InputVector.y > 0) 
-                {
-                    AttackPoint = UpMeleePoint.position;
-                    ParryPoint = UpMeleePoint.position;
-                    print("Upwards Swing, " + InputVector);
-                }
 
-                else if(InputVector.y < 0)
-                {
-                    AttackPoint = DownMeleePoint.position;
-                    pogo = true;
-                    print("Downwards Swing");
-                }
-
-                else if(Mathf.Abs(InputVector.y) < 0.3)
-                {
-                    AttackPoint = SideMeleePoint.position;
-                    ParryPoint = SideMeleePoint.position;
-                    print("Sideways Swing");
-                }
-                
-            }
-            else
+            if(AttackPoint == DownMeleePoint.position)
             {
-                AttackPoint = SideMeleePoint.position;
-                ParryPoint = SideMeleePoint.position;
-                print("Sideways Swing");
+                pogo = true;
             }
+            
 
             Collider2D[] hitEnemies;
 
@@ -174,7 +200,7 @@ public class PlayerCombat : MonoBehaviour
             {
                 if(!light_dropped) 
                 {
-                    enemy.GetComponent<Enemy>().takeDamage(MeleeDamage);
+                    enemy.GetComponent<Enemy>().takeDamage(itemManager.MeleeDamage);
                 }
                 else
                 {
@@ -205,6 +231,17 @@ public class PlayerCombat : MonoBehaviour
             foreach(Collider2D projectile in hitProjectilesParry)
             {
                 projectile.GetComponent<Projectile>().Parry();
+                if(itemManager.parry_leech_percent > 0)
+                {
+                    if(hp + projectile.GetComponent<Projectile>()._damage * itemManager.parry_leech_percent < max_hp)
+                    {
+                        hp += projectile.GetComponent<Projectile>()._damage * itemManager.parry_leech_percent;
+                    }
+                    else
+                    {
+                        hp = max_hp;
+                    }
+                }
             } 
         }
     }
@@ -283,7 +320,7 @@ public class PlayerCombat : MonoBehaviour
             }
             else if(controller.dashing)
             {
-                collision.GetComponent<Enemy>().takeDamage(MeleeDamage);
+                collision.GetComponent<Enemy>().takeDamage(itemManager.MeleeDamage);
                 print("dash dmg hit");
             }
                 
