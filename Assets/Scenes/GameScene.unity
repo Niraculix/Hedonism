@@ -529,6 +529,13 @@ MonoBehaviour:
   maxDashesLightMode: 0
   MeleeDamage: 0
   ParryRange: 0
+  AttackCooldownDarkMode: 0
+  DashResetOnKill: 0
+  parry_leech_percent: 0
+  PossibleItems:
+  - item_name: peepoopoo
+    sprite: {fileID: 0}
+    attributes: []
   ItemList: []
 --- !u!4 &1342367309
 Transform:
