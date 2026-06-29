@@ -3,12 +3,8 @@ using UnityEngine;
 public class DoorTrigger : MonoBehaviour
 {
     public DoorDirection direction;
-
-    [SerializeField] public GameObject NorthPoint;
-    [SerializeField] public GameObject SouthPoint;
-    [SerializeField] public GameObject EastPoint;
-    [SerializeField] public GameObject WestPoint;
     [HideInInspector] public RoomNode targetNode;
+    public GameObject SpawnPoint;
 
     private void OnTriggerEnter2D(Collider2D other)
     {

@@ -265,7 +265,7 @@ public class PlayerCombat : MonoBehaviour
             
             SetIFrames(5);
             
-            if (!light_dropped)
+            if (!light_dropped && dir != new Vector2(0,0))
             {
                 dropLight(damage,dir);
             }

@@ -343,6 +343,7 @@ public class CharacterController : MonoBehaviour
 		StartCoroutine(MoveStun(0.4f));
 	}
 
+
 	IEnumerator MoveStun(float sec)
 	{
 		can_Move = false;
