@@ -9,7 +9,9 @@ public class RoomDefinition : MonoBehaviour
 
     [SerializeField] private Vector2Int roomSizeInCells = new Vector2Int(2, 1);
 
-    public int distanceFromStart;
+    [HideInInspector] public int distanceFromStart;
+
+    public float KillBoxY = -100;
 
     [SerializeField] private GameObject CamBox;
     private GameObject player;
@@ -21,9 +23,12 @@ public class RoomDefinition : MonoBehaviour
 
     public List<DoorSlot> doors = new List<DoorSlot>();
     public int doorCount => doors.Count;
-    [HideInInspector] public bool enteredFromOtherRoom;
+    [HideInInspector] public bool enteredFromOtherRoom = false;
     [HideInInspector] public DoorDirection comingFrom;
     [HideInInspector] public bool doors_open;
+
+    private Vector2 SpawnPointPos;
+
     
 
 
@@ -47,47 +52,39 @@ public class RoomDefinition : MonoBehaviour
 
         if(enteredFromOtherRoom)
         {
-            Vector2 newPlayerPos = new Vector2(0,0);
+
             foreach(DoorTrigger door in gameObject.GetComponentsInChildren<DoorTrigger>())
             {
-                print($"Tür Richtung: {door.direction}, Position: {door.transform.position}");
                 if(door.direction == comingFrom)
                 {
-                    playerCC.doors_enterable = false;
-
-                    playerCC.DisableMoveForSec(1);
-
-                    switch(comingFrom)
-                    {
-                        case DoorDirection.North:
-                        newPlayerPos = door.SouthPoint.transform.position;
-                        StartCoroutine(playerCC.LaunchPlayerInDir(new Vector2(0,-10000)));
-                        break;
-
-                        case DoorDirection.East:
-                        newPlayerPos = door.WestPoint.transform.position;
-                        StartCoroutine(playerCC.LaunchPlayerInDir(new Vector2(-10000,0)));
-                        break;
-
-                        case DoorDirection.South:
-                        newPlayerPos = door.NorthPoint.transform.position;
-                        StartCoroutine(playerCC.LaunchPlayerInDir(new Vector2(0,15000)));
-                        break;
-
-                        case DoorDirection.West:
-                        newPlayerPos = door.EastPoint.transform.position;
-                        StartCoroutine(playerCC.LaunchPlayerInDir(new Vector2(10000,0)));
-                        break;
-
-                    }
-                    StartCoroutine(LockDoors(1));
+                    SpawnPointPos = door.SpawnPoint.transform.position;
                 }
             }
+            StartCoroutine(LockDoors(1));
+            
 
-            player.transform.position = newPlayerPos;
+            player.transform.position = SpawnPointPos;
             print($"Player Pos: {player.transform.position}");
-            return;
         }
+        else
+        {
+            SpawnPointPos = player.transform.position;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if(player.transform.position.y < KillBoxY)
+        {
+            ResetPlayerToSpawnPoint();
+        }
+    }
+
+    public void ResetPlayerToSpawnPoint()
+    {
+        player.transform.position = SpawnPointPos;
+        PlayerCombat playerCom = player.GetComponent<PlayerCombat>();
+        playerCom.takeDamage((int)Mathf.Round(playerCom.max_hp * 0.25f), new Vector2(0,0));
     }
 
     public void EnemyKilled()
@@ -122,7 +119,13 @@ public class RoomDefinition : MonoBehaviour
 
     void OnValidate()
     {
+
         if (CamBox == null) return;
         CamBox.GetComponent<BoxCollider2D>().size = new Vector2(roomSizeInCells.x * 72, roomSizeInCells.y * 40);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireCube(new Vector2(0, KillBoxY), new Vector2(300, 1));
     }
 }

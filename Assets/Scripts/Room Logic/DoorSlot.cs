@@ -8,4 +8,5 @@ public class DoorSlot
 {
     public DoorDirection direction;
     public bool isConnected = false;
+    public Transform SpawnPoint;
 }
