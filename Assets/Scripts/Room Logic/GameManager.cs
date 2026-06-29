@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
+    public bool DungeonGenerationOn = true;
     [SerializeField] private List<GameObject> roomPrefabs_Start = new List<GameObject>();
     [SerializeField] private List<GameObject> roomPrefabs_1Door = new List<GameObject>();
     [SerializeField] private List<GameObject> roomPrefabs_2Door = new List<GameObject>();
@@ -20,7 +21,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        if(!DungeonGenerationOn) return;
         
+        GenerateDungeon();
     }
 
     private void Awake()

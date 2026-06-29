@@ -43,9 +43,9 @@ public class PlatformerEnemyAI : MonoBehaviour
         if (playerObj != null) player = playerObj.transform;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-
+        if(!GetComponent<Enemy>().LogicEnabled) return;
 
         if (isChasing && player != null)
         {

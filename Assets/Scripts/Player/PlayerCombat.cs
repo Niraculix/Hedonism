@@ -132,27 +132,23 @@ public class PlayerCombat : MonoBehaviour
             {
                 AttackPoint = SideMeleePoint.position;
                 ParryPoint = SideMeleePoint.position;
-                print("Sideways Swing, " + InputVector);
             }
             else if(InputVector.y > 0) 
             {
                 AttackPoint = UpMeleePoint.position;
                 ParryPoint = UpMeleePoint.position;
-                print("Upwards Swing, " + InputVector);
             }
 
             else if(InputVector.y < 0)
             {
                 AttackPoint = DownMeleePoint.position;
                 ParryPoint = DownMeleePoint.position;
-                print("Downwards Swing, " + InputVector);
             }
         }
         else
         {
             AttackPoint = SideMeleePoint.position;
             ParryPoint = SideMeleePoint.position;
-            print("Sideways Swing, No Input, " + InputVector);
         }
 
         Collider2D[] ProjectilesInParryRange = Physics2D.OverlapCircleAll(ParryPoint, ParryRange, ProjectileLayers);
@@ -258,7 +254,6 @@ public class PlayerCombat : MonoBehaviour
             }
             else
             {
-                Debug.Log("ELSE BRANCH - DIE WIRD AUFGERUFEN");
                 hp = 0;
                 Die();
             }
@@ -295,7 +290,6 @@ public class PlayerCombat : MonoBehaviour
 
     public void Die()
     {
-        Debug.Log("DIE WURDE AUFGERUFEN");
         dead = true;
         hp = 0;
         SceneManager.LoadScene(gameOverSceneName);

@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using UnityEngine;
+using UnityEngine.Assemblies;
 
 public class RoomDefinition : MonoBehaviour
 {
@@ -9,15 +11,20 @@ public class RoomDefinition : MonoBehaviour
 
     [SerializeField] private Vector2Int roomSizeInCells = new Vector2Int(2, 1);
 
+    public List<EnemyWaveReference> EnemyWaves = new List<EnemyWaveReference>();
+
     [HideInInspector] public int distanceFromStart;
 
     public float KillBoxY = -100;
+
+    public bool ItemRoom = false;
 
     [SerializeField] private GameObject CamBox;
     private GameObject player;
     private CharacterController playerCC;
     private Rigidbody2D playerRB;
-    private int EnemiesRemaining;
+    private int EnemiesRemainingCurrentWave;
+    private int CurrentWave = 0;
 
     [HideInInspector] public bool room_cleared = false;
 
@@ -35,11 +42,9 @@ public class RoomDefinition : MonoBehaviour
     void Start()
     {
         doors_open = true;
-        Enemies = gameObject.GetComponentsInChildren<Enemy>().Count();
         player = GameObject.FindGameObjectWithTag("Player");
         playerCC = player.GetComponent<CharacterController>();
         playerRB = player.GetComponent<Rigidbody2D>();
-        EnemiesRemaining = Enemies;
 
         if(room_cleared)
         {
@@ -47,6 +52,12 @@ public class RoomDefinition : MonoBehaviour
             {
                 Destroy(enemy);
             }
+        }
+
+        if(!ItemRoom && EnemyWaves.Count > 0)
+        {
+            StartCoroutine(NextEnemyWave());
+            print("SpawnNextWave");
         }
 
 
@@ -87,14 +98,34 @@ public class RoomDefinition : MonoBehaviour
         playerCom.takeDamage((int)Mathf.Round(playerCom.max_hp * 0.25f), new Vector2(0,0));
     }
 
+    public IEnumerator NextEnemyWave()
+    {
+        yield return new WaitForSeconds(1);
+        print("Now Spawning Wave: " + CurrentWave);
+        foreach(GameObject enemyObj in EnemyWaves[CurrentWave].Wave)
+        {
+            enemyObj.GetComponent<Enemy>().active = true;
+        }
+
+        EnemiesRemainingCurrentWave = EnemyWaves[CurrentWave].Wave.Count;
+    }
+
     public void EnemyKilled()
     {
-        EnemiesRemaining--;
-        if(EnemiesRemaining <= 0)
+        EnemiesRemainingCurrentWave--;
+        if(EnemiesRemainingCurrentWave <= 0)
         {
-            player.GetComponent<PlayerCombat>().room_cleared = true;
-            RoomLoader.Instance.CurrentRoomCleared();
-            StartCoroutine(UnlockDoors(1));
+            CurrentWave++;
+            if(CurrentWave > EnemyWaves.Count)
+            {
+                player.GetComponent<PlayerCombat>().room_cleared = true;
+                RoomLoader.Instance.CurrentRoomCleared();
+                StartCoroutine(UnlockDoors(1));
+            }
+            else
+            {
+                StartCoroutine(NextEnemyWave());
+            }
         }
     }
 
@@ -104,12 +135,6 @@ public class RoomDefinition : MonoBehaviour
     {
         yield return new WaitForSeconds(sec);
         doors_open = false;
-
-        if(EnemiesRemaining <= 0)
-        {
-            StartCoroutine(UnlockDoors(1));
-        }
-
     }
     public IEnumerator UnlockDoors(float sec)
     {

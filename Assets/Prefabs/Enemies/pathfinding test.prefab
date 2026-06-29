@@ -170,6 +170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   hp: 30
   contact_dmg: 5
+  active: 0
+  LogicEnabled: 0
 --- !u!61 &792656615745237067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -230,17 +232,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlatformerEnemyAI
   walkSpeed: 3
   jumpForce: 8
+  walkSpeedMult: 2
   detectionRadius: 5
+  detectionCheck: {fileID: 0}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
-  groundLayer:
+    m_Bits: 64
+  Environment:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   groundCheck: {fileID: 3783809446508691532}
   wallCheck: {fileID: 8594581001168621530}
   edgeCheck: {fileID: 6375786786476588758}
   groundCheckRadius: 0.7
+  wallCheckDistance: 1
+  edgeCheckDistance: 1.5
+  detectionRate: 0.2
 --- !u!1 &7061234661244181586
 GameObject:
   m_ObjectHideFlags: 0

@@ -781,6 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4df8af3c38044d43a0b20cd0c1f4562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  DungeonGenerationOn: 1
   roomPrefabs_Start:
   - {fileID: 8133202235992323011, guid: a30707bff49dd3443a66a5933b9c1674, type: 3}
   - {fileID: 8133202235992323011, guid: 9aaa65616c67da8468c9b3b0341cd337, type: 3}

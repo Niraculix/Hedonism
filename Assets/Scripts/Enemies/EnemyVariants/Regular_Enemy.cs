@@ -19,6 +19,8 @@ public class Projectile_Spawner_Regular : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(!transform.parent.GetComponent<Enemy>().LogicEnabled) return;
+
         ShootTimer -= Time.fixedDeltaTime;
         if(ShootTimer <= 0 && active)
         {
