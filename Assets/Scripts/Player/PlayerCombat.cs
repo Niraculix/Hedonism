@@ -291,15 +291,16 @@ public class PlayerCombat : MonoBehaviour
         light_dropped = false;
     }
 
+    public string gameOverSceneName = "GameOverScene";
+
     public void Die()
     {
         Debug.Log("DIE WURDE AUFGERUFEN");
         dead = true;
         hp = 0;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
+        SceneManager.LoadScene(gameOverSceneName);
     }
-
+    
     IEnumerator ActionCooldown(float cooldownSec)
     {
         ActionOnCooldown = true;
