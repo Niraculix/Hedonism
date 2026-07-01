@@ -14,6 +14,9 @@ public class RoomLoader : MonoBehaviour
     [HideInInspector] public List<int> RoomsCleared;
 
     bool isTransitioning = false;
+    public bool IsTransitioning => isTransitioning;
+    private float lastTransitionTime = -10f;
+    public bool JustTransitioned => Time.time - lastTransitionTime < 0.3f;
 
     private void Awake()
     {
@@ -113,6 +116,7 @@ public class RoomLoader : MonoBehaviour
         }
 
         isTransitioning = false;
+        lastTransitionTime = Time.time;
         yield return null;
     }
 
