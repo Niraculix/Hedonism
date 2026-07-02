@@ -16,12 +16,11 @@ public class ParallaxLayer : MonoBehaviour
         startPos = transform.position;
         playerStartPos = player.position;
     }
-
     void FixedUpdate()
     {
         Vector3 playerDelta = player.position - playerStartPos;
         Vector3 movement = playerDelta * parallaxFactor;
 
-        transform.position = startPos + new Vector3(movement.x, movement.y, 0);
+        transform.position = startPos + new Vector3(movement.x, 0, 0);
     }
 }

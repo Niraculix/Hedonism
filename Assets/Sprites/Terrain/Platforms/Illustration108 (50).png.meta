@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 657c4240109dc004d9831497bd25f798
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3640035927018745142
+    second: Illustration108 (50)_0
+  - first:
+      213: -7924189795847893135
+    second: Illustration108 (50)_1
+  - first:
+      213: -8119059088354699530
+    second: Illustration108 (50)_2
+  - first:
+      213: 385666116608083549
+    second: Illustration108 (50)_3
+  - first:
+      213: -5388792716573282185
+    second: Illustration108 (50)_4
+  - first:
+      213: -5497507726200242653
+    second: Illustration108 (50)_5
+  - first:
+      213: 6836842941759242578
+    second: Illustration108 (50)_6
+  - first:
+      213: -3828881910085632027
+    second: Illustration108 (50)_7
+  - first:
+      213: -7192120368983443393
+    second: Illustration108 (50)_8
+  - first:
+      213: 2126729733793186524
+    second: Illustration108 (50)_9
+  - first:
+      213: 8233126986267956799
+    second: Illustration108 (50)_10
+  - first:
+      213: -7368056797037603634
+    second: Illustration108 (50)_11
+  - first:
+      213: 7330796855816563887
+    second: Illustration108 (50)_12
+  - first:
+      213: -1095999743442614674
+    second: Illustration108 (50)_13
+  - first:
+      213: 195218645893226479
+    second: Illustration108 (50)_14
+  - first:
+      213: -6722897221320676590
+    second: Illustration108 (50)_15
+  - first:
+      213: -2770210184833269802
+    second: Illustration108 (50)_16
+  - first:
+      213: -347154641231396742
+    second: Illustration108 (50)_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Illustration108 (50)_0
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 7
+        width: 478
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac253603c9efb7dc0800000000000000
+      internalID: -3640035927018745142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_1
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 73
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f06b56d5f970290800000000000000
+      internalID: -7924189795847893135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 74
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6163896ce435f80800000000000000
+      internalID: -8119059088354699530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_3
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 78
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56445a2a492a5500800000000000000
+      internalID: 385666116608083549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_4
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 60
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770ff6843992735b0800000000000000
+      internalID: -5388792716573282185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_5
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 78
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e7edd99dde4b3b0800000000000000
+      internalID: -5497507726200242653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_6
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 28
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25142b0be6851ee50800000000000000
+      internalID: 6836842941759242578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_7
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 45
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef3d6660341ddac0800000000000000
+      internalID: -3828881910085632027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_8
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 31
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38f3e041a4703c90800000000000000
+      internalID: -7192120368983443393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_9
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 26
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2010ccc69a38d10800000000000000
+      internalID: 2126729733793186524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_10
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 26
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f361f2f7f51f14270800000000000000
+      internalID: 8233126986267956799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 29
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4dba771676fb990800000000000000
+      internalID: -7368056797037603634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_12
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 20
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac2f7f66e83cb560800000000000000
+      internalID: 7330796855816563887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_13
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 18
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e660f2a4a0a3ac0f0800000000000000
+      internalID: -1095999743442614674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 16
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef9ff9f25e85b200800000000000000
+      internalID: 195218645893226479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_15
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 25
+        width: 67
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b68bdb89873b2a0800000000000000
+      internalID: -6722897221320676590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_16
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 9
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dff7db938c3e89d0800000000000000
+      internalID: -2770210184833269802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (50)_17
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 3
+        width: 1020
+        height: 742
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70464f61b8ae2bf0800000000000000
+      internalID: -347154641231396742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Illustration108 (50)_0: -3640035927018745142
+      Illustration108 (50)_1: -7924189795847893135
+      Illustration108 (50)_10: 8233126986267956799
+      Illustration108 (50)_11: -7368056797037603634
+      Illustration108 (50)_12: 7330796855816563887
+      Illustration108 (50)_13: -1095999743442614674
+      Illustration108 (50)_14: 195218645893226479
+      Illustration108 (50)_15: -6722897221320676590
+      Illustration108 (50)_16: -2770210184833269802
+      Illustration108 (50)_17: -347154641231396742
+      Illustration108 (50)_2: -8119059088354699530
+      Illustration108 (50)_3: 385666116608083549
+      Illustration108 (50)_4: -5388792716573282185
+      Illustration108 (50)_5: -5497507726200242653
+      Illustration108 (50)_6: 6836842941759242578
+      Illustration108 (50)_7: -3828881910085632027
+      Illustration108 (50)_8: -7192120368983443393
+      Illustration108 (50)_9: 2126729733793186524
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
