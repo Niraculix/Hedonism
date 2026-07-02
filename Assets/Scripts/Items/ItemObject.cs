@@ -11,7 +11,12 @@ public class ItemObject : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
 
-        // Assign the sprite from the Item data to the SpriteRenderer
+        // NICHT hier den Sprite zuweisen! Warte bis item gesetzt wird.
+    }
+
+    // Diese Methode wird von ItemRoom aufgerufen NACHDEM item zugewiesen wurde
+    public void InitializeItem()
+    {
         if (item != null && item.sprite != null)
         {
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
@@ -20,16 +25,18 @@ public class ItemObject : MonoBehaviour
                 sr = gameObject.AddComponent<SpriteRenderer>();
             }
 
-            // Convert Texture2D to Sprite
-            sr.sprite = Sprite.Create(
+            Sprite newSprite = Sprite.Create(
                 item.sprite,
                 new Rect(0, 0, item.sprite.width, item.sprite.height),
                 new Vector2(0.5f, 0.5f)
             );
+
+            sr.sprite = newSprite;
+            Debug.Log($"ItemObject: Sprite assigned successfully!");
         }
         else
         {
-            Debug.LogWarning("ItemObject: Item or item.sprite is null!", this);
+            Debug.LogError($"ItemObject: Cannot initialize - item is null: {item == null}, sprite is null: {item?.sprite == null}");
         }
     }
 
