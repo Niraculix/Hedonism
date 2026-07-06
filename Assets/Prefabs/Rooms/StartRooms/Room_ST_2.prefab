@@ -360,7 +360,7 @@ Transform:
   m_GameObject: {fileID: 120507612907162107}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.521945, y: -0.014094591, z: -10}
+  m_LocalPosition: {x: 5.5219445, y: -0.014094114, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2681,8 +2681,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 84323441
-  m_SortingLayer: 0
+  m_SortingLayerID: -1337959375
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7194612940111826760, guid: 0816de53bcf785f4c8a48e56bc859463, type: 3}
@@ -2825,10 +2825,8 @@ MonoBehaviour:
   doors:
   - direction: 2
     isConnected: 0
-    SpawnPoint: {fileID: 0}
   - direction: 3
     isConnected: 0
-    SpawnPoint: {fileID: 0}
   enteredFromOtherRoom: 0
   comingFrom: 0
   doors_open: 0

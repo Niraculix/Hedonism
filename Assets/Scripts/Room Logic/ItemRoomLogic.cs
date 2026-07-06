@@ -17,6 +17,7 @@ public class ItemRoom : MonoBehaviour
 
     void Start()
     {
+        itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
         SpawnItem();
     }
 

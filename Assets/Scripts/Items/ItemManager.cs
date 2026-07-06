@@ -34,6 +34,7 @@ public class ItemManager : MonoBehaviour
 
         foreach(Item item in ItemList)
         {
+            
             foreach(ItemAttribute att in item.attributes)
             {
                 switch (att.type)
