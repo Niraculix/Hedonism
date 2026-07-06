@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 public class PlayerCombat : MonoBehaviour
@@ -15,7 +16,7 @@ public class PlayerCombat : MonoBehaviour
     public int AdrenalinDamage = 2000;
     public int max_hp = 1000;
     private float hp;
-    public float naturalDrainRate = 2f;
+    public float naturalDrainRate = 4f;
 
     public float naturalHealRate = 1f;
     public float baseAttackCooldown = 1f;
@@ -38,8 +39,6 @@ public class PlayerCombat : MonoBehaviour
 
     private bool ActionOnCooldown = false;
 
-
-
     private int iFrames = 0;
 
     private bool dead = false;
@@ -57,6 +56,8 @@ public class PlayerCombat : MonoBehaviour
     private Vector3 AttackPoint = new Vector3();
     private Vector3 ParryPoint = new Vector3();
 
+    private Light2D LightComponent;
+
 
     ItemManager itemManager;
     
@@ -64,6 +65,7 @@ public class PlayerCombat : MonoBehaviour
     {
         itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
         itemManager.UpdateItems();
+        LightComponent = GetComponent<Light2D>();
     }
 
     public void ReloadItems()
@@ -102,6 +104,8 @@ public class PlayerCombat : MonoBehaviour
                     hp = 2;
                 }
             }
+
+            LightComponent.intensity = hp / max_hp * 20f;
         }
 
 

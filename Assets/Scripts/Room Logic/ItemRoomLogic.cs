@@ -15,13 +15,13 @@ public class ItemRoom : MonoBehaviour
     private bool hasWaveStarted = false;
     private GameObject spawnedItemInstance;
 
-    void Start()
+    public void ItemRoomStart()
     {
         itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
         SpawnItem();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (spawnedItemInstance != null && !hasWaveStarted)
         {

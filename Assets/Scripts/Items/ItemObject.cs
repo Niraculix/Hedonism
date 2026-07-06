@@ -6,12 +6,14 @@ public class ItemObject : MonoBehaviour
     GameObject player;
     ItemManager itemManager;
 
+    RoomDefinition roomDef;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
+        roomDef = GameObject.FindGameObjectWithTag("Room").GetComponent<RoomDefinition>();
 
-        // NICHT hier den Sprite zuweisen! Warte bis item gesetzt wird.
     }
 
     // Diese Methode wird von ItemRoom aufgerufen NACHDEM item zugewiesen wurde
@@ -46,6 +48,8 @@ public class ItemObject : MonoBehaviour
         {
             itemManager.ItemList.Add(item);
             itemManager.UpdateItems();
+            StartCoroutine(roomDef.NextEnemyWave());
+            
             Destroy(gameObject);
         }
     }

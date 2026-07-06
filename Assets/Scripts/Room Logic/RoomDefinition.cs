@@ -54,6 +54,20 @@ public class RoomDefinition : MonoBehaviour
             }
         }
 
+        if (ItemRoom)
+        {
+            if (GetComponent<ItemRoom>())
+            {
+                GetComponent<ItemRoom>().ItemRoomStart();
+            }
+
+            else
+            {
+                print("ERROR: Room Declared as ItemRoom, but no ItemRoomLogic-Component found.");
+                return;    
+            }
+        }
+
         if(!ItemRoom && EnemyWaves.Count > 0)
         {
             StartCoroutine(NextEnemyWave());
