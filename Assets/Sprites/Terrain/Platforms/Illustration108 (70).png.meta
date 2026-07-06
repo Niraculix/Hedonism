@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 6af5b03ed42e24f4e99825446b6b7398
+guid: c65753a7d6d846449a2487efae781a5b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2864603158750956568
-    second: Illustration108 (25)_0
-  - first:
-      213: -2035087209743939195
-    second: Illustration108 (25)_1
-  - first:
-      213: 5674161300009315817
-    second: Illustration108 (25)_2
-  - first:
-      213: -9011307312706330098
-    second: Illustration108 (25)_3
-  - first:
-      213: 1427522462402038261
-    second: Illustration108 (25)_4
+      213: -6319229300716992682
+    second: Illustration108 (70)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Illustration108 (25)_0
+      name: Illustration108 (70)_0
       rect:
         serializedVersion: 2
-        x: 227
-        y: 545
-        width: 520
-        height: 361
+        x: 267
+        y: 236
+        width: 1473
+        height: 728
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,96 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 81c00d3456d11c720800000000000000
-      internalID: 2864603158750956568
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Illustration108 (25)_1
-      rect:
-        serializedVersion: 2
-        x: 632
-        y: 123
-        width: 337
-        height: 505
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 589854017fae1c3e0800000000000000
-      internalID: -2035087209743939195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Illustration108 (25)_2
-      rect:
-        serializedVersion: 2
-        x: 1254
-        y: 337
-        width: 246
-        height: 354
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9ede25da3abaebe40800000000000000
-      internalID: 5674161300009315817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Illustration108 (25)_3
-      rect:
-        serializedVersion: 2
-        x: 1483
-        y: 377
-        width: 335
-        height: 437
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e0262483eb761f280800000000000000
-      internalID: -9011307312706330098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Illustration108 (25)_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 79
-        width: 368
-        height: 302
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f94d50cd149fc310800000000000000
-      internalID: 1427522462402038261
+      spriteID: 65706848e669d48a0800000000000000
+      internalID: -6319229300716992682
       vertices: []
       indices: 
       edges: []
@@ -235,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Illustration108 (25)_0: 2864603158750956568
-      Illustration108 (25)_1: -2035087209743939195
-      Illustration108 (25)_2: 5674161300009315817
-      Illustration108 (25)_3: -9011307312706330098
-      Illustration108 (25)_4: 1427522462402038261
+      Illustration108 (70)_0: -6319229300716992682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
