@@ -172,6 +172,15 @@ public class CharacterController : MonoBehaviour
 			JumpsAvailable = 1;
 		}
 
+		if(!m_Grounded)
+		{
+			PlayerMat.friction = 0.1f;
+		}
+		else
+		{
+			PlayerMat.friction = 0.4f;
+		}
+
 	}
 
 

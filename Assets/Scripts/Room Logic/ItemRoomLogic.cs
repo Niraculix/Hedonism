@@ -17,7 +17,6 @@ public class ItemRoom : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("ItemRoom Start() called!");
         SpawnItem();
     }
 
