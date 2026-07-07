@@ -1012,13 +1012,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2878099047295275499}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.10798044, w: 0.9941531}
-  m_LocalPosition: {x: -6.7, y: -5.6, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.070548795, w: -0.99750835}
+  m_LocalPosition: {x: -11.5, y: -6.9, z: 0}
   m_LocalScale: {x: 1.5852, y: 1.8510791, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4994384204112171904}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12.398}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.091}
 --- !u!212 &6367367318144950206
 SpriteRenderer:
   serializedVersion: 2
@@ -4765,6 +4765,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4994384204112171904}
     m_Modifications:
+    - target: {fileID: 1381757018319715790, guid: 2923fffd43116224da8eb93e47cba19a, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1381757018319715790, guid: 2923fffd43116224da8eb93e47cba19a, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[5]'
+      value: -1892696991
+      objectReference: {fileID: 0}
     - target: {fileID: 2376414552589813071, guid: 2923fffd43116224da8eb93e47cba19a, type: 3}
       propertyPath: m_Name
       value: Player
