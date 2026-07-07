@@ -18,6 +18,8 @@ public class RoomLoader : MonoBehaviour
     private float lastTransitionTime = -10f;
     public bool JustTransitioned => Time.time - lastTransitionTime < 0.3f;
 
+    private float hp_carryOver = 0;
+
     private void Awake()
     {
         Instance = this;
@@ -26,6 +28,8 @@ public class RoomLoader : MonoBehaviour
 
     public void LoadRoom(RoomNode node, DoorDirection comingFrom)
     {
+        hp_carryOver = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>().GetHp();
+        
         StartCoroutine(Transition(node, comingFrom));
     }
 
@@ -115,9 +119,26 @@ public class RoomLoader : MonoBehaviour
             trigger.targetNode = isA ? conn.nodeB : conn.nodeA;
         }
 
+        
+
         isTransitioning = false;
         lastTransitionTime = Time.time;
+
+        StartCoroutine(SetHp());
         yield return null;
+    }
+
+    IEnumerator SetHp()
+    {
+        yield return new WaitForFixedUpdate();
+
+        if(hp_carryOver == 0)
+        {
+            hp_carryOver = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>().max_hp;
+        }
+
+        player.GetComponent<PlayerCombat>().hp = hp_carryOver;
+        print("SetHP " + hp_carryOver);
     }
 
 }

@@ -117,7 +117,6 @@ public class PlatformerEnemyAI : MonoBehaviour
 
         if (wallHit.collider != null)
         {
-            Debug.Log("WALL HIT! Flipping...");
             FlipDirection();
         }
 
@@ -127,7 +126,6 @@ public class PlatformerEnemyAI : MonoBehaviour
 
         if (edgeHit.collider == null)
         {
-            Debug.Log("EDGE DETECTED! Flipping...");
             FlipDirection();
         }
 
@@ -142,7 +140,6 @@ public class PlatformerEnemyAI : MonoBehaviour
         moveDirection *= -1;
         transform.localScale = new Vector3(Mathf.Sign(moveDirection), 1, 1); // Flips sprite visually
         lastFlipTime = Time.time;
-        Debug.Log("Direction flipped! New direction: " + moveDirection);
     }
 
     void ChasePlayer()

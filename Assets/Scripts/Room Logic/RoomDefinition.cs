@@ -91,14 +91,11 @@ public class RoomDefinition : MonoBehaviour
         if(player.transform.position.y < KillBoxY)
         {
             ResetPlayerToSpawnPoint();
-            Debug.Log($"KILLBOX TRIGGERED! Player Y: {player.transform.position.y}, KillBoxY: {KillBoxY}, SpawnPointPos: {SpawnPointPos}");
-
         }
     }
 
     public void ResetPlayerToSpawnPoint()
     {
-        Debug.Log($"RESET! Player wird von {player.transform.position} zu {SpawnPointPos} gesetzt");
         player.transform.position = SpawnPointPos;
         PlayerCombat playerCom = player.GetComponent<PlayerCombat>();
         playerCom.takeDamage((int)Mathf.Round(playerCom.max_hp * 0.25f), new Vector2(0,0));
@@ -153,7 +150,7 @@ public class RoomDefinition : MonoBehaviour
         transform.position = Vector2.zero;
 
         if (CamBox == null) return;
-        CamBox.GetComponent<BoxCollider2D>().size = new Vector2(roomSizeInCells.x * 72, roomSizeInCells.y * 40);
+        CamBox.GetComponent<BoxCollider2D>().size = new Vector2(roomSizeInCells.x * 72, roomSizeInCells.y * 41);
     }
 
     void OnDrawGizmosSelected()

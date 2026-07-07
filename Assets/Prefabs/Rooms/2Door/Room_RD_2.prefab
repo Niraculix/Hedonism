@@ -2165,7 +2165,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 72, y: 80}
+  m_Size: {x: 72, y: 82}
   m_EdgeRadius: 0
 --- !u!1 &7146300011465344721
 GameObject:

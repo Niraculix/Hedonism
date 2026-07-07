@@ -15,7 +15,7 @@ public class PlayerCombat : MonoBehaviour
     public int MeleeDamage = 50;
     public int AdrenalinDamage = 2000;
     public int max_hp = 1000;
-    private float hp;
+    [HideInInspector] public float hp;
     public float naturalDrainRate = 4f;
 
     public float naturalHealRate = 1f;
@@ -69,7 +69,6 @@ public class PlayerCombat : MonoBehaviour
         itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
         itemManager.UpdateItems();
         LightComponent = GetComponent<Light2D>();
-        hp = max_hp;
     }
 
     public void ReloadItems()

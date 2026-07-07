@@ -18,6 +18,10 @@ public class ItemManager : MonoBehaviour
     public List<Item> PossibleItems = new List<Item>();
     public List<Item> ItemList = new List<Item>();
     // Update is called once per frame
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     public void UpdateItems()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");

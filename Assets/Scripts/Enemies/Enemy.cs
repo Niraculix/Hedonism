@@ -20,7 +20,6 @@ public class Enemy : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Rigidbody2D>().Sleep();
         LogicEnabled = false;
-        print("disabled Logic");
     }
 
     public void EnableLogic()
@@ -29,7 +28,6 @@ public class Enemy : MonoBehaviour
         GetComponent<BoxCollider2D>().enabled = true;
         GetComponent<Rigidbody2D>().WakeUp();
         LogicEnabled = true;
-        print("enabled Logic");
 
         //STARTUP ANIMATION LOGIC HERE
 

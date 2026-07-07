@@ -1374,7 +1374,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1337959375
-  m_SortingLayer: -2
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7194612940111826760, guid: 0816de53bcf785f4c8a48e56bc859463, type: 3}
@@ -1807,7 +1807,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 72, y: 40}
+  m_Size: {x: 72, y: 41}
   m_EdgeRadius: 0
 --- !u!1 &7181260441291987703
 GameObject:
@@ -1888,7 +1888,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1609458603
-  m_SortingLayer: -1
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1688289351642171003, guid: afd9b55c69aa7034e84ad042a0005cdc, type: 3}
@@ -1993,7 +1993,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1609458603
-  m_SortingLayer: -1
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6563544212903162416, guid: b10f157856c8e3348b13e2e03b799a24, type: 3}
