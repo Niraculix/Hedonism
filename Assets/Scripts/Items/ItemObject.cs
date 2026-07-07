@@ -17,8 +17,9 @@ public class ItemObject : MonoBehaviour
     }
 
     // Diese Methode wird von ItemRoom aufgerufen NACHDEM item zugewiesen wurde
-    public void InitializeItem()
+    public void InitializeItem(Vector2 pos)
     {
+        transform.position = pos;
         if (item != null && item.sprite != null)
         {
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
@@ -49,7 +50,7 @@ public class ItemObject : MonoBehaviour
             itemManager.ItemList.Add(item);
             itemManager.UpdateItems();
             StartCoroutine(roomDef.NextEnemyWave());
-            
+
             Destroy(gameObject);
         }
     }

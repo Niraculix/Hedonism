@@ -47,6 +47,7 @@ public class FlyingEnemy : MonoBehaviour
     void Update()
     {
         if (player == null) return;
+        if (!GetComponent<Enemy>().LogicEnabled) return;
 
         // Always increment the float timer so the bobbing wave is perfectly continuous
         floatTimer += Time.deltaTime;

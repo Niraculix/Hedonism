@@ -17,8 +17,6 @@ public class RoomDefinition : MonoBehaviour
 
     public float KillBoxY = -100;
 
-    public bool ItemRoom = false;
-
     [SerializeField] private GameObject CamBox;
     private GameObject player;
     private CharacterController playerCC;
@@ -54,24 +52,15 @@ public class RoomDefinition : MonoBehaviour
             }
         }
 
-        if (ItemRoom)
+        
+        if (GetComponent<ItemRoom>())
         {
-            if (GetComponent<ItemRoom>())
-            {
-                GetComponent<ItemRoom>().ItemRoomStart();
-            }
-
-            else
-            {
-                print("ERROR: Room Declared as ItemRoom, but no ItemRoomLogic-Component found.");
-                return;    
-            }
+            GetComponent<ItemRoom>().ItemRoomStart();
         }
 
-        if(!ItemRoom && EnemyWaves.Count > 0)
+        else if(EnemyWaves.Count > 0)
         {
             StartCoroutine(NextEnemyWave());
-            print("SpawnNextWave");
         }
 
 
@@ -161,6 +150,7 @@ public class RoomDefinition : MonoBehaviour
 
     void OnValidate()
     {
+        transform.position = Vector2.zero;
 
         if (CamBox == null) return;
         CamBox.GetComponent<BoxCollider2D>().size = new Vector2(roomSizeInCells.x * 72, roomSizeInCells.y * 40);

@@ -5,9 +5,9 @@ using System.Collections.Generic;
 public class ItemRoom : MonoBehaviour
 {
     [Header("Item Spawning")]
-    public ItemManager itemManager;
+    ItemManager itemManager;
     public GameObject itemObjectPrefab;
-    public Transform itemSpawnPoint;
+    public Vector2 itemSpawnPoint = Vector2.zero;
 
     [Header("Wave Trigger")]
     public UnityEvent onItemPickedUp;
@@ -35,11 +35,8 @@ public class ItemRoom : MonoBehaviour
 
     private void SpawnItem()
     {
-        if (itemManager == null)
-        {
-            Debug.LogError("ItemRoom: ItemManager reference is NULL! Assign it in the Inspector.", this);
-            return;
-        }
+        if (itemManager == null) return;
+        
 
         if (itemManager.PossibleItems.Count == 0)
         {
@@ -63,26 +60,25 @@ public class ItemRoom : MonoBehaviour
         Item chosenItem = itemManager.PossibleItems[randomIndex];
 
         Debug.Log($"ItemRoom: Spawning item: {chosenItem.item_name}");
-        Debug.Log($"ItemRoom: Item sprite is null? {chosenItem.sprite == null}");
-        Debug.Log($"ItemRoom: Spawn position: {itemSpawnPoint.position}");
 
-        spawnedItemInstance = Instantiate(itemObjectPrefab, itemSpawnPoint.position, Quaternion.identity);
 
-        Debug.Log($"ItemRoom: Instantiate successful! Object name: {spawnedItemInstance.name}");
+        spawnedItemInstance = Instantiate(itemObjectPrefab);
 
-        spawnedItemInstance = Instantiate(itemObjectPrefab, itemSpawnPoint.position, Quaternion.identity);
-        Debug.Log($"Spawned object parent: {spawnedItemInstance.transform.parent?.name ?? "NO PARENT"}");
+
 
         ItemObject itemObj = spawnedItemInstance.GetComponent<ItemObject>();
         if (itemObj != null)
         {
             itemObj.item = chosenItem;
-            itemObj.InitializeItem();
+            itemObj.InitializeItem(itemSpawnPoint);
             Debug.Log("ItemRoom: Item data assigned to ItemObject.");
         }
-        else
-        {
-            Debug.LogError("ItemRoom: Spawned object has NO ItemObject script!", this);
-        }
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.aquamarine;
+
+        Gizmos.DrawSphere(itemSpawnPoint,0.4f);
     }
 }

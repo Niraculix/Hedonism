@@ -27222,7 +27222,7 @@ Transform:
   m_GameObject: {fileID: 8133202235992323011}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.99899, y: 3.09358, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27249,7 +27249,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomDefinition
   Enemies: 3
   roomSizeInCells: {x: 2, y: 1}
+  EnemyWaves: []
   distanceFromStart: 0
+  KillBoxY: -100
   CamBox: {fileID: 7077014435082509964}
   room_cleared: 0
   doors:
