@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 324b820dac3194841bd690ac074d3c20
+guid: 4d5c6009d64b668459288c30a5bd24cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6430090850570751905
-    second: Illustration108 (38)_0
+      213: 4227220213082893505
+    second: Illustration108 (72)_0
   - first:
-      213: -7089000340579758316
-    second: Illustration108 (38)_1
+      213: 6633735921651426895
+    second: Illustration108 (72)_1
+  - first:
+      213: -6362934025508611041
+    second: Illustration108 (72)_2
+  - first:
+      213: 9218817055591865335
+    second: Illustration108 (72)_3
+  - first:
+      213: 5668501482522659621
+    second: Illustration108 (72)_4
+  - first:
+      213: 3437695029743248842
+    second: Illustration108 (72)_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Illustration108 (38)_0
+      name: Illustration108 (72)_0
       rect:
         serializedVersion: 2
-        x: 493
-        y: 188
-        width: 790
-        height: 649
+        x: 4
+        y: 527
+        width: 752
+        height: 533
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f50bd32807ab3c6a0800000000000000
-      internalID: -6430090850570751905
+      spriteID: 1cc2824136a1aaa30800000000000000
+      internalID: 4227220213082893505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Illustration108 (38)_1
+      name: Illustration108 (72)_1
       rect:
         serializedVersion: 2
-        x: 1285
-        y: 680
-        width: 13
-        height: 18
+        x: 721
+        y: 57
+        width: 573
+        height: 530
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +152,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41fce17dfbfce9d90800000000000000
-      internalID: -7089000340579758316
+      spriteID: f4628c77ca3cf0c50800000000000000
+      internalID: 6633735921651426895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (72)_2
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 575
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c1050573152b7a0800000000000000
+      internalID: -6362934025508611041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (72)_3
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 583
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb9dd7c441dfef70800000000000000
+      internalID: 9218817055591865335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (72)_4
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 581
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52bc98ab0109aae40800000000000000
+      internalID: 5668501482522659621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (72)_5
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 379
+        width: 617
+        height: 679
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5e8f57a6525bf20800000000000000
+      internalID: 3437695029743248842
       vertices: []
       indices: 
       edges: []
@@ -160,8 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Illustration108 (38)_0: -6430090850570751905
-      Illustration108 (38)_1: -7089000340579758316
+      Illustration108 (72)_0: 4227220213082893505
+      Illustration108 (72)_1: 6633735921651426895
+      Illustration108 (72)_2: -6362934025508611041
+      Illustration108 (72)_3: 9218817055591865335
+      Illustration108 (72)_4: 5668501482522659621
+      Illustration108 (72)_5: 3437695029743248842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
