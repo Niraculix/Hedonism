@@ -77,7 +77,6 @@ public class LightSphere : MonoBehaviour
     {
         floating = true;
         rb.gravityScale *= -1;
-        print("change grav");
         yield return new WaitForSeconds(floating_height);
 
         if(grounded == true)

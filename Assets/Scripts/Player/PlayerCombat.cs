@@ -43,6 +43,8 @@ public class PlayerCombat : MonoBehaviour
 
     private bool dead = false;
 
+    private bool draining = false;
+
     [Header("Actions")]
     [SerializeField] private InputActionReference MoveAction;
     [SerializeField] private InputActionReference LShoulderAction;
@@ -57,6 +59,7 @@ public class PlayerCombat : MonoBehaviour
     private Vector3 ParryPoint = new Vector3();
 
     private Light2D LightComponent;
+    private string gameOverSceneName = "GameOverScene";
 
 
     ItemManager itemManager;
@@ -66,11 +69,20 @@ public class PlayerCombat : MonoBehaviour
         itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
         itemManager.UpdateItems();
         LightComponent = GetComponent<Light2D>();
+        hp = max_hp;
     }
 
     public void ReloadItems()
     {
-        hp = itemManager.max_hp;
+        if(itemManager.max_hp > max_hp)
+        {
+            hp += itemManager.max_hp - max_hp;
+        }
+        else if(hp > itemManager.max_hp)
+        {
+            hp = itemManager.max_hp;
+        }
+        max_hp = itemManager.max_hp;
     }
 
     void FixedUpdate()
@@ -84,24 +96,18 @@ public class PlayerCombat : MonoBehaviour
         {
             if (!light_dropped)
             {
-                if(hp + itemManager.HealRate * Time.fixedDeltaTime < itemManager.max_hp)
+                if (draining)
                 {
-                    hp += itemManager.HealRate * Time.fixedDeltaTime;
-                }
-                else
-                {
-                    hp = itemManager.max_hp;
+                    draining = false;
+                    StartCoroutine(Heal());
                 }
             }
             else
             {
-                if(hp - itemManager.DrainRate * Time.fixedDeltaTime > 2)
+                if (!draining)
                 {
-                    hp -= itemManager.DrainRate * Time.fixedDeltaTime;
-                }
-                else
-                {
-                    hp = 2;
+                    draining = true;
+                    StartCoroutine(Drain());
                 }
             }
 
@@ -290,7 +296,6 @@ public class PlayerCombat : MonoBehaviour
         light_dropped = false;
     }
 
-    public string gameOverSceneName = "GameOverScene";
 
     public void Die()
     {
@@ -307,6 +312,51 @@ public class PlayerCombat : MonoBehaviour
 
     }
 
+    IEnumerator Drain()
+    {
+
+        if(draining)
+        {
+            float drainDmg = (float)max_hp / 100 * itemManager.DrainRate;
+            if(hp - drainDmg > 2)
+            {
+                
+                hp -= drainDmg / 3;
+            }
+            else
+            {
+                hp = 2;
+            }
+
+        }
+        yield return new WaitForSeconds(0.33f);
+
+        if(draining) StartCoroutine(Drain());
+    }
+
+    IEnumerator Heal()
+    {
+
+        if(!draining)
+        {
+            float healAmount = (float)max_hp / 100 * itemManager.HealRate;
+            if(hp + healAmount < itemManager.max_hp)
+            {
+                
+                hp += healAmount / 3;
+            }
+            else
+            {
+                hp = itemManager.max_hp;
+            }
+
+        }
+        yield return new WaitForSeconds(0.33f);
+
+        if(!draining) StartCoroutine(Heal());
+    }
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
 		if (collision.GetComponent<Enemy>())
@@ -320,7 +370,6 @@ public class PlayerCombat : MonoBehaviour
             else if(controller.dashing)
             {
                 collision.GetComponent<Enemy>().takeDamage(itemManager.MeleeDamage);
-                print("dash dmg hit");
             }
                 
 		}
