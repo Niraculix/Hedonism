@@ -1,0 +1,4459 @@
+fileFormatVersion: 2
+guid: 781183ae85c921b4f918ed7bd3e5e921
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 133714777407447904
+    second: Illustration108 (93)_0
+  - first:
+      213: 2675393393035436245
+    second: Illustration108 (93)_1
+  - first:
+      213: -5302915956766477039
+    second: Illustration108 (93)_2
+  - first:
+      213: -1511303054081917564
+    second: Illustration108 (93)_3
+  - first:
+      213: -5500806557519996866
+    second: Illustration108 (93)_4
+  - first:
+      213: 1917047225700023015
+    second: Illustration108 (93)_5
+  - first:
+      213: 4468979887673967102
+    second: Illustration108 (93)_6
+  - first:
+      213: -3837296012253992427
+    second: Illustration108 (93)_7
+  - first:
+      213: -2703426128625153
+    second: Illustration108 (93)_8
+  - first:
+      213: 6687481937448678549
+    second: Illustration108 (93)_9
+  - first:
+      213: 8515254310551060420
+    second: Illustration108 (93)_10
+  - first:
+      213: -507328189417577204
+    second: Illustration108 (93)_11
+  - first:
+      213: 5628438687777842606
+    second: Illustration108 (93)_12
+  - first:
+      213: -8691494598922207123
+    second: Illustration108 (93)_13
+  - first:
+      213: -8897730256707621712
+    second: Illustration108 (93)_14
+  - first:
+      213: -6364503617314068749
+    second: Illustration108 (93)_15
+  - first:
+      213: -4987691712753145268
+    second: Illustration108 (93)_16
+  - first:
+      213: 2492119189743669276
+    second: Illustration108 (93)_17
+  - first:
+      213: 1883911578784287530
+    second: Illustration108 (93)_18
+  - first:
+      213: 2231143801007409296
+    second: Illustration108 (93)_19
+  - first:
+      213: -7729402353645620619
+    second: Illustration108 (93)_20
+  - first:
+      213: -8761763905865041355
+    second: Illustration108 (93)_21
+  - first:
+      213: 9166912448416863438
+    second: Illustration108 (93)_22
+  - first:
+      213: -8839019521346383225
+    second: Illustration108 (93)_23
+  - first:
+      213: -5973835140429358094
+    second: Illustration108 (93)_24
+  - first:
+      213: -5130619084588110729
+    second: Illustration108 (93)_25
+  - first:
+      213: 8886968568479693045
+    second: Illustration108 (93)_26
+  - first:
+      213: -3767178215544338973
+    second: Illustration108 (93)_27
+  - first:
+      213: 5693863494999166570
+    second: Illustration108 (93)_28
+  - first:
+      213: 4302680177557816781
+    second: Illustration108 (93)_29
+  - first:
+      213: 8229423299055447260
+    second: Illustration108 (93)_30
+  - first:
+      213: 2496865341833268265
+    second: Illustration108 (93)_31
+  - first:
+      213: -3807650260514618466
+    second: Illustration108 (93)_32
+  - first:
+      213: -4281680307668199428
+    second: Illustration108 (93)_33
+  - first:
+      213: 5969290823131796509
+    second: Illustration108 (93)_34
+  - first:
+      213: 8232610842732531352
+    second: Illustration108 (93)_35
+  - first:
+      213: 6816817258676357449
+    second: Illustration108 (93)_36
+  - first:
+      213: 5908864664385737087
+    second: Illustration108 (93)_37
+  - first:
+      213: 4274283500878646750
+    second: Illustration108 (93)_38
+  - first:
+      213: 916936549900735695
+    second: Illustration108 (93)_39
+  - first:
+      213: 2845797844269328393
+    second: Illustration108 (93)_40
+  - first:
+      213: 4205407182195830895
+    second: Illustration108 (93)_41
+  - first:
+      213: -705333219814457232
+    second: Illustration108 (93)_42
+  - first:
+      213: 5878220896092005824
+    second: Illustration108 (93)_43
+  - first:
+      213: 2711408467368385493
+    second: Illustration108 (93)_44
+  - first:
+      213: -424862185799713271
+    second: Illustration108 (93)_45
+  - first:
+      213: 3689370454540803491
+    second: Illustration108 (93)_46
+  - first:
+      213: -2743658445256838260
+    second: Illustration108 (93)_47
+  - first:
+      213: -3024876258888634809
+    second: Illustration108 (93)_48
+  - first:
+      213: 3591970741898719818
+    second: Illustration108 (93)_49
+  - first:
+      213: -7169303239394155842
+    second: Illustration108 (93)_50
+  - first:
+      213: 5556547911701786439
+    second: Illustration108 (93)_51
+  - first:
+      213: -8429472525262801112
+    second: Illustration108 (93)_52
+  - first:
+      213: -7353141375555884224
+    second: Illustration108 (93)_53
+  - first:
+      213: -1160294023671397907
+    second: Illustration108 (93)_54
+  - first:
+      213: -6359839423400304395
+    second: Illustration108 (93)_55
+  - first:
+      213: -5216441840345848098
+    second: Illustration108 (93)_56
+  - first:
+      213: 5069413833207276447
+    second: Illustration108 (93)_57
+  - first:
+      213: 171650360384254167
+    second: Illustration108 (93)_58
+  - first:
+      213: -5451560692530450485
+    second: Illustration108 (93)_59
+  - first:
+      213: -2400816124717289537
+    second: Illustration108 (93)_60
+  - first:
+      213: -5125623421058392535
+    second: Illustration108 (93)_61
+  - first:
+      213: -1037620129383535052
+    second: Illustration108 (93)_62
+  - first:
+      213: 2429211900388580777
+    second: Illustration108 (93)_63
+  - first:
+      213: 7877338573860236917
+    second: Illustration108 (93)_64
+  - first:
+      213: -7537519972159045
+    second: Illustration108 (93)_65
+  - first:
+      213: 1667609044629940785
+    second: Illustration108 (93)_66
+  - first:
+      213: -4885340071821400081
+    second: Illustration108 (93)_67
+  - first:
+      213: -7991497566423432193
+    second: Illustration108 (93)_68
+  - first:
+      213: -8807697337229777121
+    second: Illustration108 (93)_69
+  - first:
+      213: -2575473096162657143
+    second: Illustration108 (93)_70
+  - first:
+      213: 3094173594813327379
+    second: Illustration108 (93)_71
+  - first:
+      213: -3817130134969461668
+    second: Illustration108 (93)_72
+  - first:
+      213: -3413526073036320375
+    second: Illustration108 (93)_73
+  - first:
+      213: 165255581048608021
+    second: Illustration108 (93)_74
+  - first:
+      213: -7793346776467619886
+    second: Illustration108 (93)_75
+  - first:
+      213: -7746219298053182351
+    second: Illustration108 (93)_76
+  - first:
+      213: 560619645066223969
+    second: Illustration108 (93)_77
+  - first:
+      213: 1965148604813090368
+    second: Illustration108 (93)_78
+  - first:
+      213: 1309906493237028847
+    second: Illustration108 (93)_79
+  - first:
+      213: -4841914702899140762
+    second: Illustration108 (93)_80
+  - first:
+      213: -3742144215006582443
+    second: Illustration108 (93)_81
+  - first:
+      213: 9177894233956418003
+    second: Illustration108 (93)_82
+  - first:
+      213: -3621508210538132402
+    second: Illustration108 (93)_83
+  - first:
+      213: -6800110759109827078
+    second: Illustration108 (93)_84
+  - first:
+      213: -445033209806832528
+    second: Illustration108 (93)_85
+  - first:
+      213: -2955632468599413234
+    second: Illustration108 (93)_86
+  - first:
+      213: 6284243684308243119
+    second: Illustration108 (93)_87
+  - first:
+      213: 5020124516093976533
+    second: Illustration108 (93)_88
+  - first:
+      213: -5397389313999262471
+    second: Illustration108 (93)_89
+  - first:
+      213: -5179183370388365084
+    second: Illustration108 (93)_90
+  - first:
+      213: -1834323926574320074
+    second: Illustration108 (93)_91
+  - first:
+      213: -4376332055586138333
+    second: Illustration108 (93)_92
+  - first:
+      213: -5201084517048154727
+    second: Illustration108 (93)_93
+  - first:
+      213: 8225988931845747893
+    second: Illustration108 (93)_94
+  - first:
+      213: -3877226885112934286
+    second: Illustration108 (93)_95
+  - first:
+      213: -1263693461828091562
+    second: Illustration108 (93)_96
+  - first:
+      213: 4619066418581425490
+    second: Illustration108 (93)_97
+  - first:
+      213: 6038597637154366115
+    second: Illustration108 (93)_98
+  - first:
+      213: 1571298835015773033
+    second: Illustration108 (93)_99
+  - first:
+      213: 964294069329936202
+    second: Illustration108 (93)_100
+  - first:
+      213: -7729719241689748411
+    second: Illustration108 (93)_101
+  - first:
+      213: -5224618474442610022
+    second: Illustration108 (93)_102
+  - first:
+      213: -5359449501521835616
+    second: Illustration108 (93)_103
+  - first:
+      213: 3135925259917808460
+    second: Illustration108 (93)_104
+  - first:
+      213: -3322189460105821937
+    second: Illustration108 (93)_105
+  - first:
+      213: 3047922724035925184
+    second: Illustration108 (93)_106
+  - first:
+      213: 2119805985301233291
+    second: Illustration108 (93)_107
+  - first:
+      213: -83947204701173448
+    second: Illustration108 (93)_108
+  - first:
+      213: -4182813229645006120
+    second: Illustration108 (93)_109
+  - first:
+      213: 5570353806441147699
+    second: Illustration108 (93)_110
+  - first:
+      213: 9201784008638966285
+    second: Illustration108 (93)_111
+  - first:
+      213: 6044592829190780766
+    second: Illustration108 (93)_112
+  - first:
+      213: -8288099254867120639
+    second: Illustration108 (93)_113
+  - first:
+      213: -9083027091693316407
+    second: Illustration108 (93)_114
+  - first:
+      213: 5921619557179952919
+    second: Illustration108 (93)_115
+  - first:
+      213: 5709132495321142378
+    second: Illustration108 (93)_116
+  - first:
+      213: 4262295634807629761
+    second: Illustration108 (93)_117
+  - first:
+      213: 2691630689141363790
+    second: Illustration108 (93)_118
+  - first:
+      213: 5337232731486283010
+    second: Illustration108 (93)_119
+  - first:
+      213: -6043816074364802444
+    second: Illustration108 (93)_120
+  - first:
+      213: -310785511193493583
+    second: Illustration108 (93)_121
+  - first:
+      213: 8085064071508369705
+    second: Illustration108 (93)_122
+  - first:
+      213: -833348197360404091
+    second: Illustration108 (93)_123
+  - first:
+      213: -690942606643031193
+    second: Illustration108 (93)_124
+  - first:
+      213: 8710332036335562020
+    second: Illustration108 (93)_125
+  - first:
+      213: 8652590378448597644
+    second: Illustration108 (93)_126
+  - first:
+      213: -7895438638259325291
+    second: Illustration108 (93)_127
+  - first:
+      213: 8490087294232125862
+    second: Illustration108 (93)_128
+  - first:
+      213: 1258169496271001599
+    second: Illustration108 (93)_129
+  - first:
+      213: 4809382178562945806
+    second: Illustration108 (93)_130
+  - first:
+      213: 8562608457735129479
+    second: Illustration108 (93)_131
+  - first:
+      213: -360519422143512672
+    second: Illustration108 (93)_132
+  - first:
+      213: -522806767077633699
+    second: Illustration108 (93)_133
+  - first:
+      213: -3483643550314790299
+    second: Illustration108 (93)_134
+  - first:
+      213: -4459139487503527307
+    second: Illustration108 (93)_135
+  - first:
+      213: -4367230235585469832
+    second: Illustration108 (93)_136
+  - first:
+      213: -2870945806445572530
+    second: Illustration108 (93)_137
+  - first:
+      213: 8771629630666669546
+    second: Illustration108 (93)_138
+  - first:
+      213: 5998576257098541617
+    second: Illustration108 (93)_139
+  - first:
+      213: -9062740099433345428
+    second: Illustration108 (93)_140
+  - first:
+      213: 1028364703668049096
+    second: Illustration108 (93)_141
+  - first:
+      213: -7228306885858894445
+    second: Illustration108 (93)_142
+  - first:
+      213: -8054344566285959603
+    second: Illustration108 (93)_143
+  - first:
+      213: 6567098905762819891
+    second: Illustration108 (93)_144
+  - first:
+      213: -6357522849527005249
+    second: Illustration108 (93)_145
+  - first:
+      213: 7410411424857557322
+    second: Illustration108 (93)_146
+  - first:
+      213: -8115603109843032540
+    second: Illustration108 (93)_147
+  - first:
+      213: 6891095768317061862
+    second: Illustration108 (93)_148
+  - first:
+      213: 6261502085915736631
+    second: Illustration108 (93)_149
+  - first:
+      213: 2042362260525654007
+    second: Illustration108 (93)_150
+  - first:
+      213: 9011980920847875418
+    second: Illustration108 (93)_151
+  - first:
+      213: 3981968223632455197
+    second: Illustration108 (93)_152
+  - first:
+      213: 2253026904717711421
+    second: Illustration108 (93)_153
+  - first:
+      213: 7690084159974038287
+    second: Illustration108 (93)_154
+  - first:
+      213: -2512528481218033025
+    second: Illustration108 (93)_155
+  - first:
+      213: 2542024631990995607
+    second: Illustration108 (93)_156
+  - first:
+      213: 8137658625683420852
+    second: Illustration108 (93)_157
+  - first:
+      213: 2273352684838662007
+    second: Illustration108 (93)_158
+  - first:
+      213: 1459985812511457940
+    second: Illustration108 (93)_159
+  - first:
+      213: 4094269294151976216
+    second: Illustration108 (93)_160
+  - first:
+      213: -3012224803947453767
+    second: Illustration108 (93)_161
+  - first:
+      213: -770692950103129626
+    second: Illustration108 (93)_162
+  - first:
+      213: 3802175832697733615
+    second: Illustration108 (93)_163
+  - first:
+      213: 33702435039668479
+    second: Illustration108 (93)_164
+  - first:
+      213: -2580146988163161803
+    second: Illustration108 (93)_165
+  - first:
+      213: -5881661589108357117
+    second: Illustration108 (93)_166
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Illustration108 (93)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 854
+        width: 1920
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0636790b1ec0bd100800000000000000
+      internalID: 133714777407447904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_1
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 847
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0ed4abd18e02520800000000000000
+      internalID: 2675393393035436245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_2
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 817
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115fe2b88024866b0800000000000000
+      internalID: -5302915956766477039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_3
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 174
+        width: 840
+        height: 661
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48dfb7921e5c60be0800000000000000
+      internalID: -1511303054081917564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_4
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 829
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3891e8949539a3b0800000000000000
+      internalID: -5500806557519996866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_5
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 597
+        width: 57
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea7f797b48ba9a10800000000000000
+      internalID: 1917047225700023015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_6
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 666
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef10c29b781050e30800000000000000
+      internalID: 4468979887673967102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_7
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 643
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ae3939b9f2fbac0800000000000000
+      internalID: -3837296012253992427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_8
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 671
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff14ded8f3566fff0800000000000000
+      internalID: -2703426128625153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_9
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 654
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594387be365becc50800000000000000
+      internalID: 6687481937448678549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 679
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf72800ea24c2670800000000000000
+      internalID: 8515254310551060420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_11
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 656
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05293d13bb95f8f0800000000000000
+      internalID: -507328189417577204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_12
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 661
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea560117a2b3c1e40800000000000000
+      internalID: 5628438687777842606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_13
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 613
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60040836bb916780800000000000000
+      internalID: -8691494598922207123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_14
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 644
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc62b54979e48480800000000000000
+      internalID: -8897730256707621712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_15
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 640
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f66e4e3eadbca7a0800000000000000
+      internalID: -6364503617314068749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_16
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 640
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a603c20d828cab0800000000000000
+      internalID: -4987691712753145268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_17
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 613
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c101b920339c59220800000000000000
+      internalID: 2492119189743669276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_18
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 623
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2bcea9799ff42a10800000000000000
+      internalID: 1883911578784287530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_19
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 628
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0988cd5477d96fe10800000000000000
+      internalID: 2231143801007409296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_20
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 631
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57272e0f285abb490800000000000000
+      internalID: -7729402353645620619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_21
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 622
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a33114626f76680800000000000000
+      internalID: -8761763905865041355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_22
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 619
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec45efead4a673f70800000000000000
+      internalID: 9166912448416863438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_23
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 602
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782d763939e755580800000000000000
+      internalID: -8839019521346383225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_24
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 603
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb56fb279ca81da0800000000000000
+      internalID: -5973835140429358094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_25
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 609
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c294130216cc8b0800000000000000
+      internalID: -5130619084588110729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_26
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 599
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f83b4ee3dad45b70800000000000000
+      internalID: 8886968568479693045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_27
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 584
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5c3e05f5b48bbc0800000000000000
+      internalID: -3767178215544338973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_28
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 594
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e4dfa6eaaa40f40800000000000000
+      internalID: 5693863494999166570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_29
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 581
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5c27d23d036bb30800000000000000
+      internalID: 4302680177557816781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_30
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 581
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdce58e93e8c43270800000000000000
+      internalID: 8229423299055447260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_31
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 583
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cc4f7acc5a6a220800000000000000
+      internalID: 2496865341833268265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_32
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 237
+        width: 240
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e934a190342882bc0800000000000000
+      internalID: -3807650260514618466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_33
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 568
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7d6ab027a6494c0800000000000000
+      internalID: -4281680307668199428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_34
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 559
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1415c1806e27d250800000000000000
+      internalID: 5969290823131796509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_35
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 237
+        width: 151
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e0a1771fb104270800000000000000
+      internalID: 8232610842732531352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_36
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 472
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94908220e233a9e50800000000000000
+      internalID: 6816817258676357449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_37
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 454
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71d1921b11800250800000000000000
+      internalID: 5908864664385737087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_38
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 456
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd4f2ba23e415b30800000000000000
+      internalID: 4274283500878646750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_39
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 451
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4d76a1fec99bc00800000000000000
+      internalID: 916936549900735695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_40
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 459
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908ee3acf0e4e7720800000000000000
+      internalID: 2845797844269328393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_41
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 439
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60b8ae0d8b9c5a30800000000000000
+      internalID: 4205407182195830895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_42
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 409
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0704da07c272636f0800000000000000
+      internalID: -705333219814457232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_43
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 439
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5a7d6c2c2a39150800000000000000
+      internalID: 5878220896092005824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_44
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 436
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db9a7aa2abd0a520800000000000000
+      internalID: 2711408467368385493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_45
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 422
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e79e0d7169a1af0800000000000000
+      internalID: -424862185799713271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_46
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 402
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3add9bb91e6433330800000000000000
+      internalID: 3689370454540803491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_47
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 412
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8337793e219ce9d0800000000000000
+      internalID: -2743658445256838260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_48
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 384
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e2e6ba11b7506d0800000000000000
+      internalID: -3024876258888634809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_49
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 381
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a423872db5e39d130800000000000000
+      internalID: 3591970741898719818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_50
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 392
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2aad830b4818c90800000000000000
+      internalID: -7169303239394155842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_51
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 367
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f6c66c2e2dc1d40800000000000000
+      internalID: 5556547911701786439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_52
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 361
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827bbc7466f740b80800000000000000
+      internalID: -8429472525262801112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_53
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 364
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ba3c6a0e464f990800000000000000
+      internalID: -7353141375555884224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_54
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 248
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1ce04abbec5efe0800000000000000
+      internalID: -1160294023671397907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_55
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 244
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f023b38dbf4db7a0800000000000000
+      internalID: -6359839423400304395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_56
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 227
+        width: 49
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed663bab8c97b97b0800000000000000
+      internalID: -5216441840345848098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_57
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 250
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9365cbb50d2a5640800000000000000
+      internalID: 5069413833207276447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_58
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 350
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d07544e713d16200800000000000000
+      internalID: 171650360384254167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_59
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 318
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf6d3a0f6a2854b0800000000000000
+      internalID: -5451560692530450485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_60
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 327
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf223364769eaed0800000000000000
+      internalID: -2400816124717289537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_61
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 357
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e546fb7a02ed8b0800000000000000
+      internalID: -5125623421058392535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_62
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 321
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43eac486df1a991f0800000000000000
+      internalID: -1037620129383535052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_63
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 324
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad10d65a5b46b120800000000000000
+      internalID: 2429211900388580777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_64
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 306
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57eeb6e62bde15d60800000000000000
+      internalID: 7877338573860236917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_65
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 293
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1729f5aa835eff0800000000000000
+      internalID: -7537519972159045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_66
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 311
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a65693799842710800000000000000
+      internalID: 1667609044629940785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_67
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 289
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7aa1c9619c33cb0800000000000000
+      internalID: -4885340071821400081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_68
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 275
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3cee9dd4f781190800000000000000
+      internalID: -7991497566423432193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_69
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 325
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17e34ddfe5c4c580800000000000000
+      internalID: -8807697337229777121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_70
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 314
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c36ae4dd4124cd0800000000000000
+      internalID: -2575473096162657143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_71
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 262
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318ed38ad76b0fa20800000000000000
+      internalID: 3094173594813327379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_72
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 282
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54d4b3cd54d60bc0800000000000000
+      internalID: -3817130134969461668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_73
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 308
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981d2294f18b0a0d0800000000000000
+      internalID: -3413526073036320375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_74
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 289
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5159d8d431b1b4200800000000000000
+      internalID: 165255581048608021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_75
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 277
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df3631d56878d390800000000000000
+      internalID: -7793346776467619886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_76
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 224
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ca343f696ef7490800000000000000
+      internalID: -7746219298053182351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_77
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 256
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161274ec898b7c700800000000000000
+      internalID: 560619645066223969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_78
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 303
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e1db88e3c954b10800000000000000
+      internalID: 1965148604813090368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_79
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 289
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7ee52f309bd2210800000000000000
+      internalID: 1309906493237028847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_80
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 300
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667a4f43b301eccb0800000000000000
+      internalID: -4841914702899140762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_81
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 260
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559ef36c9ab311cc0800000000000000
+      internalID: -3742144215006582443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_82
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 320
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d10411ed2e6e5f70800000000000000
+      internalID: 9177894233956418003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_83
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 272
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4cc6b75871ddbdc0800000000000000
+      internalID: -3621508210538132402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_84
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 255
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af562f90b4721a1a0800000000000000
+      internalID: -6800110759109827078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_85
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 254
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c363057ace2d9f0800000000000000
+      internalID: -445033209806832528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_86
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 241
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06658eedeb7bf6d0800000000000000
+      internalID: -2955632468599413234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_87
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 270
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa25f25e55e163750800000000000000
+      internalID: 6284243684308243119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_88
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 252
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfd20e46a01ba540800000000000000
+      internalID: 5020124516093976533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_89
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 257
+        width: 130
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fca598f30f9815b0800000000000000
+      internalID: -5397389313999262471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_90
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 238
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e024654a28df18b0800000000000000
+      internalID: -5179183370388365084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_91
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 262
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636b9818b1c2b86e0800000000000000
+      internalID: -1834323926574320074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_92
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 255
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32712a7ae252443c0800000000000000
+      internalID: -4376332055586138333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_93
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 251
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9958f82303902d7b0800000000000000
+      internalID: -5201084517048154727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_94
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 268
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b4f5f0b955982270800000000000000
+      internalID: 8225988931845747893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_95
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 259
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270df3fb0b2513ac0800000000000000
+      internalID: -3877226885112934286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_96
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 253
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651c0c6ed75767ee0800000000000000
+      internalID: -1263693461828091562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_97
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 254
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d4b715f683a1040800000000000000
+      internalID: 4619066418581425490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_98
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 254
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a26910ae886dc350800000000000000
+      internalID: 6038597637154366115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_99
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 262
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ba91127ff5ec510800000000000000
+      internalID: 1571298835015773033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_100
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 337
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f3d65d85cd16d00800000000000000
+      internalID: 964294069329936202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_101
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 279
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ca491bd458ab490800000000000000
+      internalID: -7729719241689748411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_102
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 260
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9aa7efbd2d6e77b0800000000000000
+      internalID: -5224618474442610022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_103
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 256
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9852ee2196f95b0800000000000000
+      internalID: -5359449501521835616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_104
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 312
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c435397b86b058b20800000000000000
+      internalID: 3135925259917808460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_105
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 229
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0188d9a94635e1d0800000000000000
+      internalID: -3322189460105821937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_106
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 244
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c49005a1956c4a20800000000000000
+      internalID: 3047922724035925184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_107
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 237
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e70aaff401b6d10800000000000000
+      internalID: 2119805985301233291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_108
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 243
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83946eb4672c5def0800000000000000
+      internalID: -83947204701173448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_109
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 244
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da74357789a3f5c0800000000000000
+      internalID: -4182813229645006120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_110
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 237
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d6b22264fdd4d40800000000000000
+      internalID: 5570353806441147699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_111
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 247
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0aabce7dcd43bf70800000000000000
+      internalID: 9201784008638966285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_112
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 244
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e573acb0725b2e350800000000000000
+      internalID: 6044592829190780766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_113
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 237
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e2772d3a1cafc80800000000000000
+      internalID: -8288099254867120639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_114
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 239
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6de5aebfa92f180800000000000000
+      internalID: -9083027091693316407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_115
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 244
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f87b8fc91dd2250800000000000000
+      internalID: 5921619557179952919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_116
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 240
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64914791c9ea3f40800000000000000
+      internalID: 5709132495321142378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_117
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 234
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c728681c47b62b30800000000000000
+      internalID: 4262295634807629761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_118
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 245
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e449fc4d9d79a5520800000000000000
+      internalID: 2691630689141363790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_119
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 244
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205e3d334e8a11a40800000000000000
+      internalID: 5337232731486283010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_120
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 235
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47aa0b74d4d002ca0800000000000000
+      internalID: -6043816074364802444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_121
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 238
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf39f3693edfabf0800000000000000
+      internalID: -310785511193493583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921a780cfeae33070800000000000000
+      internalID: 8085064071508369705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_123
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 205
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589fe12da3a5f64f0800000000000000
+      internalID: -833348197360404091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_124
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 229
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7631cda2c574966f0800000000000000
+      internalID: -690942606643031193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_125
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 233
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d6c7576d051e870800000000000000
+      internalID: 8710332036335562020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_126
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 230
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8234661b1d241870800000000000000
+      internalID: 8652590378448597644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_127
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 228
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596b8ace364cd6290800000000000000
+      internalID: -7895438638259325291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_128
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 226
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a163c46969d2d570800000000000000
+      internalID: 8490087294232125862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_129
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 228
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff71774ad7ae57110800000000000000
+      internalID: 1258169496271001599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_130
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 227
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03b6563c9b5eb240800000000000000
+      internalID: 4809382178562945806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_131
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 226
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789ce02960f74d670800000000000000
+      internalID: 8562608457735129479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_132
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 220
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0afb184ee7d2ffaf0800000000000000
+      internalID: -360519422143512672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_133
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 220
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51da2ae30e9eb8f0800000000000000
+      internalID: -522806767077633699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_134
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 224
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562086be5ac97afc0800000000000000
+      internalID: -3483643550314790299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_135
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 223
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5725f6bf244fd12c0800000000000000
+      internalID: -4459139487503527307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_136
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 221
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87225934d3b7463c0800000000000000
+      internalID: -4367230235585469832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_137
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 223
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e0a6dfff95828d0800000000000000
+      internalID: -2870945806445572530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_138
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 226
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed7d2dcca61bb970800000000000000
+      internalID: 8771629630666669546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_139
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 212
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a6372f2593f3350800000000000000
+      internalID: 5998576257098541617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_140
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 215
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e469165edaa3280800000000000000
+      internalID: -9062740099433345428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_141
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 214
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c41faddf3c754e00800000000000000
+      internalID: 1028364703668049096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_142
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 217
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ddedc3f25efab90800000000000000
+      internalID: -7228306885858894445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_143
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 215
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e7deb6a48393090800000000000000
+      internalID: -8054344566285959603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_144
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 203
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f69da29a5032b50800000000000000
+      internalID: 6567098905762819891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_145
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 205
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf7386e6aa85c7a0800000000000000
+      internalID: -6357522849527005249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_146
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 205
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49812acde117d660800000000000000
+      internalID: 7410411424857557322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_147
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 208
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42620cb48f59f5f80800000000000000
+      internalID: -8115603109843032540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_148
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 205
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea6cb7371712af50800000000000000
+      internalID: 6891095768317061862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_149
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 201
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73aff57e8f255e650800000000000000
+      internalID: 6261502085915736631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_150
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 194
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff9b41b7ade75c10800000000000000
+      internalID: 2042362260525654007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_151
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 187
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d3cb566ecf01d70800000000000000
+      internalID: 9011980920847875418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_152
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 193
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d167184800bc24730800000000000000
+      internalID: 3981968223632455197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_153
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 179
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38d815680c544f10800000000000000
+      internalID: 2253026904717711421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_154
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 190
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b5c18bccaa8ba60800000000000000
+      internalID: 7690084159974038287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_155
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 196
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a82f488a4b12dd0800000000000000
+      internalID: -2512528481218033025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_156
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 182
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79acd104fe5174320800000000000000
+      internalID: 2542024631990995607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_157
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 186
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6f047a765cee070800000000000000
+      internalID: 8137658625683420852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_158
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 187
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f2dfcd8329c8f10800000000000000
+      internalID: 2273352684838662007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_159
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 188
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4920bd37c59e24410800000000000000
+      internalID: 1459985812511457940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_160
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 175
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815c7bc0b34c1d830800000000000000
+      internalID: 4094269294151976216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_161
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 175
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b26711108d6236d0800000000000000
+      internalID: -3012224803947453767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_162
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 178
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1843e58d2fd45f0800000000000000
+      internalID: -770692950103129626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_163
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 176
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1068966ca04c430800000000000000
+      internalID: 3802175832697733615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_164
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 169
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8ea94af2cb77000800000000000000
+      internalID: 33702435039668479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_165
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 168
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531ad360cf9713cd0800000000000000
+      internalID: -2580146988163161803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration108 (93)_166
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 171
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308032472f3206ea0800000000000000
+      internalID: -5881661589108357117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Illustration108 (93)_0: 133714777407447904
+      Illustration108 (93)_1: 2675393393035436245
+      Illustration108 (93)_10: 8515254310551060420
+      Illustration108 (93)_100: 964294069329936202
+      Illustration108 (93)_101: -7729719241689748411
+      Illustration108 (93)_102: -5224618474442610022
+      Illustration108 (93)_103: -5359449501521835616
+      Illustration108 (93)_104: 3135925259917808460
+      Illustration108 (93)_105: -3322189460105821937
+      Illustration108 (93)_106: 3047922724035925184
+      Illustration108 (93)_107: 2119805985301233291
+      Illustration108 (93)_108: -83947204701173448
+      Illustration108 (93)_109: -4182813229645006120
+      Illustration108 (93)_11: -507328189417577204
+      Illustration108 (93)_110: 5570353806441147699
+      Illustration108 (93)_111: 9201784008638966285
+      Illustration108 (93)_112: 6044592829190780766
+      Illustration108 (93)_113: -8288099254867120639
+      Illustration108 (93)_114: -9083027091693316407
+      Illustration108 (93)_115: 5921619557179952919
+      Illustration108 (93)_116: 5709132495321142378
+      Illustration108 (93)_117: 4262295634807629761
+      Illustration108 (93)_118: 2691630689141363790
+      Illustration108 (93)_119: 5337232731486283010
+      Illustration108 (93)_12: 5628438687777842606
+      Illustration108 (93)_120: -6043816074364802444
+      Illustration108 (93)_121: -310785511193493583
+      Illustration108 (93)_122: 8085064071508369705
+      Illustration108 (93)_123: -833348197360404091
+      Illustration108 (93)_124: -690942606643031193
+      Illustration108 (93)_125: 8710332036335562020
+      Illustration108 (93)_126: 8652590378448597644
+      Illustration108 (93)_127: -7895438638259325291
+      Illustration108 (93)_128: 8490087294232125862
+      Illustration108 (93)_129: 1258169496271001599
+      Illustration108 (93)_13: -8691494598922207123
+      Illustration108 (93)_130: 4809382178562945806
+      Illustration108 (93)_131: 8562608457735129479
+      Illustration108 (93)_132: -360519422143512672
+      Illustration108 (93)_133: -522806767077633699
+      Illustration108 (93)_134: -3483643550314790299
+      Illustration108 (93)_135: -4459139487503527307
+      Illustration108 (93)_136: -4367230235585469832
+      Illustration108 (93)_137: -2870945806445572530
+      Illustration108 (93)_138: 8771629630666669546
+      Illustration108 (93)_139: 5998576257098541617
+      Illustration108 (93)_14: -8897730256707621712
+      Illustration108 (93)_140: -9062740099433345428
+      Illustration108 (93)_141: 1028364703668049096
+      Illustration108 (93)_142: -7228306885858894445
+      Illustration108 (93)_143: -8054344566285959603
+      Illustration108 (93)_144: 6567098905762819891
+      Illustration108 (93)_145: -6357522849527005249
+      Illustration108 (93)_146: 7410411424857557322
+      Illustration108 (93)_147: -8115603109843032540
+      Illustration108 (93)_148: 6891095768317061862
+      Illustration108 (93)_149: 6261502085915736631
+      Illustration108 (93)_15: -6364503617314068749
+      Illustration108 (93)_150: 2042362260525654007
+      Illustration108 (93)_151: 9011980920847875418
+      Illustration108 (93)_152: 3981968223632455197
+      Illustration108 (93)_153: 2253026904717711421
+      Illustration108 (93)_154: 7690084159974038287
+      Illustration108 (93)_155: -2512528481218033025
+      Illustration108 (93)_156: 2542024631990995607
+      Illustration108 (93)_157: 8137658625683420852
+      Illustration108 (93)_158: 2273352684838662007
+      Illustration108 (93)_159: 1459985812511457940
+      Illustration108 (93)_16: -4987691712753145268
+      Illustration108 (93)_160: 4094269294151976216
+      Illustration108 (93)_161: -3012224803947453767
+      Illustration108 (93)_162: -770692950103129626
+      Illustration108 (93)_163: 3802175832697733615
+      Illustration108 (93)_164: 33702435039668479
+      Illustration108 (93)_165: -2580146988163161803
+      Illustration108 (93)_166: -5881661589108357117
+      Illustration108 (93)_17: 2492119189743669276
+      Illustration108 (93)_18: 1883911578784287530
+      Illustration108 (93)_19: 2231143801007409296
+      Illustration108 (93)_2: -5302915956766477039
+      Illustration108 (93)_20: -7729402353645620619
+      Illustration108 (93)_21: -8761763905865041355
+      Illustration108 (93)_22: 9166912448416863438
+      Illustration108 (93)_23: -8839019521346383225
+      Illustration108 (93)_24: -5973835140429358094
+      Illustration108 (93)_25: -5130619084588110729
+      Illustration108 (93)_26: 8886968568479693045
+      Illustration108 (93)_27: -3767178215544338973
+      Illustration108 (93)_28: 5693863494999166570
+      Illustration108 (93)_29: 4302680177557816781
+      Illustration108 (93)_3: -1511303054081917564
+      Illustration108 (93)_30: 8229423299055447260
+      Illustration108 (93)_31: 2496865341833268265
+      Illustration108 (93)_32: -3807650260514618466
+      Illustration108 (93)_33: -4281680307668199428
+      Illustration108 (93)_34: 5969290823131796509
+      Illustration108 (93)_35: 8232610842732531352
+      Illustration108 (93)_36: 6816817258676357449
+      Illustration108 (93)_37: 5908864664385737087
+      Illustration108 (93)_38: 4274283500878646750
+      Illustration108 (93)_39: 916936549900735695
+      Illustration108 (93)_4: -5500806557519996866
+      Illustration108 (93)_40: 2845797844269328393
+      Illustration108 (93)_41: 4205407182195830895
+      Illustration108 (93)_42: -705333219814457232
+      Illustration108 (93)_43: 5878220896092005824
+      Illustration108 (93)_44: 2711408467368385493
+      Illustration108 (93)_45: -424862185799713271
+      Illustration108 (93)_46: 3689370454540803491
+      Illustration108 (93)_47: -2743658445256838260
+      Illustration108 (93)_48: -3024876258888634809
+      Illustration108 (93)_49: 3591970741898719818
+      Illustration108 (93)_5: 1917047225700023015
+      Illustration108 (93)_50: -7169303239394155842
+      Illustration108 (93)_51: 5556547911701786439
+      Illustration108 (93)_52: -8429472525262801112
+      Illustration108 (93)_53: -7353141375555884224
+      Illustration108 (93)_54: -1160294023671397907
+      Illustration108 (93)_55: -6359839423400304395
+      Illustration108 (93)_56: -5216441840345848098
+      Illustration108 (93)_57: 5069413833207276447
+      Illustration108 (93)_58: 171650360384254167
+      Illustration108 (93)_59: -5451560692530450485
+      Illustration108 (93)_6: 4468979887673967102
+      Illustration108 (93)_60: -2400816124717289537
+      Illustration108 (93)_61: -5125623421058392535
+      Illustration108 (93)_62: -1037620129383535052
+      Illustration108 (93)_63: 2429211900388580777
+      Illustration108 (93)_64: 7877338573860236917
+      Illustration108 (93)_65: -7537519972159045
+      Illustration108 (93)_66: 1667609044629940785
+      Illustration108 (93)_67: -4885340071821400081
+      Illustration108 (93)_68: -7991497566423432193
+      Illustration108 (93)_69: -8807697337229777121
+      Illustration108 (93)_7: -3837296012253992427
+      Illustration108 (93)_70: -2575473096162657143
+      Illustration108 (93)_71: 3094173594813327379
+      Illustration108 (93)_72: -3817130134969461668
+      Illustration108 (93)_73: -3413526073036320375
+      Illustration108 (93)_74: 165255581048608021
+      Illustration108 (93)_75: -7793346776467619886
+      Illustration108 (93)_76: -7746219298053182351
+      Illustration108 (93)_77: 560619645066223969
+      Illustration108 (93)_78: 1965148604813090368
+      Illustration108 (93)_79: 1309906493237028847
+      Illustration108 (93)_8: -2703426128625153
+      Illustration108 (93)_80: -4841914702899140762
+      Illustration108 (93)_81: -3742144215006582443
+      Illustration108 (93)_82: 9177894233956418003
+      Illustration108 (93)_83: -3621508210538132402
+      Illustration108 (93)_84: -6800110759109827078
+      Illustration108 (93)_85: -445033209806832528
+      Illustration108 (93)_86: -2955632468599413234
+      Illustration108 (93)_87: 6284243684308243119
+      Illustration108 (93)_88: 5020124516093976533
+      Illustration108 (93)_89: -5397389313999262471
+      Illustration108 (93)_9: 6687481937448678549
+      Illustration108 (93)_90: -5179183370388365084
+      Illustration108 (93)_91: -1834323926574320074
+      Illustration108 (93)_92: -4376332055586138333
+      Illustration108 (93)_93: -5201084517048154727
+      Illustration108 (93)_94: 8225988931845747893
+      Illustration108 (93)_95: -3877226885112934286
+      Illustration108 (93)_96: -1263693461828091562
+      Illustration108 (93)_97: 4619066418581425490
+      Illustration108 (93)_98: 6038597637154366115
+      Illustration108 (93)_99: 1571298835015773033
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
