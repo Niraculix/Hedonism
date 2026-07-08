@@ -215,7 +215,7 @@ MonoBehaviour:
   m_PogoForce: 3000
   m_MovementSmoothing: 0.05
   m_DashForce: 6000
-  m_DashCooldown: 1
+  m_DashCooldown: 0
   m_DashRechargeTime: 0.25
   DashYDamping: 1.2
   MaxDashes: 3
@@ -323,6 +323,7 @@ MonoBehaviour:
   MeleeDamage: 1000
   AdrenalinDamage: 2000
   max_hp: 30
+  hp: 0
   naturalDrainRate: 2
   naturalHealRate: 0.2
   baseAttackCooldown: 1
@@ -345,7 +346,6 @@ MonoBehaviour:
   LTriggerAction: {fileID: 5037749538142088997, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   RTriggerAction: {fileID: -5270623865475825602, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   light_dropped: 0
-  gameOverSceneName: GameOverScene
 --- !u!70 &7362777206761080782
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

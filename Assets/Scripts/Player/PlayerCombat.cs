@@ -63,12 +63,16 @@ public class PlayerCombat : MonoBehaviour
 
 
     ItemManager itemManager;
+    GameManager gameManager;
     
     private void Start()
     {
         itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
         itemManager.UpdateItems();
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         LightComponent = GetComponent<Light2D>();
+
+        if(!gameManager.DungeonGenerationOn) hp = itemManager.max_hp;
     }
 
     public void ReloadItems()
@@ -255,6 +259,7 @@ public class PlayerCombat : MonoBehaviour
     {
         Debug.Log("takeDamage aufgerufen, HP: " + hp + ", Schaden: " + damage + ", dead: " + dead + ", iFrames: " + iFrames);
 
+
         if (!dead)
         { 
             if(hp - damage > 0)
@@ -266,6 +271,8 @@ public class PlayerCombat : MonoBehaviour
                 hp = 0;
                 Die();
             }
+
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().FreezeGame(2);
             
             SetIFrames(5);
             

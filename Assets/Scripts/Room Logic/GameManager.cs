@@ -139,4 +139,13 @@ public class GameManager : MonoBehaviour
         if (distance == 0) return roll < 0.70f ? 2 : 3;
         return 1;
     }
+
+    public System.Collections.IEnumerator FreezeGame(float sec)
+    {
+        var time = Time.timeScale;
+        Time.timeScale = 0f;
+        print($"Freeze Game for {sec} sec");
+        yield return new WaitForSecondsRealtime(sec);
+        Time.timeScale = time;
+    }
 }

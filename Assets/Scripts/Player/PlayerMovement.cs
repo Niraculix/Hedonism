@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontalMove = 0f;
 
-    public Vector2 movementVector;
+    [HideInInspector] public Vector2 movementVector;
     bool jumping = false;
     bool dashing = false;
 
