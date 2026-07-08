@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 08a9444b5c607ed4d9ec132bce71818b
+guid: 43e0461bfce4b0443953fab8379fcc60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4291070521418836949
-    second: Illustration108 (17)_0
+      213: 8693431923249437061
+    second: Plant_2_0
+  - first:
+      213: -3830455449734456622
+    second: Plant_2_1
+  - first:
+      213: -4504312699372548189
+    second: Plant_2_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Illustration108 (17)_0
+      name: Plant_2_0
       rect:
         serializedVersion: 2
-        x: 1484
-        y: 543
-        width: 300
-        height: 172
+        x: 664
+        y: 503
+        width: 38
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5dbe15777e1fc8b30800000000000000
-      internalID: 4291070521418836949
+      spriteID: 589d250464645a870800000000000000
+      internalID: 8693431923249437061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant_2_1
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 505
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da5e96201d77dac0800000000000000
+      internalID: -3830455449734456622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant_2_2
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 523
+        width: 58
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af4e9cf6777d71c0800000000000000
+      internalID: -4504312699372548189
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Illustration108 (17)_0: 4291070521418836949
+      Plant_2_0: 8693431923249437061
+      Plant_2_1: -3830455449734456622
+      Plant_2_2: -4504312699372548189
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
