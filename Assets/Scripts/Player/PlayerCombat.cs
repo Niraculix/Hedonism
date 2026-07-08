@@ -64,6 +64,7 @@ public class PlayerCombat : MonoBehaviour
 
     ItemManager itemManager;
     GameManager gameManager;
+
     
     private void Start()
     {
@@ -81,6 +82,7 @@ public class PlayerCombat : MonoBehaviour
         {
             hp += itemManager.max_hp - max_hp;
         }
+
         else if(hp > itemManager.max_hp)
         {
             hp = itemManager.max_hp;

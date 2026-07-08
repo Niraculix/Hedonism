@@ -183,6 +183,11 @@ public class CharacterController : MonoBehaviour
 
 	}
 
+	void OnEsc()
+	{
+		GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().Esc();
+	}
+
 
 	public void Move(float move, bool jump, bool dash)
 	{
