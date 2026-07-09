@@ -12,6 +12,9 @@ public class PlayerCombat : MonoBehaviour
     public float MeleeAttackRange = 0.4f;
     public float ParryRange = 0.3f;
 
+    [Header("visuals")]
+    public float LightIntensity = 2f;
+
     public int MeleeDamage = 50;
     public int AdrenalinDamage = 2000;
     public int max_hp = 1000;
@@ -116,7 +119,7 @@ public class PlayerCombat : MonoBehaviour
                 }
             }
 
-            LightComponent.intensity = hp / max_hp * 20f;
+            LightComponent.intensity = hp / max_hp * LightIntensity;
         }
 
 
