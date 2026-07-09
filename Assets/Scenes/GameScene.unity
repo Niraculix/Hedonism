@@ -291,9 +291,9 @@ MonoBehaviour:
   - {fileID: 8133202235992323011, guid: 6b68cda7876804f4e856bb66373c1569, type: 3}
   - {fileID: 8133202235992323011, guid: 0d1398af3b83b624dbaa31e069da3980, type: 3}
   roomPrefabs_1Door:
-  - {fileID: 8133202235992323011, guid: 2b0526e38ed1462469e70768f5a4cfb3, type: 3}
+  - {fileID: 8133202235992323011, guid: 9b7312b9d4cafd642979576219e755c7, type: 3}
   - {fileID: 8133202235992323011, guid: 0bbebb5a887d02f4a99c303ae506b293, type: 3}
-  - {fileID: 8133202235992323011, guid: 3b3d3fc7dd2f5fd4fbddc10839c5f403, type: 3}
+  - {fileID: 8133202235992323011, guid: 6d60f8c737e35364082d36c984f17eb4, type: 3}
   - {fileID: 8133202235992323011, guid: a2d9b4a6cae6eea4f80570520355f2ec, type: 3}
   roomPrefabs_2Door:
   - {fileID: 8133202235992323011, guid: 479973bea8443b3429ec854bc9f6aec9, type: 3}
