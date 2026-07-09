@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Items\ItemObject.cs" />
     <Compile Include="Assets\Scripts\UI\dashUI.cs" />
     <Compile Include="Assets\Scripts\Enemies\Pathfinding-Patrol.cs" />
+    <Compile Include="Assets\Scripts\UI\StartScreenLogic.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Scripts\Room Logic\Doors\DoorTrigger.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyVariants\Offset_Enemy.cs" />
