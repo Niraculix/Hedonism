@@ -1,0 +1,707 @@
+fileFormatVersion: 2
+guid: cca5a00c305717c48948ca709c219d3b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1988516162468993838
+    second: sheetnobg_0
+  - first:
+      213: 1288509276408911792
+    second: sheetnobg_1
+  - first:
+      213: -1940120320094947925
+    second: sheetnobg_2
+  - first:
+      213: -1583257212180852538
+    second: sheetnobg_3
+  - first:
+      213: -407910244486898679
+    second: sheetnobg_4
+  - first:
+      213: -7457590740496341380
+    second: sheetnobg_5
+  - first:
+      213: -8126776562580335907
+    second: sheetnobg_6
+  - first:
+      213: -5524008706410989933
+    second: sheetnobg_7
+  - first:
+      213: -8281915024920156560
+    second: sheetnobg_8
+  - first:
+      213: 3735180356353604972
+    second: sheetnobg_9
+  - first:
+      213: -8449609039317390489
+    second: sheetnobg_10
+  - first:
+      213: -2673028550823584920
+    second: sheetnobg_11
+  - first:
+      213: -28814374808562858
+    second: sheetnobg_12
+  - first:
+      213: 2579218285740307638
+    second: sheetnobg_13
+  - first:
+      213: -21486740346413452
+    second: sheetnobg_14
+  - first:
+      213: 6543437198307612236
+    second: sheetnobg_15
+  - first:
+      213: -2627774172071763472
+    second: sheetnobg_16
+  - first:
+      213: -6268692866251461625
+    second: sheetnobg_17
+  - first:
+      213: -6466243188418214098
+    second: sheetnobg_18
+  - first:
+      213: 4576560806427325313
+    second: sheetnobg_19
+  - first:
+      213: 6445849077799074143
+    second: sheetnobg_20
+  - first:
+      213: -4016051505006615320
+    second: sheetnobg_21
+  - first:
+      213: 3750879429852110521
+    second: sheetnobg_22
+  - first:
+      213: -1132921045740271560
+    second: sheetnobg_23
+  - first:
+      213: -3674796561551011282
+    second: sheetnobg_24
+  - first:
+      213: -1975064859544355082
+    second: sheetnobg_25
+  - first:
+      213: 8301976555796527437
+    second: sheetnobg_26
+  - first:
+      213: -7942306415743290680
+    second: sheetnobg_27
+  - first:
+      213: -6260188539051357498
+    second: sheetnobg_28
+  - first:
+      213: 2197509783762013084
+    second: sheetnobg_29
+  - first:
+      213: -1726805054391472678
+    second: sheetnobg_30
+  - first:
+      213: -8728069628483147535
+    second: sheetnobg_31
+  - first:
+      213: 4077043535062145823
+    second: sheetnobg_32
+  - first:
+      213: -1377404213136687194
+    second: sheetnobg_33
+  - first:
+      213: -7010455147018377797
+    second: sheetnobg_34
+  - first:
+      213: -8343376567162854965
+    second: sheetnobg_35
+  - first:
+      213: -487144186704201715
+    second: sheetnobg_36
+  - first:
+      213: -8707240840772802646
+    second: sheetnobg_37
+  - first:
+      213: -4734097749148838519
+    second: sheetnobg_38
+  - first:
+      213: -981540377945041194
+    second: sheetnobg_39
+  - first:
+      213: 1535961728221124997
+    second: sheetnobg_40
+  - first:
+      213: 9026943357934875656
+    second: sheetnobg_41
+  - first:
+      213: 6457053495549764377
+    second: sheetnobg_42
+  - first:
+      213: -1885708446502150303
+    second: sheetnobg_43
+  - first:
+      213: 6373134294844250159
+    second: sheetnobg_44
+  - first:
+      213: -6047984472081693700
+    second: sheetnobg_45
+  - first:
+      213: 8017241705887981152
+    second: sheetnobg_46
+  - first:
+      213: -304432900977582335
+    second: sheetnobg_47
+  - first:
+      213: 1924324310037810981
+    second: sheetnobg_48
+  - first:
+      213: 9205352154234848025
+    second: sheetnobg_49
+  - first:
+      213: 6979715302232433679
+    second: sheetnobg_50
+  - first:
+      213: -2200428873199942613
+    second: sheetnobg_51
+  - first:
+      213: -7604494976019465324
+    second: sheetnobg_52
+  - first:
+      213: -541199103975028205
+    second: sheetnobg_53
+  - first:
+      213: -3158546353750854698
+    second: sheetnobg_54
+  - first:
+      213: 7400399636939800201
+    second: sheetnobg_55
+  - first:
+      213: -8481639721798375709
+    second: sheetnobg_56
+  - first:
+      213: -6284251932685643730
+    second: sheetnobg_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sheetnobg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1620
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b56160ae0a89b10800000000000000
+      internalID: 1988516162468993838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_1
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1620
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7162e2c54b1e110800000000000000
+      internalID: 1288509276408911792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_2
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1620
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5393b19de4315e0800000000000000
+      internalID: -1940120320094947925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_3
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1620
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c092e734f3270ae0800000000000000
+      internalID: -1583257212180852538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_4
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1620
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c9d193bcfc65af0800000000000000
+      internalID: -407910244486898679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c762978cbb0518890800000000000000
+      internalID: -7457590740496341380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_6
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1080
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2dd6a16c3e73f80800000000000000
+      internalID: -8126776562580335907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_7
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1080
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39635365957c653b0800000000000000
+      internalID: -5524008706410989933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_8
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1080
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076e9af0a2ab01d80800000000000000
+      internalID: -8281915024920156560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_9
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1080
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d39788eb606d330800000000000000
+      internalID: 3735180356353604972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76bae80c855fcba80800000000000000
+      internalID: -8449609039317390489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_11
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 540
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bdea102be77ead0800000000000000
+      internalID: -2673028550823584920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_12
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 540
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6535c119a71a99ff0800000000000000
+      internalID: -28814374808562858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_13
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 540
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b43eb79d593bc320800000000000000
+      internalID: 2579218285740307638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_14
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 540
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e554a6ce9a3bff0800000000000000
+      internalID: -21486740346413452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46d3379675feca50800000000000000
+      internalID: 6543437198307612236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_16
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f167b32055488bd0800000000000000
+      internalID: -2627774172071763472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheetnobg_17
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 720
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c6e051d012109a0800000000000000
+      internalID: -6268692866251461625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 520c8d6bbf59ab24f9b566338b963354
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":720.0,"y":540.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      sheetnobg_0: 1988516162468993838
+      sheetnobg_1: 1288509276408911792
+      sheetnobg_10: -8449609039317390489
+      sheetnobg_11: -2673028550823584920
+      sheetnobg_12: -28814374808562858
+      sheetnobg_13: 2579218285740307638
+      sheetnobg_14: -21486740346413452
+      sheetnobg_15: 6543437198307612236
+      sheetnobg_16: -2627774172071763472
+      sheetnobg_17: -6268692866251461625
+      sheetnobg_2: -1940120320094947925
+      sheetnobg_3: -1583257212180852538
+      sheetnobg_4: -407910244486898679
+      sheetnobg_5: -7457590740496341380
+      sheetnobg_6: -8126776562580335907
+      sheetnobg_7: -5524008706410989933
+      sheetnobg_8: -8281915024920156560
+      sheetnobg_9: 3735180356353604972
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
