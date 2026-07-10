@@ -35,9 +35,8 @@ public class CharacterController : MonoBehaviour
 
 	private float grav;
 
-	const float k_GroundedRadius = .2f;
+	const float k_GroundedRadius = .4f;
 	private bool m_Grounded;
-	private bool m_DashOnCooldown;
 	private bool can_Move = true;
 	private Rigidbody2D m_Rigidbody2D;
 	private Vector3 m_Velocity = Vector3.zero;
@@ -52,15 +51,12 @@ public class CharacterController : MonoBehaviour
 	private bool jumpInputReleased;
 
 	private Vector2 InputVector;
-
 	private bool recharging_dash = false;
 
 	[HideInInspector] public bool dashing;
 	[HideInInspector] public int dashes_remaining;
 	[HideInInspector] public bool m_FacingRight = true;
 	[HideInInspector] public bool doors_enterable = true;
-
-	private int dashCooldownFrames = 0;
 
 	private bool light_dropped;
 
@@ -127,9 +123,10 @@ public class CharacterController : MonoBehaviour
 					OnLandEvent.Invoke();
 				
 
-				if(m_DashOnCooldown == false && dashes_remaining < MaxDashes)
+				if(dashes_remaining < MaxDashes && !recharging_dash)
 				{
-					DashCooldown();
+					recharging_dash = true;
+					StartCoroutine(DashRecharge());
 				}
 
 				JumpsAvailable = 2;
@@ -148,25 +145,6 @@ public class CharacterController : MonoBehaviour
 			CoyoteTimeFrames--;
 		}
 
-		if(dashCooldownFrames > 0 && m_DashOnCooldown)
-		{
-			if(m_Grounded && !dashing)
-			{
-				dashCooldownFrames--;
-			}
-			else
-			{
-				m_DashOnCooldown = false;
-			}
-		}
-
-		else if(dashCooldownFrames <= 0 && m_DashOnCooldown)
-		{
-			recharging_dash = true;
-			m_DashOnCooldown = false;
-			StartCoroutine(DashRecharge());
-		}
-
 		if(!m_Grounded && JumpsAvailable > 1)
 		{
 			JumpsAvailable = 1;
@@ -174,11 +152,11 @@ public class CharacterController : MonoBehaviour
 
 		if(!m_Grounded)
 		{
-			PlayerMat.friction = 0.1f;
+			PlayerMat.friction = 0.05f;
 		}
 		else
 		{
-			PlayerMat.friction = 0.4f;
+			PlayerMat.friction = 0.6f;
 		}
 
 	}
@@ -287,30 +265,21 @@ public class CharacterController : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
-	void DashCooldown()
-	{
-		m_DashOnCooldown = true;
-
-		dashCooldownFrames = (int)Mathf.Ceil(m_DashCooldown * 50);
-	}
-
 	IEnumerator DashRecharge()
 	{
-		if(m_DashOnCooldown && !dashing)
-		{
-			RegainDash();
-		}
-
 		yield return new WaitForSeconds(m_DashRechargeTime);
-
-		if(recharging_dash && dashes_remaining < MaxDashes && m_DashOnCooldown)
+		if (recharging_dash)
 		{
-			StartCoroutine(DashRecharge());
-		}
-		else
-		{
-			recharging_dash = false;
-			m_DashOnCooldown = false;
+			print("DashRecharge");
+			if(m_Grounded && !dashing && dashes_remaining < MaxDashes)
+			{
+				RegainDash();
+				StartCoroutine(DashRecharge());
+			}
+			else
+			{
+				recharging_dash = false;
+			}
 		}
 	}
 
