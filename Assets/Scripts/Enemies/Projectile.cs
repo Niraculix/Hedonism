@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Rendering.Universal;
 
 public class Projectile : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Projectile : MonoBehaviour
         // Ensure we start at the intended scale
         transform.localScale = startScale;
         _spawnTime = Time.time;
+        GetComponent<Light2D>().color = new Color(255,95,95);
 
         StartCoroutine(ScaleOverTime());
     }
@@ -52,6 +54,8 @@ public class Projectile : MonoBehaviour
     {
         print("Parried");
         _isParried = true;
+        
+        GetComponent<Light2D>().color = Color.white;
         // Richtung umkehren zurück zur Quelle
         _direction = (_initPos - transform.position).normalized;
         // Ein bisschen schneller nach Parry
@@ -94,8 +98,20 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    public void EnterParryRange()
+    public IEnumerator EnterParryRange()
     {
-        //Adden zu blink animation
+        for(var i = 0; i < 5; i++)
+        {
+            yield return new WaitForSeconds(0.1f);
+            GetComponent<Light2D>().intensity += 0.5f;
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        for(var i = 0; i < 5; i++)
+        {
+            yield return new WaitForSeconds(0.1f);
+            GetComponent<Light2D>().intensity -= 0.5f;
+        }
     }
 }

@@ -175,7 +175,7 @@ public class PlayerCombat : MonoBehaviour
         {
             if(!projectile.GetComponent<Projectile>()) continue;
             
-            projectile.GetComponent<Projectile>().EnterParryRange();
+            StartCoroutine(projectile.GetComponent<Projectile>().EnterParryRange());
         }
     }
 

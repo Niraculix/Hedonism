@@ -84,6 +84,11 @@ public class RoomDefinition : MonoBehaviour
         {
             SpawnPointPos = player.transform.position;
         }
+
+        if(EnemyWaves.Count <= 0)
+        {
+            UnlockDoors(3);
+        }
     }
 
     void FixedUpdate()
