@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5089527663815493065}
   - component: {fileID: 792656615745237067}
   m_Layer: 7
-  m_Name: DummyEnemy
+  m_Name: DummyEnemy 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1471550351243303828, guid: 0287771c911f7c8408bef7f1070dd1d8, type: 3}
+  m_Sprite: {fileID: -1846781244278701463, guid: 27789a340d0954b428e008800c2c36fb, type: 3}
   m_Color: {r: 0.7923084, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -175,7 +175,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.99, y: 3.95}
+    oldSize: {x: 1.6875, y: 1.9375}
     newSize: {x: 1.6875, y: 1.9375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
