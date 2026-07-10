@@ -2591,7 +2591,7 @@ GameObject:
   - component: {fileID: 4577596900626670604}
   m_Layer: 3
   m_Name: Room_ST_3
-  m_TagString: Environment
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
