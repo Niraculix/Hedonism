@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6291264605004153333}
   - component: {fileID: 3447192513628458204}
   - component: {fileID: 1201191707481299959}
+  - component: {fileID: 4125000110053774644}
   m_Layer: 7
   m_Name: Floating
   m_TagString: Enemy
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1919528934542034935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1105.5327, y: 874.9106, z: 0}
+  m_LocalPosition: {x: 1105.599, y: 875.062, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -85,12 +86,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1203941536006510875, guid: 0d48acb7accb47a44813044d568d310c, type: 3}
+  m_Sprite: {fileID: -7940612715657465664, guid: 81ce85377fdf31641ae73b7fbea9afd2, type: 3}
   m_Color: {r: 0.67996407, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.6875, y: 1.9375}
+  m_Size: {x: 0.25, y: 0.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -176,8 +177,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.33, y: 2.71}
-    newSize: {x: 1.6875, y: 1.9375}
+    oldSize: {x: 0.25, y: 0.24}
+    newSize: {x: 0.25, y: 0.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -200,13 +201,28 @@ MonoBehaviour:
   detectionRadius: 15
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   chaseSpeed: 6
   returnSpeed: 2
   floatAmplitude: 0.3
   floatFrequency: 2
   floatAmplitudeX: 0.5
   floatFrequencyX: 1.5
+--- !u!114 &4125000110053774644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919528934542034935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efc2304f903ba4543baf83516ecea876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyVisual
+  visual: {fileID: 6947600282063105952}
+  idleSprite: {fileID: -7940612715657465664, guid: 81ce85377fdf31641ae73b7fbea9afd2, type: 3}
+  alertedSprite: {fileID: -7612178259080392887, guid: 74d5d2db017f434478533bc4959d1443, type: 3}

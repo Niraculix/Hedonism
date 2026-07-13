@@ -45,6 +45,12 @@ public class Enemy : MonoBehaviour
         {
             IFrames--;
         }
+
+        if (transform.position.y < GameObject.FindGameObjectWithTag("Room").GetComponent<RoomDefinition>().KillBoxY)
+        {
+            GameObject.FindGameObjectWithTag("Room").GetComponent<RoomDefinition>().EnemyKilled();
+            Destroy(gameObject);
+        }
     }
 
     public void takeDamage(int damage)
@@ -72,6 +78,5 @@ public class Enemy : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().RegainDash();
         }
         
-        Destroy(gameObject);
     }
 }

@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 2830e6339d0d722459884a29f1c4d069
+guid: 6fe1cf5adfb33b2489659a9784f4f280
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3138234937168664295
-    second: chasing enemy_0
-  - first:
-      213: 8281112211402796240
-    second: chasing enemy_1
-  - first:
-      213: 8839893526294886989
-    second: chasing enemy_2
+      213: 6640464690610726747
+    second: redcircle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,67 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chasing enemy_0
+      name: redcircle_0
       rect:
         serializedVersion: 2
-        x: 449
-        y: 374
-        width: 324
-        height: 301
-      alignment: 9
-      pivot: {x: 0.94251186, y: 0.48278344}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7e698ab5c004d8b20800000000000000
-      internalID: 3138234937168664295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chasing enemy_1
-      rect:
-        serializedVersion: 2
-        x: 867
-        y: 501
-        width: 9
-        height: 21
+        x: 1157
+        y: 679
+        width: 148
+        height: 152
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0dc20d95eab6ce270800000000000000
-      internalID: 8281112211402796240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chasing enemy_2
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 267
-        width: 58
-        height: 93
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d4af41f835c9daa70800000000000000
-      internalID: 8839893526294886989
+      spriteID: b576063147ba72c50800000000000000
+      internalID: 6640464690610726747
       vertices: []
       indices: 
       edges: []
@@ -175,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d4b061edd1ebd56429f2a2308691c78f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      chasing enemy_0: 3138234937168664295
-      chasing enemy_1: 8281112211402796240
-      chasing enemy_2: 8839893526294886989
+      redcircle_0: 6640464690610726747
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
