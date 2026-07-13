@@ -3,7 +3,9 @@ using UnityEngine;
 public class FlyingEnemy : MonoBehaviour
 {
     // --- State Machine ---
-    private enum EnemyState { Idle, Chase }
+    public enum EnemyState { Idle, Chase }
+
+    public EnemyState CurrentState => currentState;
     private EnemyState currentState;
 
     [Header("Optimization")]

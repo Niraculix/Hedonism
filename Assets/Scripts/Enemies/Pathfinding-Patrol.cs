@@ -33,6 +33,8 @@ public class PlatformerEnemyAI : MonoBehaviour
     [Header("Optimization")]
     public float detectionRate = 0.2f; 
     private float detectionTimer;
+    
+    private Animator animator;
 
 
     void Start()
@@ -41,6 +43,8 @@ public class PlatformerEnemyAI : MonoBehaviour
         // Find the player in the scene (assuming the player is tagged "Player")
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null) player = playerObj.transform;
+        animator = GetComponentInChildren<Animator>();
+
     }
 
     void FixedUpdate()
@@ -97,15 +101,21 @@ public class PlatformerEnemyAI : MonoBehaviour
             if (hit.collider != null && hit.collider.CompareTag("Player"))
             {
                 isChasing = true; 
+                animator.SetBool("IsAlerted", true); 
+
             }
             else
             {
                 isChasing = false; 
+                animator.SetBool("IsAlerted", false);  
+
             }
         }
         else
         {
             isChasing = false; 
+            animator.SetBool("IsAlerted", false);  
+
         }
     }
 
@@ -139,6 +149,8 @@ public class PlatformerEnemyAI : MonoBehaviour
 
         moveDirection *= -1;
         transform.localScale = new Vector3(Mathf.Sign(moveDirection), 1, 1); // Flips sprite visually
+        SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
+        sr.flipX = moveDirection < 0;
         lastFlipTime = Time.time;
     }
 
@@ -163,6 +175,8 @@ public class PlatformerEnemyAI : MonoBehaviour
         {
             moveDirection = directionToPlayer;
             transform.localScale = new Vector3(Mathf.Sign(moveDirection), 1, 1);
+            SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
+            sr.flipX = moveDirection < 0;
         }
     }
 

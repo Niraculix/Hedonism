@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\Room Logic\Doors\DoorBlocker.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyVariants\Regular_Enemy.cs" />
     <Compile Include="Assets\Scripts\Room Logic\EnemyWaveReference.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Enemy Visual.cs" />
+    <Compile Include="Assets\Scripts\Room Logic\Doors\DoorLockAnimation.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Spike.cs" />
     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
@@ -75,6 +77,7 @@
     <Compile Include="Assets\Scripts\Enemies\Pathfinding-Patrol.cs" />
     <Compile Include="Assets\Scripts\UI\StartScreenLogic.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyVariants\SpinEffect.cs" />
     <Compile Include="Assets\Scripts\Room Logic\Doors\DoorTrigger.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyVariants\Offset_Enemy.cs" />
     <Compile Include="Assets\Scripts\Room Logic\RoomDefinition.cs" />
