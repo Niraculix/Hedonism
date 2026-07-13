@@ -10827,7 +10827,6 @@ MonoBehaviour:
   roomSizeInCells: {x: 1, y: 1}
   EnemyWaves:
   - Wave:
-    - {fileID: 3730156273742299924, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
     - {fileID: 3717135783988782909}
     - {fileID: 9082339330173263492}
     - {fileID: 4616061694641306514}

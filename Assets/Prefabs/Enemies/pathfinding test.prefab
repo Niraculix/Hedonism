@@ -113,6 +113,7 @@ MonoBehaviour:
   contact_dmg: 5
   active: 0
   LogicEnabled: 0
+  animationObject: {fileID: 5263970294108881308}
 --- !u!61 &792656615745237067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -186,7 +187,7 @@ MonoBehaviour:
   wallCheck: {fileID: 8594581001168621530}
   edgeCheck: {fileID: 6375786786476588758}
   groundCheckRadius: 0.7
-  wallCheckDistance: 1
+  wallCheckDistance: 3.2
   edgeCheckDistance: 1.5
   detectionRate: 0.2
 --- !u!1 &7061234661244181586
@@ -214,7 +215,7 @@ Transform:
   m_GameObject: {fileID: 7061234661244181586}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.077, y: -0.849, z: 0}
+  m_LocalPosition: {x: -2.26, y: -0.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -245,7 +246,7 @@ Transform:
   m_GameObject: {fileID: 8330099908729898490}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.069, y: -0.286, z: 0}
+  m_LocalPosition: {x: -2.61, y: -0.286, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

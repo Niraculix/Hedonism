@@ -148,7 +148,7 @@ public class PlatformerEnemyAI : MonoBehaviour
         if (Time.time < lastFlipTime + flipCooldown) return;
 
         moveDirection *= -1;
-        //transform.localScale = new Vector3(Mathf.Sign(moveDirection), 1, 1); // Flips sprite visually
+        transform.localScale = new Vector3(Mathf.Sign(moveDirection), 1, 1); // Flips sprite visually
         SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
         sr.flipX = moveDirection < 0;
         lastFlipTime = Time.time;
@@ -174,7 +174,7 @@ public class PlatformerEnemyAI : MonoBehaviour
         if (directionToPlayer != moveDirection)
         {
             moveDirection = directionToPlayer;
-            //transform.localScale = new Vector3(Mathf.Sign(moveDirection), 1, 1);
+            transform.localScale = new Vector3(Mathf.Sign(moveDirection), 1, 1);
             SpriteRenderer sr = GetComponentInChildren<SpriteRenderer>();
             sr.flipX = moveDirection < 0;
         }

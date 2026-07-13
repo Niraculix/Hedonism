@@ -12,19 +12,24 @@ public class Enemy : MonoBehaviour
     [HideInInspector] public bool active = false;
     [HideInInspector] public bool LogicEnabled = true;
 
+    public GameObject animationObject;
+
     
 
     public void Start()
     {
         GetComponent<BoxCollider2D>().enabled = false;
-        GetComponent<SpriteRenderer>().enabled = false;
+        if(animationObject != null) animationObject.SetActive(false);
+        if(GetComponent<SpriteRenderer>()) GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Rigidbody2D>().Sleep();
         LogicEnabled = false;
     }
 
     public void EnableLogic()
     {
-        GetComponent<SpriteRenderer>().enabled = true;
+        if(GetComponent<PlatformerEnemyAI>()) print("Logic enabled");
+        if(animationObject != null) animationObject.SetActive(true);
+        if(GetComponent<SpriteRenderer>()) GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<BoxCollider2D>().enabled = true;
         GetComponent<Rigidbody2D>().WakeUp();
         LogicEnabled = true;
