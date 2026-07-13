@@ -200,10 +200,10 @@ MonoBehaviour:
   detectionRadius: 15
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   chaseSpeed: 6
   returnSpeed: 2
   floatAmplitude: 0.3
