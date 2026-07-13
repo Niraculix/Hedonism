@@ -5,9 +5,9 @@ using UnityEngine.Rendering.Universal;
 public class FloatingDamageNumber : MonoBehaviour
 {
     Color color;
-    public int Lifetime = 200;
+    public int Lifetime = 150;
     int currLifetime;
-    public float FloatingSpeed = 10;
+    public float FloatingSpeed = 10f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,31 +16,34 @@ public class FloatingDamageNumber : MonoBehaviour
         int randi = Random.Range(0,100);
         color = new Color(255,randi,randi);
 
-        GetComponent<TextMeshProUGUI>().color = color;
-        GetComponent<Light2D>().color = color;
+        GetComponent<TextMeshProUGUI>().color = Color.black;
+        GetComponent<Light2D>().color = Color.red;
     }
 
-    void Init()
+    public void Init(float dmg)
     {
-        
-    }
+        GetComponent<TextMeshProUGUI>().text = $"{dmg}";
+        print($"Spawned! Dmg: {dmg}, Position: {transform.position}")
+;    }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(currLifetime < 0)
+        if(currLifetime > 0)
         {
             currLifetime--;
         }
         else
         {
+            print("despawn");
             Destroy(gameObject);
         }
 
-        transform.Translate(new Vector2(0,FloatingSpeed * Time.fixedTime));
+        transform.Translate(new Vector2(0,FloatingSpeed * Time.fixedDeltaTime));
         if(currLifetime < Lifetime / 2)
         {
-            GetComponent<TextMeshProUGUI>().alpha -= 1 / (Lifetime / 2);
+            GetComponent<TextMeshProUGUI>().alpha -= 1 / (Lifetime / 2f);
+            GetComponent<Light2D>().intensity -= 0.1f;
         }
     }
 }
