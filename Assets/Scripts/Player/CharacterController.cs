@@ -70,6 +70,10 @@ public class CharacterController : MonoBehaviour
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
 
+	public enum PlayerState { Idle, Running ,Jumping ,Falling , Dashing, Knockback, Attacking }
+	public PlayerState CurrentState { get; private set; }
+	private Animator animator;
+
 
 	private void Awake()
 	{
@@ -79,6 +83,12 @@ public class CharacterController : MonoBehaviour
 		itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
 		//itemManager.UpdateItems();
 
+		animator = GetComponent<Animator>();
+		if (animator == null)
+		{
+			Debug.LogWarning("No Animator comp on P");
+		}
+		
 		dashing = false;
 		dashes_remaining = MaxDashes;
 
@@ -158,9 +168,57 @@ public class CharacterController : MonoBehaviour
 		{
 			PlayerMat.friction = 0.6f;
 		}
-
+		UpdateAnimationState();
 	}
 
+	private void UpdateAnimationState()
+	{
+		if (animator == null) return;
+
+			if (dashing)
+			{
+				CurrentState = PlayerState.Dashing;
+				animator.SetBool("IsDashing", true);
+				return;
+			}
+			else
+			{
+				animator.SetBool("IsDashing", false);
+			}
+		float verticalVelocity = m_Rigidbody2D.linearVelocity.y;
+
+		if(!m_Grounded && verticalVelocity > 0.1f)
+		{
+			CurrentState = PlayerState.Jumping;
+			animator.SetBool("IsGrounded", false);
+		}
+		else if (m_Grounded)
+		{
+			animator.SetBool("IsGrounded", true);
+			float horizontalSpeed = Mathf.Abs(m_Rigidbody2D.linearVelocity.x);
+			if (horizontalSpeed > 0.1f)
+			{
+				CurrentState = PlayerState.Running;
+                animator.SetFloat("Speed", horizontalSpeed);
+            }
+			else
+			{
+				CurrentState = PlayerState.Idle;
+                animator.SetFloat("Speed", 0);
+            }
+		}
+		
+	}
+	public void TriggerAttackAnimation()
+	{
+		CurrentState = PlayerState.Attacking;
+		animator.SetTrigger("Attack");
+	}
+	public void TriggerKnockbackAnimation()
+	{
+		CurrentState = PlayerState.Knockback;
+		animator.SetTrigger("Knockback");
+	}
 	void OnEsc()
 	{
 		GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().Esc();
