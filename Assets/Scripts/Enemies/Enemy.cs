@@ -12,6 +12,11 @@ public class Enemy : MonoBehaviour
     [HideInInspector] public bool active = false;
     [HideInInspector] public bool LogicEnabled = true;
 
+    public GameObject FloatingNumberPrefab;
+
+    public Canvas canvas;
+    public GameObject NumberSpawnPoint;
+
     
 
     public void Start()
@@ -54,6 +59,8 @@ public class Enemy : MonoBehaviour
             hp -= damage;
             print("Damaged " + gameObject.name + ", HP Now: " + hp);
 
+            SpawnDamageNumber((float)damage);
+
             IFrames = 5;
 
             if(hp <= 0)
@@ -73,5 +80,14 @@ public class Enemy : MonoBehaviour
         }
         
         Destroy(gameObject);
+    }
+
+    void SpawnDamageNumber(float dmg)
+    {
+        GameObject NewNumber = Instantiate(FloatingNumberPrefab, canvas.transform);
+        float randf = Random.Range(-5,5) * (Random.Range(0,10) / 10f);
+        NewNumber.transform.position = NumberSpawnPoint.transform.position;
+        NewNumber.transform.Translate(new Vector2(randf,0));
+        NewNumber.GetComponent<FloatingDamageNumber>().Init(dmg);
     }
 }

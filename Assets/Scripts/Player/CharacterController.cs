@@ -35,7 +35,7 @@ public class CharacterController : MonoBehaviour
 
 	private float grav;
 
-	const float k_GroundedRadius = .4f;
+	public float k_GroundedRadius = .4f;
 	private bool m_Grounded;
 	private bool can_Move = true;
 	private Rigidbody2D m_Rigidbody2D;
