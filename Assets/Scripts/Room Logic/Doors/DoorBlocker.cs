@@ -3,22 +3,28 @@ using UnityEngine;
 public class DoorBlocker : MonoBehaviour
 {
     GameObject Room;
+    private DoorLockAnimation lockAnim;
+    private bool lastDoorsOpen = true;
     void Start()
     {
         Room = GameObject.FindGameObjectWithTag("Room");
+        lockAnim = GetComponent<DoorLockAnimation>();
     }
 
     void FixedUpdate()
     {
-        if(Room.GetComponent<RoomDefinition>().doors_open)
+        bool doorsOpen = Room.GetComponent<RoomDefinition>().doors_open;
+
+        if (doorsOpen != lastDoorsOpen)
         {
-            GetComponent<BoxCollider2D>().isTrigger = true;
-            GetComponent<SpriteRenderer>().enabled = false;
+            if (doorsOpen)
+                lockAnim.PlayUnlockAnimation();
+            else
+                lockAnim.PlayLockAnimation();
+
+            lastDoorsOpen = doorsOpen;
         }
-        else
-        {
-            GetComponent<BoxCollider2D>().isTrigger = false;
-            GetComponent<SpriteRenderer>().enabled = true;
-        }
+
+        GetComponent<BoxCollider2D>().isTrigger = doorsOpen;
     }
 }

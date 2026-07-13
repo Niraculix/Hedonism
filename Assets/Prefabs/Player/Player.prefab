@@ -229,6 +229,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   m_GroundCheck: {fileID: 9111719633053037842}
+  k_GroundedRadius: 0.82
   CoyoteTime: 4
   jumpAction: {fileID: -2099379676528639254, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   dashing: 0
@@ -295,7 +296,7 @@ MonoBehaviour:
   MeleeAttackRange: 1.32
   ParryRange: 1.5
   LightIntensity: 2
-  MeleeDamage: 1000
+  MeleeDamage: 5
   AdrenalinDamage: 2000
   max_hp: 30
   hp: 0
@@ -683,7 +684,7 @@ Transform:
   m_GameObject: {fileID: 4594282879416625894}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.053, y: -0.626, z: 0}
+  m_LocalPosition: {x: -0.053, y: -0.444, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
