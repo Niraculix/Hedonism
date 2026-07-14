@@ -34,7 +34,7 @@ AnimatorController:
   m_Name: chasing floor
   serializedVersion: 6
   m_AnimatorParameters:
-  - m_Name: IsAlerted
+  - m_Name: isChasing
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -120,7 +120,7 @@ AnimatorStateTransition:
     m_ConditionEvent: isChasing
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: IsAlerted
+    m_ConditionEvent: isChasing
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1749226141858667298}
@@ -148,7 +148,7 @@ AnimatorStateTransition:
     m_ConditionEvent: isChasing
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: IsAlerted
+    m_ConditionEvent: isChasing
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3654552242412188730}

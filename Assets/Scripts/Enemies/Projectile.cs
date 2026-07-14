@@ -76,6 +76,7 @@ public class Projectile : MonoBehaviour
             {
                 Debug.Log("Spieler getroffen!");
                 other.GetComponent<PlayerCombat>().takeDamage(_damage, _direction);
+                other.GetComponent<CharacterController>().Knockback(_direction,_damage);
                 Destroy(gameObject);
             }
             return;

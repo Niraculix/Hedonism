@@ -85,7 +85,7 @@ public class RoomDefinition : MonoBehaviour
             SpawnPointPos = player.transform.position;
         }
 
-        if(EnemyWaves.Count <= 0)
+        if(EnemyWaves.Count <= 0 || room_cleared)
         {
             UnlockDoors(3);
         }
@@ -148,6 +148,11 @@ public class RoomDefinition : MonoBehaviour
     {
         yield return new WaitForSeconds(sec);
         doors_open = true;
+    }
+
+    public void ItemPickedUp()
+    {
+        StartCoroutine(NextEnemyWave());
     }
 
     void OnValidate()

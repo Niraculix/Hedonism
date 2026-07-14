@@ -181,6 +181,7 @@ public class PlayerCombat : MonoBehaviour
 
     void OnMelee()
     {
+        if(GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().IsPaused) return;
         if(!ActionOnCooldown)
         {
             controller.TriggerAttackAnimation();
@@ -282,7 +283,7 @@ public class PlayerCombat : MonoBehaviour
                 Die();
             }
 
-            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().FreezeGame(2);
+            StartCoroutine(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().FreezeGame(2));
             
             SetIFrames(5);
             

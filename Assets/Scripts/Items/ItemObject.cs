@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -13,6 +14,7 @@ public class ItemObject : MonoBehaviour
     public GameObject ItemNameUI;
 
     RoomDefinition roomDef;
+    float Y_Offset = 128;
 
     void Start()
     {
@@ -25,6 +27,7 @@ public class ItemObject : MonoBehaviour
     // Diese Methode wird von ItemRoom aufgerufen NACHDEM item zugewiesen wurde
     public void InitializeItem(Vector2 pos)
     {
+        itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
         transform.position = pos;
         if (item != null && item.sprite != null)
         {
@@ -50,20 +53,21 @@ public class ItemObject : MonoBehaviour
 
         ItemNameUI.GetComponent<TextMeshProUGUI>().text = item.item_name;
 
-        float Y_Offset = 128;
 
         foreach(ItemAttribute att in item.attributes)
         {
             GameObject newAttrUI = Instantiate(UIAttrChangePrefab);
-            newAttrUI.transform.parent = DescriptionUI.transform;
+            newAttrUI.transform.SetParent(DescriptionUI.transform);
             newAttrUI.transform.localScale = new Vector2(1,1);
             newAttrUI.transform.position = new Vector2(0, Y_Offset);
 
+            print(att.type);
+
             Color changeColor;
 
-            int newValueInt;
-            float newValueFloat;
-            bool newValueBool;
+            int newValueInt = 0;
+            float newValueFloat = 0f;
+            bool newValueBool = false;
 
             switch (att.type)
                 {
@@ -77,7 +81,7 @@ public class ItemObject : MonoBehaviour
                         {
                             changeColor = Color.red;
                         }
-                        newAttrUI.GetComponent<ItemAttrUI>().Init("Max HP", $"{itemManager.max_hp}", $"{newValueInt}", changeColor);
+                        newAttrUI.GetComponent<ItemAttrUI>().Init("Max HP", $"{itemManager.max_hp}", $"{newValueInt}", changeColor, Y_Offset);
                     break;
 
                     case ItemAttribute.ItemType.LHealRate_Float:
@@ -90,7 +94,7 @@ public class ItemObject : MonoBehaviour
                         {
                             changeColor = Color.red;
                         }
-                        newAttrUI.GetComponent<ItemAttrUI>().Init("Healrate:", $"{itemManager.HealRate}% / sec", $"{newValueFloat}% / sec", changeColor);
+                        newAttrUI.GetComponent<ItemAttrUI>().Init("Healrate:", $"{itemManager.HealRate}% / sec", $"{newValueFloat}% / sec", changeColor, Y_Offset);
                     break;
 
                     case ItemAttribute.ItemType.DDrainRate_Float:
@@ -103,7 +107,7 @@ public class ItemObject : MonoBehaviour
                         {
                             changeColor = Color.red;
                         }
-                        newAttrUI.GetComponent<ItemAttrUI>().Init("Drainrate:", $"{itemManager.DrainRate}% / sec", $"{newValueFloat}% / sec", changeColor);
+                        newAttrUI.GetComponent<ItemAttrUI>().Init("Drainrate:", $"{itemManager.DrainRate}% / sec", $"{newValueFloat}% / sec", changeColor, Y_Offset);
                     
                     break;
 
@@ -117,7 +121,7 @@ public class ItemObject : MonoBehaviour
                         {
                             changeColor = Color.red;
                         }
-                        newAttrUI.GetComponent<ItemAttrUI>().Init("Max Dashes in Adrenalin:", $"{itemManager.maxDashesDarkMode}", $"{newValueInt}", changeColor);
+                        newAttrUI.GetComponent<ItemAttrUI>().Init("Max Dashes in Adrenalin:", $"{itemManager.maxDashesDarkMode}", $"{newValueInt}", changeColor, Y_Offset);
                     break;
 
                     case ItemAttribute.ItemType.LDashCount_Int:
@@ -130,7 +134,7 @@ public class ItemObject : MonoBehaviour
                         {
                             changeColor = Color.red;
                         }
-                        newAttrUI.GetComponent<ItemAttrUI>().Init("Max Dashes in Normal:", $"{itemManager.maxDashesLightMode}", $"{newValueInt}", changeColor);
+                        newAttrUI.GetComponent<ItemAttrUI>().Init("Max Dashes in Normal:", $"{itemManager.maxDashesLightMode}", $"{newValueInt}", changeColor, Y_Offset);
                     break;
 
                     case ItemAttribute.ItemType.LAttackDMG_Int:
@@ -143,7 +147,7 @@ public class ItemObject : MonoBehaviour
                         {
                             changeColor = Color.red;
                         }
-                        newAttrUI.GetComponent<ItemAttrUI>().Init("Melee Damage:", $"{itemManager.maxDashesLightMode}", $"{newValueInt}", changeColor);
+                        newAttrUI.GetComponent<ItemAttrUI>().Init("Melee Damage:", $"{itemManager.maxDashesLightMode}", $"{newValueInt}", changeColor, Y_Offset);
                     break;
 
                     case ItemAttribute.ItemType.DAttackCooldown_Float:
@@ -156,7 +160,7 @@ public class ItemObject : MonoBehaviour
                         {
                             changeColor = Color.red;
                         }
-                        newAttrUI.GetComponent<ItemAttrUI>().Init("Attack Cooldown:", $"{itemManager.AttackCooldownDarkMode} sec", $"{newValueFloat} sec", changeColor);
+                        newAttrUI.GetComponent<ItemAttrUI>().Init("Attack Cooldown:", $"{itemManager.AttackCooldownDarkMode} sec", $"{newValueFloat} sec", changeColor, Y_Offset);
                     break;
 
                     case ItemAttribute.ItemType.DDashReset_Bool:
@@ -169,7 +173,7 @@ public class ItemObject : MonoBehaviour
                         {
                             changeColor = Color.green;
                         }
-                        newAttrUI.GetComponent<ItemAttrUI>().Init("Dash Resets on Kill:", $"{itemManager.DashResetOnKill} sec", $"{newValueBool} sec", changeColor);
+                        newAttrUI.GetComponent<ItemAttrUI>().Init("Dash Resets on Kill:", $"{itemManager.DashResetOnKill} sec", $"{newValueBool} sec", changeColor, Y_Offset);
                     break;
 
                     case ItemAttribute.ItemType.LParryLechPercent_Float:
@@ -182,12 +186,15 @@ public class ItemObject : MonoBehaviour
                         {
                             changeColor = Color.red;
                         }
-                        newAttrUI.GetComponent<ItemAttrUI>().Init("Heal with Parry", $"{itemManager.parry_leech_percent}% of Projectile DMG", $"{newValueFloat}% of Projectile DMG", changeColor);
+                        newAttrUI.GetComponent<ItemAttrUI>().Init("Heal with Parry", $"{itemManager.parry_leech_percent}% of Projectile DMG", $"{newValueFloat}% of Projectile DMG", changeColor, Y_Offset);
                     break;
                 }
+                
+            
             Y_Offset -= 90;
         }
     }
+
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -195,7 +202,7 @@ public class ItemObject : MonoBehaviour
         {
             itemManager.ItemList.Add(item);
             itemManager.UpdateItems();
-            StartCoroutine(roomDef.NextEnemyWave());
+            roomDef.ItemPickedUp();
 
             Destroy(gameObject);
         }

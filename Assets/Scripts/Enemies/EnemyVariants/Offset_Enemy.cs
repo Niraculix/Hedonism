@@ -47,4 +47,10 @@ public class Enemy_Offset : MonoBehaviour
         GameObject proj = Instantiate(ProjectilePrefab, transform.position, Quaternion.identity);
         proj.GetComponent<Projectile>().Init(dir, ProjectileDamage);
     }
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.color = Color.skyBlue;
+        Gizmos.DrawSphere(transform.position,0.3f);
+    }
 }
