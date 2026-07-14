@@ -229,12 +229,14 @@ public class CharacterController : MonoBehaviour
     }
     public void TriggerAttackAnimation()
     {
+        Debug.Log("️ ATTACK TRIGGERED!");
         if (torsoAnimator != null) torsoAnimator.SetTrigger("Attack");
         if (legsAnimator != null) legsAnimator.SetTrigger("Attack");
     }
 
     public void TriggerKnockbackAnimation()
     {
+        Debug.Log("️ Knockback TRIGGERED!");
         if (torsoAnimator != null) torsoAnimator.SetTrigger("Knockback");
         if (legsAnimator != null) legsAnimator.SetTrigger("Knockback");
     }
