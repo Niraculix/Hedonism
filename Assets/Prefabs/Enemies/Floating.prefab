@@ -123,7 +123,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1105.599, y: 875.062, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 242047937806248252}
@@ -172,7 +172,7 @@ MonoBehaviour:
   contact_dmg: 5
   active: 0
   LogicEnabled: 1
-  animationObject: {fileID: 0}
+  animationObject: {fileID: 1180867204230701485}
 --- !u!61 &3447192513628458204
 BoxCollider2D:
   m_ObjectHideFlags: 0

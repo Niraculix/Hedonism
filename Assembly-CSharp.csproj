@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Enemies\EnemyVariants\SpinEffect.cs" />
     <Compile Include="Assets\Scripts\Room Logic\Doors\DoorTrigger.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyVariants\Offset_Enemy.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Room Logic\RoomDefinition.cs" />
     <Compile Include="Assets\Scripts\UI\ItemDescUI.cs" />
     <Compile Include="Assets\Scripts\UI\RoomIconUI.cs" />

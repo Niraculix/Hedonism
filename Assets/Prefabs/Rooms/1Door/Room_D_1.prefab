@@ -4830,14 +4830,6 @@ PrefabInstance:
       value: Floating
       objectReference: {fileID: 0}
     - target: {fileID: 4696381557592850593, guid: 877770c9d0857ce4abd7d966587280b0, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.4925
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696381557592850593, guid: 877770c9d0857ce4abd7d966587280b0, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.8183
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696381557592850593, guid: 877770c9d0857ce4abd7d966587280b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.9234
       objectReference: {fileID: 0}
