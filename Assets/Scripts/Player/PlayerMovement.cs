@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnMove(InputValue value)
     {
+        if(GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().IsPaused) return;
         if(Mathf.Abs(value.Get<Vector2>().x) > 0.25)
         {
             movementVector = value.Get<Vector2>();
@@ -31,11 +32,13 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump()
     {
+        if(GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().IsPaused) return;
         jumping = true;
     }
 
     void OnDash()
     {
+        if(GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().IsPaused) return;
         dashing = true;
         GetComponent<PlayerCombat>().SetIFrames(10);
     }

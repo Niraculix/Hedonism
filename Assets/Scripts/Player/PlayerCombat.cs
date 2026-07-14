@@ -96,7 +96,6 @@ public class PlayerCombat : MonoBehaviour
 
     void FixedUpdate()
     {
-        print(hp);
         if(iFrames > 0)
         {
             iFrames--;
@@ -182,6 +181,7 @@ public class PlayerCombat : MonoBehaviour
 
     void OnMelee()
     {
+        if(GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().IsPaused) return;
         if(!ActionOnCooldown)
         {
             if (light_dropped)
@@ -279,7 +279,7 @@ public class PlayerCombat : MonoBehaviour
                 Die();
             }
 
-            GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().FreezeGame(2);
+            StartCoroutine(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().FreezeGame(2));
             
             SetIFrames(5);
             

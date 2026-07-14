@@ -3,8 +3,8 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
 
-    public static bool IsPaused = false;
-    public static bool OptionsOpened = false;
+    public bool IsPaused = false;
+    public bool OptionsOpened = false;
 
     public GameObject MenuUI;
     public GameObject OptionsUI;

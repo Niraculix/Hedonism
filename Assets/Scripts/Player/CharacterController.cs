@@ -243,6 +243,15 @@ public class CharacterController : MonoBehaviour
 		GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().Esc();
 	}
 
+	void OnDash()
+	{
+		PauseMenu pauseUI = GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>();
+		if (pauseUI.IsPaused)
+		{
+			pauseUI.Esc();
+		}
+	}
+
 
 	public void Move(float move, bool jump, bool dash)
 	{
@@ -386,6 +395,7 @@ public class CharacterController : MonoBehaviour
 
 	void OnMove(InputValue value)
 	{
+		if(GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().IsPaused) return;
 		InputVector = value.Get<Vector2>();
 	}
 
