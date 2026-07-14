@@ -31,8 +31,12 @@ public class CharacterController : MonoBehaviour
 	[SerializeField] private LayerMask m_WhatIsGround;
 	[SerializeField] private Transform m_GroundCheck;
 
+	[Header("Animation Debug")]
+    [SerializeField] private GameObject torsoObject;
+    [SerializeField] private GameObject legsObject;
 
-	private float grav;
+
+    private float grav;
 
 	public float k_GroundedRadius = .4f;
 	private bool m_Grounded;
@@ -69,16 +73,45 @@ public class CharacterController : MonoBehaviour
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
 
+	public enum PlayerState { Idle, Running ,Jumping ,Falling , Dashing, Knockback, Attacking }
+	public PlayerState CurrentState { get; private set; }
 
-	private void Awake()
+    /// <summary>
+    /// /////////////////// Animator
+    /// </summary>
+    private Animator torsoAnimator;
+    private Animator legsAnimator;
+
+
+    private void Awake()
 	{
 		
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 		grav = m_Rigidbody2D.gravityScale;
 		itemManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<ItemManager>();
-		//itemManager.UpdateItems();
+        //itemManager.UpdateItems();
 
-		dashing = false;
+   
+        if (torsoObject != null)
+        {
+            torsoAnimator = torsoObject.GetComponent<Animator>();
+        }
+        else
+        {
+            Debug.LogError(" Torso Object is missing! Drag it into the Inspector.");
+        }
+
+        if (legsObject != null)
+        {
+            legsAnimator = legsObject.GetComponent<Animator>();
+        }
+        else
+        {
+            Debug.LogError(" Legs Object is missing! Drag it into the Inspector.");
+        }
+
+
+        dashing = false;
 		dashes_remaining = MaxDashes;
 
 		if (OnLandEvent == null)
@@ -157,10 +190,55 @@ public class CharacterController : MonoBehaviour
 		{
 			PlayerMat.friction = 0.6f;
 		}
-
+		UpdateAnimationState();
 	}
 
-	void OnEsc()
+    private void UpdateAnimationState()
+    {
+        // Calculate velocities once
+        float horizontalSpeed = Mathf.Abs(m_Rigidbody2D.linearVelocity.x);
+        float verticalVelocity = m_Rigidbody2D.linearVelocity.y;
+
+        // --- 1. UPDATE LEGS ---
+        if (legsAnimator != null)
+        {
+            legsAnimator.SetFloat("Speed", horizontalSpeed);
+            legsAnimator.SetBool("IsGrounded", m_Grounded);
+
+            // Jump and Fall logic
+            legsAnimator.SetBool("IsJumping", !m_Grounded && verticalVelocity > 0.1f);
+            legsAnimator.SetBool("IsFalling", !m_Grounded && verticalVelocity <= 0.1f);
+
+            // Dash logic
+            legsAnimator.SetBool("IsDashing", dashing);
+        }
+
+        // --- 2. UPDATE TORSO ---
+        if (torsoAnimator != null)
+        {
+            torsoAnimator.SetFloat("Speed", horizontalSpeed);
+            torsoAnimator.SetBool("IsGrounded", m_Grounded);
+
+            // Jump and Fall logic
+            torsoAnimator.SetBool("IsJumping", !m_Grounded && verticalVelocity > 0.1f);
+            torsoAnimator.SetBool("IsFalling", !m_Grounded && verticalVelocity <= 0.1f);
+
+            // Dash logic
+            torsoAnimator.SetBool("IsDashing", dashing);
+        }
+    }
+    public void TriggerAttackAnimation()
+    {
+        if (torsoAnimator != null) torsoAnimator.SetTrigger("Attack");
+        if (legsAnimator != null) legsAnimator.SetTrigger("Attack");
+    }
+
+    public void TriggerKnockbackAnimation()
+    {
+        if (torsoAnimator != null) torsoAnimator.SetTrigger("Knockback");
+        if (legsAnimator != null) legsAnimator.SetTrigger("Knockback");
+    }
+    void OnEsc()
 	{
 		GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().Esc();
 	}
