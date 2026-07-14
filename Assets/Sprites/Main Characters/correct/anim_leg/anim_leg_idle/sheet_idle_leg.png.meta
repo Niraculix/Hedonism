@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 468f3e18f36c93d43a89affb9b5d865b
+guid: f88844b4c0aa35646800b508d6863d53
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5913715002755380045
-    second: anim_blank_0
+      213: -6463656669648674922
+    second: sheet_idle_leg_0
+  - first:
+      213: -1494619233775426497
+    second: sheet_idle_leg_1
+  - first:
+      213: -3500972752514699298
+    second: sheet_idle_leg_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -98,12 +104,78 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: sheet_idle_leg_0
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1532
+        width: 120
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f918f318a7c46a0800000000000000
+      internalID: -6463656669648674922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_idle_leg_1
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 886
+        width: 126
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f346958c9bb024be0800000000000000
+      internalID: -1494619233775426497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_idle_leg_2
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 236
+        width: 128
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf2a0e94db0a6fc0800000000000000
+      internalID: -3500972752514699298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9075c315cd1d3e44480f7e3c55cb2462
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -111,10 +183,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":720.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
-    nameFileIdTable: {}
+      entries: []
+    nameFileIdTable:
+      sheet_idle_leg_0: -6463656669648674922
+      sheet_idle_leg_1: -1494619233775426497
+      sheet_idle_leg_2: -3500972752514699298
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

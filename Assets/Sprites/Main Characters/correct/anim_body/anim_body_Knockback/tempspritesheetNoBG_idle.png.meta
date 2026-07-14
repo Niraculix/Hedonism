@@ -1,34 +1,28 @@
 fileFormatVersion: 2
-guid: 7ac94003b8c976c43a8bbf7ee605c6a2
+guid: 6cb1c0cdcd334eb40abf9039630924b6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6683476861023091374
-    second: TempKnockback_0
+      213: -29899759522264411
+    second: tempspritesheetNoBG_idle_0
   - first:
-      213: 733495705421072417
-    second: TempKnockback_1
+      213: 3911440045433561061
+    second: tempspritesheetNoBG_idle_1
   - first:
-      213: -6204622517525510885
-    second: TempKnockback_2
+      213: 2628590969284183554
+    second: tempspritesheetNoBG_idle_2
   - first:
-      213: -8831475700679186688
-    second: TempKnockback_3
+      213: 9213965668491392201
+    second: tempspritesheetNoBG_idle_3
   - first:
-      213: 5189918360398140289
-    second: TempKnockback_4
+      213: 3398093179847501450
+    second: tempspritesheetNoBG_idle_4
   - first:
-      213: -7518569902651147948
-    second: TempKnockback_5
+      213: 6283558817482093085
+    second: tempspritesheetNoBG_idle_5
   - first:
-      213: -7719903677372754145
-    second: TempKnockback_6
-  - first:
-      213: -3444510449405366521
-    second: TempKnockback_7
-  - first:
-      213: -1945874384892088459
-    second: TempKnockback_8
+      213: 374216578861514388
+    second: tempspritesheetNoBG_idle_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -124,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TempKnockback_0
+      name: tempspritesheetNoBG_idle_0
       rect:
         serializedVersion: 2
-        x: 323
-        y: 1865
-        width: 211
-        height: 193
+        x: 155
+        y: 1669
+        width: 256
+        height: 177
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2550d2a94358f33a0800000000000000
-      internalID: -6683476861023091374
+      spriteID: 5aa4eceb356c59ff0800000000000000
+      internalID: -29899759522264411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempKnockback_1
+      name: tempspritesheetNoBG_idle_1
       rect:
         serializedVersion: 2
-        x: 1043
-        y: 1867
-        width: 205
-        height: 188
+        x: 879
+        y: 1669
+        width: 136
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 128c5e53576ed2a00800000000000000
-      internalID: 733495705421072417
+      spriteID: 5ef1e446ff9384630800000000000000
+      internalID: 3911440045433561061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempKnockback_2
+      name: tempspritesheetNoBG_idle_2
       rect:
         serializedVersion: 2
-        x: 1205
-        y: 1962
-        width: 55
-        height: 80
+        x: 997
+        y: 1689
+        width: 104
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,42 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b15808d91b0c4e9a0800000000000000
-      internalID: -6204622517525510885
+      spriteID: 206cbf74f81aa7420800000000000000
+      internalID: 2628590969284183554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempKnockback_3
+      name: tempspritesheetNoBG_idle_3
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1327
-        width: 264
-        height: 188
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 007e58234ab407580800000000000000
-      internalID: -8831475700679186688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TempKnockback_4
-      rect:
-        serializedVersion: 2
-        x: 1038
-        y: 1330
+        x: 147
+        y: 1128
         width: 232
-        height: 188
+        height: 167
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1831fcc504b460840800000000000000
-      internalID: 5189918360398140289
+      spriteID: 9c4f21335f49edf70800000000000000
+      internalID: 9213965668491392201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempKnockback_5
+      name: tempspritesheetNoBG_idle_4
       rect:
         serializedVersion: 2
-        x: 318
-        y: 793
-        width: 274
-        height: 183
+        x: 888
+        y: 1142
+        width: 195
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,19 +221,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 459f885328ca8a790800000000000000
-      internalID: -7518569902651147948
+      spriteID: a86ec724eb3782f20800000000000000
+      internalID: 3398093179847501450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TempKnockback_6
+      name: tempspritesheetNoBG_idle_5
       rect:
         serializedVersion: 2
-        x: 1044
-        y: 799
-        width: 282
+        x: 173
+        y: 589
+        width: 186
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d123b49e37fa33750800000000000000
+      internalID: 6283558817482093085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheetNoBG_idle_6
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 587
+        width: 197
         height: 168
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -271,52 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1717f9d1846dd490800000000000000
-      internalID: -7719903677372754145
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TempKnockback_7
-      rect:
-        serializedVersion: 2
-        x: 319
-        y: 260
-        width: 210
-        height: 169
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70f621efef3a230d0800000000000000
-      internalID: -3444510449405366521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TempKnockback_8
-      rect:
-        serializedVersion: 2
-        x: 1038
-        y: 251
-        width: 207
-        height: 181
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57fa9fe7e8ddef4e0800000000000000
-      internalID: -1945874384892088459
+      spriteID: 49e3a1ceefb713500800000000000000
+      internalID: 374216578861514388
       vertices: []
       indices: 
       edges: []
@@ -335,15 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TempKnockback_0: -6683476861023091374
-      TempKnockback_1: 733495705421072417
-      TempKnockback_2: -6204622517525510885
-      TempKnockback_3: -8831475700679186688
-      TempKnockback_4: 5189918360398140289
-      TempKnockback_5: -7518569902651147948
-      TempKnockback_6: -7719903677372754145
-      TempKnockback_7: -3444510449405366521
-      TempKnockback_8: -1945874384892088459
+      tempspritesheetNoBG_idle_0: -29899759522264411
+      tempspritesheetNoBG_idle_1: 3911440045433561061
+      tempspritesheetNoBG_idle_2: 2628590969284183554
+      tempspritesheetNoBG_idle_3: 9213965668491392201
+      tempspritesheetNoBG_idle_4: 3398093179847501450
+      tempspritesheetNoBG_idle_5: 6283558817482093085
+      tempspritesheetNoBG_idle_6: 374216578861514388
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

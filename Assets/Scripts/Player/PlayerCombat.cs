@@ -183,6 +183,8 @@ public class PlayerCombat : MonoBehaviour
     {
         if(!ActionOnCooldown)
         {
+            controller.TriggerAttackAnimation();
+
             if (light_dropped)
             {
                 StartCoroutine(ActionCooldown(AdrenalinAttackCooldown));
@@ -267,8 +269,10 @@ public class PlayerCombat : MonoBehaviour
 
 
         if (!dead)
-        { 
-            if(hp - damage > 0)
+        {
+            controller.TriggerKnockbackAnimation();
+
+            if (hp - damage > 0)
             {
                 hp -= damage;
             }
