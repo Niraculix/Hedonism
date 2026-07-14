@@ -1,4 +1,6 @@
+using System;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,14 +20,19 @@ public class HealthBar : MonoBehaviour
     void FixedUpdate()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
-        if(Player == null) return;
+        if(Player == null)
+        {
+            print("no player found");
+            return;
+        } 
 
-        float current_hp = (float)Player.GetComponent<PlayerCombat>().GetHp();
+        float current_hp = (float)Player.GetComponent<PlayerCombat>().hp;
         TextMeshProUGUI textMesh = HpText.GetComponent<TextMeshProUGUI>();
 
         textMesh.text = $"{Mathf.Round(current_hp * 100) / 100.0} / {itemManager.max_hp}";
         
         float hp_difference =  current_hp / itemManager.max_hp;
+        print(hp_difference);
         slider.value = hp_difference;
         if(Player.GetComponent<PlayerCombat>().light_dropped)
         {

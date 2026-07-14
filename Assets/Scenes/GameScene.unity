@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4df8af3c38044d43a0b20cd0c1f4562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  DungeonGenerationOn: 0
+  DungeonGenerationOn: 1
   roomPrefabs_Start:
   - {fileID: 8133202235992323011, guid: a30707bff49dd3443a66a5933b9c1674, type: 3}
   - {fileID: 8133202235992323011, guid: 9aaa65616c67da8468c9b3b0341cd337, type: 3}
@@ -320,71 +320,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   RoomsCleared: 
---- !u!1001 &1435762748
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4986356226655880597, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -17.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 4986356226655880597, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994384204112171904, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994384204112171904, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994384204112171904, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994384204112171904, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994384204112171904, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994384204112171904, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994384204112171904, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994384204112171904, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994384204112171904, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994384204112171904, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8133202235992323011, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
-      propertyPath: m_Name
-      value: Room_LRD_3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3232af7b33b205345b7635aff7753f41, type: 3}
 --- !u!1 &1906481941
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,7 +526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 988445648669343106, guid: e3594d0a4476ea143a014f6a0c18f829, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1063574173113734012, guid: e3594d0a4476ea143a014f6a0c18f829, type: 3}
       propertyPath: m_Pivot.x
@@ -673,6 +608,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2091372093440106136, guid: e3594d0a4476ea143a014f6a0c18f829, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4240397577888022127, guid: e3594d0a4476ea143a014f6a0c18f829, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
@@ -728,4 +667,3 @@ SceneRoots:
   - {fileID: 1342367309}
   - {fileID: 420183055211055151}
   - {fileID: 924177014959608031}
-  - {fileID: 1435762748}

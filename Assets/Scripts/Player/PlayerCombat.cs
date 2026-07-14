@@ -96,6 +96,7 @@ public class PlayerCombat : MonoBehaviour
 
     void FixedUpdate()
     {
+        print(hp);
         if(iFrames > 0)
         {
             iFrames--;
