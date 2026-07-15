@@ -22,13 +22,13 @@ public class StartScreenLogic : MonoBehaviour
     IEnumerator ChangeScene()
     {
         blinking = false;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.75f);
         SceneManager.LoadScene("GameScene");
     }
 
     IEnumerator Blink()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         if(blinking)
         {
             textActive = !textActive;
