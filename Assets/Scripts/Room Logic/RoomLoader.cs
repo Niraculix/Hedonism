@@ -24,6 +24,7 @@ public class RoomLoader : MonoBehaviour
     {
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        print(name);
     }
 
     public void LoadRoom(RoomNode node, DoorDirection comingFrom)

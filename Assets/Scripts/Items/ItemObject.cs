@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ItemObject : MonoBehaviour
@@ -15,6 +16,8 @@ public class ItemObject : MonoBehaviour
 
     RoomDefinition roomDef;
     float Y_Offset = 128;
+
+    Vector2 floatingdir = new Vector2(0,1);
 
     void Start()
     {
@@ -62,6 +65,8 @@ public class ItemObject : MonoBehaviour
             newAttrUI.transform.position = new Vector2(0, Y_Offset);
 
             print(att.type);
+
+            StartCoroutine(Floating());
 
             Color changeColor;
 
@@ -193,6 +198,18 @@ public class ItemObject : MonoBehaviour
             
             Y_Offset -= 90;
         }
+    }
+
+    void FixedUpdate()
+    {
+        transform.Translate(floatingdir * Time.fixedDeltaTime);
+    }
+
+    IEnumerator Floating()
+    {
+        yield return new WaitForSeconds(1);
+        floatingdir.y *= -1;
+        StartCoroutine(Floating());
     }
 
 
