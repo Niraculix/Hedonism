@@ -1,0 +1,6963 @@
+fileFormatVersion: 2
+guid: 07af7ba7ea116c44380539b06718f168
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3474951299264768247
+    second: Up3Atk_Sheet_0
+  - first:
+      213: -3858993736341650707
+    second: Up3Atk_Sheet_1
+  - first:
+      213: 1327437622153731049
+    second: Up3Atk_Sheet_2
+  - first:
+      213: -23732662208504027
+    second: Up3Atk_Sheet_3
+  - first:
+      213: 5548722270154284391
+    second: Up3Atk_Sheet_4
+  - first:
+      213: 4349087759767529543
+    second: Up3Atk_Sheet_5
+  - first:
+      213: 7532815900577791512
+    second: Up3Atk_Sheet_6
+  - first:
+      213: -8712775134845684653
+    second: Up3Atk_Sheet_7
+  - first:
+      213: 5021095651044459133
+    second: Up3Atk_Sheet_8
+  - first:
+      213: 7618186878486702980
+    second: Up3Atk_Sheet_9
+  - first:
+      213: -7234510179947447877
+    second: Up3Atk_Sheet_10
+  - first:
+      213: 217928059384801222
+    second: Up3Atk_Sheet_11
+  - first:
+      213: -583373930962470369
+    second: Up3Atk_Sheet_12
+  - first:
+      213: -5668003937150722097
+    second: Up3Atk_Sheet_13
+  - first:
+      213: -853066670078024247
+    second: Up3Atk_Sheet_14
+  - first:
+      213: 7034532913160847885
+    second: Up3Atk_Sheet_15
+  - first:
+      213: 1969024469635385914
+    second: Up3Atk_Sheet_16
+  - first:
+      213: -8119202736922171357
+    second: Up3Atk_Sheet_17
+  - first:
+      213: -5804717341378283958
+    second: Up3Atk_Sheet_18
+  - first:
+      213: 2131037996426226581
+    second: Up3Atk_Sheet_19
+  - first:
+      213: 1416886092677654877
+    second: Up3Atk_Sheet_20
+  - first:
+      213: -3392214037102170131
+    second: Up3Atk_Sheet_21
+  - first:
+      213: 8620878966818744981
+    second: Up3Atk_Sheet_22
+  - first:
+      213: -1783164728515381513
+    second: Up3Atk_Sheet_23
+  - first:
+      213: 3674472781695301685
+    second: Up3Atk_Sheet_24
+  - first:
+      213: 5079455105175517796
+    second: Up3Atk_Sheet_25
+  - first:
+      213: 8018366527871554439
+    second: Up3Atk_Sheet_26
+  - first:
+      213: 2531303864468868963
+    second: Up3Atk_Sheet_27
+  - first:
+      213: 5350515806798208808
+    second: Up3Atk_Sheet_28
+  - first:
+      213: -4447806695823051919
+    second: Up3Atk_Sheet_29
+  - first:
+      213: -315201406868682592
+    second: Up3Atk_Sheet_30
+  - first:
+      213: 2850446357705659565
+    second: Up3Atk_Sheet_31
+  - first:
+      213: 6367582331145066673
+    second: Up3Atk_Sheet_32
+  - first:
+      213: -7718878869145712813
+    second: Up3Atk_Sheet_33
+  - first:
+      213: 3384643570102955050
+    second: Up3Atk_Sheet_34
+  - first:
+      213: -8803206628143872844
+    second: Up3Atk_Sheet_35
+  - first:
+      213: -1763168407124535815
+    second: Up3Atk_Sheet_36
+  - first:
+      213: 8672587411723070960
+    second: Up3Atk_Sheet_37
+  - first:
+      213: -7320043590690767163
+    second: Up3Atk_Sheet_38
+  - first:
+      213: 4352574482316051446
+    second: Up3Atk_Sheet_39
+  - first:
+      213: -1709722173674557216
+    second: Up3Atk_Sheet_40
+  - first:
+      213: 1436971302230052547
+    second: Up3Atk_Sheet_41
+  - first:
+      213: -7739631875907510100
+    second: Up3Atk_Sheet_42
+  - first:
+      213: 1968549457892289506
+    second: Up3Atk_Sheet_43
+  - first:
+      213: -8857945043305016419
+    second: Up3Atk_Sheet_44
+  - first:
+      213: -8134630220203156931
+    second: Up3Atk_Sheet_45
+  - first:
+      213: -93549523769536692
+    second: Up3Atk_Sheet_46
+  - first:
+      213: 8028257457775070551
+    second: Up3Atk_Sheet_47
+  - first:
+      213: 7455738782657413936
+    second: Up3Atk_Sheet_48
+  - first:
+      213: -4200382848469121491
+    second: Up3Atk_Sheet_49
+  - first:
+      213: -3281809931822275145
+    second: Up3Atk_Sheet_50
+  - first:
+      213: -4856176255547374710
+    second: Up3Atk_Sheet_51
+  - first:
+      213: -1591748250775240644
+    second: Up3Atk_Sheet_52
+  - first:
+      213: 159248481117234965
+    second: Up3Atk_Sheet_53
+  - first:
+      213: -14318679712248288
+    second: Up3Atk_Sheet_54
+  - first:
+      213: -252845683564461509
+    second: Up3Atk_Sheet_55
+  - first:
+      213: -2497690357519269983
+    second: Up3Atk_Sheet_56
+  - first:
+      213: 224362697838077185
+    second: Up3Atk_Sheet_57
+  - first:
+      213: 355906164049026669
+    second: Up3Atk_Sheet_58
+  - first:
+      213: -6021975012995268628
+    second: Up3Atk_Sheet_59
+  - first:
+      213: 3296411370295625150
+    second: Up3Atk_Sheet_60
+  - first:
+      213: 3975846066554218588
+    second: Up3Atk_Sheet_61
+  - first:
+      213: -5739169523509273232
+    second: Up3Atk_Sheet_62
+  - first:
+      213: -6686318140071020059
+    second: Up3Atk_Sheet_63
+  - first:
+      213: -7578362399123281457
+    second: Up3Atk_Sheet_64
+  - first:
+      213: -165578119262665007
+    second: Up3Atk_Sheet_65
+  - first:
+      213: 2795208209000717789
+    second: Up3Atk_Sheet_66
+  - first:
+      213: -6752472449715531618
+    second: Up3Atk_Sheet_67
+  - first:
+      213: -6539271646729820935
+    second: Up3Atk_Sheet_68
+  - first:
+      213: 2961251673034609913
+    second: Up3Atk_Sheet_69
+  - first:
+      213: 8719568294229942678
+    second: Up3Atk_Sheet_70
+  - first:
+      213: 5185294073598197928
+    second: Up3Atk_Sheet_71
+  - first:
+      213: 8234625943539755182
+    second: Up3Atk_Sheet_72
+  - first:
+      213: -6177299631207957233
+    second: Up3Atk_Sheet_73
+  - first:
+      213: -6883213556500780648
+    second: Up3Atk_Sheet_74
+  - first:
+      213: 1630299413934675138
+    second: Up3Atk_Sheet_75
+  - first:
+      213: -7441439488396222012
+    second: Up3Atk_Sheet_76
+  - first:
+      213: -598383743545966000
+    second: Up3Atk_Sheet_77
+  - first:
+      213: -1608801544142857087
+    second: Up3Atk_Sheet_78
+  - first:
+      213: -632223207708661274
+    second: Up3Atk_Sheet_79
+  - first:
+      213: 3441457854068702798
+    second: Up3Atk_Sheet_80
+  - first:
+      213: 2664494658487892653
+    second: Up3Atk_Sheet_81
+  - first:
+      213: -669210211053720763
+    second: Up3Atk_Sheet_82
+  - first:
+      213: 4461763140574048313
+    second: Up3Atk_Sheet_83
+  - first:
+      213: -8821254478550640920
+    second: Up3Atk_Sheet_84
+  - first:
+      213: 102145253017551295
+    second: Up3Atk_Sheet_85
+  - first:
+      213: 654176030165251397
+    second: Up3Atk_Sheet_86
+  - first:
+      213: 581055834225644365
+    second: Up3Atk_Sheet_87
+  - first:
+      213: -2471111262470051473
+    second: Up3Atk_Sheet_88
+  - first:
+      213: -547383477408105159
+    second: Up3Atk_Sheet_89
+  - first:
+      213: 4753112148464671500
+    second: Up3Atk_Sheet_90
+  - first:
+      213: -4242343710334350006
+    second: Up3Atk_Sheet_91
+  - first:
+      213: 2112003683859545959
+    second: Up3Atk_Sheet_92
+  - first:
+      213: 3369734473807195155
+    second: Up3Atk_Sheet_93
+  - first:
+      213: 2989733034760142770
+    second: Up3Atk_Sheet_94
+  - first:
+      213: -2088928985765290835
+    second: Up3Atk_Sheet_95
+  - first:
+      213: 4199554319450414524
+    second: Up3Atk_Sheet_96
+  - first:
+      213: -2179700443451824409
+    second: Up3Atk_Sheet_97
+  - first:
+      213: -813004699257687328
+    second: Up3Atk_Sheet_98
+  - first:
+      213: 7874554198166525427
+    second: Up3Atk_Sheet_99
+  - first:
+      213: 2982712346523343974
+    second: Up3Atk_Sheet_100
+  - first:
+      213: -5304315824748132069
+    second: Up3Atk_Sheet_101
+  - first:
+      213: 2245978675882882602
+    second: Up3Atk_Sheet_102
+  - first:
+      213: -4287856881710836094
+    second: Up3Atk_Sheet_103
+  - first:
+      213: 8484074026853488623
+    second: Up3Atk_Sheet_104
+  - first:
+      213: -1635845544447405717
+    second: Up3Atk_Sheet_105
+  - first:
+      213: -5423487555872323913
+    second: Up3Atk_Sheet_106
+  - first:
+      213: -6139229915979750189
+    second: Up3Atk_Sheet_107
+  - first:
+      213: -3490547969676641045
+    second: Up3Atk_Sheet_108
+  - first:
+      213: -6184228622163114820
+    second: Up3Atk_Sheet_109
+  - first:
+      213: -7061813278082556635
+    second: Up3Atk_Sheet_110
+  - first:
+      213: -4759639010317268059
+    second: Up3Atk_Sheet_111
+  - first:
+      213: -9178920797096867151
+    second: Up3Atk_Sheet_112
+  - first:
+      213: 3927230583206689168
+    second: Up3Atk_Sheet_113
+  - first:
+      213: 2841390055845008187
+    second: Up3Atk_Sheet_114
+  - first:
+      213: 8913544577471199840
+    second: Up3Atk_Sheet_115
+  - first:
+      213: -6973026909635232354
+    second: Up3Atk_Sheet_116
+  - first:
+      213: -7368490528266325248
+    second: Up3Atk_Sheet_117
+  - first:
+      213: -8931392588350817903
+    second: Up3Atk_Sheet_118
+  - first:
+      213: 7074216518046883802
+    second: Up3Atk_Sheet_119
+  - first:
+      213: 5059047670224789090
+    second: Up3Atk_Sheet_120
+  - first:
+      213: 6622547335197764308
+    second: Up3Atk_Sheet_121
+  - first:
+      213: 8306357770878416825
+    second: Up3Atk_Sheet_122
+  - first:
+      213: -4261140116391637689
+    second: Up3Atk_Sheet_123
+  - first:
+      213: 2514095599350334912
+    second: Up3Atk_Sheet_124
+  - first:
+      213: -611235273635763375
+    second: Up3Atk_Sheet_125
+  - first:
+      213: -548666791579822701
+    second: Up3Atk_Sheet_126
+  - first:
+      213: -8158319850776407558
+    second: Up3Atk_Sheet_127
+  - first:
+      213: -3661896880223182649
+    second: Up3Atk_Sheet_128
+  - first:
+      213: 3413058639282705289
+    second: Up3Atk_Sheet_129
+  - first:
+      213: 7031432216590873637
+    second: Up3Atk_Sheet_130
+  - first:
+      213: -6714824614150779446
+    second: Up3Atk_Sheet_131
+  - first:
+      213: -6815791681962186141
+    second: Up3Atk_Sheet_132
+  - first:
+      213: -811593505120913464
+    second: Up3Atk_Sheet_133
+  - first:
+      213: -3561442688366723980
+    second: Up3Atk_Sheet_134
+  - first:
+      213: -5179417220885021734
+    second: Up3Atk_Sheet_135
+  - first:
+      213: -1135674810921093313
+    second: Up3Atk_Sheet_136
+  - first:
+      213: -5688603641223137705
+    second: Up3Atk_Sheet_137
+  - first:
+      213: -4749376021736199428
+    second: Up3Atk_Sheet_138
+  - first:
+      213: -3597868859561679640
+    second: Up3Atk_Sheet_139
+  - first:
+      213: -4188023626997612714
+    second: Up3Atk_Sheet_140
+  - first:
+      213: -5577683744973297877
+    second: Up3Atk_Sheet_141
+  - first:
+      213: -1272978243199885508
+    second: Up3Atk_Sheet_142
+  - first:
+      213: -4986300193646867008
+    second: Up3Atk_Sheet_143
+  - first:
+      213: -5112044380002490951
+    second: Up3Atk_Sheet_144
+  - first:
+      213: 1603761902710504125
+    second: Up3Atk_Sheet_145
+  - first:
+      213: 5682651966547734359
+    second: Up3Atk_Sheet_146
+  - first:
+      213: 6223335912992978760
+    second: Up3Atk_Sheet_147
+  - first:
+      213: -3837544490780765725
+    second: Up3Atk_Sheet_148
+  - first:
+      213: 5470177945151133993
+    second: Up3Atk_Sheet_149
+  - first:
+      213: 2283333302752899351
+    second: Up3Atk_Sheet_150
+  - first:
+      213: -4145612884667638418
+    second: Up3Atk_Sheet_151
+  - first:
+      213: 8482307779039004855
+    second: Up3Atk_Sheet_152
+  - first:
+      213: 2266474278394426944
+    second: Up3Atk_Sheet_153
+  - first:
+      213: -4511969441688695087
+    second: Up3Atk_Sheet_154
+  - first:
+      213: -1678850388762873674
+    second: Up3Atk_Sheet_155
+  - first:
+      213: -5846591860131927813
+    second: Up3Atk_Sheet_156
+  - first:
+      213: -5661197446581210150
+    second: Up3Atk_Sheet_157
+  - first:
+      213: 6624700136060733881
+    second: Up3Atk_Sheet_158
+  - first:
+      213: -6832046699327664518
+    second: Up3Atk_Sheet_159
+  - first:
+      213: 2024249504039241166
+    second: Up3Atk_Sheet_160
+  - first:
+      213: 4058971429764288293
+    second: Up3Atk_Sheet_161
+  - first:
+      213: 2397769882061378356
+    second: Up3Atk_Sheet_162
+  - first:
+      213: 7619716534066015
+    second: Up3Atk_Sheet_163
+  - first:
+      213: 3482385916827751705
+    second: Up3Atk_Sheet_164
+  - first:
+      213: 2169808718418246592
+    second: Up3Atk_Sheet_165
+  - first:
+      213: -1517603649281975654
+    second: Up3Atk_Sheet_166
+  - first:
+      213: -3673994043635952745
+    second: Up3Atk_Sheet_167
+  - first:
+      213: 1571438044724177358
+    second: Up3Atk_Sheet_168
+  - first:
+      213: -2921264549928174980
+    second: Up3Atk_Sheet_169
+  - first:
+      213: 2138722905926431710
+    second: Up3Atk_Sheet_170
+  - first:
+      213: -5326237572649843609
+    second: Up3Atk_Sheet_171
+  - first:
+      213: -511770765092192105
+    second: Up3Atk_Sheet_172
+  - first:
+      213: -1604123086705017194
+    second: Up3Atk_Sheet_173
+  - first:
+      213: 5411385087127054924
+    second: Up3Atk_Sheet_174
+  - first:
+      213: 5424682922172569473
+    second: Up3Atk_Sheet_175
+  - first:
+      213: 131783615070428051
+    second: Up3Atk_Sheet_176
+  - first:
+      213: 3910784881907732296
+    second: Up3Atk_Sheet_177
+  - first:
+      213: -4530548309993304668
+    second: Up3Atk_Sheet_178
+  - first:
+      213: -6511845391515825962
+    second: Up3Atk_Sheet_179
+  - first:
+      213: 3566623029665036964
+    second: Up3Atk_Sheet_180
+  - first:
+      213: 6404068387508690683
+    second: Up3Atk_Sheet_181
+  - first:
+      213: 638752361052448742
+    second: Up3Atk_Sheet_182
+  - first:
+      213: -2104402125694796824
+    second: Up3Atk_Sheet_183
+  - first:
+      213: -4210150597522746609
+    second: Up3Atk_Sheet_184
+  - first:
+      213: 2318292300369028641
+    second: Up3Atk_Sheet_185
+  - first:
+      213: 3971679192538821688
+    second: Up3Atk_Sheet_186
+  - first:
+      213: 3095903480904955880
+    second: Up3Atk_Sheet_187
+  - first:
+      213: 612371899869441043
+    second: Up3Atk_Sheet_188
+  - first:
+      213: -8569830275278985108
+    second: Up3Atk_Sheet_189
+  - first:
+      213: -4680838881424169620
+    second: Up3Atk_Sheet_190
+  - first:
+      213: 290816254258026733
+    second: Up3Atk_Sheet_191
+  - first:
+      213: -7625870507909612269
+    second: Up3Atk_Sheet_192
+  - first:
+      213: 4303070125433175478
+    second: Up3Atk_Sheet_193
+  - first:
+      213: -3019308810436702005
+    second: Up3Atk_Sheet_194
+  - first:
+      213: 4265150502455123851
+    second: Up3Atk_Sheet_195
+  - first:
+      213: -7306144252982874902
+    second: Up3Atk_Sheet_196
+  - first:
+      213: 5001009033574836058
+    second: Up3Atk_Sheet_197
+  - first:
+      213: 6886947388075437138
+    second: Up3Atk_Sheet_198
+  - first:
+      213: -6681642635099679150
+    second: Up3Atk_Sheet_199
+  - first:
+      213: -8878051335860223357
+    second: Up3Atk_Sheet_200
+  - first:
+      213: -2306250313371541995
+    second: Up3Atk_Sheet_201
+  - first:
+      213: -5131547073364407580
+    second: Up3Atk_Sheet_202
+  - first:
+      213: -1752228135325436598
+    second: Up3Atk_Sheet_203
+  - first:
+      213: -2886542214383085695
+    second: Up3Atk_Sheet_204
+  - first:
+      213: 951489179959179399
+    second: Up3Atk_Sheet_205
+  - first:
+      213: -4665738856224841107
+    second: Up3Atk_Sheet_206
+  - first:
+      213: -4510587554298501130
+    second: Up3Atk_Sheet_207
+  - first:
+      213: -5401449444664690589
+    second: Up3Atk_Sheet_208
+  - first:
+      213: -7429079536299989117
+    second: Up3Atk_Sheet_209
+  - first:
+      213: -7282810732028350589
+    second: Up3Atk_Sheet_210
+  - first:
+      213: 4830847616178957552
+    second: Up3Atk_Sheet_211
+  - first:
+      213: 4116996548318229351
+    second: Up3Atk_Sheet_212
+  - first:
+      213: -7709382651650596959
+    second: Up3Atk_Sheet_213
+  - first:
+      213: -8353660596890627632
+    second: Up3Atk_Sheet_214
+  - first:
+      213: 3724834255343172343
+    second: Up3Atk_Sheet_215
+  - first:
+      213: 1938556955013911907
+    second: Up3Atk_Sheet_216
+  - first:
+      213: -132613344450069640
+    second: Up3Atk_Sheet_217
+  - first:
+      213: -908260351227155067
+    second: Up3Atk_Sheet_218
+  - first:
+      213: -1120729250148253599
+    second: Up3Atk_Sheet_219
+  - first:
+      213: 4118232319346537114
+    second: Up3Atk_Sheet_220
+  - first:
+      213: 3718821254195960717
+    second: Up3Atk_Sheet_221
+  - first:
+      213: -6698276372807682044
+    second: Up3Atk_Sheet_222
+  - first:
+      213: 2579320780412098387
+    second: Up3Atk_Sheet_223
+  - first:
+      213: -5944766360928341579
+    second: Up3Atk_Sheet_224
+  - first:
+      213: 1488312068073191235
+    second: Up3Atk_Sheet_225
+  - first:
+      213: -8947344844633971590
+    second: Up3Atk_Sheet_226
+  - first:
+      213: -3345198585747529483
+    second: Up3Atk_Sheet_227
+  - first:
+      213: 3661245802305135676
+    second: Up3Atk_Sheet_228
+  - first:
+      213: 2894488884169294834
+    second: Up3Atk_Sheet_229
+  - first:
+      213: 1427582917882957820
+    second: Up3Atk_Sheet_230
+  - first:
+      213: 6489456662245530987
+    second: Up3Atk_Sheet_231
+  - first:
+      213: 4052466110099725388
+    second: Up3Atk_Sheet_232
+  - first:
+      213: 1868038866347365127
+    second: Up3Atk_Sheet_233
+  - first:
+      213: -6959737753862232940
+    second: Up3Atk_Sheet_234
+  - first:
+      213: 2310096049516107018
+    second: Up3Atk_Sheet_235
+  - first:
+      213: 5544830252522780446
+    second: Up3Atk_Sheet_236
+  - first:
+      213: -1676514728920951084
+    second: Up3Atk_Sheet_237
+  - first:
+      213: -4709089168062363302
+    second: Up3Atk_Sheet_238
+  - first:
+      213: 7601295979151031724
+    second: Up3Atk_Sheet_239
+  - first:
+      213: -7584900120723353178
+    second: Up3Atk_Sheet_240
+  - first:
+      213: 4420997428237183466
+    second: Up3Atk_Sheet_241
+  - first:
+      213: 6601036237254329349
+    second: Up3Atk_Sheet_242
+  - first:
+      213: -5519307792264678932
+    second: Up3Atk_Sheet_243
+  - first:
+      213: 2901497688788901339
+    second: Up3Atk_Sheet_244
+  - first:
+      213: 6921916418086461339
+    second: Up3Atk_Sheet_245
+  - first:
+      213: 1585357303721838333
+    second: Up3Atk_Sheet_246
+  - first:
+      213: -221756627897832885
+    second: Up3Atk_Sheet_247
+  - first:
+      213: 9126072990981818891
+    second: Up3Atk_Sheet_248
+  - first:
+      213: -3219246240486585184
+    second: Up3Atk_Sheet_249
+  - first:
+      213: 2980315397907130397
+    second: Up3Atk_Sheet_250
+  - first:
+      213: -1092418079347209767
+    second: Up3Atk_Sheet_251
+  - first:
+      213: -5676392946278547476
+    second: Up3Atk_Sheet_252
+  - first:
+      213: -352446416338637474
+    second: Up3Atk_Sheet_253
+  - first:
+      213: -1059112755713006247
+    second: Up3Atk_Sheet_254
+  - first:
+      213: -2812651990248259112
+    second: Up3Atk_Sheet_255
+  - first:
+      213: -9205461257326825829
+    second: Up3Atk_Sheet_256
+  - first:
+      213: 1779516135430928632
+    second: Up3Atk_Sheet_257
+  - first:
+      213: -4236971973305048100
+    second: Up3Atk_Sheet_258
+  - first:
+      213: -4361690294662639728
+    second: Up3Atk_Sheet_259
+  - first:
+      213: -7509120216757544105
+    second: Up3Atk_Sheet_260
+  - first:
+      213: 3383034234371353326
+    second: Up3Atk_Sheet_261
+  - first:
+      213: 6553010753362652792
+    second: Up3Atk_Sheet_262
+  - first:
+      213: -192867549962985739
+    second: Up3Atk_Sheet_263
+  - first:
+      213: -7204938126282950660
+    second: Up3Atk_Sheet_264
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 735
+        width: 235
+        height: 553
+      alignment: 9
+      pivot: {x: 0.5517921, y: 0.11483671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8657cabc1893030800000000000000
+      internalID: 3474951299264768247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 716
+        width: 233
+        height: 572
+      alignment: 9
+      pivot: {x: 0.53917724, y: 0.11699148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb56f9fb710c6210800000000000000
+      internalID: 1327437622153731049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1087
+        width: 77
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fdc7bf44fabaff0800000000000000
+      internalID: -23732662208504027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 713
+        width: 247
+        height: 575
+      alignment: 9
+      pivot: {x: 0.51231873, y: 0.11369799}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d58dd9185010d40800000000000000
+      internalID: 5548722270154284391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 1087
+        width: 77
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74861f966401b5c30800000000000000
+      internalID: 4349087759767529543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 694
+        width: 248
+        height: 586
+      alignment: 9
+      pivot: {x: 0.5122691, y: 0.1521043}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e7a58a620f98860800000000000000
+      internalID: 7532815900577791512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2986
+        y: 1087
+        width: 77
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354baa75d21061780800000000000000
+      internalID: -8712775134845684653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 856
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7283c744e38ea540800000000000000
+      internalID: 5021095651044459133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 856
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48bedb46a9c39b960800000000000000
+      internalID: 7618186878486702980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 856
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb9f848425bd99b90800000000000000
+      internalID: -7234510179947447877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 856
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7a8365a6c360300800000000000000
+      internalID: 217928059384801222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 775
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a32c9208077e7f0800000000000000
+      internalID: -583373930962470369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 770
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf9d9413743751b0800000000000000
+      internalID: -5668003937150722097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 775
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c52640226c4924f0800000000000000
+      internalID: -853066670078024247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 770
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d020fb9f96eaf9160800000000000000
+      internalID: 7034532913160847885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 775
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a4ba2a251635b10800000000000000
+      internalID: 1969024469635385914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 770
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328ef5ec02cc25f80800000000000000
+      internalID: -8119202736922171357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 775
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a46f89d2550817fa0800000000000000
+      internalID: -5804717341378283958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 770
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b68db54c7f29d10800000000000000
+      internalID: 2131037996426226581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 367
+        width: 14
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d592e31f46ac9a310800000000000000
+      internalID: 1416886092677654877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 535
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def6e645e4f6ce0d0800000000000000
+      internalID: -3392214037102170131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 546
+        width: 15
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a2ed4beb383a770800000000000000
+      internalID: 8620878966818744981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 478
+        width: 122
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6b5d4802de047e0800000000000000
+      internalID: -1783164728515381513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 535
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5383ac9d6895ef230800000000000000
+      internalID: 3674472781695301685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 536
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46af78c8189dd7640800000000000000
+      internalID: 5079455105175517796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 523
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7839aacbfd5f64f60800000000000000
+      internalID: 8018366527871554439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 511
+        width: 119
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f8d3c047ff02320800000000000000
+      internalID: 2531303864468868963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 501
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82fd15d27c9d04a40800000000000000
+      internalID: 5350515806798208808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 508
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173fcd920673642c0800000000000000
+      internalID: -4447806695823051919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 518
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a883ee8dfd20abf0800000000000000
+      internalID: -315201406868682592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 517
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da41a5a2cd1de8720800000000000000
+      internalID: 2850446357705659565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 517
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b894fda4623e5850800000000000000
+      internalID: 6367582331145066673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 498
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3570d4c909801e490800000000000000
+      internalID: -7718878869145712813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 501
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ceb47f46ba8fe20800000000000000
+      internalID: 3384643570102955050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 497
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4ce1d863ab4d580800000000000000
+      internalID: -8803206628143872844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 498
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f59626eca7f787e0800000000000000
+      internalID: -1763168407124535815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 498
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd27473d483b5870800000000000000
+      internalID: 8672587411723070960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 485
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce7084332bf96a90800000000000000
+      internalID: -7320043590690767163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 488
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3c0e44e63776c30800000000000000
+      internalID: 4352574482316051446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 487
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0f485ddb8d548e0800000000000000
+      internalID: -1709722173674557216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 460
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce4ad539c521f310800000000000000
+      internalID: 1436971302230052547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 488
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca02e30b0dd479490800000000000000
+      internalID: -7739631875907510100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 2203
+        y: 479
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb25785d41b15b10800000000000000
+      internalID: 1968549457892289506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 488
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d935fdd1ae1421580800000000000000
+      internalID: -8857945043305016419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 439
+        width: 77
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a12a1f9ecfb1f80800000000000000
+      internalID: -8134630220203156931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 439
+        width: 77
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f4fca2435a3bef0800000000000000
+      internalID: -93549523769536692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 468
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d40105f991a6f60800000000000000
+      internalID: 8028257457775070551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 476
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033066eabea187760800000000000000
+      internalID: 7455738782657413936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 468
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26ca5ccd0e35b5c0800000000000000
+      internalID: -4200382848469121491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 472
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b56269314ba472d0800000000000000
+      internalID: -3281809931822275145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 439
+        width: 77
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a838969bc656b9cb0800000000000000
+      internalID: -4856176255547374710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 476
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3041bc3669f8e9e0800000000000000
+      internalID: -1591748250775240644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 44
+        width: 250
+        height: 559
+      alignment: 9
+      pivot: {x: 0.51217115, y: 0.13530049}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517630c56a3c53200800000000000000
+      internalID: 159248481117234965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 438
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e49169c312dcff0800000000000000
+      internalID: -14318679712248288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 463
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b324620c036bd7cf0800000000000000
+      internalID: -252845683564461509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 457
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af35296adb665dd0800000000000000
+      internalID: -2497690357519269983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 423
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105ac795fa81d1300800000000000000
+      internalID: 224362697838077185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 457
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e938145ce60f400800000000000000
+      internalID: 355906164049026669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 460
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef7328a1a5ad6ca0800000000000000
+      internalID: -6021975012995268628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 459
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb587081da43fbd20800000000000000
+      internalID: 3296411370295625150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 460
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58299ebeea0d2730800000000000000
+      internalID: 3975846066554218588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 448
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d5b7dc9bf5a50b0800000000000000
+      internalID: -5739169523509273232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 442
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9f0d5c31d6533a0800000000000000
+      internalID: -6686318140071020059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 454
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc96415cc8f34d690800000000000000
+      internalID: -7578362399123281457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 444
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d685cae39fb3bdf0800000000000000
+      internalID: -165578119262665007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 451
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd5eb27e039ac620800000000000000
+      internalID: 2795208209000717789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 441
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90181745166a42a0800000000000000
+      internalID: -6752472449715531618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 436
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4a2e67517df35a0800000000000000
+      internalID: -6539271646729820935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 281
+        width: 207
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f452cd05ba781920800000000000000
+      internalID: 2961251673034609913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 432
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691a5545a21220970800000000000000
+      internalID: 8719568294229942678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 436
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a042c0bc7dd5f740800000000000000
+      internalID: 5185294073598197928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 423
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea827eeaaa4474270800000000000000
+      internalID: 8234625943539755182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 423
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0db2b2d6b2d54aa0800000000000000
+      internalID: -6177299631207957233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 423
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8992e9b3db9e970a0800000000000000
+      internalID: -6883213556500780648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 430
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c49a15edacff9610800000000000000
+      internalID: 1630299413934675138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 423
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c124943632bab890800000000000000
+      internalID: -7441439488396222012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 433
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0520396d72d12b7f0800000000000000
+      internalID: -598383743545966000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 420
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cd347f4836ca9e0800000000000000
+      internalID: -1608801544142857087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 401
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e964cd9754e937f0800000000000000
+      internalID: -632223207708661274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 408
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e3e354fa382cf20800000000000000
+      internalID: 3441457854068702798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 420
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daab81956cf2af420800000000000000
+      internalID: 2664494658487892653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 419
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b2412dbdc76b6f0800000000000000
+      internalID: -669210211053720763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 414
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930f8d9dfed5bed30800000000000000
+      internalID: 4461763140574048313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 409
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e65aace9cb949580800000000000000
+      internalID: -8821254478550640920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 407
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb18a910194ea6100800000000000000
+      internalID: 102145253017551295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 408
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545339a22a9141900800000000000000
+      internalID: 654176030165251397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 397
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4310b1e333501800800000000000000
+      internalID: 581055834225644365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 403
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6961083669d4bdd0800000000000000
+      internalID: -2471111262470051473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 2224
+        y: 407
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93dfb21a0ad4768f0800000000000000
+      internalID: -547383477408105159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 405
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b94d2e05276f140800000000000000
+      internalID: 4753112148464671500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 2278
+        y: 405
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d88625fda2025c0800000000000000
+      internalID: -4242343710334350006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 411
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fb3cc19285f4d10800000000000000
+      internalID: 2112003683859545959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 2354
+        y: 406
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c6aaa76a3b3ce20800000000000000
+      internalID: 3369734473807195155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 389
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bff026da5aad7920800000000000000
+      internalID: 2989733034760142770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 392
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac5172b722a203e0800000000000000
+      internalID: -2088928985765290835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 391
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd9cc14760d74a30800000000000000
+      internalID: 4199554319450414524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 2224
+        y: 395
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6ea47cef520c1e0800000000000000
+      internalID: -2179700443451824409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 392
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2b5049880a7b4f0800000000000000
+      internalID: -813004699257687328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 378
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5d6427259084d60800000000000000
+      internalID: 7874554198166525427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 387
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c12b97319b46920800000000000000
+      internalID: 2982712346523343974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 382
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1987616cd84366b0800000000000000
+      internalID: -5304315824748132069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 381
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26f91db4b15b2f10800000000000000
+      internalID: 2245978675882882602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 381
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28659e552e87e74c0800000000000000
+      internalID: -4287856881710836094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 381
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe758ba706c7db570800000000000000
+      internalID: 8484074026853488623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 386
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b619ec7f42f4c49e0800000000000000
+      internalID: -1635845544447405717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 355
+        width: 59
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b68a748dc6ebb4b0800000000000000
+      internalID: -5423487555872323913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 373
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4639f1be21dcaa0800000000000000
+      internalID: -6139229915979750189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 378
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec76f38d151f8fc0800000000000000
+      internalID: -3490547969676641045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 371
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb40a2665d43d2aa0800000000000000
+      internalID: -6184228622163114820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 372
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d90c91d366ffd90800000000000000
+      internalID: -7061813278082556635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 374
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab82faa98d52fdb0800000000000000
+      internalID: -4759639010317268059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 368
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba8893ca2ced9080800000000000000
+      internalID: -9178920797096867151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 374
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099b5177863508630800000000000000
+      internalID: 3927230583206689168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 46
+        width: 222
+        height: 552
+      alignment: 9
+      pivot: {x: 0.595944, y: 0.13067596}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ab7c5319543bb70800000000000000
+      internalID: 8913544577471199840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 365
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9db3f968f4da3f90800000000000000
+      internalID: -6973026909635232354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 357
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003fadb87ecddb990800000000000000
+      internalID: -7368490528266325248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 358
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199facde2c15d0480800000000000000
+      internalID: -8931392588350817903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 356
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf926e317aac2260800000000000000
+      internalID: 7074216518046883802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 348
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e14855d09553640800000000000000
+      internalID: 5059047670224789090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 347
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da2caea6b308eb50800000000000000
+      internalID: 6622547335197764308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 352
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b77386326c164370800000000000000
+      internalID: 8306357770878416825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d4f4004a36dd4c0800000000000000
+      internalID: -4261140116391637689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 349
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c546aa90acd3e220800000000000000
+      internalID: 2514095599350334912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 353
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b60c0d1c47487f0800000000000000
+      internalID: -611235273635763375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 353
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 395d4d3c57eb268f0800000000000000
+      internalID: -548666791579822701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 353
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af154720253d7ce80800000000000000
+      internalID: -8158319850776407558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 341
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0af2260345e2dc0800000000000000
+      internalID: -3661896880223182649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 337
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9831600dfbe9d5f20800000000000000
+      internalID: 3413058639282705289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 337
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524f22cc85aa49160800000000000000
+      internalID: 7031432216590873637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 334
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd4e70179620d2a0800000000000000
+      internalID: -6714824614150779446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 324
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ae49da3917961a0800000000000000
+      internalID: -6815791681962186141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 344
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7f041d104acb4f0800000000000000
+      internalID: -811593505120913464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 336
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c3df78eb6339ec0800000000000000
+      internalID: -3561442688366723980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 342
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb7b95ba730f18b0800000000000000
+      internalID: -5179417220885021734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 330
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3770bac6c54d30f0800000000000000
+      internalID: -1135674810921093313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 327
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756b6e8b0250e01b0800000000000000
+      internalID: -5688603641223137705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 330
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfae7a7eba3d61eb0800000000000000
+      internalID: -4749376021736199428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 334
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4e265a55dc11ec0800000000000000
+      internalID: -3597868859561679640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_140
+      rect:
+        serializedVersion: 2
+        x: 2356
+        y: 330
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f3dd943b621e5c0800000000000000
+      internalID: -4188023626997612714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_141
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27656f8f261892b0800000000000000
+      internalID: -5577683744973297877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_142
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 318
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f15474809755ee0800000000000000
+      internalID: -1272978243199885508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_143
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 319
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd8736746a1dcab0800000000000000
+      internalID: -4986300193646867008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_144
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 293
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b56bed98be5e09b0800000000000000
+      internalID: -5112044380002490951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_145
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 307
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba3d5314f4b14610800000000000000
+      internalID: 1603761902710504125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_146
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 309
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fa0480bd5dcde40800000000000000
+      internalID: 5682651966547734359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_147
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 314
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847b0eb4a0bbd5650800000000000000
+      internalID: 6223335912992978760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_148
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 311
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e151492e9d4ebac0800000000000000
+      internalID: -3837544490780765725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_149
+      rect:
+        serializedVersion: 2
+        x: 2284
+        y: 311
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929d8eedbd9f9eb40800000000000000
+      internalID: 5470177945151133993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_150
+      rect:
+        serializedVersion: 2
+        x: 2313
+        y: 309
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711f76e8a8700bf10800000000000000
+      internalID: 2283333302752899351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_151
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 309
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d5a19bb03d776c0800000000000000
+      internalID: -4145612884667638418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_152
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 296
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8072ddbf537b570800000000000000
+      internalID: 8482307779039004855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_153
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 304
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04672401952247f10800000000000000
+      internalID: 2266474278394426944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_154
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 297
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de4abeb2b34261c0800000000000000
+      internalID: -4511969441688695087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_155
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 299
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b033c2677683b8e0800000000000000
+      internalID: -1678850388762873674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_156
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 299
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf865260eabbcdea0800000000000000
+      internalID: -5846591860131927813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_157
+      rect:
+        serializedVersion: 2
+        x: 2333
+        y: 280
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3bd29aae26f61b0800000000000000
+      internalID: -5661197446581210150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_158
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 304
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9c161bca9afeb50800000000000000
+      internalID: 6624700136060733881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_159
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 287
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ec1b589b1bf21a0800000000000000
+      internalID: -6832046699327664518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_160
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 292
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec50501f234971c10800000000000000
+      internalID: 2024249504039241166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_161
+      rect:
+        serializedVersion: 2
+        x: 2262
+        y: 291
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f4f80920d545830800000000000000
+      internalID: 4058971429764288293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_162
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 293
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4331669f007964120800000000000000
+      internalID: 2397769882061378356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_163
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 274
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b5d4187121b1000800000000000000
+      internalID: 7619716534066015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_164
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 269
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91557577a8be35030800000000000000
+      internalID: 3482385916827751705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_165
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 271
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb7dd38885bc1e10800000000000000
+      internalID: 2169808718418246592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_166
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 266
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a16b6858360fae0800000000000000
+      internalID: -1517603649281975654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_167
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 275
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7939d2a02e9530dc0800000000000000
+      internalID: -3673994043635952745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_168
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 275
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9a15a639edec510800000000000000
+      internalID: 1571438044724177358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_169
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 274
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7af69e8e559577d0800000000000000
+      internalID: -2921264549928174980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_170
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 276
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed37cb8c6254ead10800000000000000
+      internalID: 2138722905926431710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_171
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 268
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7640ed4b5276516b0800000000000000
+      internalID: -5326237572649843609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_172
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 276
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790004c5333d5e8f0800000000000000
+      internalID: -511770765092192105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_173
+      rect:
+        serializedVersion: 2
+        x: 2197
+        y: 261
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69eb1f83d820db9e0800000000000000
+      internalID: -1604123086705017194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_174
+      rect:
+        serializedVersion: 2
+        x: 2279
+        y: 274
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4aed05e01a191b40800000000000000
+      internalID: 5411385087127054924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_175
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 272
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18759336068584b40800000000000000
+      internalID: 5424682922172569473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_176
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 47
+        width: 210
+        height: 225
+      alignment: 9
+      pivot: {x: 0.64489454, y: 0.37828818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b5d7bef7034d100800000000000000
+      internalID: 131783615070428051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_177
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 265
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f041f3126e54630800000000000000
+      internalID: 3910784881907732296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_178
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 257
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad4a11e0524021c0800000000000000
+      internalID: -4530548309993304668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_179
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 263
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d84f6e1e1741a5a0800000000000000
+      internalID: -6511845391515825962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_180
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 247
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa79eaafb03f7130800000000000000
+      internalID: 3566623029665036964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_181
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 258
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe93caa442dfd850800000000000000
+      internalID: 6404068387508690683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_182
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 259
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e729fb53ed4dd800800000000000000
+      internalID: 638752361052448742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_183
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 243
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb72619a69abc2e0800000000000000
+      internalID: -2104402125694796824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_184
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 247
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0312cf765a8295c0800000000000000
+      internalID: -4210150597522746609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_185
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 253
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126e409709a3c2020800000000000000
+      internalID: 2318292300369028641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_186
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 231
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8343619ce2d3e1730800000000000000
+      internalID: 3971679192538821688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_187
+      rect:
+        serializedVersion: 2
+        x: 2283
+        y: 228
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e73c3620dbd6fa20800000000000000
+      internalID: 3095903480904955880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_188
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 253
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c262a9ff49f7800800000000000000
+      internalID: 612371899869441043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_189
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 244
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68ab9005c8d11980800000000000000
+      internalID: -8569830275278985108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_190
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 250
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6520e566d15a0fb0800000000000000
+      internalID: -4680838881424169620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_191
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 239
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de895f9a7df290400800000000000000
+      internalID: 290816254258026733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_192
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 241
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d7be83d277b2690800000000000000
+      internalID: -7625870507909612269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_193
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 235
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd3a0efa7397bb30800000000000000
+      internalID: 4303070125433175478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_194
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 231
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc096b642a24916d0800000000000000
+      internalID: -3019308810436702005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_195
+      rect:
+        serializedVersion: 2
+        x: 2131
+        y: 229
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f9a64c8cbd03b30800000000000000
+      internalID: 4265150502455123851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_196
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 219
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeca133f28c5b9a90800000000000000
+      internalID: -7306144252982874902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_197
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 223
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a576fb43837276540800000000000000
+      internalID: 5001009033574836058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_198
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 215
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c6a0d292a539f50800000000000000
+      internalID: 6886947388075437138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_199
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 215
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25657ca9c690643a0800000000000000
+      internalID: -6681642635099679150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_200
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 218
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3828e541953dac480800000000000000
+      internalID: -8878051335860223357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_201
+      rect:
+        serializedVersion: 2
+        x: 2306
+        y: 216
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e1b5c1f8d8effd0800000000000000
+      internalID: -2306250313371541995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_202
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 221
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea4be7ff1519c8b0800000000000000
+      internalID: -5131547073364407580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_203
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 208
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a457b7c6bc5dea7e0800000000000000
+      internalID: -1752228135325436598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_204
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 208
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187d68a4621f0f7d0800000000000000
+      internalID: -2886542214383085695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_205
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 208
+        width: 59
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78838133e5e543d00800000000000000
+      internalID: 951489179959179399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_206
+      rect:
+        serializedVersion: 2
+        x: 2131
+        y: 209
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d622bfbfa37ff3fb0800000000000000
+      internalID: -4665738856224841107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_207
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 206
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f76db9748c2761c0800000000000000
+      internalID: -4510587554298501130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_208
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 187
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368b78229523a05b0800000000000000
+      internalID: -5401449444664690589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_209
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 204
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38727bec58b96e890800000000000000
+      internalID: -7429079536299989117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_210
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 212
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f2c07a9324eea90800000000000000
+      internalID: -7282810732028350589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_211
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 192
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fca36edf4e9a0340800000000000000
+      internalID: 4830847616178957552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_212
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 192
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76374044c82822930800000000000000
+      internalID: 4116996548318229351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_213
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 193
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af9eca0355c20590800000000000000
+      internalID: -7709382651650596959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_214
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 188
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1182c52f5d11c80800000000000000
+      internalID: -8353660596890627632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_215
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 195
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fabfec250541b330800000000000000
+      internalID: 3724834255343172343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_216
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 199
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3659778974327ea10800000000000000
+      internalID: 1938556955013911907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_217
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 192
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bb397addcd82ef0800000000000000
+      internalID: -132613344450069640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_218
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 183
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58da881d5063563f0800000000000000
+      internalID: -908260351227155067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_219
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 185
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16006835fae5270f0800000000000000
+      internalID: -1120729250148253599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_220
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 185
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92fe21a976e62930800000000000000
+      internalID: 4118232319346537114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_221
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 188
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8bd58f3a38eb9330800000000000000
+      internalID: 3718821254195960717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_222
+      rect:
+        serializedVersion: 2
+        x: 2346
+        y: 184
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 408f76fb021fa03a0800000000000000
+      internalID: -6698276372807682044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_223
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 183
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3571f3e75969bc320800000000000000
+      internalID: 2579320780412098387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_224
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 176
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1bc20dd72ff7da0800000000000000
+      internalID: -5944766360928341579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_225
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 176
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347fd64c0fb87a410800000000000000
+      internalID: 1488312068073191235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_226
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 165
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a746ba4d445a4d380800000000000000
+      internalID: -8947344844633971590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_227
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 171
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f021612c977391d0800000000000000
+      internalID: -3345198585747529483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_228
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 168
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34a9c9b8ab5fc230800000000000000
+      internalID: 3661245802305135676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_229
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f34a33fd4a4b2820800000000000000
+      internalID: 2894488884169294834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_230
+      rect:
+        serializedVersion: 2
+        x: 2383
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff44d3a91bcfc310800000000000000
+      internalID: 1427582917882957820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_231
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 176
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ddf62a37e2f0a50800000000000000
+      internalID: 6489456662245530987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_232
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 151
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c9dccc4704d3830800000000000000
+      internalID: 4052466110099725388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_233
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 151
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703124f937b9ce910800000000000000
+      internalID: 1868038866347365127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_234
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 163
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494aa2b136b0a6f90800000000000000
+      internalID: -6959737753862232940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_235
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 154
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05d07c1e1c1f0020800000000000000
+      internalID: 2310096049516107018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_236
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 162
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17b575acb133fc40800000000000000
+      internalID: 5544830252522780446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_237
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 163
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6d4f19cb2dbb8e0800000000000000
+      internalID: -1676514728920951084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_238
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 151
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a59c00af954f5aeb0800000000000000
+      internalID: -4709089168062363302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_239
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 166
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cadf6ed6b6a3d7960800000000000000
+      internalID: 7601295979151031724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_240
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 151
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a19777d6850db690800000000000000
+      internalID: -7584900120723353178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_241
+      rect:
+        serializedVersion: 2
+        x: 2461
+        y: 163
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae92efeccb98a5d30800000000000000
+      internalID: 4420997428237183466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_242
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 127
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5048607eb779b9b50800000000000000
+      internalID: 6601036237254329349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_243
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 148
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1b4043eca7763b0800000000000000
+      internalID: -5519307792264678932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_244
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 127
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd11e076c0344820800000000000000
+      internalID: 2901497688788901339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_245
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 148
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9fdcf0fe469f0060800000000000000
+      internalID: 6921916418086461339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_246
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 127
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df649627112500610800000000000000
+      internalID: 1585357303721838333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_247
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 149
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4aaf8795892cecf0800000000000000
+      internalID: -221756627897832885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_248
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 149
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a02c5880356ae70800000000000000
+      internalID: 9126072990981818891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_249
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 147
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac094fb990f253d0800000000000000
+      internalID: -3219246240486585184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_250
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 148
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18a1e260153c5920800000000000000
+      internalID: 2980315397907130397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_251
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 138
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d98b427b83f6d0f0800000000000000
+      internalID: -1092418079347209767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_252
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 136
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefb88fa0b66931b0800000000000000
+      internalID: -5676392946278547476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_253
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 122
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5da6c70adbdb1bf0800000000000000
+      internalID: -352446416338637474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_254
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 122
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95524a26f864d41f0800000000000000
+      internalID: -1059112755713006247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_255
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 122
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1057cbae377f8d0800000000000000
+      internalID: -2812651990248259112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_256
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 117
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ee96352c1af3080800000000000000
+      internalID: -9205461257326825829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_257
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 128
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8bf643f7c12b810800000000000000
+      internalID: 1779516135430928632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_258
+      rect:
+        serializedVersion: 2
+        x: 2279
+        y: 124
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd3eddf40704335c0800000000000000
+      internalID: -4236971973305048100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_259
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 127
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f4d5649c92873c0800000000000000
+      internalID: -4361690294662639728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_260
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 111
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b5678a2fe3ac790800000000000000
+      internalID: -7509120216757544105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_261
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 116
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeaa0ba46b3f2fe20800000000000000
+      internalID: 3383034234371353326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_262
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 118
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87eee739f88f0fa50800000000000000
+      internalID: 6553010753362652792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_263
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 84
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe91c33cfbc25df0800000000000000
+      internalID: -192867549962985739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up3Atk_Sheet_264
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 91
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf77c3292fae20c90800000000000000
+      internalID: -7204938126282950660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 85d3d982d91a15d4a8b56640624d3c93
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Up3Atk_Sheet_0: 3474951299264768247
+      Up3Atk_Sheet_1: -3858993736341650707
+      Up3Atk_Sheet_10: -7234510179947447877
+      Up3Atk_Sheet_100: 2982712346523343974
+      Up3Atk_Sheet_101: -5304315824748132069
+      Up3Atk_Sheet_102: 2245978675882882602
+      Up3Atk_Sheet_103: -4287856881710836094
+      Up3Atk_Sheet_104: 8484074026853488623
+      Up3Atk_Sheet_105: -1635845544447405717
+      Up3Atk_Sheet_106: -5423487555872323913
+      Up3Atk_Sheet_107: -6139229915979750189
+      Up3Atk_Sheet_108: -3490547969676641045
+      Up3Atk_Sheet_109: -6184228622163114820
+      Up3Atk_Sheet_11: 217928059384801222
+      Up3Atk_Sheet_110: -7061813278082556635
+      Up3Atk_Sheet_111: -4759639010317268059
+      Up3Atk_Sheet_112: -9178920797096867151
+      Up3Atk_Sheet_113: 3927230583206689168
+      Up3Atk_Sheet_114: 2841390055845008187
+      Up3Atk_Sheet_115: 8913544577471199840
+      Up3Atk_Sheet_116: -6973026909635232354
+      Up3Atk_Sheet_117: -7368490528266325248
+      Up3Atk_Sheet_118: -8931392588350817903
+      Up3Atk_Sheet_119: 7074216518046883802
+      Up3Atk_Sheet_12: -583373930962470369
+      Up3Atk_Sheet_120: 5059047670224789090
+      Up3Atk_Sheet_121: 6622547335197764308
+      Up3Atk_Sheet_122: 8306357770878416825
+      Up3Atk_Sheet_123: -4261140116391637689
+      Up3Atk_Sheet_124: 2514095599350334912
+      Up3Atk_Sheet_125: -611235273635763375
+      Up3Atk_Sheet_126: -548666791579822701
+      Up3Atk_Sheet_127: -8158319850776407558
+      Up3Atk_Sheet_128: -3661896880223182649
+      Up3Atk_Sheet_129: 3413058639282705289
+      Up3Atk_Sheet_13: -5668003937150722097
+      Up3Atk_Sheet_130: 7031432216590873637
+      Up3Atk_Sheet_131: -6714824614150779446
+      Up3Atk_Sheet_132: -6815791681962186141
+      Up3Atk_Sheet_133: -811593505120913464
+      Up3Atk_Sheet_134: -3561442688366723980
+      Up3Atk_Sheet_135: -5179417220885021734
+      Up3Atk_Sheet_136: -1135674810921093313
+      Up3Atk_Sheet_137: -5688603641223137705
+      Up3Atk_Sheet_138: -4749376021736199428
+      Up3Atk_Sheet_139: -3597868859561679640
+      Up3Atk_Sheet_14: -853066670078024247
+      Up3Atk_Sheet_140: -4188023626997612714
+      Up3Atk_Sheet_141: -5577683744973297877
+      Up3Atk_Sheet_142: -1272978243199885508
+      Up3Atk_Sheet_143: -4986300193646867008
+      Up3Atk_Sheet_144: -5112044380002490951
+      Up3Atk_Sheet_145: 1603761902710504125
+      Up3Atk_Sheet_146: 5682651966547734359
+      Up3Atk_Sheet_147: 6223335912992978760
+      Up3Atk_Sheet_148: -3837544490780765725
+      Up3Atk_Sheet_149: 5470177945151133993
+      Up3Atk_Sheet_15: 7034532913160847885
+      Up3Atk_Sheet_150: 2283333302752899351
+      Up3Atk_Sheet_151: -4145612884667638418
+      Up3Atk_Sheet_152: 8482307779039004855
+      Up3Atk_Sheet_153: 2266474278394426944
+      Up3Atk_Sheet_154: -4511969441688695087
+      Up3Atk_Sheet_155: -1678850388762873674
+      Up3Atk_Sheet_156: -5846591860131927813
+      Up3Atk_Sheet_157: -5661197446581210150
+      Up3Atk_Sheet_158: 6624700136060733881
+      Up3Atk_Sheet_159: -6832046699327664518
+      Up3Atk_Sheet_16: 1969024469635385914
+      Up3Atk_Sheet_160: 2024249504039241166
+      Up3Atk_Sheet_161: 4058971429764288293
+      Up3Atk_Sheet_162: 2397769882061378356
+      Up3Atk_Sheet_163: 7619716534066015
+      Up3Atk_Sheet_164: 3482385916827751705
+      Up3Atk_Sheet_165: 2169808718418246592
+      Up3Atk_Sheet_166: -1517603649281975654
+      Up3Atk_Sheet_167: -3673994043635952745
+      Up3Atk_Sheet_168: 1571438044724177358
+      Up3Atk_Sheet_169: -2921264549928174980
+      Up3Atk_Sheet_17: -8119202736922171357
+      Up3Atk_Sheet_170: 2138722905926431710
+      Up3Atk_Sheet_171: -5326237572649843609
+      Up3Atk_Sheet_172: -511770765092192105
+      Up3Atk_Sheet_173: -1604123086705017194
+      Up3Atk_Sheet_174: 5411385087127054924
+      Up3Atk_Sheet_175: 5424682922172569473
+      Up3Atk_Sheet_176: 131783615070428051
+      Up3Atk_Sheet_177: 3910784881907732296
+      Up3Atk_Sheet_178: -4530548309993304668
+      Up3Atk_Sheet_179: -6511845391515825962
+      Up3Atk_Sheet_18: -5804717341378283958
+      Up3Atk_Sheet_180: 3566623029665036964
+      Up3Atk_Sheet_181: 6404068387508690683
+      Up3Atk_Sheet_182: 638752361052448742
+      Up3Atk_Sheet_183: -2104402125694796824
+      Up3Atk_Sheet_184: -4210150597522746609
+      Up3Atk_Sheet_185: 2318292300369028641
+      Up3Atk_Sheet_186: 3971679192538821688
+      Up3Atk_Sheet_187: 3095903480904955880
+      Up3Atk_Sheet_188: 612371899869441043
+      Up3Atk_Sheet_189: -8569830275278985108
+      Up3Atk_Sheet_19: 2131037996426226581
+      Up3Atk_Sheet_190: -4680838881424169620
+      Up3Atk_Sheet_191: 290816254258026733
+      Up3Atk_Sheet_192: -7625870507909612269
+      Up3Atk_Sheet_193: 4303070125433175478
+      Up3Atk_Sheet_194: -3019308810436702005
+      Up3Atk_Sheet_195: 4265150502455123851
+      Up3Atk_Sheet_196: -7306144252982874902
+      Up3Atk_Sheet_197: 5001009033574836058
+      Up3Atk_Sheet_198: 6886947388075437138
+      Up3Atk_Sheet_199: -6681642635099679150
+      Up3Atk_Sheet_2: 1327437622153731049
+      Up3Atk_Sheet_20: 1416886092677654877
+      Up3Atk_Sheet_200: -8878051335860223357
+      Up3Atk_Sheet_201: -2306250313371541995
+      Up3Atk_Sheet_202: -5131547073364407580
+      Up3Atk_Sheet_203: -1752228135325436598
+      Up3Atk_Sheet_204: -2886542214383085695
+      Up3Atk_Sheet_205: 951489179959179399
+      Up3Atk_Sheet_206: -4665738856224841107
+      Up3Atk_Sheet_207: -4510587554298501130
+      Up3Atk_Sheet_208: -5401449444664690589
+      Up3Atk_Sheet_209: -7429079536299989117
+      Up3Atk_Sheet_21: -3392214037102170131
+      Up3Atk_Sheet_210: -7282810732028350589
+      Up3Atk_Sheet_211: 4830847616178957552
+      Up3Atk_Sheet_212: 4116996548318229351
+      Up3Atk_Sheet_213: -7709382651650596959
+      Up3Atk_Sheet_214: -8353660596890627632
+      Up3Atk_Sheet_215: 3724834255343172343
+      Up3Atk_Sheet_216: 1938556955013911907
+      Up3Atk_Sheet_217: -132613344450069640
+      Up3Atk_Sheet_218: -908260351227155067
+      Up3Atk_Sheet_219: -1120729250148253599
+      Up3Atk_Sheet_22: 8620878966818744981
+      Up3Atk_Sheet_220: 4118232319346537114
+      Up3Atk_Sheet_221: 3718821254195960717
+      Up3Atk_Sheet_222: -6698276372807682044
+      Up3Atk_Sheet_223: 2579320780412098387
+      Up3Atk_Sheet_224: -5944766360928341579
+      Up3Atk_Sheet_225: 1488312068073191235
+      Up3Atk_Sheet_226: -8947344844633971590
+      Up3Atk_Sheet_227: -3345198585747529483
+      Up3Atk_Sheet_228: 3661245802305135676
+      Up3Atk_Sheet_229: 2894488884169294834
+      Up3Atk_Sheet_23: -1783164728515381513
+      Up3Atk_Sheet_230: 1427582917882957820
+      Up3Atk_Sheet_231: 6489456662245530987
+      Up3Atk_Sheet_232: 4052466110099725388
+      Up3Atk_Sheet_233: 1868038866347365127
+      Up3Atk_Sheet_234: -6959737753862232940
+      Up3Atk_Sheet_235: 2310096049516107018
+      Up3Atk_Sheet_236: 5544830252522780446
+      Up3Atk_Sheet_237: -1676514728920951084
+      Up3Atk_Sheet_238: -4709089168062363302
+      Up3Atk_Sheet_239: 7601295979151031724
+      Up3Atk_Sheet_24: 3674472781695301685
+      Up3Atk_Sheet_240: -7584900120723353178
+      Up3Atk_Sheet_241: 4420997428237183466
+      Up3Atk_Sheet_242: 6601036237254329349
+      Up3Atk_Sheet_243: -5519307792264678932
+      Up3Atk_Sheet_244: 2901497688788901339
+      Up3Atk_Sheet_245: 6921916418086461339
+      Up3Atk_Sheet_246: 1585357303721838333
+      Up3Atk_Sheet_247: -221756627897832885
+      Up3Atk_Sheet_248: 9126072990981818891
+      Up3Atk_Sheet_249: -3219246240486585184
+      Up3Atk_Sheet_25: 5079455105175517796
+      Up3Atk_Sheet_250: 2980315397907130397
+      Up3Atk_Sheet_251: -1092418079347209767
+      Up3Atk_Sheet_252: -5676392946278547476
+      Up3Atk_Sheet_253: -352446416338637474
+      Up3Atk_Sheet_254: -1059112755713006247
+      Up3Atk_Sheet_255: -2812651990248259112
+      Up3Atk_Sheet_256: -9205461257326825829
+      Up3Atk_Sheet_257: 1779516135430928632
+      Up3Atk_Sheet_258: -4236971973305048100
+      Up3Atk_Sheet_259: -4361690294662639728
+      Up3Atk_Sheet_26: 8018366527871554439
+      Up3Atk_Sheet_260: -7509120216757544105
+      Up3Atk_Sheet_261: 3383034234371353326
+      Up3Atk_Sheet_262: 6553010753362652792
+      Up3Atk_Sheet_263: -192867549962985739
+      Up3Atk_Sheet_264: -7204938126282950660
+      Up3Atk_Sheet_27: 2531303864468868963
+      Up3Atk_Sheet_28: 5350515806798208808
+      Up3Atk_Sheet_29: -4447806695823051919
+      Up3Atk_Sheet_3: -23732662208504027
+      Up3Atk_Sheet_30: -315201406868682592
+      Up3Atk_Sheet_31: 2850446357705659565
+      Up3Atk_Sheet_32: 6367582331145066673
+      Up3Atk_Sheet_33: -7718878869145712813
+      Up3Atk_Sheet_34: 3384643570102955050
+      Up3Atk_Sheet_35: -8803206628143872844
+      Up3Atk_Sheet_36: -1763168407124535815
+      Up3Atk_Sheet_37: 8672587411723070960
+      Up3Atk_Sheet_38: -7320043590690767163
+      Up3Atk_Sheet_39: 4352574482316051446
+      Up3Atk_Sheet_4: 5548722270154284391
+      Up3Atk_Sheet_40: -1709722173674557216
+      Up3Atk_Sheet_41: 1436971302230052547
+      Up3Atk_Sheet_42: -7739631875907510100
+      Up3Atk_Sheet_43: 1968549457892289506
+      Up3Atk_Sheet_44: -8857945043305016419
+      Up3Atk_Sheet_45: -8134630220203156931
+      Up3Atk_Sheet_46: -93549523769536692
+      Up3Atk_Sheet_47: 8028257457775070551
+      Up3Atk_Sheet_48: 7455738782657413936
+      Up3Atk_Sheet_49: -4200382848469121491
+      Up3Atk_Sheet_5: 4349087759767529543
+      Up3Atk_Sheet_50: -3281809931822275145
+      Up3Atk_Sheet_51: -4856176255547374710
+      Up3Atk_Sheet_52: -1591748250775240644
+      Up3Atk_Sheet_53: 159248481117234965
+      Up3Atk_Sheet_54: -14318679712248288
+      Up3Atk_Sheet_55: -252845683564461509
+      Up3Atk_Sheet_56: -2497690357519269983
+      Up3Atk_Sheet_57: 224362697838077185
+      Up3Atk_Sheet_58: 355906164049026669
+      Up3Atk_Sheet_59: -6021975012995268628
+      Up3Atk_Sheet_6: 7532815900577791512
+      Up3Atk_Sheet_60: 3296411370295625150
+      Up3Atk_Sheet_61: 3975846066554218588
+      Up3Atk_Sheet_62: -5739169523509273232
+      Up3Atk_Sheet_63: -6686318140071020059
+      Up3Atk_Sheet_64: -7578362399123281457
+      Up3Atk_Sheet_65: -165578119262665007
+      Up3Atk_Sheet_66: 2795208209000717789
+      Up3Atk_Sheet_67: -6752472449715531618
+      Up3Atk_Sheet_68: -6539271646729820935
+      Up3Atk_Sheet_69: 2961251673034609913
+      Up3Atk_Sheet_7: -8712775134845684653
+      Up3Atk_Sheet_70: 8719568294229942678
+      Up3Atk_Sheet_71: 5185294073598197928
+      Up3Atk_Sheet_72: 8234625943539755182
+      Up3Atk_Sheet_73: -6177299631207957233
+      Up3Atk_Sheet_74: -6883213556500780648
+      Up3Atk_Sheet_75: 1630299413934675138
+      Up3Atk_Sheet_76: -7441439488396222012
+      Up3Atk_Sheet_77: -598383743545966000
+      Up3Atk_Sheet_78: -1608801544142857087
+      Up3Atk_Sheet_79: -632223207708661274
+      Up3Atk_Sheet_8: 5021095651044459133
+      Up3Atk_Sheet_80: 3441457854068702798
+      Up3Atk_Sheet_81: 2664494658487892653
+      Up3Atk_Sheet_82: -669210211053720763
+      Up3Atk_Sheet_83: 4461763140574048313
+      Up3Atk_Sheet_84: -8821254478550640920
+      Up3Atk_Sheet_85: 102145253017551295
+      Up3Atk_Sheet_86: 654176030165251397
+      Up3Atk_Sheet_87: 581055834225644365
+      Up3Atk_Sheet_88: -2471111262470051473
+      Up3Atk_Sheet_89: -547383477408105159
+      Up3Atk_Sheet_9: 7618186878486702980
+      Up3Atk_Sheet_90: 4753112148464671500
+      Up3Atk_Sheet_91: -4242343710334350006
+      Up3Atk_Sheet_92: 2112003683859545959
+      Up3Atk_Sheet_93: 3369734473807195155
+      Up3Atk_Sheet_94: 2989733034760142770
+      Up3Atk_Sheet_95: -2088928985765290835
+      Up3Atk_Sheet_96: 4199554319450414524
+      Up3Atk_Sheet_97: -2179700443451824409
+      Up3Atk_Sheet_98: -813004699257687328
+      Up3Atk_Sheet_99: 7874554198166525427
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

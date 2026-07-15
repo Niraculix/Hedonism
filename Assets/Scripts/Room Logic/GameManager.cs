@@ -140,8 +140,10 @@ public class GameManager : MonoBehaviour
         return 1;
     }
 
-    public System.Collections.IEnumerator FreezeGame(float sec)
+    public System.Collections.IEnumerator FreezeGame(float sec, float delay )
     {
+
+        yield return new WaitForSecondsRealtime(delay);
         var time = Time.timeScale;
         Time.timeScale = 0f;
         print($"Freeze Game for {sec} sec");

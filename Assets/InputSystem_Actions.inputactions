@@ -21,7 +21,7 @@
                     "id": "6c2ab1b8-8984-453a-af3d-a3c78ae1679a",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 },
                 {
@@ -73,15 +73,6 @@
                     "name": "LeftShoulder",
                     "type": "Button",
                     "id": "5b4c221d-c75f-4d75-a5bd-dcd4c82db8da",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Esc",
-                    "type": "Button",
-                    "id": "3b236b62-216f-4074-a99d-be4c995bb812",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -372,28 +363,6 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "LeftShoulder",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "dcd8e87d-2e21-49c6-8399-e42948b1791b",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Esc",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "055f1b2f-f468-4322-9ea4-29b88106308e",
-                    "path": "<Gamepad>/start",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Esc",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

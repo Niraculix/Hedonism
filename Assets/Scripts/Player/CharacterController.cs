@@ -227,11 +227,31 @@ public class CharacterController : MonoBehaviour
             torsoAnimator.SetBool("IsDashing", dashing);
         }
     }
-    public void TriggerAttackAnimation()
+    public void TriggerAttackAnimation(int direction)
     {
-        Debug.Log("️ ATTACK TRIGGERED!");
-        if (torsoAnimator != null) torsoAnimator.SetTrigger("Attack");
-        if (legsAnimator != null) legsAnimator.SetTrigger("Attack");
+        if (torsoAnimator != null)
+        {
+            CurrentState = PlayerState.Attacking;
+            torsoAnimator.SetInteger("AttackDir", direction);
+            StartCoroutine(ResetAttackDir());
+        }
+
+        if (legsAnimator != null)
+        {
+            legsAnimator.SetInteger("AttackDir", direction);
+        }
+
+    }
+    private IEnumerator ResetAttackDir()
+    {
+        // Wait 1 frame to ensure the Animator registers the attack direction
+        yield return null;
+
+        // Reset to -1. 
+        // We use -1 because 0 is Forward, 1 is Up, and 2 is Down. 
+        // -1 is a "neutral" state that won't trigger any attack!
+        if (torsoAnimator != null) torsoAnimator.SetInteger("AttackDir", -1);
+        if (legsAnimator != null) legsAnimator.SetInteger("AttackDir", -1);
     }
 
     public void TriggerKnockbackAnimation()

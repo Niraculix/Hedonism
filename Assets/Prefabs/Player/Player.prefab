@@ -297,6 +297,8 @@ MonoBehaviour:
   MeleeAttackRange: 1.32
   ParryRange: 1.5
   LightIntensity: 2
+  FreezeDuration: 0.5
+  FreezeDelay: 0.13
   MeleeDamage: 5
   AdrenalinDamage: 2000
   max_hp: 30

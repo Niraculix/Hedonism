@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 7997f198acfa0664282a57b78baeec52
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5702203997638433394
+    second: SheetDashNoBG_0
+  - first:
+      213: -1137228371290118530
+    second: SheetDashNoBG_1
+  - first:
+      213: -363232618917722670
+    second: SheetDashNoBG_2
+  - first:
+      213: 7028964170804171235
+    second: SheetDashNoBG_3
+  - first:
+      213: -1522547055239020617
+    second: SheetDashNoBG_4
+  - first:
+      213: -7301660102318865815
+    second: SheetDashNoBG_5
+  - first:
+      213: -12413119399435659
+    second: SheetDashNoBG_6
+  - first:
+      213: -100301208026093568
+    second: SheetDashNoBG_7
+  - first:
+      213: 5100777919994102852
+    second: SheetDashNoBG_8
+  - first:
+      213: -8810653332076103036
+    second: SheetDashNoBG_9
+  - first:
+      213: -587452721874659609
+    second: SheetDashNoBG_10
+  - first:
+      213: -6453971738426981562
+    second: SheetDashNoBG_11
+  - first:
+      213: -1551563485251342586
+    second: SheetDashNoBG_12
+  - first:
+      213: -6588606942918267161
+    second: SheetDashNoBG_13
+  - first:
+      213: 6669475253339366099
+    second: SheetDashNoBG_14
+  - first:
+      213: -7235074089380820687
+    second: SheetDashNoBG_15
+  - first:
+      213: 1489783178698818868
+    second: SheetDashNoBG_16
+  - first:
+      213: 5929900189463456255
+    second: SheetDashNoBG_17
+  - first:
+      213: -5408931986948185046
+    second: SheetDashNoBG_18
+  - first:
+      213: 8095230712872199971
+    second: SheetDashNoBG_19
+  - first:
+      213: 7739798912485831506
+    second: SheetDashNoBG_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SheetDashNoBG_12
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 2442
+        width: 239
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f602f0b3db77ae0800000000000000
+      internalID: -1551563485251342586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheetDashNoBG_14
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 2474
+        width: 250
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d22d81186cbe8c50800000000000000
+      internalID: 6669475253339366099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheetDashNoBG_15
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1854
+        width: 223
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139c2d2e27ad79b90800000000000000
+      internalID: -7235074089380820687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheetDashNoBG_16
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1802
+        width: 280
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43502b668e5cca410800000000000000
+      internalID: 1489783178698818868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheetDashNoBG_21
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1198
+        width: 275
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9ad7aedcc3b4250800000000000000
+      internalID: 5929900189463456255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheetDashNoBG_18
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 679
+        width: 274
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24a4bff30d9fe4b0800000000000000
+      internalID: -5408931986948185046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheetDashNoBG_19
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 679
+        width: 274
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32764976179085070800000000000000
+      internalID: 8095230712872199971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheetDashNoBG_20
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 118
+        width: 275
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2533cab8a1a496b60800000000000000
+      internalID: 7739798912485831506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheetDashNoBG_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 3087
+        width: 165
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a404a8a913b4c48a85eee6fc6b443e
+      internalID: 1550090689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheetDashNoBG_10
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 3034
+        width: 198
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d0f5e023be7904cae3e1e2e40741a8
+      internalID: 324564322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SheetDashNoBG_17
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1189
+        width: 260
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4df747c1f386cd46a0f7aabd89ed9ec
+      internalID: -78969616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7fb26a2323105f147913abba70d634ce
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SheetDashNoBG_10: 324564322
+      SheetDashNoBG_11: -6453971738426981562
+      SheetDashNoBG_12: -1551563485251342586
+      SheetDashNoBG_13: -6588606942918267161
+      SheetDashNoBG_14: 6669475253339366099
+      SheetDashNoBG_15: -7235074089380820687
+      SheetDashNoBG_16: 1489783178698818868
+      SheetDashNoBG_17: -5702203997638433394
+      SheetDashNoBG_18: -5408931986948185046
+      SheetDashNoBG_19: 8095230712872199971
+      SheetDashNoBG_20: 7739798912485831506
+      SheetDashNoBG_21: 5929900189463456255
+      SheetDashNoBG_23: 1169827697
+      SheetDashNoBG_3: 7028964170804171235
+      SheetDashNoBG_4: -1522547055239020617
+      SheetDashNoBG_5: -7301660102318865815
+      SheetDashNoBG_6: -12413119399435659
+      SheetDashNoBG_7: -100301208026093568
+      SheetDashNoBG_8: 1550090689
+      SheetDashNoBG_9: -8810653332076103036
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

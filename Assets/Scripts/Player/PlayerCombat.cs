@@ -15,6 +15,8 @@ public class PlayerCombat : MonoBehaviour
 
     [Header("visuals")]
     public float LightIntensity = 2f;
+    public float FreezeDuration = 2;
+    public float FreezeDelay = 0.2f;
 
     public int MeleeDamage = 50;
     public int AdrenalinDamage = 2000;
@@ -48,6 +50,8 @@ public class PlayerCombat : MonoBehaviour
     private bool dead = false;
 
     private bool draining = false;
+
+    private int attackDirection = 0;
 
     [Header("Actions")]
     [SerializeField] private InputActionReference MoveAction;
@@ -149,23 +153,27 @@ public class PlayerCombat : MonoBehaviour
         {
             if(Mathf.Abs(InputVector.y) < 0.7)
             {
+                attackDirection = 0;
                 AttackPoint = SideMeleePoint.position;
                 ParryPoint = SideMeleePoint.position;
             }
             else if(InputVector.y > 0) 
             {
+                attackDirection = 1;
                 AttackPoint = UpMeleePoint.position;
                 ParryPoint = UpMeleePoint.position;
             }
 
             else if(InputVector.y < 0)
             {
+                attackDirection = 2;
                 AttackPoint = DownMeleePoint.position;
                 ParryPoint = DownMeleePoint.position;
             }
         }
         else
         {
+            attackDirection = 0;
             AttackPoint = SideMeleePoint.position;
             ParryPoint = SideMeleePoint.position;
         }
@@ -184,7 +192,7 @@ public class PlayerCombat : MonoBehaviour
         if(GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().IsPaused) return;
         if(!ActionOnCooldown)
         {
-            controller.TriggerAttackAnimation();
+            controller.TriggerAttackAnimation(attackDirection);
 
             if (light_dropped)
             {
@@ -283,7 +291,7 @@ public class PlayerCombat : MonoBehaviour
                 Die();
             }
 
-            StartCoroutine(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().FreezeGame(2));
+            StartCoroutine(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().FreezeGame(FreezeDuration, FreezeDelay));     
             
             SetIFrames(5);
             
