@@ -16,6 +16,12 @@ public class Enemy : MonoBehaviour
 
     public GameObject animationObject;
 
+    public GameObject NumberSpawnPoint;
+
+    public GameObject FloatingNumberPrefab;
+
+    public Canvas canvas;
+
     AudioManager audioManager = AudioManager.Instance;
 
     
@@ -71,6 +77,8 @@ public class Enemy : MonoBehaviour
 
             IFrames = 5;
 
+            SpawnDamageNumber(damage);
+
             if(hp <= 0)
             {
                 Die();
@@ -90,6 +98,15 @@ public class Enemy : MonoBehaviour
         LogicEnabled = false;
         StartCoroutine(DeathAnim());
         
+    }
+
+    void SpawnDamageNumber(float dmg)
+    {
+        GameObject NewNumber = Instantiate(FloatingNumberPrefab, canvas.transform);
+        float randf = Random.Range(-5,5) * (Random.Range(0,10) / 10f);
+        NewNumber.transform.position = NumberSpawnPoint.transform.position;
+        NewNumber.transform.Translate(new Vector2(randf,0));
+        NewNumber.GetComponent<FloatingDamageNumber>().Init(dmg);
     }
 
     IEnumerator DeathAnim()
