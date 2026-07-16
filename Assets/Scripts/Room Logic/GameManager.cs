@@ -145,7 +145,7 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(delay);
         var time = Time.timeScale;
-        Time.timeScale = 0f;
+        Time.timeScale = 0.1f;
         print($"Freeze Game for {sec} sec");
         yield return new WaitForSecondsRealtime(sec);
         Time.timeScale = time;

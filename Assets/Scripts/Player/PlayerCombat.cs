@@ -15,7 +15,7 @@ public class PlayerCombat : MonoBehaviour
 
     [Header("visuals")]
     public float LightIntensity = 2f;
-    public float FreezeDuration = 2;
+    public float FreezeDuration = 3;
     public float FreezeDelay = 0.2f;
 
     public int MeleeDamage = 50;
@@ -39,7 +39,6 @@ public class PlayerCombat : MonoBehaviour
     public Transform DownMeleePoint;
     public CharacterController controller;
 
-    private GameObject LightSphere = null;
 
     private Vector2 InputVector;
 
@@ -317,16 +316,16 @@ public class PlayerCombat : MonoBehaviour
 
             audioManager.Play(audioManager.EnterAdrenalinSound);
 
-            LightSphere = light;
+			GetComponent<OrbitManager>().BuildOrbiters();
         }
     }
 
     public void pickupLight()
 
     {
-        LightSphere = null;
         light_dropped = false;
         audioManager.Play(audioManager.ExitAdrenalinSound);
+		GetComponent<OrbitManager>().BuildOrbiters();
     }
 
 

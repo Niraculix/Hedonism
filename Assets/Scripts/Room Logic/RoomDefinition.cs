@@ -76,7 +76,7 @@ public class RoomDefinition : MonoBehaviour
                     SpawnPointPos = door.SpawnPoint.transform.position;
                 }
             }
-            StartCoroutine(LockDoors(1));
+            StartCoroutine(LockDoors(0.01f));
             
 
             player.transform.position = SpawnPointPos;

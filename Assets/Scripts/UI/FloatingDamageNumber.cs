@@ -16,7 +16,7 @@ public class FloatingDamageNumber : MonoBehaviour
         int randi = Random.Range(0,100);
         color = new Color(255,randi,randi);
 
-        GetComponent<TextMeshProUGUI>().color = Color.black;
+        GetComponent<TextMeshProUGUI>().color = Color.white;
         GetComponent<Light2D>().color = Color.red;
     }
 

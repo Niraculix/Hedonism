@@ -66,6 +66,15 @@ public class Enemy : MonoBehaviour
             GameObject.FindGameObjectWithTag("Room").GetComponent<RoomDefinition>().EnemyKilled();
             Destroy(gameObject);
         }
+
+        if(transform.localScale.x < 0)
+        {
+            canvas.transform.localScale = new Vector2(-1.428571f,1.428571f);
+        }
+        else
+        {
+            canvas.transform.localScale = new Vector2(1.428571f,1.428571f);
+        }
     }
 
     public void takeDamage(int damage)

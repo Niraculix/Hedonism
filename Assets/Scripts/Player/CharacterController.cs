@@ -114,6 +114,7 @@ public class CharacterController : MonoBehaviour
 
         dashing = false;
 		dashes_remaining = MaxDashes;
+		GetComponent<OrbitManager>().BuildOrbiters();
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
@@ -143,6 +144,7 @@ public class CharacterController : MonoBehaviour
 		if(dashes_remaining > MaxDashes)
 		{
 			dashes_remaining = MaxDashes;
+			GetComponent<OrbitManager>().BuildOrbiters();
 		}
 		
 
@@ -333,6 +335,7 @@ public class CharacterController : MonoBehaviour
 
 			m_Grounded = false;
 			dashes_remaining--;
+			GetComponent<OrbitManager>().BuildOrbiters();
 
 			StartCoroutine(DashTime(0.13f));
 
@@ -421,6 +424,7 @@ public class CharacterController : MonoBehaviour
 	public void RegainDash()
 	{
 		dashes_remaining++;
+		GetComponent<OrbitManager>().BuildOrbiters();
 		audioManager.Play(audioManager.RegainDashSound);
 	}
 
