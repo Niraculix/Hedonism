@@ -5119,6 +5119,54 @@ PrefabInstance:
       propertyPath: m_Name
       value: pathfinding test
       objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: m_BlendStyleIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: m_PointLightOuterAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[5]'
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295169254799186161, guid: db52a1fa2ef4f7a41b50c6a5fb74a1a8, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[6]'
+      value: -1892696991
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
