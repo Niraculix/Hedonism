@@ -12,6 +12,13 @@ public class PlantWobble : MonoBehaviour
 
     private bool wobbling = false;
 
+    private Quaternion originalRotation;
+
+    private void Start()
+    {
+        originalRotation = sprite.localRotation;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (wobbling)
@@ -33,29 +40,29 @@ public class PlantWobble : MonoBehaviour
         Sequence wobble = DOTween.Sequence();
 
         wobble.Append(
-            sprite.DORotate(
+            sprite.DOLocalRotate(
                 new Vector3(0, 0, bendAmount * direction),
                 wobbleDuration
             ).SetEase(Ease.OutQuad)
         );
 
         wobble.Append(
-            sprite.DORotate(
+            sprite.DOLocalRotate(
                 new Vector3(0, 0, -bendAmount * 0.5f * direction),
                 wobbleDuration * 1.2f
             ).SetEase(Ease.InOutQuad)
         );
 
         wobble.Append(
-            sprite.DORotate(
+            sprite.DOLocalRotate(
                 new Vector3(0, 0, bendAmount * 0.25f * direction),
                 wobbleDuration
             ).SetEase(Ease.InOutQuad)
         );
 
         wobble.Append(
-            sprite.DORotate(
-                Vector3.zero,
+            sprite.DOLocalRotate(
+                originalRotation.eulerAngles,
                 wobbleDuration * 1.5f
             ).SetEase(Ease.OutQuad)
         );
