@@ -193,6 +193,7 @@ public class PlayerCombat : MonoBehaviour
         if(!ActionOnCooldown)
         {
             controller.TriggerAttackAnimation(attackDirection);
+            audioManager.Play(audioManager.attackSound);
 
             if (light_dropped)
             {
@@ -212,18 +213,19 @@ public class PlayerCombat : MonoBehaviour
 
             Collider2D[] hitEnemies;
 
-            if(AttackPoint == DownMeleePoint.position)
+            if(AttackPoint == SideMeleePoint.position)
             {
-                hitEnemies = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(GetComponent<CapsuleCollider2D>().size.x * 1.5f, MeleeAttackRange * 3), 0, EnemyLayers);
+                hitEnemies = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(MeleeAttackRange * 7f, MeleeAttackRange * 3f), 0, EnemyLayers);
             }
             else
             {
-                hitEnemies = Physics2D.OverlapCircleAll(AttackPoint, MeleeAttackRange, EnemyLayers);
+                hitEnemies = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(MeleeAttackRange * 2f, MeleeAttackRange * 7f), EnemyLayers);
             }
 
             
             foreach(Collider2D enemy in hitEnemies)
             {
+                if(!enemy.GetComponent<Enemy>()) return;
                 audioManager.Play(audioManager.EnemyDamageSound,1,UnityEngine.Random.Range(0.9f, 1.1f));
 
                 if(!light_dropped) 
@@ -427,10 +429,14 @@ public class PlayerCombat : MonoBehaviour
         return hp;
     }
 
-    public void OnDrawGizmosSelected()
+    public void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(SideMeleePoint.position, ParryRange);
-        Gizmos.DrawWireCube(DownMeleePoint.position, new Vector2(GetComponent<CapsuleCollider2D>().size.x * 1.5f, MeleeAttackRange * 2));
-        Gizmos.DrawWireSphere(UpMeleePoint.position, MeleeAttackRange);
+        Gizmos.DrawWireCube(SideMeleePoint.position, new Vector2(MeleeAttackRange * 7f, MeleeAttackRange * 3f));
+        Gizmos.DrawWireCube(DownMeleePoint.position, new Vector2(MeleeAttackRange * 2f, MeleeAttackRange * 7f));
+        Gizmos.DrawWireCube(UpMeleePoint.position, new Vector2(MeleeAttackRange * 2f, MeleeAttackRange * 7f));
+
+        Gizmos.color = Color.blue;
+
+        Gizmos.DrawWireSphere(SideMeleePoint.position,ParryRange);
     }
 }

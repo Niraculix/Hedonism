@@ -5863,7 +5863,6 @@ MonoBehaviour:
     - {fileID: 113330806067263373}
     - {fileID: 4412430842718277494}
     - {fileID: 5254091755693287378}
-    - {fileID: 0}
   distanceFromStart: 0
   KillBoxY: -100
   CamBox: {fileID: 7077014435082509964}
