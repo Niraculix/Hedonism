@@ -1,18 +1,51 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameOverUI : MonoBehaviour
 {
-    public string mainSceneName = "GameScene";
+    public GameObject text;
     public string startScreen = "Start";
+    bool blinking = true;
+    bool active = true;
+    bool textActive;
 
-    public void Restart()
+    void Start()
     {
-        SceneManager.LoadScene(mainSceneName);
+        StartCoroutine(Blink());
+        textActive = true;
     }
 
-    public void StartScreen()
+    void OnJump()
     {
-        SceneManager.LoadScene(startScreen);
+        print("tod und verderben");
+        if(active)
+        {
+            text.SetActive(false);
+            active = false;
+            StartCoroutine(ChangeScene());
+        }
+    }
+
+    IEnumerator ChangeScene()
+    {
+        blinking = false;
+        text.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        text.SetActive(false);
+        yield return new WaitForSeconds(2.2f);
+        SceneManager.LoadScene("Start");
+    }
+
+
+    IEnumerator Blink()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if(blinking)
+        {
+            textActive = !textActive;
+            text.SetActive(textActive);
+            StartCoroutine(Blink());
+        }
     }
 }

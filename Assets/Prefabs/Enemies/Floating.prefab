@@ -158,7 +158,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1105.599, y: 875.062, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 681649567195259373}
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 71ac0605315c40b0ab63ee5f3ba9560519d6820e0000000061bc2f8f8d5c10dc
+  m_ApplyToSortingLayers: 71ac0605315c40b0ab63ee5f3ba9560561bc2f8f8d5c10dc19d6820e00000000
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0

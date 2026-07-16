@@ -148,6 +148,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0.1f;
         print($"Freeze Game for {sec} sec");
         yield return new WaitForSecondsRealtime(sec);
-        Time.timeScale = time;
+        Time.timeScale = 1f;
     }
 }
