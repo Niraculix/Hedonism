@@ -23,7 +23,6 @@ public class RoomLoader : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        DontDestroyOnLoad(gameObject);
         print(name);
     }
 

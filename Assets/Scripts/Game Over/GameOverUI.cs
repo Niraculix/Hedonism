@@ -31,9 +31,9 @@ public class GameOverUI : MonoBehaviour
     {
         blinking = false;
         text.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         text.SetActive(false);
-        yield return new WaitForSeconds(2.2f);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("Start");
     }
 

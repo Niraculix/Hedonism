@@ -256,7 +256,7 @@ public class PlayerCombat : MonoBehaviour
                 }
             }
 
-            Collider2D[] hitProjectilesParry = Physics2D.OverlapCircleAll(ParryPoint, ParryRange, ProjectileLayers);
+            Collider2D[] hitProjectilesParry = Physics2D.OverlapCircleAll(AttackPoint, ParryRange, ProjectileLayers);
 
             foreach(Collider2D projectile in hitProjectilesParry)
             {
@@ -438,5 +438,7 @@ public class PlayerCombat : MonoBehaviour
         Gizmos.color = Color.blue;
 
         Gizmos.DrawWireSphere(SideMeleePoint.position,ParryRange);
+        Gizmos.DrawWireSphere(UpMeleePoint.position,ParryRange);
+        Gizmos.DrawWireSphere(DownMeleePoint.position,ParryRange);
     }
 }

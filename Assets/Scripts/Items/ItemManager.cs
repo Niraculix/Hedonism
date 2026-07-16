@@ -20,7 +20,6 @@ public class ItemManager : MonoBehaviour
     // Update is called once per frame
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
     }
     public void UpdateItems()
     {

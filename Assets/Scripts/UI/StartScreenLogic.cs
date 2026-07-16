@@ -16,6 +16,7 @@ public class StartScreenLogic : MonoBehaviour
     AudioSource Music;
     void Start()
     {
+        active = true;
         StartCoroutine(Blink());
         Music = gameObject.AddComponent<AudioSource>();
         textActive = true;

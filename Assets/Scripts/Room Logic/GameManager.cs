@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         if(!DungeonGenerationOn) return;
+
+        print("GameScene Start");
         
         GenerateDungeon();
     }
@@ -29,7 +31,6 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     void GenerateDungeon()
