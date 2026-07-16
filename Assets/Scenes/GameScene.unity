@@ -204,24 +204,103 @@ MonoBehaviour:
   DashResetOnKill: 0
   parry_leech_percent: 0
   PossibleItems:
-  - item_name: peepoopoo
-    sprite: {fileID: 2800000, guid: 2244e4bea00fee040a3a1e25195a2a0c, type: 3}
+  - item_name: Heart
+    sprite: {fileID: 2800000, guid: 1bfd468404b407f43a961fac671130c0, type: 3}
     attributes:
     - type: 0
       boolValue: 0
       floatValue: 0
-      intValue: 100
-  - item_name: peepoopoo2
-    sprite: {fileID: 2800000, guid: a0fca4293a3857c4a94686589c0831fa, type: 3}
+      intValue: 70
+  - item_name: Lungs
+    sprite: {fileID: 2800000, guid: 8b2832239bc37ff44b4a7ce86192b11a, type: 3}
+    attributes:
+    - type: 3
+      boolValue: 0
+      floatValue: 0
+      intValue: 1
+    - type: 4
+      boolValue: 0
+      floatValue: 0
+      intValue: 1
+    - type: 7
+      boolValue: 0
+      floatValue: 0.1
+      intValue: 0
+  - item_name: Pufferfish
+    sprite: {fileID: 2800000, guid: c783048b2bc97014298df6139d80c93c, type: 3}
+    attributes:
+    - type: 2
+      boolValue: 0
+      floatValue: 0.5
+      intValue: 0
+  - item_name: Cheliped
+    sprite: {fileID: 2800000, guid: d1d705cc147c5b748a11fdfc7cc814a7, type: 3}
     attributes:
     - type: 5
       boolValue: 0
       floatValue: 0
-      intValue: 10
+      intValue: 1000
+  - item_name: Shrimp
+    sprite: {fileID: 2800000, guid: 8c201196e1fcde8459791b27bb3f1963, type: 3}
+    attributes:
+    - type: 4
+      boolValue: 0
+      floatValue: 0
+      intValue: 1
+  - item_name: Garden Eel Knot
+    sprite: {fileID: 2800000, guid: 95d3c727200dc9e4e95c9c2f96d11b55, type: 3}
+    attributes:
+    - type: 3
+      boolValue: 0
+      floatValue: 0
+      intValue: 1
+  - item_name: Crimson Ox
+    sprite: {fileID: 2800000, guid: b7b36b7d030b6cc479c78a8b937091a0, type: 3}
+    attributes:
+    - type: 3
+      boolValue: 0
+      floatValue: 0
+      intValue: 1
+    - type: 4
+      boolValue: 0
+      floatValue: 0
+      intValue: 1
+    - type: 5
+      boolValue: 0
+      floatValue: 0
+      intValue: 500
+  - item_name: Vampire Remnants
+    sprite: {fileID: 2800000, guid: 43bd182f1f32b854cb182ebece441cbd, type: 3}
+    attributes:
+    - type: 8
+      boolValue: 0
+      floatValue: 0
+      intValue: 1
+  - item_name: Squid
+    sprite: {fileID: 2800000, guid: 7d9c43f37b3256249ae15546263aa20a, type: 3}
+    attributes:
+    - type: 6
+      boolValue: 0
+      floatValue: 0.2
+      intValue: 0
+  - item_name: Fishbone
+    sprite: {fileID: 2800000, guid: 4706bf41424a22a4d883b8fb44a0cbd0, type: 3}
+    attributes:
+    - type: 1
+      boolValue: 0
+      floatValue: 0.3
+      intValue: 0
+  - item_name: Seashell
+    sprite: {fileID: 2800000, guid: bb0bddf5697c194458f3dad8c46fc0ed, type: 3}
+    attributes:
     - type: 0
       boolValue: 0
       floatValue: 0
-      intValue: 40
+      intValue: 20
+    - type: 8
+      boolValue: 0
+      floatValue: 0.5
+      intValue: 0
   ItemList: []
 --- !u!4 &1342367309
 Transform:
@@ -441,6 +520,8 @@ MonoBehaviour:
   EnemyDamageSound: {fileID: 8300000, guid: 8c3fba1539cfa554d9f34dcd08820d40, type: 3}
   EnemyDeathSound: {fileID: 8300000, guid: 11c3190ee38c80a47bba6624d0453af8, type: 3}
   NewWaveSound: {fileID: 8300000, guid: 181d74f50c408a842bb2cda8aebea471, type: 3}
+  PlayerDMGSound: {fileID: 8300000, guid: fbbd75ce3a696fb43a45d007822712e5, type: 3}
+  EnterParryRangeSound: {fileID: 8300000, guid: 0a2b16c6066605144b3e7695f40200f4, type: 3}
   jumpSound: {fileID: 8300000, guid: 2d5a99c09215aed4195ad2d4cb8c959a, type: 3}
   jumpInAirSound: {fileID: 8300000, guid: f3b2ab4315db83046825464cee702510, type: 3}
   dashSound: {fileID: 8300000, guid: 0ff7a7a5252ed56458c67c86c92e87e1, type: 3}
@@ -448,6 +529,7 @@ MonoBehaviour:
   footstepSound: {fileID: 8300000, guid: 628aa695432e6044da25097d32baa446, type: 3}
   EnterAdrenalinSound: {fileID: 8300000, guid: 127de43ef9acb084ca7b4045a5e06e28, type: 3}
   ExitAdrenalinSound: {fileID: 8300000, guid: a418b92d486f7f848bdbd76bd80fd46a, type: 3}
+  RegainDashSound: {fileID: 8300000, guid: 02f68e9ef71392a4db757eb74bc46766, type: 3}
   doorOpenSound: {fileID: 8300000, guid: bb4a83430e04ebd4eb96706a76fd595d, type: 3}
   doorCloseSound: {fileID: 8300000, guid: e4b2ff100923a8544a2dea20087574fa, type: 3}
   ItemPickupSound: {fileID: 8300000, guid: 15ef94ae9edd3fa48a86b55ae3a85105, type: 3}

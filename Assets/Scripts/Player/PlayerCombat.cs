@@ -72,6 +72,7 @@ public class PlayerCombat : MonoBehaviour
 
     ItemManager itemManager;
     GameManager gameManager;
+    AudioManager audioManager = AudioManager.Instance;
 
     
     private void Start()
@@ -224,6 +225,8 @@ public class PlayerCombat : MonoBehaviour
             
             foreach(Collider2D enemy in hitEnemies)
             {
+                audioManager.Play(audioManager.EnemyDamageSound,1,UnityEngine.Random.Range(0.9f, 1.1f));
+
                 if(!light_dropped) 
                 {
                     enemy.GetComponent<Enemy>().takeDamage(itemManager.MeleeDamage);
@@ -288,8 +291,10 @@ public class PlayerCombat : MonoBehaviour
             else
             {
                 hp = 0;
-                Die();
+                StartCoroutine(Die());
             }
+
+            audioManager.Play(audioManager.PlayerDMGSound,1,Random.Range(0.9f,1.1f));
 
             StartCoroutine(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().FreezeGame(FreezeDuration, FreezeDelay));     
             
@@ -310,6 +315,8 @@ public class PlayerCombat : MonoBehaviour
             GameObject light = Instantiate(LightSpherePrefab,transform.position, Quaternion.identity);
             light.GetComponent<LightSphere>().Init(dir,damage);
 
+            audioManager.Play(audioManager.EnterAdrenalinSound);
+
             LightSphere = light;
         }
     }
@@ -319,13 +326,17 @@ public class PlayerCombat : MonoBehaviour
     {
         LightSphere = null;
         light_dropped = false;
+        audioManager.Play(audioManager.ExitAdrenalinSound);
     }
 
 
-    public void Die()
+    public IEnumerator Die()
     {
         dead = true;
         hp = 0;
+        audioManager.StopMusic();
+        audioManager.Play(audioManager.gameOverSound);
+        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(gameOverSceneName);
     }
     

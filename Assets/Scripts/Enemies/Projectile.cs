@@ -16,6 +16,8 @@ public class Projectile : MonoBehaviour
     [SerializeField] private Vector3 startScale = new Vector3(0.5f, 0.5f, 1f);
     [SerializeField] private Vector3 endScale = new Vector3(1f, 1f, 1f);
     private float _spawnTime;
+    AudioManager audioManager = AudioManager.Instance;
+
     private void Awake()
     {
         // Ensure we start at the intended scale
@@ -47,6 +49,8 @@ public class Projectile : MonoBehaviour
         _direction = direction.normalized;
         _damage = damage;
         _initPos = transform.position;
+
+        audioManager.Play(audioManager.BulletShootSound);
     }
 
     // Wird vom ParryController aufgerufen
@@ -54,12 +58,14 @@ public class Projectile : MonoBehaviour
     {
         print("Parried");
         _isParried = true;
+
+        audioManager.Play(audioManager.parrySound,1,Random.Range(0.9f, 1.1f));
         
         GetComponent<Light2D>().color = Color.white;
-        // Richtung umkehren zurück zur Quelle
         _direction = (_initPos - transform.position).normalized;
-        // Ein bisschen schneller nach Parry
-        speed *= 1.5f;
+        speed *= 2f;
+
+
     }
 
     private void FixedUpdate()
@@ -77,6 +83,7 @@ public class Projectile : MonoBehaviour
                 Debug.Log("Spieler getroffen!");
                 other.GetComponent<PlayerCombat>().takeDamage(_damage, _direction);
                 other.GetComponent<CharacterController>().Knockback(_direction,_damage);
+                audioManager.Play(audioManager.BulletHitSound,1,Random.Range(0.9f, 1.1f));
                 Destroy(gameObject);
             }
             return;
@@ -87,6 +94,7 @@ public class Projectile : MonoBehaviour
         {
             Debug.Log("Gegner getroffen!");
             other.GetComponent<Enemy>().takeDamage(_damage);
+                audioManager.Play(audioManager.BulletHitSound,1,Random.Range(0.9f, 1.1f));
             Destroy(gameObject);
             return;
         }
@@ -95,12 +103,15 @@ public class Projectile : MonoBehaviour
         if (other.CompareTag("Environment"))
         {
             Destroy(gameObject);
+                audioManager.Play(audioManager.BulletHitSound,1,Random.Range(0.7f, 1f));
             return;
         }
     }
 
     public IEnumerator EnterParryRange()
     {
+        audioManager.Play(audioManager.EnterParryRangeSound,1,Random.Range(0.9f, 1.1f));
+
         for(var i = 0; i < 5; i++)
         {
             yield return new WaitForSeconds(0.1f);

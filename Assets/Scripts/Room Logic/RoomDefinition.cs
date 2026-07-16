@@ -34,6 +34,8 @@ public class RoomDefinition : MonoBehaviour
 
     private Vector2 SpawnPointPos;
 
+    AudioManager audioManager = AudioManager.Instance;
+
     
 
 
@@ -110,6 +112,7 @@ public class RoomDefinition : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         print("Now Spawning Wave: " + CurrentWave);
+        audioManager.Play(audioManager.NewWaveSound);
         foreach(GameObject enemyObj in EnemyWaves[CurrentWave].Wave)
         {
             enemyObj.GetComponent<Enemy>().active = true;
@@ -142,11 +145,13 @@ public class RoomDefinition : MonoBehaviour
     public IEnumerator LockDoors(float sec)
     {
         yield return new WaitForSeconds(sec);
+        audioManager.Play(audioManager.doorCloseSound);
         doors_open = false;
     }
     public IEnumerator UnlockDoors(float sec)
     {
         yield return new WaitForSeconds(sec);
+        audioManager.Play(audioManager.doorOpenSound);
         doors_open = true;
     }
 
