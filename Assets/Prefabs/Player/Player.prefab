@@ -314,11 +314,11 @@ MonoBehaviour:
   FreezeDuration: 0.5
   FreezeDelay: 0.13
   MeleeDamage: 5
-  AdrenalinDamage: 2000
-  max_hp: 30
+  AdrenalinDamage: 20
+  max_hp: 60
   hp: 0
-  naturalDrainRate: 2
-  naturalHealRate: 0.2
+  naturalDrainRate: 5
+  naturalHealRate: 0.8
   baseAttackCooldown: 1
   AdrenalinAttackCooldown: 0.25
   room_cleared: 0
