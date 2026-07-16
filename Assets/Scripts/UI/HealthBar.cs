@@ -32,7 +32,8 @@ public class HealthBar : MonoBehaviour
         textMesh.text = $"{Mathf.Round(current_hp * 100) / 100.0} / {itemManager.max_hp}";
         
         float hp_difference =  current_hp / itemManager.max_hp;
-        slider.value = hp_difference;
+        if(hp_difference > 0) slider.value = hp_difference;
+        else slider.value = slider.maxValue;
         if(Player.GetComponent<PlayerCombat>().light_dropped)
         {
             fill.GetComponent<Image>().color = Color.red;
