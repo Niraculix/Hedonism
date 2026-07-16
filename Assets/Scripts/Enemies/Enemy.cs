@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
+
 
 public class Enemy : MonoBehaviour
 {
@@ -13,6 +15,8 @@ public class Enemy : MonoBehaviour
     [HideInInspector] public bool LogicEnabled = true;
 
     public GameObject animationObject;
+
+    AudioManager audioManager = AudioManager.Instance;
 
     
 
@@ -82,6 +86,16 @@ public class Enemy : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().RegainDash();
         }
+
+        LogicEnabled = false;
+        StartCoroutine(DeathAnim());
         
+    }
+
+    IEnumerator DeathAnim()
+    {
+        audioManager.Play(audioManager.EnemyDeathSound);
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject); 
     }
 }

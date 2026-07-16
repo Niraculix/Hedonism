@@ -17,6 +17,8 @@ public class ItemObject : MonoBehaviour
     RoomDefinition roomDef;
     float Y_Offset = 128;
 
+    
+
     Vector2 floatingdir = new Vector2(0,1);
 
     void Start()
@@ -220,6 +222,7 @@ public class ItemObject : MonoBehaviour
             itemManager.ItemList.Add(item);
             itemManager.UpdateItems();
             roomDef.ItemPickedUp();
+            
 
             Destroy(gameObject);
         }

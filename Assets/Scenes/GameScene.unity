@@ -520,6 +520,8 @@ MonoBehaviour:
   EnemyDamageSound: {fileID: 8300000, guid: 8c3fba1539cfa554d9f34dcd08820d40, type: 3}
   EnemyDeathSound: {fileID: 8300000, guid: 11c3190ee38c80a47bba6624d0453af8, type: 3}
   NewWaveSound: {fileID: 8300000, guid: 181d74f50c408a842bb2cda8aebea471, type: 3}
+  PlayerDMGSound: {fileID: 8300000, guid: fbbd75ce3a696fb43a45d007822712e5, type: 3}
+  EnterParryRangeSound: {fileID: 8300000, guid: 0a2b16c6066605144b3e7695f40200f4, type: 3}
   jumpSound: {fileID: 8300000, guid: 2d5a99c09215aed4195ad2d4cb8c959a, type: 3}
   jumpInAirSound: {fileID: 8300000, guid: f3b2ab4315db83046825464cee702510, type: 3}
   dashSound: {fileID: 8300000, guid: 0ff7a7a5252ed56458c67c86c92e87e1, type: 3}
@@ -527,6 +529,7 @@ MonoBehaviour:
   footstepSound: {fileID: 8300000, guid: 628aa695432e6044da25097d32baa446, type: 3}
   EnterAdrenalinSound: {fileID: 8300000, guid: 127de43ef9acb084ca7b4045a5e06e28, type: 3}
   ExitAdrenalinSound: {fileID: 8300000, guid: a418b92d486f7f848bdbd76bd80fd46a, type: 3}
+  RegainDashSound: {fileID: 8300000, guid: 02f68e9ef71392a4db757eb74bc46766, type: 3}
   doorOpenSound: {fileID: 8300000, guid: bb4a83430e04ebd4eb96706a76fd595d, type: 3}
   doorCloseSound: {fileID: 8300000, guid: e4b2ff100923a8544a2dea20087574fa, type: 3}
   ItemPickupSound: {fileID: 8300000, guid: 15ef94ae9edd3fa48a86b55ae3a85105, type: 3}

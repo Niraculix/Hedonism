@@ -81,6 +81,7 @@ public class CharacterController : MonoBehaviour
     /// </summary>
     private Animator torsoAnimator;
     private Animator legsAnimator;
+    AudioManager audioManager = AudioManager.Instance;
 
 
     private void Awake()
@@ -301,6 +302,12 @@ public class CharacterController : MonoBehaviour
 
 				m_Rigidbody2D.linearVelocityY = 0;
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				if(JumpsAvailable == 2)
+				{
+					audioManager.Play(audioManager.jumpSound,1,UnityEngine.Random.Range(0.9f, 1.1f));
+				}
+				else audioManager.Play(audioManager.jumpInAirSound,1,UnityEngine.Random.Range(0.9f, 1.1f));
+
 				JumpsAvailable--;
 			}
 		}
@@ -354,7 +361,13 @@ public class CharacterController : MonoBehaviour
 			
 
 			m_Rigidbody2D.AddForce(InputVector * m_DashForce);
+			audioManager.Play(audioManager.dashSound,1,UnityEngine.Random.Range(0.9f, 1.1f));
 		}
+	}
+
+	public void Land()
+	{
+		audioManager.Play(audioManager.landSound, 1, UnityEngine.Random.Range(0.9f,1.1f));
 	}
 
 	public IEnumerator LaunchPlayerInDir(Vector2 force)
@@ -408,6 +421,7 @@ public class CharacterController : MonoBehaviour
 	public void RegainDash()
 	{
 		dashes_remaining++;
+		audioManager.Play(audioManager.RegainDashSound);
 	}
 
 	public void ResetCoyoteTime(int i)
