@@ -113,12 +113,12 @@ public class RoomDefinition : MonoBehaviour
         yield return new WaitForSeconds(1);
         print("Now Spawning Wave: " + CurrentWave);
         audioManager.Play(audioManager.NewWaveSound);
-        foreach(GameObject enemyObj in EnemyWaves[CurrentWave].Wave)
+        foreach(GameObject enemyObj in EnemyWaves[0].Wave)
         {
             enemyObj.GetComponent<Enemy>().active = true;
         }
 
-        EnemiesRemainingCurrentWave = EnemyWaves[CurrentWave].Wave.Count;
+        EnemiesRemainingCurrentWave = EnemyWaves[0].Wave.Count;
     }
 
     public void EnemyKilled()
