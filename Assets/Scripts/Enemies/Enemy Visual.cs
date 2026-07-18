@@ -11,13 +11,20 @@ public class EnemyVisual : MonoBehaviour
     void Start()
     {
         flyingEnemy = GetComponent<FlyingEnemy>();
+        transform.localPosition = new Vector2(0,0);
     }
 
-    void Update()
+    void FixedUpdate()
     {
+
         if (flyingEnemy.CurrentState == FlyingEnemy.EnemyState.Chase)
+        {
             visual.sprite = alertedSprite;
+        }
         else
+        {
             visual.sprite = idleSprite;
+        }
+        
     }
 }

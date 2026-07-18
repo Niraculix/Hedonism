@@ -135,7 +135,7 @@ public class RoomDefinition : MonoBehaviour
             }
             else
             {
-                StartCoroutine(NextEnemyWave());
+                StartCoroutine(UnlockDoors(1));
             }
         }
     }

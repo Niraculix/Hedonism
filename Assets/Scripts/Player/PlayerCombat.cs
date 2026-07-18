@@ -177,103 +177,108 @@ public class PlayerCombat : MonoBehaviour
             AttackPoint = SideMeleePoint.position;
             ParryPoint = SideMeleePoint.position;
         }
-
-        Collider2D[] ProjectilesInParryRange = Physics2D.OverlapCircleAll(ParryPoint, ParryRange, ProjectileLayers);
-        foreach(Collider2D projectile in ProjectilesInParryRange)
-        {
-            if(!projectile.GetComponent<Projectile>()) continue;
-            
-            StartCoroutine(projectile.GetComponent<Projectile>().EnterParryRange());
-        }
     }
 
     void OnMelee()
     {
         if(GameObject.FindGameObjectWithTag("PauseUI").GetComponent<PauseMenu>().IsPaused) return;
-        if(!ActionOnCooldown)
+        if(ActionOnCooldown) return;
+        controller.TriggerAttackAnimation(attackDirection);
+        audioManager.Play(audioManager.attackSound);
+
+        StartCoroutine(AttackDelay());
+    }
+
+    IEnumerator AttackDelay()
+    {
+        yield return new WaitForSeconds(0.2f);
+        bool pogo = false;
+
+        if (light_dropped)
         {
-            controller.TriggerAttackAnimation(attackDirection);
-            audioManager.Play(audioManager.attackSound);
+            StartCoroutine(ActionCooldown(AdrenalinAttackCooldown));
+        }
+        else
+        {
+            StartCoroutine(ActionCooldown(baseAttackCooldown));
+        }
+        
 
-            if (light_dropped)
+        Collider2D[] hitEnemies;
+
+        if(AttackPoint == SideMeleePoint.position)
+        {
+            hitEnemies = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(MeleeAttackRange * 7f, MeleeAttackRange * 4f), EnemyLayers);
+        }
+        else
+        {
+            hitEnemies = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(MeleeAttackRange * 3f, MeleeAttackRange * 7f), EnemyLayers);
+        }
+
+
+        if(AttackPoint == DownMeleePoint.position)
+        {
+            pogo = true;
+        }
+
+        
+        foreach(Collider2D enemy in hitEnemies)
+        {
+            if(!enemy.GetComponent<Enemy>()) continue;
+            audioManager.Play(audioManager.EnemyDamageSound,1,UnityEngine.Random.Range(0.9f, 1.1f));
+
+            if(!light_dropped) 
             {
-                StartCoroutine(ActionCooldown(AdrenalinAttackCooldown));
+                enemy.GetComponent<Enemy>().takeDamage(itemManager.MeleeDamage);
             }
             else
             {
-                StartCoroutine(ActionCooldown(baseAttackCooldown));
-            }
-            bool pogo = false;
-
-            if(AttackPoint == DownMeleePoint.position)
-            {
-                pogo = true;
-            }
-            
-
-            Collider2D[] hitEnemies;
-
-            if(AttackPoint == SideMeleePoint.position)
-            {
-                hitEnemies = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(MeleeAttackRange * 7f, MeleeAttackRange * 3f), 0, EnemyLayers);
-            }
-            else
-            {
-                hitEnemies = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(MeleeAttackRange * 2f, MeleeAttackRange * 7f), EnemyLayers);
+                enemy.GetComponent<Enemy>().takeDamage(AdrenalinDamage);
             }
 
-            
-            foreach(Collider2D enemy in hitEnemies)
+            if(pogo)
             {
-                if(!enemy.GetComponent<Enemy>()) return;
-                audioManager.Play(audioManager.EnemyDamageSound,1,UnityEngine.Random.Range(0.9f, 1.1f));
+                controller.Pogo();
+                pogo = false;
+            }
+        }
 
-                if(!light_dropped) 
+
+
+        Collider2D[] hitProjectilesAttack;
+
+        if(AttackPoint == SideMeleePoint.position)
+        {
+            hitProjectilesAttack = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(MeleeAttackRange * 7f, MeleeAttackRange * 4f), EnemyLayers);
+        }
+        else
+        {
+            hitProjectilesAttack = Physics2D.OverlapBoxAll(AttackPoint, new Vector2(MeleeAttackRange * 3f, MeleeAttackRange * 7f), EnemyLayers);
+        }
+
+        foreach(Collider2D projectile in hitProjectilesAttack)
+        {
+            print(projectile);
+            projectile.GetComponent<Projectile>().Parry();
+            if(itemManager.parry_leech_percent > 0)
+            {
+                if(hp + projectile.GetComponent<Projectile>()._damage * itemManager.parry_leech_percent < max_hp)
                 {
-                    enemy.GetComponent<Enemy>().takeDamage(itemManager.MeleeDamage);
+                    hp += projectile.GetComponent<Projectile>()._damage * itemManager.parry_leech_percent;
                 }
                 else
                 {
-                    enemy.GetComponent<Enemy>().takeDamage(AdrenalinDamage);
-                }
-
-                if(pogo)
-                {
-                    controller.Pogo();
-                    pogo = false;
+                    hp = max_hp;
                 }
             }
 
-
-            Collider2D[] hitProjectilesAttack = Physics2D.OverlapCircleAll(AttackPoint, MeleeAttackRange, ProjectileLayers);
-
-            foreach(Collider2D projectile in hitProjectilesAttack)
+            if(pogo)
             {
-                if(pogo)
-                {
-                    controller.Pogo();
-                    pogo = false;
-                }
+                controller.Pogo();
+                pogo = false;
             }
-
-            Collider2D[] hitProjectilesParry = Physics2D.OverlapCircleAll(AttackPoint, ParryRange, ProjectileLayers);
-
-            foreach(Collider2D projectile in hitProjectilesParry)
-            {
-                projectile.GetComponent<Projectile>().Parry();
-                if(itemManager.parry_leech_percent > 0)
-                {
-                    if(hp + projectile.GetComponent<Projectile>()._damage * itemManager.parry_leech_percent < max_hp)
-                    {
-                        hp += projectile.GetComponent<Projectile>()._damage * itemManager.parry_leech_percent;
-                    }
-                    else
-                    {
-                        hp = max_hp;
-                    }
-                }
-            } 
         }
+    
     }
 
     public void takeDamage(int damage, Vector2 dir)
@@ -297,9 +302,9 @@ public class PlayerCombat : MonoBehaviour
 
             audioManager.Play(audioManager.PlayerDMGSound,1,Random.Range(0.9f,1.1f));
 
-            StartCoroutine(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().FreezeGame(FreezeDuration, FreezeDelay));     
+            //StartCoroutine(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().FreezeGame(FreezeDuration, FreezeDelay));     
             
-            SetIFrames(5);
+            SetIFrames(30);
             
             if (!light_dropped && dir != new Vector2(0,0))
             {
@@ -335,9 +340,7 @@ public class PlayerCombat : MonoBehaviour
     {
         dead = true;
         hp = 0;
-        audioManager.StopMusic();
-        audioManager.Play(audioManager.gameOverSound);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForFixedUpdate();
         SceneManager.LoadScene(gameOverSceneName);
     }
     
@@ -431,14 +434,9 @@ public class PlayerCombat : MonoBehaviour
 
     public void OnDrawGizmos()
     {
-        Gizmos.DrawWireCube(SideMeleePoint.position, new Vector2(MeleeAttackRange * 7f, MeleeAttackRange * 3f));
-        Gizmos.DrawWireCube(DownMeleePoint.position, new Vector2(MeleeAttackRange * 2f, MeleeAttackRange * 7f));
-        Gizmos.DrawWireCube(UpMeleePoint.position, new Vector2(MeleeAttackRange * 2f, MeleeAttackRange * 7f));
-
         Gizmos.color = Color.blue;
-
-        Gizmos.DrawWireSphere(SideMeleePoint.position,ParryRange);
-        Gizmos.DrawWireSphere(UpMeleePoint.position,ParryRange);
-        Gizmos.DrawWireSphere(DownMeleePoint.position,ParryRange);
+        Gizmos.DrawWireCube(SideMeleePoint.position, new Vector2(MeleeAttackRange * 7f, MeleeAttackRange * 4f));
+        Gizmos.DrawWireCube(DownMeleePoint.position, new Vector2(MeleeAttackRange * 3f, MeleeAttackRange * 7f));
+        Gizmos.DrawWireCube(UpMeleePoint.position, new Vector2(MeleeAttackRange * 3f, MeleeAttackRange * 7f));
     }
 }

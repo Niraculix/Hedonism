@@ -319,8 +319,8 @@ MonoBehaviour:
   hp: 0
   naturalDrainRate: 5
   naturalHealRate: 0.8
-  baseAttackCooldown: 1
-  AdrenalinAttackCooldown: 0.25
+  baseAttackCooldown: 0.6
+  AdrenalinAttackCooldown: 0.6
   room_cleared: 0
   EnemyLayers:
     serializedVersion: 2

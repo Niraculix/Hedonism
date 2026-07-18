@@ -10,15 +10,20 @@ public class GameOverUI : MonoBehaviour
     bool active = true;
     bool textActive;
 
+    public AudioClip gameOverSound;
+
+    public AudioClip UISound;
+
     void Start()
     {
         StartCoroutine(Blink());
         textActive = true;
+        GetComponent<AudioSource>().volume = 0.5f;
+        GetComponent<AudioSource>().PlayOneShot(gameOverSound);
     }
 
     void OnJump()
     {
-        print("tod und verderben");
         if(active)
         {
             text.SetActive(false);
@@ -31,6 +36,7 @@ public class GameOverUI : MonoBehaviour
     {
         blinking = false;
         text.SetActive(true);
+        GetComponent<AudioSource>().PlayOneShot(UISound);
         yield return new WaitForSeconds(0.5f);
         text.SetActive(false);
         yield return new WaitForSeconds(1f);

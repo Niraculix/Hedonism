@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 
 public class Enemy : MonoBehaviour
@@ -31,6 +32,7 @@ public class Enemy : MonoBehaviour
         GetComponent<BoxCollider2D>().enabled = false;
         if(animationObject != null) animationObject.SetActive(false);
         if(GetComponent<SpriteRenderer>()) GetComponent<SpriteRenderer>().enabled = false;
+        if(GetComponent<Light2D>()) GetComponent<Light2D>().intensity = 0f;
         GetComponent<Rigidbody2D>().Sleep();
         LogicEnabled = false;
     }
@@ -40,6 +42,7 @@ public class Enemy : MonoBehaviour
         if(GetComponent<PlatformerEnemyAI>()) print("Logic enabled");
         if(animationObject != null) animationObject.SetActive(true);
         if(GetComponent<SpriteRenderer>()) GetComponent<SpriteRenderer>().enabled = true;
+        if(GetComponent<Light2D>()) GetComponent<Light2D>().intensity = 1f;
         GetComponent<BoxCollider2D>().enabled = true;
         GetComponent<Rigidbody2D>().WakeUp();
         LogicEnabled = true;
@@ -64,7 +67,7 @@ public class Enemy : MonoBehaviour
         if (transform.position.y < GameObject.FindGameObjectWithTag("Room").GetComponent<RoomDefinition>().KillBoxY)
         {
             GameObject.FindGameObjectWithTag("Room").GetComponent<RoomDefinition>().EnemyKilled();
-            Destroy(gameObject);
+            LogicEnabled = false;
         }
 
         if(transform.localScale.x < 0)
@@ -105,7 +108,9 @@ public class Enemy : MonoBehaviour
         }
 
         LogicEnabled = false;
-        StartCoroutine(DeathAnim());
+        audioManager.Play(audioManager.EnemyDeathSound);
+
+        Destroy(gameObject);
         
     }
 
@@ -116,12 +121,5 @@ public class Enemy : MonoBehaviour
         NewNumber.transform.position = NumberSpawnPoint.transform.position;
         NewNumber.transform.Translate(new Vector2(randf,0));
         NewNumber.GetComponent<FloatingDamageNumber>().Init(dmg);
-    }
-
-    IEnumerator DeathAnim()
-    {
-        audioManager.Play(audioManager.EnemyDeathSound);
-        yield return new WaitForSeconds(1);
-        Destroy(gameObject); 
     }
 }

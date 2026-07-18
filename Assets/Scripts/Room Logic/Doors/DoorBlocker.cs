@@ -17,12 +17,18 @@ public class DoorBlocker : MonoBehaviour
 
         if (doorsOpen != lastDoorsOpen)
         {
-            if (doorsOpen)
-                lockAnim.PlayUnlockAnimation();
-            else
-                lockAnim.PlayLockAnimation();
-
             lastDoorsOpen = doorsOpen;
+
+            if (doorsOpen)
+            {
+                lockAnim.PlayUnlockAnimation();
+            }
+            else
+            {
+                lockAnim.PlayLockAnimation();
+            }
+
+            print(doorsOpen);
         }
 
         GetComponent<BoxCollider2D>().isTrigger = doorsOpen;

@@ -134,7 +134,7 @@ Transform:
   m_GameObject: {fileID: 120507612907162107}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0967903, y: -1.2835746, z: -10}
+  m_LocalPosition: {x: 5.073428, y: -1.2835746, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5850,7 +5850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemRoom
   itemObjectPrefab: {fileID: 5795946142029301887, guid: 644b484eac2d5404bb70ce837dfbd65e, type: 3}
-  itemSpawnPoint: {x: 43.3, y: 0.91}
+  itemSpawnPoint: {x: 13.8, y: -3.82}
   onItemPickedUp:
     m_PersistentCalls:
       m_Calls: []

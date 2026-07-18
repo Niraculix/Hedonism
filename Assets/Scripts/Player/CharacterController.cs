@@ -12,12 +12,12 @@ public class CharacterController : MonoBehaviour
 {
 	[Header("Movement Forces")]
 	[SerializeField] private float speed = 10f;
-	[SerializeField] private float m_JumpForce = 1400f;
-	[SerializeField] private float m_PogoForce = 600f;
+	[SerializeField] private float m_JumpForce;
+	[SerializeField] private float m_PogoForce;
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;
 
 	[Header("Dash")]
-	[SerializeField] private float m_DashForce = 600f;
+	[SerializeField] private float m_DashForce;
 	public float m_DashCooldown = 0.25f;
 	public float m_DashRechargeTime = 0.25f;
 	[Range(1, 1.5f)] [SerializeField] private float DashYDamping;
@@ -443,6 +443,7 @@ public class CharacterController : MonoBehaviour
 	{
 		m_Rigidbody2D.linearVelocityY = 0;
 		m_Rigidbody2D.AddForce(new Vector2(0,m_PogoForce));
+		print("Pogo");
 		RegainDash();
 	}
 

@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 5d2a5401b01f38b42b81c281efbdeb97
+  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 30f9de32e6d8e9c47b11661fdaa5dbab
   - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: bc5df8b36c0bc274db3971794e51895a
-  - enabled: 1
-    path: Assets/Scenes/Start.unity
-    guid: 5d2a5401b01f38b42b81c281efbdeb97
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
